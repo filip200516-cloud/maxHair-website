@@ -1,0 +1,292 @@
+{
+  "content": [
+    {
+      "id": "onas_hero_code",
+      "name": "code",
+      "parent": "onas_hero_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- O NAS HERO SECTION -->\n<section class=\"onas-hero-section\">\n  <div class=\"hero-video-wrapper\">\n    <video autoplay muted loop playsinline class=\"hero-video\">\n      <source src=\"https://mediumseagreen-gaur-406121.hostingersite.com/wp-content/uploads/2025/12/e638fe11-5724-4879-8264-d81b33a85de1.mp4\" type=\"video/mp4\">\n    </video>\n    <div class=\"hero-overlay\"></div>\n  </div>\n  <div class=\"onas-hero-content\">\n    <div class=\"section-badge\">O nás</div>\n    <h1 class=\"hero-title\">Přímá turecká klinika<br/>bez prostředníka</h1>\n    <p class=\"hero-description\">Oficiální klinika MaxHair vám zařídí vše - letenky, ubytování i operaci. Bez marže prostředníka.</p>\n    <div class=\"hero-stats\">\n      <div class=\"stat-item\">\n        <div class=\"stat-number\">5000+ <span style=\"color: #dc3545; font-size: 20px; font-weight: normal;\">(potřeba ověřit)</span></div>\n        <div class=\"stat-label\">Spokojených klientů</div>\n      </div>\n      <div class=\"stat-item\">\n        <div class=\"stat-number\">95%</div>\n        <div class=\"stat-label\">Úspěšnost</div>\n      </div>\n      <div class=\"stat-item\">\n        <div class=\"stat-number\">15+</div>\n        <div class=\"stat-label\">Let zkušeností</div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #A67C00;\n    --dark-brown: #5A452C;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #CCCCCC;\n  }\n\n  .onas-hero-section {\n    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;\n    min-height: 100vh;\n    position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    overflow: hidden;\n  }\n\n  .hero-video-wrapper {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    z-index: 1;\n  }\n\n  .hero-video {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n\n  .hero-overlay {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: linear-gradient(135deg, rgba(90, 69, 44, 0.85) 0%, rgba(58, 45, 30, 0.9) 100%);\n    z-index: 2;\n  }\n\n  .onas-hero-content {\n    position: relative;\n    z-index: 3;\n    max-width: 1200px;\n    width: 100%;\n    padding: 0 80px;\n    text-align: center;\n  }\n\n  .section-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: rgba(229, 193, 88, 0.2);\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 32px;\n    border-radius: 30px;\n    border: 1px solid var(--primary-gold);\n  }\n\n  .hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(42px, 6vw, 72px);\n    font-weight: 800;\n    color: var(--white);\n    margin: 0 0 32px 0;\n    letter-spacing: -2px;\n    line-height: 1.2;\n  }\n\n  .hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(18px, 2.5vw, 24px);\n    color: rgba(255, 255, 255, 0.9);\n    margin: 0 0 60px 0;\n    line-height: 1.6;\n    max-width: 800px;\n    margin-left: auto;\n    margin-right: auto;\n  }\n\n  .hero-stats {\n    display: flex;\n    gap: 60px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .stat-item {\n    text-align: center;\n  }\n\n  .stat-number {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 800;\n    color: var(--primary-gold);\n    margin-bottom: 8px;\n  }\n\n  .stat-label {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(14px, 1.8vw, 18px);\n    color: rgba(255, 255, 255, 0.8);\n  }\n\n  @media (max-width: 768px) {\n    .onas-hero-content {\n      padding: 0 24px;\n    }\n\n    .hero-stats {\n      gap: 40px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "onas_hero_001",
+        "user_id": 1,
+        "time": 1735690200
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "onas_hero_container",
+      "name": "container",
+      "parent": "onas_hero_section",
+      "children": ["onas_hero_code"],
+      "settings": {
+        "_width": "100vw",
+        "_height": "100vh"
+      }
+    },
+    {
+      "id": "onas_hero_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["onas_hero_container"],
+      "settings": {
+        "_width": "100vw",
+        "_height": "100vh"
+      },
+      "label": "O nás Hero | MaxHair"
+    },
+    {
+      "id": "onas_story_code",
+      "name": "code",
+      "parent": "onas_story_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- O NAS STORY SECTION -->\n<section class=\"onas-story-section\">\n  <div class=\"onas-story-content\">\n    <div class=\"story-grid\">\n      <div class=\"story-text\">\n        <div class=\"section-badge\">Náš příběh</div>\n        <h2 class=\"section-title\">Jak jsme vznikli a proč jsme jiní</h2>\n        <p>MaxHair je přímá turecká klinika transplantace vlasů, která se specializuje na české klienty. Naším cílem je poskytnout nejvyšší kvalitu za nejlepší cenu - bez prostředníků a jejich marží.</p>\n        <p><strong>Proč přímá klinika?</strong></p>\n        <p>Většina českých firem funguje jako prostředníci - mají smlouvu s tureckou klinikou, přidají marži 30-50% a prodávají vám službu. My jsme přímo klinika. Komunikujete s námi, platíte nám, žádný prostředník.</p>\n        <p><strong>Nižší cena bez kompromisů</strong></p>\n        <p>Bez marže prostředníka můžeme nabídnout stejnou kvalitu za nižší cenu. Vše je zahrnuto v ceně - letenka, hotel, transport, operace, péče. Transparentní ceník bez skrytých poplatků.</p>\n        <p><strong>Zkušenosti s českými klienty</strong></p>\n        <p>Máme bohaté zkušenosti s českými klienty. Rozumíme jejich potřebám, očekáváním a preferencím. Díky české podpoře Michaely je komunikace vždy v češtině.</p>\n      </div>\n      <div class=\"story-image\">\n        <img src=\"https://mediumseagreen-gaur-406121.hostingersite.com/wp-content/uploads/2025/12/staff.jpg\" alt=\"Tým MaxHair\" />\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #A67C00;\n    --dark-brown: #5A452C;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #CCCCCC;\n  }\n\n  .onas-story-section {\n    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;\n    min-height: auto;\n    background: var(--white);\n    padding: 100px 80px;\n  }\n\n  .onas-story-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .story-grid {\n    display: grid;\n    grid-template-columns: 1.2fr 1fr;\n    gap: 80px;\n    align-items: center;\n  }\n\n  .story-text {\n    text-align: left;\n  }\n\n  .section-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: rgba(229, 193, 88, 0.1);\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 24px;\n    border-radius: 30px;\n    border: 1px solid var(--primary-gold);\n  }\n\n  .section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(32px, 4vw, 48px);\n    font-weight: 800;\n    color: var(--dark-brown);\n    margin: 0 0 32px 0;\n    line-height: 1.2;\n  }\n\n  .story-text p {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 18px);\n    color: var(--dark-brown);\n    line-height: 1.8;\n    margin: 0 0 24px 0;\n  }\n\n  .story-text p:last-child {\n    margin-bottom: 0;\n  }\n\n  .story-text strong {\n    font-weight: 600;\n    color: var(--dark-brown);\n  }\n\n  .story-image {\n    width: 100%;\n    border-radius: 24px;\n    overflow: hidden;\n    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);\n  }\n\n  .story-image img {\n    width: 100%;\n    height: auto;\n    display: block;\n  }\n\n  @media (max-width: 992px) {\n    .story-grid {\n      grid-template-columns: 1fr;\n      gap: 40px;\n    }\n\n    .story-image {\n      order: -1;\n    }\n  }\n\n  @media (max-width: 768px) {\n    .onas-story-section {\n      padding: 60px 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "onas_story_001",
+        "user_id": 1,
+        "time": 1735690201
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "onas_story_container",
+      "name": "container",
+      "parent": "onas_story_section",
+      "children": ["onas_story_code"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "onas_story_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["onas_story_container"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "O nás Story | MaxHair"
+    },
+    {
+      "id": "onas_why_code",
+      "name": "code",
+      "parent": "onas_why_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- O NAS WHY SECTION -->\n<section class=\"onas-why-section\">\n  <div class=\"onas-why-content\">\n    <div class=\"section-badge\">Proč MaxHair</div>\n    <h2 class=\"section-title\">Proč jsme jiní</h2>\n    <p class=\"section-description\">4 klíčové výhody, které nás odlišují</p>\n    \n    <div class=\"why-grid\">\n      <div class=\"why-card\">\n        <div class=\"why-icon\">🏥</div>\n        <h3>Přímá klinika</h3>\n        <p>Žádný prostředník. Komunikujete přímo s námi, platíte přímo nám. Úspora až 30% oproti prostředníkům.</p>\n      </div>\n      \n      <div class=\"why-card\">\n        <div class=\"why-icon\">💰</div>\n        <h3>Nižší cena</h3>\n        <p>Bez marže prostředníka můžeme nabídnout stejnou kvalitu za nižší cenu. Transparentní ceník bez skrytých poplatků.</p>\n      </div>\n      \n      <div class=\"why-card\">\n        <div class=\"why-icon\"><svg width=\"64\" height=\"64\" viewBox=\"0 0 3 2\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"3\" height=\"1\" fill=\"#11457e\"/><rect y=\"1\" width=\"3\" height=\"1\" fill=\"#fff\"/><path d=\"M0 0h3v2H0z\" fill=\"#d7141a\"/></svg></div>\n        <h3>Česká podpora</h3>\n        <p>Michaela je tu pro vás v češtině 24/7. Od konzultace přes organizaci cesty až po pooperační péči.</p>\n      </div>\n      \n      <div class=\"why-card\">\n        <div class=\"why-icon\">✅</div>\n        <h3>Osvědčené výsledky</h3>\n        <p>5000+ spokojených klientů, 98% úspěšnost, 15+ let zkušeností. Stejné výstupy jako přední české firmy.</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #A67C00;\n    --dark-brown: #5A452C;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #CCCCCC;\n  }\n\n  .onas-why-section {\n    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;\n    min-height: auto;\n    background: var(--light-gray);\n    padding: 100px 80px;\n  }\n\n  .onas-why-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n    text-align: center;\n  }\n\n  .section-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: rgba(229, 193, 88, 0.1);\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 24px;\n    border-radius: 30px;\n    border: 1px solid var(--primary-gold);\n  }\n\n  .section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(32px, 4vw, 48px);\n    font-weight: 800;\n    color: var(--dark-brown);\n    margin: 0 0 16px 0;\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: var(--dark-brown);\n    opacity: 0.7;\n    margin: 0 0 60px 0;\n  }\n\n  .why-grid {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    gap: 40px;\n  }\n\n  .why-card {\n    background: var(--white);\n    border-radius: 24px;\n    padding: 48px 40px;\n    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);\n    transition: all 0.3s ease;\n    text-align: left;\n  }\n\n  .why-card:hover {\n    transform: translateY(-8px);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    border: 2px solid var(--primary-gold);\n  }\n\n  .why-icon {\n    font-size: 64px;\n    margin-bottom: 24px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .why-icon svg {\n    width: 64px;\n    height: 48px;\n    border-radius: 4px;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n  }\n\n  .why-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(22px, 2.5vw, 28px);\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 16px 0;\n  }\n\n  .why-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(15px, 1.8vw, 17px);\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.7;\n    margin: 0;\n  }\n\n  @media (max-width: 768px) {\n    .onas-why-section {\n      padding: 60px 24px;\n    }\n\n    .why-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "onas_why_001",
+        "user_id": 1,
+        "time": 1735690202
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "onas_why_container",
+      "name": "container",
+      "parent": "onas_why_section",
+      "children": ["onas_why_code"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "onas_why_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["onas_why_container"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "O nás Why | MaxHair"
+    },
+    {
+      "id": "onas_team_code",
+      "name": "code",
+      "parent": "onas_team_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- O NAS TEAM SECTION -->\n<section class=\"onas-team-section\">\n  <div class=\"onas-team-content\">\n    <div class=\"section-badge\">Náš tým</div>\n    <h2 class=\"section-title\">Zkušení odborníci</h2>\n    <p class=\"section-description\">Lékaři s mezinárodními certifikacemi a letitou praxí</p>\n    \n    <div class=\"team-grid\">\n      <div class=\"doctor-card\">\n        <div class=\"doctor-image\">\n          <img src=\"https://mediumseagreen-gaur-406121.hostingersite.com/wp-content/uploads/2025/12/Dr-Seyit-Sahin.jpg\" alt=\"Dr Seyit Şahin\" />\n        </div>\n        <div class=\"doctor-info\">\n          <h3>Dr Seyit Şahin</h3>\n          <p class=\"doctor-title\">Hlavní chirurg</p>\n          <p class=\"doctor-description\">Přední odborník na transplantaci vlasů s více než 15 lety zkušeností. Absolvoval tisíce úspěšných zákroků metodami DHI a Sapphire FUE.</p>\n          <ul class=\"doctor-stats\">\n            <li><strong>5000+</strong> zákroků <span style=\"color: #dc3545; font-size: 12px; font-weight: normal;\">(potřeba ověřit)</span></li>\n            <li><strong>15+</strong> let praxe</li>\n            <li><strong>98%</strong> úspěšnost</li>\n          </ul>\n        </div>\n      </div>\n      \n      <div class=\"doctor-card\">\n        <div class=\"doctor-image\">\n          <img src=\"https://mediumseagreen-gaur-406121.hostingersite.com/wp-content/uploads/2025/12/Dr-Merve-Altun.jpg\" alt=\"Dr Merve Altun\" />\n        </div>\n        <div class=\"doctor-info\">\n          <h3>Dr Merve Altun</h3>\n          <p class=\"doctor-title\">Specialistka na ženy</p>\n          <p class=\"doctor-description\">Odbornice na jemnou transplantaci pro ženy. Zaměřuje se na přirozený vzhled, diskrétní zásahy a zachování délky vlasů.</p>\n          <ul class=\"doctor-stats\">\n            <li><strong>3000+</strong> zákroků <span style=\"color: #dc3545; font-size: 12px; font-weight: normal;\">(potřeba ověřit)</span></li>\n            <li><strong>10+</strong> let praxe</li>\n            <li><strong>99%</strong> spokojenost</li>\n          </ul>\n        </div>\n      </div>\n      \n      <div class=\"doctor-card\">\n        <div class=\"doctor-image\">\n          <img src=\"https://mediumseagreen-gaur-406121.hostingersite.com/wp-content/uploads/2025/12/staff.jpg\" alt=\"Celý tým MaxHair\" />\n        </div>\n        <div class=\"doctor-info\">\n          <h3>Celý tým MaxHair</h3>\n          <p class=\"doctor-title\">Zkušení profesionálové</p>\n          <p class=\"doctor-description\">Náš tým tvoří certifikovaní chirurgové a asistenté s letitou praxí v oblasti transplantace vlasů. Společně jsme provedli více než 10 000 úspěšných zákroků.</p>\n          <ul class=\"doctor-stats\">\n            <li><strong>10+</strong> specialistů</li>\n            <li><strong>20+</strong> let tradice</li>\n            <li><strong>5000+</strong> klientů <span style=\"color: #dc3545; font-size: 12px; font-weight: normal;\">(potřeba ověřit)</span></li>\n          </ul>\n        </div>\n      </div>\n      \n      <div class=\"support-card\">\n        <div class=\"support-image-placeholder\">\n          <div class=\"placeholder-text\">Fotka Michaely<br/>česká podpora<br/>přátelský úsměv</div>\n        </div>\n        <div class=\"support-info\">\n          <h3>Michaela</h3>\n          <p class=\"support-title\">Česká podpora</p>\n          <p class=\"support-description\">Česká přítelkyně majitele kliniky. Michaela vám pomůže v každé fázi - od konzultace až po pooperační péči. Komunikace v češtině 24/7.</p>\n          <div class=\"support-contact\">\n            <a href=\"mailto:Michaela@maxhair.cz\" class=\"contact-link\">\n              <i class=\"fas fa-envelope\"></i> Email\n            </a>\n            <a href=\"tel:+420601515323\" class=\"contact-link\">\n              <i class=\"fas fa-phone\"></i> +420 601 515 323\n            </a>\n            <a href=\"https://wa.me/420601515323\" target=\"_blank\" class=\"contact-link\">\n              <i class=\"fab fa-whatsapp\"></i> WhatsApp\n            </a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #A67C00;\n    --dark-brown: #5A452C;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #CCCCCC;\n  }\n\n  .onas-team-section {\n    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;\n    min-height: auto;\n    background: var(--white);\n    padding: 100px 80px;\n  }\n\n  .onas-team-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n    text-align: center;\n  }\n\n  .section-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: rgba(229, 193, 88, 0.1);\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 24px;\n    border-radius: 30px;\n    border: 1px solid var(--primary-gold);\n  }\n\n  .section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(32px, 4vw, 48px);\n    font-weight: 800;\n    color: var(--dark-brown);\n    margin: 0 0 16px 0;\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: var(--dark-brown);\n    opacity: 0.7;\n    margin: 0 0 60px 0;\n  }\n\n  .team-grid {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    gap: 40px;\n  }\n\n  .doctor-card,\n  .support-card {\n    background: var(--light-gray);\n    border-radius: 24px;\n    overflow: hidden;\n    transition: all 0.3s ease;\n    text-align: left;\n  }\n\n  .doctor-card:hover {\n    box-shadow: 0 20px 60px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .doctor-image {\n    width: 100%;\n    height: 350px;\n    overflow: hidden;\n  }\n\n  .doctor-image img {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n\n  .doctor-info {\n    padding: 32px;\n  }\n\n  .doctor-info h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(24px, 3vw, 28px);\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 8px 0;\n  }\n\n  .doctor-title {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--primary-gold);\n    font-weight: 600;\n    margin: 0 0 16px 0;\n  }\n\n  .doctor-description {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0 0 20px 0;\n  }\n\n  .doctor-stats {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    display: flex;\n    gap: 24px;\n    flex-wrap: wrap;\n  }\n\n  .doctor-stats li {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: var(--dark-brown);\n  }\n\n  .doctor-stats strong {\n    display: block;\n    font-family: 'Poppins', sans-serif;\n    font-size: 24px;\n    font-weight: 700;\n    color: var(--primary-gold);\n    margin-bottom: 4px;\n  }\n\n  .support-card {\n    background: linear-gradient(135deg, var(--primary-gold) 0%, var(--secondary-gold) 100%);\n    padding: 32px;\n    display: flex;\n    flex-direction: column;\n  }\n\n  .support-image-placeholder {\n    width: 100%;\n    height: 250px;\n    background: rgba(0, 0, 0, 0.1);\n    border-radius: 16px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 24px;\n    border: 2px dashed rgba(0, 0, 0, 0.2);\n  }\n\n  .placeholder-text {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: var(--black);\n    opacity: 0.6;\n    text-align: center;\n    line-height: 1.6;\n  }\n\n  .support-info {\n    flex: 1;\n  }\n\n  .support-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 28px;\n    font-weight: 800;\n    color: var(--black);\n    margin: 0 0 8px 0;\n  }\n\n  .support-title {\n    font-family: 'Inter', sans-serif;\n    font-size: 18px;\n    color: var(--black);\n    font-weight: 600;\n    margin: 0 0 16px 0;\n  }\n\n  .support-description {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--black);\n    opacity: 0.9;\n    line-height: 1.6;\n    margin: 0 0 24px 0;\n  }\n\n  .support-contact {\n    display: flex;\n    flex-direction: column;\n    gap: 12px;\n  }\n\n  .contact-link {\n    display: flex;\n    align-items: center;\n    gap: 12px;\n    padding: 12px 20px;\n    background: var(--black);\n    color: var(--white);\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 10px;\n    transition: all 0.3s ease;\n  }\n\n  .contact-link:hover {\n    background: var(--dark-brown);\n    transform: translateY(-2px);\n  }\n\n  @media (max-width: 992px) {\n    .team-grid {\n      grid-template-columns: 1fr;\n    }\n  }\n\n  @media (max-width: 768px) {\n    .onas-team-section {\n      padding: 60px 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "onas_team_001",
+        "user_id": 1,
+        "time": 1735690203
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "onas_team_container",
+      "name": "container",
+      "parent": "onas_team_section",
+      "children": ["onas_team_code"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "onas_team_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["onas_team_container"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "O nás Team | MaxHair"
+    },
+    {
+      "id": "onas_clinic_code",
+      "name": "code",
+      "parent": "onas_clinic_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- O NAS CLINIC SECTION -->\n<section class=\"onas-clinic-section\">\n  <div class=\"onas-clinic-content\">\n    <div class=\"section-badge\">Naše klinika</div>\n    <h2 class=\"section-title\">Moderní klinika v Istanbulu</h2>\n    <p class=\"section-description\">Profesionální prostředí s nejmodernějším vybavením</p>\n    \n    <div class=\"clinic-grid\">\n      <div class=\"clinic-image\">\n        <img src=\"https://mediumseagreen-gaur-406121.hostingersite.com/wp-content/uploads/2025/12/0c8482ee-7c62-4bc2-85e6-ff374f727869-scaled.jpg\" alt=\"Recepce MaxHair\" />\n        <div class=\"image-label\">Recepce</div>\n      </div>\n      <div class=\"clinic-image\">\n        <img src=\"https://mediumseagreen-gaur-406121.hostingersite.com/wp-content/uploads/2025/12/9a3d6798-e4a7-4479-9563-6cfd303cd15f-scaled.jpg\" alt=\"Recepce MaxHair\" />\n        <div class=\"image-label\">Recepce</div>\n      </div>\n      <div class=\"clinic-image\">\n        <img src=\"https://mediumseagreen-gaur-406121.hostingersite.com/wp-content/uploads/2025/12/IMG_6580-scaled.jpg\" alt=\"Ordinace MaxHair\" />\n        <div class=\"image-label\">Ordinace</div>\n      </div>\n    </div>\n    \n    <div class=\"clinic-info\">\n      <div class=\"clinic-address\">\n        <h3>Adresa kliniky</h3>\n        <p>Izzet Paşa Mah. Yeni Yol Cad.<br/>Nurol Tower No: 3 / 303<br/>Şişli / ISTANBUL<br/>Turecko</p>\n      </div>\n      <div class=\"clinic-features\">\n        <h3>Vybavení kliniky</h3>\n        <ul class=\"features-list\">\n          <li>✓ Nejmodernější operační sály</li>\n          <li>✓ Certifikované vybavení</li>\n          <li>✓ Sterilní prostředí</li>\n          <li>✓ Komfortní čekárny</li>\n          <li>✓ Profesionální tým</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #A67C00;\n    --dark-brown: #5A452C;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #CCCCCC;\n  }\n\n  .onas-clinic-section {\n    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;\n    min-height: auto;\n    background: var(--light-gray);\n    padding: 100px 80px;\n  }\n\n  .onas-clinic-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n    text-align: center;\n  }\n\n  .section-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: rgba(229, 193, 88, 0.1);\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 24px;\n    border-radius: 30px;\n    border: 1px solid var(--primary-gold);\n  }\n\n  .section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(32px, 4vw, 48px);\n    font-weight: 800;\n    color: var(--dark-brown);\n    margin: 0 0 16px 0;\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: var(--dark-brown);\n    opacity: 0.7;\n    margin: 0 0 60px 0;\n  }\n\n  .clinic-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 32px;\n    margin-bottom: 60px;\n  }\n\n  .clinic-image {\n    position: relative;\n    border-radius: 20px;\n    overflow: hidden;\n    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);\n    transition: all 0.3s ease;\n  }\n\n  .clinic-image:hover {\n    transform: translateY(-8px);\n    box-shadow: 0 16px 48px rgba(229, 193, 88, 0.25);\n  }\n\n  .clinic-image img {\n    width: 100%;\n    height: 400px;\n    object-fit: cover;\n    display: block;\n  }\n\n  .image-label {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);\n    color: var(--white);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    padding: 20px;\n    text-align: left;\n  }\n\n  .clinic-info {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 60px;\n    text-align: left;\n    background: var(--white);\n    border-radius: 24px;\n    padding: 48px;\n  }\n\n  .clinic-address h3,\n  .clinic-features h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 24px;\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 20px 0;\n  }\n\n  .clinic-address p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.8;\n    margin: 0;\n  }\n\n  .features-list {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n  }\n\n  .features-list li {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-brown);\n    padding: 12px 0;\n    border-bottom: 1px solid var(--light-gray);\n  }\n\n  .features-list li:last-child {\n    border-bottom: none;\n  }\n\n  @media (max-width: 992px) {\n    .clinic-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n\n    .clinic-info {\n      grid-template-columns: 1fr;\n    }\n  }\n\n  @media (max-width: 768px) {\n    .onas-clinic-section {\n      padding: 60px 24px;\n    }\n\n    .clinic-grid {\n      grid-template-columns: 1fr;\n    }\n\n    .clinic-image img {\n      height: 300px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "onas_clinic_001",
+        "user_id": 1,
+        "time": 1735690204
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "onas_clinic_container",
+      "name": "container",
+      "parent": "onas_clinic_section",
+      "children": ["onas_clinic_code"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "onas_clinic_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["onas_clinic_container"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "O nás Clinic | MaxHair"
+    },
+    {
+      "id": "onas_cert_code",
+      "name": "code",
+      "parent": "onas_cert_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- O NAS CERT SECTION -->\n<section class=\"onas-cert-section\">\n  <div class=\"onas-cert-content\">\n    <div class=\"cert-grid\">\n      <div class=\"cert-card\">\n        <div class=\"cert-icon\">🛡️</div>\n        <h3>Certifikace</h3>\n        <p>Naše klinika je certifikována podle mezinárodních standardů. Všechny postupy jsou v souladu s evropskými normami.</p>\n        <div class=\"cert-placeholder\">\n          <div class=\"placeholder-text\">Certifikáty kliniky</div>\n        </div>\n      </div>\n      \n      <div class=\"cert-card\">\n        <div class=\"cert-icon\">✅</div>\n        <h3>Garance kvality</h3>\n        <p>Garantujeme úspěšnost zákroku a kvalitu práce. Transplantované vlasy jsou trvalé a odolné vůči vypadávání.</p>\n      </div>\n      \n      <div class=\"cert-card\">\n        <div class=\"cert-icon\">💯</div>\n        <h3>Záruční certifikát</h3>\n        <p>Každý klient obdrží záruční certifikát. Online follow-up konzultace zdarma po zákroku.</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #A67C00;\n    --dark-brown: #5A452C;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #CCCCCC;\n  }\n\n  .onas-cert-section {\n    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;\n    min-height: auto;\n    background: var(--white);\n    padding: 100px 80px;\n  }\n\n  .onas-cert-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .cert-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 40px;\n  }\n\n  .cert-card {\n    background: var(--light-gray);\n    border-radius: 24px;\n    padding: 48px 40px;\n    text-align: center;\n    transition: all 0.3s ease;\n  }\n\n  .cert-card:hover {\n    transform: translateY(-8px);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    border: 2px solid var(--primary-gold);\n  }\n\n  .cert-icon {\n    font-size: 64px;\n    margin-bottom: 24px;\n  }\n\n  .cert-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 24px;\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 16px 0;\n  }\n\n  .cert-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.7;\n    margin: 0 0 24px 0;\n  }\n\n  .cert-placeholder {\n    width: 100%;\n    height: 150px;\n    background: var(--white);\n    border-radius: 12px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    border: 2px dashed var(--medium-gray);\n  }\n\n  .placeholder-text {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: var(--dark-brown);\n    opacity: 0.5;\n  }\n\n  @media (max-width: 768px) {\n    .onas-cert-section {\n      padding: 60px 24px;\n    }\n\n    .cert-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "onas_cert_001",
+        "user_id": 1,
+        "time": 1735690205
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "onas_cert_container",
+      "name": "container",
+      "parent": "onas_cert_section",
+      "children": ["onas_cert_code"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "onas_cert_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["onas_cert_container"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "O nás Cert | MaxHair"
+    },
+    {
+      "id": "onas_stats_code",
+      "name": "code",
+      "parent": "onas_stats_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- O NAS STATS SECTION -->\n<section class=\"onas-stats-section\">\n  <div class=\"onas-stats-content\">\n    <h2 class=\"section-title\">Naše čísla mluví za nás</h2>\n    <div class=\"stats-grid\">\n      <div class=\"stat-box\">\n        <div class=\"stat-number\">5000+ <span style=\"color: #dc3545; font-size: 20px; font-weight: normal;\">(potřeba ověřit)</span></div>\n        <div class=\"stat-label\">Spokojených klientů</div>\n        <div class=\"stat-description\">Tisíce úspěšných zákroků po celém světě</div>\n      </div>\n      \n      <div class=\"stat-box\">\n        <div class=\"stat-number\">95%</div>\n        <div class=\"stat-label\">Úspěšnost zákroků</div>\n        <div class=\"stat-description\">Vysoká míra spokojenosti klientů</div>\n      </div>\n      \n      <div class=\"stat-box\">\n        <div class=\"stat-number\">15+</div>\n        <div class=\"stat-label\">Let zkušeností</div>\n        <div class=\"stat-description\">Dlouholetá tradice a odbornost</div>\n      </div>\n      \n      <div class=\"stat-box\">\n        <div class=\"stat-number\">24/7</div>\n        <div class=\"stat-label\">Česká podpora</div>\n        <div class=\"stat-description\">Michaela je tu pro vás kdykoli</div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #A67C00;\n    --dark-brown: #5A452C;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #CCCCCC;\n  }\n\n  .onas-stats-section {\n    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;\n    min-height: auto;\n    background: linear-gradient(135deg, var(--dark-brown) 0%, #3d2f1e 100%);\n    padding: 100px 80px;\n  }\n\n  .onas-stats-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n    text-align: center;\n  }\n\n  .section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(32px, 4vw, 48px);\n    font-weight: 800;\n    color: var(--white);\n    margin: 0 0 60px 0;\n  }\n\n  .stats-grid {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    gap: 40px;\n  }\n\n  .stat-box {\n    background: rgba(255, 255, 255, 0.05);\n    border: 1px solid rgba(229, 193, 88, 0.2);\n    border-radius: 24px;\n    padding: 48px 32px;\n    transition: all 0.3s ease;\n  }\n\n  .stat-box:hover {\n    background: rgba(255, 255, 255, 0.08);\n    border-color: var(--primary-gold);\n    transform: translateY(-8px);\n  }\n\n  .stat-number {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(48px, 6vw, 72px);\n    font-weight: 800;\n    color: var(--primary-gold);\n    margin-bottom: 16px;\n    line-height: 1;\n  }\n\n  .stat-label {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(18px, 2vw, 24px);\n    font-weight: 700;\n    color: var(--white);\n    margin-bottom: 12px;\n  }\n\n  .stat-description {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: rgba(255, 255, 255, 0.7);\n    line-height: 1.6;\n    margin: 0;\n  }\n\n  @media (max-width: 992px) {\n    .stats-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .onas-stats-section {\n      padding: 60px 24px;\n    }\n\n    .stats-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "onas_stats_001",
+        "user_id": 1,
+        "time": 1735690206
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "onas_stats_container",
+      "name": "container",
+      "parent": "onas_stats_section",
+      "children": ["onas_stats_code"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "onas_stats_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["onas_stats_container"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "O nás Stats | MaxHair"
+    },
+    {
+      "id": "onas_cta_code",
+      "name": "code",
+      "parent": "onas_cta_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- O NAS CTA SECTION -->\n<section class=\"onas-cta-section\">\n  <div class=\"onas-cta-content\">\n    <h2 class=\"cta-title\">Připraveni začít?</h2>\n    <p class=\"cta-description\">Domluvte si bezplatnou konzultaci a zjistěte, jak můžeme pomoci právě vám</p>\n    <div class=\"cta-buttons\">\n      <a href=\"/kontakt\" class=\"btn-primary\">Bezplatná konzultace</a>\n      <a href=\"/reference\" class=\"btn-secondary\">Prohlédnout reference</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #A67C00;\n    --dark-brown: #5A452C;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #CCCCCC;\n  }\n\n  .onas-cta-section {\n    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;\n    min-height: 50vh;\n    background: var(--light-gray);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 100px 80px;\n  }\n\n  .onas-cta-content {\n    max-width: 800px;\n    width: 100%;\n    text-align: center;\n  }\n\n  .cta-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(32px, 4vw, 48px);\n    font-weight: 800;\n    color: var(--dark-brown);\n    margin: 0 0 24px 0;\n  }\n\n  .cta-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: var(--dark-brown);\n    opacity: 0.7;\n    margin: 0 0 40px 0;\n    line-height: 1.6;\n  }\n\n  .cta-buttons {\n    display: flex;\n    gap: 24px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 18px 48px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 18px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 12px;\n    transition: all 0.3s ease;\n    box-shadow: 0 4px 16px rgba(229, 193, 88, 0.3);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-2px);\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 18px 48px;\n    background: transparent;\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 18px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--primary-gold);\n    border-radius: 12px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--primary-gold);\n    color: var(--black);\n  }\n\n  @media (max-width: 768px) {\n    .onas-cta-section {\n      padding: 60px 24px;\n    }\n\n    .cta-buttons {\n      flex-direction: column;\n      align-items: center;\n    }\n\n    .btn-primary,\n    .btn-secondary {\n      width: 100%;\n      max-width: 300px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "onas_cta_001",
+        "user_id": 1,
+        "time": 1735690207
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "onas_cta_container",
+      "name": "container",
+      "parent": "onas_cta_section",
+      "children": ["onas_cta_code"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "onas_cta_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["onas_cta_container"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "O nás CTA | MaxHair"
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "",
+  "version": "2.0",
+  "globalClasses": [],
+  "globalElements": []
+}
+

@@ -1,0 +1,241 @@
+{
+  "content": [
+    {
+      "id": "dhi_hero_code",
+      "name": "code",
+      "parent": "dhi_hero_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- DHI HERO SECTION -->\n<section class=\"dhi-hero-section\">\n  <div class=\"dhi-hero-content\">\n    <div class=\"section-badge\">Metoda</div>\n    <h1 class=\"hero-title\">DHI Metoda<br/>Direct Hair Implantation</h1>\n    <p class=\"hero-description\">Nejpřesnější metoda transplantace vlasů. Přímá implantace bez kanálků pomocí Choi implanter pen.</p>\n    <div class=\"hero-cta-group\">\n      <a href=\"#kontakt\" class=\"btn-primary\">Bezplatná konzultace</a>\n      <a href=\"#cenik\" class=\"btn-secondary\">Zjistit cenu</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #A67C00;\n    --dark-brown: #5A452C;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #CCCCCC;\n  }\n\n  .dhi-hero-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    min-height: 80vh;\n    background: linear-gradient(135deg, rgba(90, 69, 44, 0.95) 0%, rgba(0, 0, 0, 0.9) 100%);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: clamp(60px, 10vh, 120px) clamp(20px, 5vw, 80px);\n    position: relative;\n    overflow: hidden;\n  }\n\n  .dhi-hero-content {\n    max-width: 1200px;\n    width: 100%;\n    text-align: center;\n    position: relative;\n    z-index: 1;\n  }\n\n  .section-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 32px;\n    border-radius: 30px;\n  }\n\n  .hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(42px, 6vw, 72px);\n    font-weight: 800;\n    color: var(--white);\n    margin: 0 0 24px 0;\n    letter-spacing: -2px;\n    line-height: 1.2;\n  }\n\n  .hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(18px, 2.5vw, 24px);\n    color: rgba(255, 255, 255, 0.9);\n    margin: 0 0 48px 0;\n    line-height: 1.6;\n    max-width: 800px;\n    margin-left: auto;\n    margin-right: auto;\n  }\n\n  .hero-cta-group {\n    display: flex;\n    gap: 20px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 10px;\n    transition: all 0.3s ease;\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-3px);\n    box-shadow: 0 10px 35px rgba(229, 193, 88, 0.5);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: transparent;\n    color: var(--white);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--white);\n    border-radius: 10px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--white);\n    color: var(--black);\n    transform: translateY(-3px);\n  }\n\n  @media (max-width: 768px) {\n    .dhi-hero-section {\n      padding: 60px 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "dhi_hero_001",
+        "user_id": 1,
+        "time": 1735692000
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "dhi_hero_container",
+      "name": "container",
+      "parent": "dhi_hero_section",
+      "children": ["dhi_hero_code"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "dhi_hero_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["dhi_hero_container"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "DHI Hero | MaxHair"
+    },
+    {
+      "id": "dhi_co_code",
+      "name": "code",
+      "parent": "dhi_co_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- CO JE DHI SECTION -->\n<section class=\"dhi-co-section\">\n  <div class=\"dhi-co-content\">\n    <div class=\"section-header\">\n      <div class=\"section-badge\">Technologie</div>\n      <h2 class=\"section-title\">Co je DHI metoda?</h2>\n      <p class=\"section-description\">Direct Hair Implantation je nejmodernější metoda transplantace vlasů, která umožňuje přímou implantaci štěpů bez předchozího vytváření kanálků.</p>\n    </div>\n    \n    <div class=\"dhi-explanation-grid\">\n      <div class=\"explanation-card\">\n        <div class=\"card-icon\">✍️</div>\n        <h3>Choi Implanter Pen</h3>\n        <p>Speciální nástroj, který kombinuje vytvoření kanálku a implantaci štěpu v jednom kroku. Zajišťuje přesné umístění každého vlasu.</p>\n      </div>\n      \n      <div class=\"explanation-card\">\n        <div class=\"card-icon\">🎯</div>\n        <h3>Přímá implantace</h3>\n        <p>Štěpy se implantují přímo do pokožky bez předchozího vytváření kanálků. Tím se minimalizuje trauma a zkracuje doba hojení.</p>\n      </div>\n      \n      <div class=\"explanation-card\">\n        <div class=\"card-icon\">⚡</div>\n        <h3>Bez kanálků</h3>\n        <p>Oproti klasické FUE metodě není potřeba nejdřív vytvářet kanálky. Choi pen vše zvládne najednou - rychleji a přesněji.</p>\n      </div>\n    </div>\n    \n    <div class=\"dhi-placeholder\">\n      <div class=\"placeholder-content\">\n        <div class=\"placeholder-icon\">📸</div>\n        <p><strong>Ilustrace Choi implanter pen</strong></p>\n        <p>Fotografie speciálního nástroje používaného při DHI metodě</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .dhi-co-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--white);\n  }\n\n  .dhi-co-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .section-header {\n    text-align: center;\n    margin-bottom: 60px;\n  }\n\n  .section-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--light-gray);\n    color: var(--dark-brown);\n    font-family: 'Inter', sans-serif;\n    font-size: 12px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 20px;\n    border-radius: 30px;\n  }\n\n  .section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 800;\n    color: var(--dark-brown);\n    margin: 0 0 20px 0;\n    letter-spacing: -1px;\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: var(--dark-brown);\n    opacity: 0.7;\n    max-width: 800px;\n    margin: 0 auto;\n    line-height: 1.6;\n  }\n\n  .dhi-explanation-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 32px;\n    margin-bottom: 60px;\n  }\n\n  .explanation-card {\n    background: var(--light-gray);\n    border-radius: 20px;\n    padding: 40px 32px;\n    text-align: center;\n    transition: all 0.3s ease;\n  }\n\n  .explanation-card:hover {\n    background: var(--white);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .card-icon {\n    font-size: 56px;\n    margin-bottom: 24px;\n  }\n\n  .explanation-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 22px;\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 16px 0;\n  }\n\n  .explanation-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0;\n  }\n\n  .dhi-placeholder {\n    background: var(--light-gray);\n    border-radius: 20px;\n    padding: 80px 40px;\n    text-align: center;\n    border: 2px dashed var(--medium-gray);\n  }\n\n  .placeholder-content {\n    max-width: 600px;\n    margin: 0 auto;\n  }\n\n  .placeholder-icon {\n    font-size: 64px;\n    margin-bottom: 24px;\n  }\n\n  .placeholder-content p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-brown);\n    margin: 8px 0;\n  }\n\n  .placeholder-content strong {\n    color: var(--dark-brown);\n    font-weight: 600;\n  }\n\n  @media (max-width: 1200px) {\n    .dhi-explanation-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .dhi-co-section {\n      padding: 60px 24px;\n    }\n\n    .dhi-explanation-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "dhi_co_001",
+        "user_id": 1,
+        "time": 1735692001
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "dhi_co_container",
+      "name": "container",
+      "parent": "dhi_co_section",
+      "children": ["dhi_co_code"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "dhi_co_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["dhi_co_container"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "DHI Co je | MaxHair"
+    },
+    {
+      "id": "dhi_proces_code",
+      "name": "code",
+      "parent": "dhi_proces_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- JAK DHI FUNGUJE SECTION -->\n<section class=\"dhi-proces-section\">\n  <div class=\"dhi-proces-content\">\n    <div class=\"section-header\">\n      <div class=\"section-badge\">Proces</div>\n      <h2 class=\"section-title\">Jak DHI funguje?</h2>\n      <p class=\"section-description\">Proces DHI transplantace probíhá v několika krocích, které zajišťují maximální přesnost a přirozený výsledek.</p>\n    </div>\n    \n    <div class=\"proces-layout\">\n      <div class=\"timeline-column\">\n        <h3 class=\"timeline-title\">5 kroků DHI procesu</h3>\n        <div class=\"timeline\">\n          <div class=\"timeline-item\">\n            <div class=\"timeline-number\">1</div>\n            <div class=\"timeline-content\">\n              <h4>Odběr štěpů z dárcové oblasti</h4>\n              <p>Jednotlivé folikulární jednotky se odeberou z dárcové oblasti (obvykle týl hlavy) pomocí mikrochirurgických nástrojů. Každý štěp obsahuje 1-4 vlasy.</p>\n            </div>\n          </div>\n          \n          <div class=\"timeline-item\">\n            <div class=\"timeline-number\">2</div>\n            <div class=\"timeline-content\">\n              <h4>Příprava štěpů</h4>\n              <p>Odebrané štěpy se pečlivě třídí a připravují pod mikroskopem. Zajišťuje se jejich kvalita a životaschopnost před implantací.</p>\n            </div>\n          </div>\n          \n          <div class=\"timeline-item\">\n            <div class=\"timeline-number\">3</div>\n            <div class=\"timeline-content\">\n              <h4>Přímá implantace Choi penem</h4>\n              <p>Choi implanter pen vytvoří kanálek a současně implantuje štěp v jednom pohybu. Tím se minimalizuje trauma pokožky a zkracuje doba hojení.</p>\n            </div>\n          </div>\n          \n          <div class=\"timeline-item\">\n            <div class=\"timeline-number\">4</div>\n            <div class=\"timeline-content\">\n              <h4>Hojení a růst</h4>\n              <p>Po implantaci následuje fáze hojení. Nové vlasy začínají růst po 3-4 měsících a plný výsledek je viditelný po 12-18 měsících.</p>\n            </div>\n          </div>\n        </div>\n      </div>\n      \n      <div class=\"video-column\">\n        <div class=\"video-wrapper\">\n          <video controls class=\"dhi-video\">\n            <source src=\"https://mediumseagreen-gaur-406121.hostingersite.com/wp-content/uploads/2025/12/vid-5.mov\" type=\"video/quicktime\">\n            <source src=\"https://mediumseagreen-gaur-406121.hostingersite.com/wp-content/uploads/2025/12/vid-5.mov\" type=\"video/mp4\">\n            Váš prohlížeč nepodporuje video tag.\n          </video>\n        </div>\n        <p class=\"video-caption\">Video ukázka DHI transplantace pomocí Choi implanter pen</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .dhi-proces-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n  }\n\n  .dhi-proces-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .proces-layout {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: clamp(40px, 5vw, 60px);\n    margin-top: 60px;\n    align-items: start;\n  }\n\n  .timeline-column {\n    padding-right: clamp(20px, 3vw, 40px);\n    border-right: 2px solid var(--medium-gray);\n  }\n\n  .timeline-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(20px, 2.5vw, 28px);\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 clamp(24px, 3vw, 32px) 0;\n  }\n\n  .timeline {\n    margin: 0;\n  }\n\n  .timeline-item {\n    display: flex;\n    gap: clamp(16px, 2vw, 24px);\n    margin-bottom: clamp(24px, 3vw, 32px);\n    align-items: flex-start;\n  }\n\n  .timeline-item:last-child {\n    margin-bottom: 0;\n  }\n\n  .timeline-number {\n    width: clamp(40px, 5vw, 50px);\n    height: clamp(40px, 5vw, 50px);\n    background: var(--primary-gold);\n    color: var(--black);\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(18px, 2.2vw, 22px);\n    font-weight: 800;\n    flex-shrink: 0;\n  }\n\n  .timeline-content {\n    flex: 1;\n  }\n\n  .timeline-content h4 {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(16px, 2vw, 18px);\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 clamp(8px, 1vw, 10px) 0;\n  }\n\n  .timeline-content p {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(13px, 1.6vw, 14px);\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.5;\n    margin: 0;\n  }\n\n  .video-column {\n    padding-left: clamp(20px, 3vw, 40px);\n    display: flex;\n    flex-direction: column;\n  }\n\n  .video-wrapper {\n    width: 100%;\n    position: relative;\n    padding-bottom: 56.25%; /* 16:9 aspect ratio */\n    border-radius: clamp(16px, 2vw, 20px);\n    overflow: hidden;\n    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);\n    margin-bottom: clamp(16px, 2vw, 24px);\n    background: #000;\n  }\n\n  .dhi-video {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    display: block;\n  }\n\n  .video-caption {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(12px, 1.5vw, 14px);\n    color: var(--dark-brown);\n    opacity: 0.6;\n    margin: 0;\n    text-align: center;\n  }\n\n  @media (max-width: 992px) {\n    .proces-layout {\n      grid-template-columns: 1fr;\n      gap: clamp(40px, 5vw, 60px);\n    }\n\n    .timeline-column {\n      padding-right: 0;\n      border-right: none;\n      border-bottom: 2px solid var(--medium-gray);\n      padding-bottom: clamp(30px, 4vw, 40px);\n    }\n\n    .video-column {\n      padding-left: 0;\n    }\n  }\n\n  @media (max-width: 768px) {\n    .dhi-proces-section {\n      padding: 60px 24px;\n    }\n\n    .timeline-item {\n      flex-direction: column;\n      gap: clamp(12px, 1.5vw, 16px);\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "dhi_proces_001",
+        "user_id": 1,
+        "time": 1735692002
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "dhi_proces_container",
+      "name": "container",
+      "parent": "dhi_proces_section",
+      "children": ["dhi_proces_code"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "dhi_proces_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["dhi_proces_container"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "DHI Proces | MaxHair"
+    },
+    {
+      "id": "dhi_vyhody_code",
+      "name": "code",
+      "parent": "dhi_vyhody_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- VYHODY DHI SECTION -->\n<section class=\"dhi-vyhody-section\">\n  <div class=\"dhi-vyhody-content\">\n    <div class=\"section-header\">\n      <div class=\"section-badge\">Výhody</div>\n      <h2 class=\"section-title\">Proč zvolit DHI metodu?</h2>\n      <p class=\"section-description\">DHI metoda nabízí řadu výhod oproti klasickým metodám transplantace vlasů.</p>\n    </div>\n    \n    <div class=\"vyhody-grid\">\n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\">📊</div>\n        <h3>Vyšší hustota</h3>\n        <p>Díky přesnému umístění každého štěpu lze dosáhnout vyšší hustoty vlasů než u klasických metod.</p>\n      </div>\n      \n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\">⚡</div>\n        <h3>Kratší hojení</h3>\n        <p>Minimální trauma pokožky znamená rychlejší hojení a kratší dobu rekonvalescence.</p>\n      </div>\n      \n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\">✨</div>\n        <h3>Přirozenější vzhled</h3>\n        <p>Přesné umístění každého vlasu zajišťuje přirozený směr růstu a vzhled.</p>\n      </div>\n      \n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\">🔍</div>\n        <h3>Minimální jizvy</h3>\n        <p>Díky menším řezům a přesné práci zůstávají jen minimální jizvy, které jsou téměř neviditelné.</p>\n      </div>\n      \n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\">🎯</div>\n        <h3>Přesné umístění</h3>\n        <p>Choi pen umožňuje přesné umístění každého štěpu podle přirozeného směru růstu vlasů.</p>\n      </div>\n      \n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\">💇</div>\n        <h3>Vhodné pro jemné vlasy</h3>\n        <p>DHI metoda je ideální pro jemné vlasy a oblasti, kde je potřeba maximální přesnost.</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .dhi-vyhody-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    padding: clamp(50px, 6vw, 80px) clamp(20px, 4vw, 60px);\n    background: var(--white);\n  }\n\n  .dhi-vyhody-content {\n    max-width: 1200px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .section-header {\n    text-align: center;\n    margin-bottom: clamp(30px, 4vw, 40px);\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(14px, 1.8vw, 16px);\n    color: var(--dark-brown);\n    opacity: 0.7;\n    max-width: 700px;\n    margin: 0 auto;\n    line-height: 1.6;\n  }\n\n  .vyhody-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: clamp(20px, 2.5vw, 24px);\n    margin-top: clamp(30px, 4vw, 40px);\n  }\n\n  .vyhoda-card {\n    background: transparent;\n    padding: clamp(20px, 2.5vw, 24px);\n    text-align: left;\n    border-bottom: 1px solid var(--light-gray);\n  }\n\n  .vyhoda-card:last-child {\n    border-bottom: none;\n  }\n\n  .vyhoda-icon {\n    font-size: clamp(24px, 3vw, 28px);\n    margin-bottom: clamp(12px, 1.5vw, 16px);\n    display: inline-block;\n  }\n\n  .vyhoda-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(16px, 2vw, 18px);\n    font-weight: 600;\n    color: var(--dark-brown);\n    margin: 0 0 clamp(8px, 1vw, 10px) 0;\n  }\n\n  .vyhoda-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(13px, 1.6vw, 14px);\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.5;\n    margin: 0;\n  }\n\n  @media (max-width: 992px) {\n    .vyhody-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .dhi-vyhody-section {\n      padding: clamp(40px, 5vw, 60px) clamp(20px, 3vw, 24px);\n    }\n\n    .vyhody-grid {\n      grid-template-columns: 1fr;\n      gap: clamp(16px, 2vw, 20px);\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "dhi_vyhody_001",
+        "user_id": 1,
+        "time": 1735692003
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "dhi_vyhody_container",
+      "name": "container",
+      "parent": "dhi_vyhody_section",
+      "children": ["dhi_vyhody_code"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "dhi_vyhody_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["dhi_vyhody_container"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "DHI Výhody | MaxHair"
+    },
+    {
+      "id": "dhi_porovnani_code",
+      "name": "code",
+      "parent": "dhi_porovnani_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- DHI VS FUE SECTION -->\n<section class=\"dhi-porovnani-section\">\n  <div class=\"dhi-porovnani-content\">\n    <div class=\"section-header\">\n      <div class=\"section-badge\">Porovnání</div>\n      <h2 class=\"section-title\">DHI vs. Klasická FUE</h2>\n      <p class=\"section-description\">Porovnejte si rozdíly mezi DHI metodou a klasickou FUE metodou.</p>\n    </div>\n    \n    <div class=\"porovnani-table\">\n      <div class=\"table-header\">\n        <div class=\"table-cell\">Kritérium</div>\n        <div class=\"table-cell\">DHI</div>\n        <div class=\"table-cell\">Klasická FUE</div>\n      </div>\n      \n      <div class=\"table-row\">\n        <div class=\"table-cell\">Způsob implantace</div>\n        <div class=\"table-cell\">Přímá implantace Choi penem</div>\n        <div class=\"table-cell\">Nejdřív kanálky, pak implantace</div>\n      </div>\n      \n      <div class=\"table-row\">\n        <div class=\"table-cell\">Trauma pokožky</div>\n        <div class=\"table-cell\">Minimální</div>\n        <div class=\"table-cell\">Větší</div>\n      </div>\n      \n      <div class=\"table-row\">\n        <div class=\"table-cell\">Doba hojení</div>\n        <div class=\"table-cell\">Kratší</div>\n        <div class=\"table-cell\">Delší</div>\n      </div>\n      \n      <div class=\"table-row\">\n        <div class=\"table-cell\">Hustota vlasů</div>\n        <div class=\"table-cell\">Vyšší</div>\n        <div class=\"table-cell\">Nižší</div>\n      </div>\n      \n      <div class=\"table-row\">\n        <div class=\"table-cell\">Přesnost umístění</div>\n        <div class=\"table-cell\">Maximální</div>\n        <div class=\"table-cell\">Dobrá</div>\n      </div>\n      \n      <div class=\"table-row\">\n        <div class=\"table-cell\">Vhodné pro</div>\n        <div class=\"table-cell\">Jemné vlasy, vysoká hustota</div>\n        <div class=\"table-cell\">Všeobecné použití</div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .dhi-porovnani-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    padding: clamp(50px, 6vw, 70px) clamp(20px, 4vw, 60px);\n    background: var(--light-gray);\n  }\n\n  .dhi-porovnani-content {\n    max-width: 1000px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .section-header {\n    text-align: center;\n    margin-bottom: clamp(30px, 4vw, 40px);\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(14px, 1.8vw, 16px);\n    color: var(--dark-brown);\n    opacity: 0.7;\n    max-width: 700px;\n    margin: 0 auto;\n    line-height: 1.6;\n  }\n\n  .porovnani-table {\n    margin-top: clamp(30px, 4vw, 40px);\n    background: var(--white);\n    border-radius: clamp(12px, 1.5vw, 16px);\n    overflow: hidden;\n    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);\n  }\n\n  .table-header {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    background: var(--primary-gold);\n    color: var(--black);\n  }\n\n  .table-row {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    border-bottom: 1px solid var(--light-gray);\n  }\n\n  .table-row:last-child {\n    border-bottom: none;\n  }\n\n  .table-cell {\n    padding: clamp(16px, 2vw, 20px) clamp(20px, 2.5vw, 24px);\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(14px, 1.7vw, 15px);\n    line-height: 1.5;\n  }\n\n  .table-header .table-cell {\n    font-weight: 700;\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(15px, 1.8vw, 16px);\n  }\n\n  .table-row:nth-child(even) {\n    background: var(--light-gray);\n  }\n\n  @media (max-width: 768px) {\n    .dhi-porovnani-section {\n      padding: clamp(40px, 5vw, 50px) clamp(20px, 3vw, 24px);\n    }\n\n    .table-header,\n    .table-row {\n      grid-template-columns: 1fr;\n    }\n\n    .table-cell {\n      padding: clamp(14px, 1.8vw, 16px) clamp(16px, 2vw, 18px);\n    }\n\n    .table-cell:first-child {\n      font-weight: 600;\n      background: var(--primary-gold);\n      color: var(--black);\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "dhi_porovnani_001",
+        "user_id": 1,
+        "time": 1735692004
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "dhi_porovnani_container",
+      "name": "container",
+      "parent": "dhi_porovnani_section",
+      "children": ["dhi_porovnani_code"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "dhi_porovnani_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["dhi_porovnani_container"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "DHI Porovnání | MaxHair"
+    },
+    {
+      "id": "dhi_faq_code",
+      "name": "code",
+      "parent": "dhi_faq_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- DHI FAQ SECTION -->\n<section class=\"dhi-faq-section\">\n  <div class=\"dhi-faq-content\">\n    <div class=\"section-header\">\n      <div class=\"section-badge\">FAQ</div>\n      <h2 class=\"section-title\">Časté otázky o DHI metodě</h2>\n    </div>\n    \n    <div class=\"faq-list\">\n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Je DHI metoda bolestivá?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>DHI metoda se provádí v lokální anestezii, takže během zákroku necítíte žádnou bolest. Po zákroku může být mírný diskomfort, který obvykle odezní během několika dní.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Jak dlouho trvá DHI transplantace?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Doba trvání závisí na počtu štěpů. Obvykle trvá 6-8 hodin. DHI metoda může být rychlejší než klasická FUE díky efektivnějšímu procesu implantace.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Kdy uvidím výsledky DHI transplantace?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Nové vlasy začínají růst po 3-4 měsících. Plný výsledek je viditelný po 12-18 měsících. DHI metoda může mít rychlejší růst díky minimálnímu traumatu.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Je DHI vhodná pro každého?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>DHI je ideální pro kandidáty, kteří potřebují vysokou hustotu nebo mají jemné vlasy. Během konzultace zjistíme, zda je DHI pro vás vhodná metoda.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Kolik stojí DHI transplantace?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Cena DHI transplantace začíná od 69,900 Kč v rámci našich all-inclusive balíčků. Cena zahrnuje vše - letenku, hotel, transport i operaci. <a href=\"/#cenik\">Více o cenách</a></p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .dhi-faq-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--white);\n  }\n\n  .dhi-faq-content {\n    max-width: 1000px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .faq-list {\n    margin-top: 60px;\n  }\n\n  .faq-item {\n    border-bottom: 2px solid var(--light-gray);\n    margin-bottom: 0;\n  }\n\n  .faq-item:last-child {\n    border-bottom: none;\n  }\n\n  .faq-question {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 24px 0;\n    background: transparent;\n    border: none;\n    cursor: pointer;\n    text-align: left;\n    font-family: 'Poppins', sans-serif;\n    font-size: 20px;\n    font-weight: 600;\n    color: var(--dark-brown);\n    transition: all 0.3s ease;\n  }\n\n  .faq-question:hover {\n    color: var(--primary-gold);\n  }\n\n  .faq-icon {\n    font-size: 28px;\n    font-weight: 300;\n    color: var(--primary-gold);\n    transition: transform 0.3s ease;\n  }\n\n  .faq-item.active .faq-icon {\n    transform: rotate(45deg);\n  }\n\n  .faq-answer {\n    max-height: 0;\n    overflow: hidden;\n    transition: max-height 0.3s ease;\n  }\n\n  .faq-item.active .faq-answer {\n    max-height: 500px;\n  }\n\n  .faq-answer p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.6;\n    padding: 0 0 24px 0;\n    margin: 0;\n  }\n\n  .faq-answer a {\n    color: var(--primary-gold);\n    text-decoration: underline;\n  }\n\n  @media (max-width: 768px) {\n    .dhi-faq-section {\n      padding: 60px 24px;\n    }\n\n    .faq-question {\n      font-size: 18px;\n      padding: 20px 0;\n    }\n  }\n</style>\n\n<script>\n  document.addEventListener('DOMContentLoaded', function() {\n    const faqItems = document.querySelectorAll('.faq-item');\n    faqItems.forEach(item => {\n      const question = item.querySelector('.faq-question');\n      question.addEventListener('click', () => {\n        const isActive = item.classList.contains('active');\n        faqItems.forEach(i => i.classList.remove('active'));\n        if (!isActive) {\n          item.classList.add('active');\n        }\n      });\n    });\n  });\n</script>",
+        "executeCode": true,
+        "signature": "dhi_faq_001",
+        "user_id": 1,
+        "time": 1735692005
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "dhi_faq_container",
+      "name": "container",
+      "parent": "dhi_faq_section",
+      "children": ["dhi_faq_code"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "dhi_faq_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["dhi_faq_container"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "DHI FAQ | MaxHair"
+    },
+    {
+      "id": "dhi_cta_code",
+      "name": "code",
+      "parent": "dhi_cta_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- DHI CTA SECTION -->\n<section class=\"dhi-cta-section\">\n  <div class=\"dhi-cta-content\">\n    <h2 class=\"cta-title\">Zajímá vás DHI metoda?</h2>\n    <p class=\"cta-description\">Získejte bezplatnou konzultaci a zjistěte, zda je DHI metoda vhodná právě pro vás.</p>\n    <div class=\"cta-buttons\">\n      <a href=\"/kontakt\" class=\"btn-primary\">Bezplatná konzultace</a>\n      <a href=\"/#cenik\" class=\"btn-secondary\">Zjistit cenu</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  .dhi-cta-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: linear-gradient(135deg, rgba(90, 69, 44, 0.95) 0%, rgba(0, 0, 0, 0.9) 100%);\n    text-align: center;\n  }\n\n  .dhi-cta-content {\n    max-width: 800px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .cta-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 800;\n    color: var(--white);\n    margin: 0 0 24px 0;\n    letter-spacing: -1px;\n  }\n\n  .cta-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(18px, 2.5vw, 22px);\n    color: rgba(255, 255, 255, 0.9);\n    margin: 0 0 48px 0;\n    line-height: 1.6;\n  }\n\n  .cta-buttons {\n    display: flex;\n    gap: 20px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 10px;\n    transition: all 0.3s ease;\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-3px);\n    box-shadow: 0 10px 35px rgba(229, 193, 88, 0.5);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: transparent;\n    color: var(--white);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--white);\n    border-radius: 10px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--white);\n    color: var(--black);\n    transform: translateY(-3px);\n  }\n\n  @media (max-width: 768px) {\n    .dhi-cta-section {\n      padding: 60px 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "dhi_cta_001",
+        "user_id": 1,
+        "time": 1735692006
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "dhi_cta_container",
+      "name": "container",
+      "parent": "dhi_cta_section",
+      "children": ["dhi_cta_code"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "dhi_cta_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["dhi_cta_container"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "DHI CTA | MaxHair"
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "",
+  "version": "2.0",
+  "globalClasses": [],
+  "globalElements": []
+}
+

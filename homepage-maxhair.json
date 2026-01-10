@@ -1,0 +1,48 @@
+{
+  "content": [
+    {
+      "id": "hero_code",
+      "name": "code",
+      "parent": "hero_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- HERO SECTION -->\n<section class=\"hero-section\">\n  <div class=\"hero-content\">\n    <div class=\"hero-badge\">Přímá turecká klinika</div>\n    <h1 class=\"hero-title\">\n      <span class=\"hero-line\">Transplantace vlasů <span class=\"highlight\">bez prostředníka</span>!</span>\n      <span class=\"hero-line\">Kompletní servis za <span class=\"highlight\">férovou cenu</span>.</span>\n    </h1>\n    <p class=\"hero-description\">\n      <span class=\"hero-line-nowrap\"><span class=\"highlight\">Vše zahrnuto v ceně</span>: letenka, ubytování v <span class=\"highlight\">5* hotelu</span>, <span class=\"highlight\">VIP transport</span> a operace <span class=\"highlight\">zkušenými doktory</span>.</span>\n      <span class=\"hero-line-second\">S <span class=\"highlight\">českou podporou Michaely na místě</span>.</span>\n    </p>\n    <div class=\"hero-cta-group\">\n      <a href=\"#kontakt\" class=\"btn-primary\">Bezplatná konzultace</a>\n      <a href=\"#cenik\" class=\"btn-secondary\">Zjistit cenu</a>\n    </div>\n    <div class=\"hero-stats\">\n      <div class=\"stat-item\">\n        <div class=\"stat-number\">5,000+ <span style=\"color: #dc3545; font-size: clamp(12px, 1.5vw, 16px); font-weight: normal;\">(potřeba ověřit)</span></div>\n        <div class=\"stat-label\">Spokojených klientů</div>\n      </div>\n      <div class=\"stat-item\">\n        <div class=\"stat-number\">95%</div>\n        <div class=\"stat-label\">Úspěšnost</div>\n      </div>\n      <div class=\"stat-item\">\n        <div class=\"stat-number\">15+</div>\n        <div class=\"stat-label\">Let zkušeností</div>\n      </div>\n    </div>\n  </div>\n  <div class=\"hero-background\">\n    <video autoplay muted loop playsinline class=\"hero-video\">\n      <source src=\"https://mediumseagreen-gaur-406121.hostingersite.com/wp-content/uploads/2025/12/WhatsApp-Video-2025-12-13-at-14.56.52_6de6a47b.mp4\" type=\"video/mp4\">\n    </video>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #A67C00;\n    --dark-brown: #5A452C;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #CCCCCC;\n  }\n\n  * {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n  }\n\n  .hero-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    min-height: 100vh;\n    max-height: 100vh;\n    background: linear-gradient(135deg, rgba(90, 69, 44, 0.9) 0%, rgba(0, 0, 0, 0.8) 100%);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    position: relative;\n    overflow: hidden;\n    padding: 90px clamp(20px, 4vw, 60px) clamp(40px, 6vh, 80px);\n  }\n\n  .hero-background {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    z-index: 0;\n  }\n\n  .hero-video {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    opacity: 0.3;\n  }\n\n  .hero-content {\n    max-width: 1200px;\n    width: 100%;\n    text-align: center;\n    position: relative;\n    z-index: 1;\n    animation: fadeInUp 1s ease-out;\n  }\n\n  .hero-badge {\n    display: inline-block;\n    padding: clamp(6px, 1vw, 8px) clamp(16px, 2.5vw, 24px);\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(10px, 1.3vw, 12px);\n    font-weight: 600;\n    letter-spacing: 1.5px;\n    text-transform: uppercase;\n    margin-bottom: clamp(16px, 2.5vw, 24px);\n    border-radius: 30px;\n  }\n\n  .hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(24px, 4vw, 56px);\n    font-weight: 800;\n    color: var(--white);\n    line-height: 1.3;\n    margin: 0 0 clamp(12px, 2vw, 20px) 0;\n    letter-spacing: -1.5px;\n  }\n\n  .hero-line {\n    display: block;\n    white-space: normal;\n    word-wrap: break-word;\n    overflow-wrap: break-word;\n  }\n\n  .highlight {\n    color: var(--primary-gold);\n    font-weight: 800;\n    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(229, 193, 88, 0.5);\n    position: relative;\n  }\n\n  .hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(13px, 1.8vw, 20px);\n    color: var(--white);\n    line-height: 1.6;\n    max-width: min(800px, 90vw);\n    margin: 0 auto clamp(20px, 3vw, 32px);\n    opacity: 0.95;\n    text-align: center;\n  }\n\n  .hero-description .highlight {\n    color: var(--primary-gold);\n    font-weight: 700;\n    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8), 0 0 15px rgba(229, 193, 88, 0.4);\n  }\n\n  .hero-line-nowrap {\n    white-space: nowrap;\n    display: block;\n    text-align: center;\n    margin: 0 auto;\n    width: 100%;\n  }\n\n  .hero-line-second {\n    display: block;\n    text-align: center;\n    margin: 8px auto 0;\n    width: 100%;\n    max-width: 100%;\n  }\n\n  .hero-cta-group {\n    display: flex;\n    gap: clamp(10px, 1.5vw, 16px);\n    justify-content: center;\n    margin-bottom: clamp(24px, 4vw, 40px);\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: clamp(12px, 1.8vw, 16px) clamp(28px, 4vw, 40px);\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(13px, 1.6vw, 15px);\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 8px;\n    transition: all 0.3s ease;\n    box-shadow: 0 4px 16px rgba(229, 193, 88, 0.3);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-3px);\n    box-shadow: 0 10px 35px rgba(229, 193, 88, 0.5);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: clamp(12px, 1.8vw, 16px) clamp(28px, 4vw, 40px);\n    background: transparent;\n    color: var(--white);\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(13px, 1.6vw, 15px);\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--white);\n    border-radius: 8px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--white);\n    color: var(--black);\n    transform: translateY(-3px);\n  }\n\n  .hero-stats {\n    display: flex;\n    justify-content: center;\n    gap: clamp(24px, 5vw, 60px);\n    margin-top: clamp(16px, 2.5vw, 28px);\n    flex-wrap: wrap;\n  }\n\n  .stat-item {\n    text-align: center;\n  }\n\n  .stat-number {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(24px, 3.5vw, 48px);\n    font-weight: 800;\n    color: var(--primary-gold);\n    margin-bottom: 6px;\n  }\n\n  .stat-label {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(11px, 1.3vw, 14px);\n    color: var(--white);\n    opacity: 0.85;\n    text-transform: uppercase;\n    letter-spacing: 0.8px;\n  }\n\n  @keyframes fadeInUp {\n    from {\n      opacity: 0;\n      transform: translateY(40px);\n    }\n    to {\n      opacity: 1;\n      transform: translateY(0);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .hero-section {\n      padding: 90px 24px clamp(40px, 6vh, 80px);\n    }\n    .hero-title {\n      white-space: normal;\n      font-size: clamp(22px, 5vw, 32px);\n    }\n    .hero-line {\n      white-space: normal;\n    }\n    .hero-line-nowrap {\n      white-space: normal;\n    }\n    .hero-line-second {\n      white-space: normal;\n    }\n    .hero-stats {\n      gap: 40px;\n    }\n  }\n\n\n</style>",
+        "executeCode": true,
+        "signature": "hero_maxhair",
+        "user_id": 1,
+        "time": 1735689600
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "hero_container",
+      "name": "container",
+      "parent": "hero_section",
+      "children": [
+        "hero_code"
+      ],
+      "settings": {
+        "_width": "100vw",
+        "_height": "100vh"
+      }
+    },
+    {
+      "id": "hero_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "hero_container"
+      ],
+      "settings": {
+        "_width": "100vw",
+        "_height": "100vh"
+      },
+      "label": "Hero | MaxHair"
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "",
+  "version": "2.0",
+  "globalClasses": [],
+  "globalElements": []
+}

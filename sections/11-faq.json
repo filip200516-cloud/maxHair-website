@@ -1,0 +1,46 @@
+{
+  "content": [
+    {
+      "id": "faq_code",
+      "name": "code",
+      "parent": "faq_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- FAQ SECTION -->\n<section class=\"faq-section\" id=\"faq\">\n  <div class=\"faq-content\">\n    <div class=\"section-badge\">FAQ</div>\n    <h2 class=\"section-title\">Často kladené otázky</h2>\n    <p class=\"section-description\">Odpovědi na nejčastější dotazy</p>\n    \n    <div class=\"faq-grid\">\n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Kolik to stojí?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Ceny se pohybují od 69,900 Kč (Economic Package) do 89,200 Kč (Premium Care Package). Vše je zahrnuto v ceně - letenka, ubytování v 5* hotelu, VIP transport, operace, PRP terapie. Bez skrytých poplatků.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Co je zahrnuto v ceně?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Vše! Zpáteční letenka, 3 noci v 5* hotelu, VIP transport, předoperační vyšetření, transplantace (neomezený počet štěpů v rámci bezpečných limitů), PRP terapie, kosmetický balíček, pooperační péče, česká podpora Michaely 24/7, cestovní pojištění a certifikát.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Je to bolestivé?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Zákrok probíhá v lokální anestezii, takže necítíte bolest. Někteří klienti pociťují mírný tlak, ale nic bolestivého. Po zákroku můžete mít lehké nepohodlí, které zmírníte běžnými léky.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Jsou výsledky trvalé?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Ano! Transplantované vlasy jsou odolné vůči vypadávání a zůstanou vám navždy. Jsou to vaše vlastní vlasy z dárcové oblasti, které jsou geneticky programované růst trvale.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Proč je vaše cena nižší než u konkurence?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Jsme přímá klinika bez prostředníka. Většina českých firem jen zprostředkovává - přidají marži 30-50%. Vy komunikujete přímo s námi a platíte přímo nám. Žádná marže = nižší cena až o 30%.</p>\n        </div>\n      </div>\n    </div>\n    \n    <div class=\"faq-cta\">\n      <p>Máte další otázky?</p>\n      <div class=\"faq-cta-buttons\">\n        <a href=\"/faq\" class=\"btn-secondary\">Zobrazit všechny FAQ</a>\n        <a href=\"#kontakt\" class=\"btn-primary\">Kontaktujte nás</a>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .faq-section {\n    width: 100%;\r\n    max-width: 100vw;\r\n    box-sizing: border-box;\n    min-height: auto;\n    background: var(--white);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: clamp(50px, 10vw, 100px) clamp(20px, 5vw, 80px);\n  }\n\n  .faq-content {\n    max-width: 1000px;\n    width: 100%;\n    text-align: center;\n  }\n\n  .faq-grid {\n    margin: 60px 0;\n  }\n\n  .faq-item {\n    border-bottom: 2px solid var(--light-gray);\n    transition: all 0.3s ease;\n  }\n\n  .faq-item:last-child {\n    border-bottom: none;\n  }\n\n  .faq-question {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 24px 0;\n    background: transparent;\n    border: none;\n    cursor: pointer;\n    text-align: left;\n    font-family: 'Poppins', sans-serif;\n    font-size: 20px;\n    font-weight: 600;\n    color: var(--dark-brown);\n    transition: all 0.3s ease;\n  }\n\n  .faq-question:hover {\n    color: var(--primary-gold);\n  }\n\n  .faq-icon {\n    width: 32px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 28px;\n    color: var(--primary-gold);\n    transition: transform 0.3s ease;\n    flex-shrink: 0;\n  }\n\n  .faq-item.active .faq-icon {\n    transform: rotate(45deg);\n  }\n\n  .faq-answer {\n    max-height: 0;\n    overflow: hidden;\n    transition: max-height 0.3s ease;\n  }\n\n  .faq-item.active .faq-answer {\n    max-height: 500px;\n  }\n\n  .faq-answer p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.7;\n    margin: 0 0 24px 0;\n    padding-right: 40px;\n    text-align: left;\n  }\n\n  .faq-cta {\n    margin-top: clamp(40px, 5vw, 60px);\n    padding: clamp(32px, 4vw, 48px);\n    background: var(--light-gray);\n    border-radius: clamp(20px, 2.5vw, 24px);\n  }\n\n  .faq-cta p {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(20px, 2.5vw, 24px);\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 clamp(20px, 2.5vw, 24px) 0;\n  }\n\n  .faq-cta-buttons {\n    display: flex;\n    gap: clamp(12px, 1.5vw, 16px);\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: clamp(12px, 1.5vw, 14px) clamp(24px, 3vw, 32px);\n    background: transparent;\n    color: var(--primary-gold);\n    border: 2px solid var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(14px, 1.7vw, 16px);\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: clamp(8px, 1vw, 10px);\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--primary-gold);\n    color: var(--black);\n    transform: translateY(-2px);\n  }\n\n  @media (max-width: 768px) {\n    .faq-section {\n      padding: 60px 24px;\n    }\n    .faq-question {\n      font-size: 17px;\n      padding: 20px 0;\n    }\n    .faq-answer p {\n      padding-right: 0;\n    }\n  }\n</style>\n\n<script>\n  // FAQ Accordion\n  (function() {\n    const faqItems = document.querySelectorAll('.faq-item');\n    \n    faqItems.forEach(item => {\n      const question = item.querySelector('.faq-question');\n      \n      question.addEventListener('click', () => {\n        const isActive = item.classList.contains('active');\n        \n        // Close all items\n        faqItems.forEach(i => i.classList.remove('active'));\n        \n        // Open clicked item if it wasn't active\n        if (!isActive) {\n          item.classList.add('active');\n        }\n      });\n    });\n  })();\n</script>",
+        "executeCode": true,
+        "signature": "faq_maxhair",
+        "user_id": 1,
+        "time": 1735689610
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "faq_container",
+      "name": "container",
+      "parent": "faq_section",
+      "children": [
+        "faq_code"
+      ],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "faq_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "faq_container"
+      ],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "FAQ | MaxHair"
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "",
+  "version": "2.0",
+  "globalClasses": [],
+  "globalElements": []
+}

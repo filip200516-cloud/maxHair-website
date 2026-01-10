@@ -1,0 +1,177 @@
+{
+  "content": [
+    {
+      "id": "herocode",
+      "name": "code",
+      "parent": "herocontainer",
+      "children": [],
+      "settings": {
+        "code": "<!-- HERO SECTION -->\n<section class=\"hero-section\">\n  <div class=\"hero-content\">\n    <div class=\"hero-badge\">Premium Turecká Klinika</div>\n    <h1 class=\"hero-title\">\n      <span class=\"hero-line\">Obnovte svou sebedůvěru</span>\n      <span class=\"hero-line\">s profesionální transplantací vlasů</span>\n    </h1>\n    <p class=\"hero-description\">\n      MaxHair - vaše cesta k přirozenému a trvalému výsledku. \n      Tisíce spokojených klientů z České republiky.\n    </p>\n    <div class=\"hero-cta-group\">\n      <a href=\"#kontakt\" class=\"btn-primary\">Konzultace zdarma</a>\n      <a href=\"#sluzby\" class=\"btn-secondary\">Naše služby</a>\n    </div>\n    <div class=\"hero-stats\">\n      <div class=\"stat-item\">\n        <div class=\"stat-number\">10,000+</div>\n        <div class=\"stat-label\">Spokojených klientů</div>\n      </div>\n      <div class=\"stat-item\">\n        <div class=\"stat-number\">98%</div>\n        <div class=\"stat-label\">Úspěšnost</div>\n      </div>\n      <div class=\"stat-item\">\n        <div class=\"stat-number\">15+</div>\n        <div class=\"stat-label\">Let zkušeností</div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #D4AF37;\n    --secondary-gold: #A67C00;\n    --dark-brown: #5A452C;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #CCCCCC;\n  }\n\n  * {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n  }\n\n  .hero-section {\n    width: 100vw;\n    height: 100vh;\n    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    position: relative;\n    overflow: hidden;\n    padding: 0 80px;\n  }\n\n  .hero-section::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    right: 0;\n    width: 50%;\n    height: 100%;\n    background: url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800') center/cover;\n    opacity: 0.1;\n    z-index: 0;\n  }\n\n  .hero-content {\n    max-width: 1200px;\n    width: 100%;\n    text-align: center;\n    position: relative;\n    z-index: 1;\n    animation: fadeInUp 1s ease-out;\n  }\n\n  .hero-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 12px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 30px;\n    border-radius: 30px;\n  }\n\n  .hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(42px, 6vw, 72px);\n    font-weight: 800;\n    color: var(--dark-brown);\n    line-height: 1.2;\n    margin: 0 0 24px 0;\n    letter-spacing: -2px;\n  }\n\n  .hero-line {\n    display: block;\n  }\n\n  .hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(18px, 2.5vw, 22px);\n    color: var(--dark-brown);\n    line-height: 1.6;\n    max-width: 700px;\n    margin: 0 auto 40px;\n    opacity: 0.8;\n  }\n\n  .hero-cta-group {\n    display: flex;\n    gap: 20px;\n    justify-content: center;\n    margin-bottom: 60px;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 18px 48px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 8px;\n    transition: all 0.3s ease;\n    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-2px);\n    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.4);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 18px 48px;\n    background: transparent;\n    color: var(--dark-brown);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--primary-gold);\n    border-radius: 8px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--primary-gold);\n    color: var(--black);\n    transform: translateY(-2px);\n  }\n\n  .hero-stats {\n    display: flex;\n    justify-content: center;\n    gap: 60px;\n    margin-top: 40px;\n    flex-wrap: wrap;\n  }\n\n  .stat-item {\n    text-align: center;\n  }\n\n  .stat-number {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(32px, 4vw, 48px);\n    font-weight: 800;\n    color: var(--primary-gold);\n    margin-bottom: 8px;\n  }\n\n  .stat-label {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    text-transform: uppercase;\n    letter-spacing: 1px;\n  }\n\n  @keyframes fadeInUp {\n    from {\n      opacity: 0;\n      transform: translateY(30px);\n    }\n    to {\n      opacity: 1;\n      transform: translateY(0);\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "hero001",
+        "user_id": 1,
+        "time": 1735689600
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "herocontainer",
+      "name": "container",
+      "parent": "herosection",
+      "children": ["herocode"],
+      "settings": {
+        "_width": "100vw",
+        "_height": "100vh"
+      }
+    },
+    {
+      "id": "herosection",
+      "name": "section",
+      "parent": 0,
+      "children": ["herocontainer"],
+      "settings": {
+        "_width": "100vw",
+        "_height": "100vh"
+      },
+      "label": "Hero | PC"
+    },
+    {
+      "id": "servicescode",
+      "name": "code",
+      "parent": "servicescontainer",
+      "children": [],
+      "settings": {
+        "code": "<!-- SERVICES SECTION -->\n<section class=\"services-section\">\n  <div class=\"services-wrapper\">\n    <div class=\"section-header\">\n      <div class=\"section-badge\">Naše služby</div>\n      <h2 class=\"section-title\">Komplexní řešení pro vaše vlasy</h2>\n      <p class=\"section-description\">Profesionální přístup a nejmodernější technologie</p>\n    </div>\n\n    <div class=\"services-grid\">\n      <div class=\"service-card\">\n        <div class=\"service-icon\">\n          <svg viewBox=\"0 0 100 100\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n            <circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"currentColor\" stroke-width=\"3\"/>\n            <path d=\"M30 50 L45 65 L70 35\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n          </svg>\n        </div>\n        <h3 class=\"service-title\">FUE Transplantace</h3>\n        <p class=\"service-description\">Nejmodernější metoda bez jizev. Přirozený vzhled a rychlé hojení.</p>\n        <ul class=\"service-features\">\n          <li>Bez jizev</li>\n          <li>Rychlé zotavení</li>\n          <li>Přirozený výsledek</li>\n        </ul>\n        <a href=\"#\" class=\"service-link\">Více informací →</a>\n      </div>\n\n      <div class=\"service-card\">\n        <div class=\"service-icon\">\n          <svg viewBox=\"0 0 100 100\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n            <rect x=\"20\" y=\"30\" width=\"60\" height=\"50\" rx=\"5\" stroke=\"currentColor\" stroke-width=\"3\"/>\n            <path d=\"M35 50 L50 65 L65 50\" stroke=\"currentColor\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n          </svg>\n        </div>\n        <h3 class=\"service-title\">DHI Metoda</h3>\n        <p class=\"service-description\">Precizní implantace s maximální hustotou. Ideální pro náročné případy.</p>\n        <ul class=\"service-features\">\n          <li>Maximální hustota</li>\n          <li>Precizní umístění</li>\n          <li>Okamžitý výsledek</li>\n        </ul>\n        <a href=\"#\" class=\"service-link\">Více informací →</a>\n      </div>\n\n      <div class=\"service-card\">\n        <div class=\"service-icon\">\n          <svg viewBox=\"0 0 100 100\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n            <path d=\"M50 20 L60 40 L80 45 L65 60 L68 80 L50 70 L32 80 L35 60 L20 45 L40 40 Z\" stroke=\"currentColor\" stroke-width=\"3\" fill=\"none\"/>\n          </svg>\n        </div>\n        <h3 class=\"service-title\">Komplexní péče</h3>\n        <p class=\"service-description\">Kompletní balíček služeb včetně ubytování a transferu z letiště.</p>\n        <ul class=\"service-features\">\n          <li>Ubytování</li>\n          <li>Transfer</li>\n          <li>Pooperační péče</li>\n        </ul>\n        <a href=\"#\" class=\"service-link\">Více informací →</a>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .services-section {\n    width: 100vw;\n    min-height: 100vh;\n    background: var(--white);\n    padding: 100px 80px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .services-wrapper {\n    max-width: 1400px;\n    width: 100%;\n  }\n\n  .section-header {\n    text-align: center;\n    margin-bottom: 80px;\n  }\n\n  .section-badge {\n    display: inline-block;\n    padding: 6px 20px;\n    background: var(--light-gray);\n    color: var(--dark-brown);\n    font-family: 'Inter', sans-serif;\n    font-size: 11px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 20px;\n    border-radius: 30px;\n  }\n\n  .section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 800;\n    color: var(--dark-brown);\n    margin: 0 0 16px 0;\n    letter-spacing: -1px;\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: 18px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    margin: 0;\n  }\n\n  .services-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 40px;\n  }\n\n  .service-card {\n    background: var(--white);\n    border: 1px solid var(--light-gray);\n    border-radius: 16px;\n    padding: 48px 32px;\n    transition: all 0.3s ease;\n    position: relative;\n    overflow: hidden;\n  }\n\n  .service-card::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 0;\n    height: 4px;\n    background: var(--primary-gold);\n    transition: width 0.3s ease;\n  }\n\n  .service-card:hover::before {\n    width: 100%;\n  }\n\n  .service-card:hover {\n    border-color: var(--primary-gold);\n    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.15);\n    transform: translateY(-8px);\n  }\n\n  .service-icon {\n    width: 64px;\n    height: 64px;\n    margin-bottom: 24px;\n    color: var(--primary-gold);\n  }\n\n  .service-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .service-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: 24px;\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 16px 0;\n  }\n\n  .service-description {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0 0 24px 0;\n  }\n\n  .service-features {\n    list-style: none;\n    margin: 0 0 32px 0;\n    padding: 0;\n  }\n\n  .service-features li {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: var(--dark-brown);\n    padding: 8px 0;\n    padding-left: 24px;\n    position: relative;\n  }\n\n  .service-features li::before {\n    content: '✓';\n    position: absolute;\n    left: 0;\n    color: var(--primary-gold);\n    font-weight: 700;\n  }\n\n  .service-link {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    font-weight: 600;\n    color: var(--primary-gold);\n    text-decoration: none;\n    display: inline-flex;\n    align-items: center;\n    gap: 8px;\n    transition: all 0.3s ease;\n  }\n\n  .service-link:hover {\n    color: var(--secondary-gold);\n    gap: 12px;\n  }\n</style>",
+        "executeCode": true,
+        "signature": "services001",
+        "user_id": 1,
+        "time": 1735689601
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "servicescontainer",
+      "name": "container",
+      "parent": "servicessection",
+      "children": ["servicescode"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "servicessection",
+      "name": "section",
+      "parent": 0,
+      "children": ["servicescontainer"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "Služby | PC"
+    },
+    {
+      "id": "aboutcode",
+      "name": "code",
+      "parent": "aboutcontainer",
+      "children": [],
+      "settings": {
+        "code": "<!-- ABOUT SECTION -->\n<section class=\"about-section\">\n  <div class=\"about-wrapper\">\n    <div class=\"about-content\">\n      <div class=\"about-text\">\n        <div class=\"section-badge\">O nás</div>\n        <h2 class=\"section-title\">Proč zvolit MaxHair?</h2>\n        <p class=\"about-description\">\n          Jsme přední turecká klinika specializující se na transplantaci vlasů. \n          Naše zkušenosti a moderní technologie zajišťují vynikající výsledky \n          pro tisíce klientů z celé Evropy.\n        </p>\n        <div class=\"about-features\">\n          <div class=\"feature-item\">\n            <div class=\"feature-icon\">✓</div>\n            <div class=\"feature-text\">\n              <h4>Certifikovaní lékaři</h4>\n              <p>Mezinárodně uznávaní odborníci</p>\n            </div>\n          </div>\n          <div class=\"feature-item\">\n            <div class=\"feature-icon\">✓</div>\n            <div class=\"feature-text\">\n              <h4>Moderní technologie</h4>\n              <p>Nejnovější metody a vybavení</p>\n            </div>\n          </div>\n          <div class=\"feature-item\">\n            <div class=\"feature-icon\">✓</div>\n            <div class=\"feature-text\">\n              <h4>Kompletní servis</h4>\n              <p>Od letiště až po pooperační péči</p>\n            </div>\n          </div>\n        </div>\n        <a href=\"#kontakt\" class=\"btn-primary\">Domluvit konzultaci</a>\n      </div>\n      <div class=\"about-image\">\n        <div class=\"image-placeholder\">\n          <svg viewBox=\"0 0 600 600\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n            <rect width=\"600\" height=\"600\" fill=\"var(--light-gray)\"/>\n            <text x=\"300\" y=\"300\" text-anchor=\"middle\" font-family=\"Inter\" font-size=\"24\" fill=\"var(--medium-gray)\">Obrázek kliniky</text>\n          </svg>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .about-section {\n    width: 100vw;\n    min-height: 100vh;\n    background: var(--light-gray);\n    padding: 100px 80px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .about-wrapper {\n    max-width: 1400px;\n    width: 100%;\n  }\n\n  .about-content {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 80px;\n    align-items: center;\n  }\n\n  .about-text {\n    animation: fadeInLeft 0.8s ease-out;\n  }\n\n  .about-description {\n    font-family: 'Inter', sans-serif;\n    font-size: 18px;\n    color: var(--dark-brown);\n    line-height: 1.8;\n    margin: 0 0 40px 0;\n    opacity: 0.8;\n  }\n\n  .about-features {\n    margin: 0 0 40px 0;\n  }\n\n  .feature-item {\n    display: flex;\n    gap: 20px;\n    margin-bottom: 32px;\n  }\n\n  .feature-icon {\n    width: 40px;\n    height: 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 20px;\n    font-weight: 700;\n    flex-shrink: 0;\n  }\n\n  .feature-text h4 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 20px;\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 4px 0;\n  }\n\n  .feature-text p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    margin: 0;\n  }\n\n  .about-image {\n    animation: fadeInRight 0.8s ease-out;\n  }\n\n  .image-placeholder {\n    width: 100%;\n    height: 500px;\n    border-radius: 16px;\n    overflow: hidden;\n    background: var(--white);\n    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);\n  }\n\n  .image-placeholder svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  @keyframes fadeInLeft {\n    from {\n      opacity: 0;\n      transform: translateX(-30px);\n    }\n    to {\n      opacity: 1;\n      transform: translateX(0);\n    }\n  }\n\n  @keyframes fadeInRight {\n    from {\n      opacity: 0;\n      transform: translateX(30px);\n    }\n    to {\n      opacity: 1;\n      transform: translateX(0);\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "about001",
+        "user_id": 1,
+        "time": 1735689602
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "aboutcontainer",
+      "name": "container",
+      "parent": "aboutsection",
+      "children": ["aboutcode"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "aboutsection",
+      "name": "section",
+      "parent": 0,
+      "children": ["aboutcontainer"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "O nás | PC"
+    },
+    {
+      "id": "testimonialscode",
+      "name": "code",
+      "parent": "testimonialscontainer",
+      "children": [],
+      "settings": {
+        "code": "<!-- TESTIMONIALS SECTION -->\n<section class=\"testimonials-section\">\n  <div class=\"testimonials-wrapper\">\n    <div class=\"section-header\">\n      <div class=\"section-badge\">Recenze</div>\n      <h2 class=\"section-title\">Co říkají naši klienti</h2>\n      <p class=\"section-description\">Tisíce spokojených klientů z České republiky</p>\n    </div>\n\n    <div class=\"testimonials-grid\">\n      <div class=\"testimonial-card\">\n        <div class=\"testimonial-stars\">★★★★★</div>\n        <p class=\"testimonial-text\">\n          \"Výborná zkušenost od začátku do konce. Profesionální přístup, \n          skvělé výsledky a perfektní komunikace. Vřele doporučuji!\"\n        </p>\n        <div class=\"testimonial-author\">\n          <div class=\"author-avatar\">JP</div>\n          <div class=\"author-info\">\n            <div class=\"author-name\">Jan P.</div>\n            <div class=\"author-location\">Praha, ČR</div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"testimonial-card\">\n        <div class=\"testimonial-stars\">★★★★★</div>\n        <p class=\"testimonial-text\">\n          \"Nemohl jsem být spokojenější. Výsledek je přirozený a nikdo \n          nepozná, že jsem podstoupil transplantaci. Děkuji MaxHair!\"\n        </p>\n        <div class=\"testimonial-author\">\n          <div class=\"author-avatar\">MK</div>\n          <div class=\"author-info\">\n            <div class=\"author-name\">Martin K.</div>\n            <div class=\"author-location\">Brno, ČR</div>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"testimonial-card\">\n        <div class=\"testimonial-stars\">★★★★★</div>\n        <p class=\"testimonial-text\">\n          \"Kompletní servis na vysoké úrovni. Od transferu z letiště až po \n          pooperační péči - vše perfektně zorganizované. Skvělé!\"\n        </p>\n        <div class=\"testimonial-author\">\n          <div class=\"author-avatar\">TL</div>\n          <div class=\"author-info\">\n            <div class=\"author-name\">Tomáš L.</div>\n            <div class=\"author-location\">Ostrava, ČR</div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .testimonials-section {\n    width: 100vw;\n    min-height: 100vh;\n    background: var(--white);\n    padding: 100px 80px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .testimonials-wrapper {\n    max-width: 1400px;\n    width: 100%;\n  }\n\n  .testimonials-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 40px;\n  }\n\n  .testimonial-card {\n    background: var(--white);\n    border: 1px solid var(--light-gray);\n    border-radius: 16px;\n    padding: 40px 32px;\n    transition: all 0.3s ease;\n    position: relative;\n  }\n\n  .testimonial-card::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 0;\n    height: 4px;\n    background: var(--primary-gold);\n    transition: width 0.3s ease;\n  }\n\n  .testimonial-card:hover::before {\n    width: 100%;\n  }\n\n  .testimonial-card:hover {\n    border-color: var(--primary-gold);\n    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.15);\n    transform: translateY(-8px);\n  }\n\n  .testimonial-stars {\n    font-size: 20px;\n    color: var(--primary-gold);\n    margin-bottom: 20px;\n    letter-spacing: 2px;\n  }\n\n  .testimonial-text {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-brown);\n    line-height: 1.7;\n    margin: 0 0 32px 0;\n    font-style: italic;\n    opacity: 0.8;\n  }\n\n  .testimonial-author {\n    display: flex;\n    align-items: center;\n    gap: 16px;\n  }\n\n  .author-avatar {\n    width: 56px;\n    height: 56px;\n    background: var(--primary-gold);\n    color: var(--black);\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-family: 'Poppins', sans-serif;\n    font-size: 20px;\n    font-weight: 700;\n    flex-shrink: 0;\n  }\n\n  .author-name {\n    font-family: 'Poppins', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    color: var(--dark-brown);\n    margin-bottom: 4px;\n  }\n\n  .author-location {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: var(--dark-brown);\n    opacity: 0.6;\n  }\n</style>",
+        "executeCode": true,
+        "signature": "testimonials001",
+        "user_id": 1,
+        "time": 1735689603
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "testimonialscontainer",
+      "name": "container",
+      "parent": "testimonialssection",
+      "children": ["testimonialscode"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "testimonialssection",
+      "name": "section",
+      "parent": 0,
+      "children": ["testimonialscontainer"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "Recenze | PC"
+    },
+    {
+      "id": "ctacode",
+      "name": "code",
+      "parent": "ctacontainer",
+      "children": [],
+      "settings": {
+        "code": "<!-- CTA SECTION -->\n<section class=\"cta-section\" id=\"kontakt\">\n  <div class=\"cta-wrapper\">\n    <div class=\"cta-content\">\n      <h2 class=\"cta-title\">Připraveni začít?</h2>\n      <p class=\"cta-description\">\n        Domluvte si bezplatnou konzultaci a zjistěte, jak můžeme pomoci právě vám.\n      </p>\n      <div class=\"cta-buttons\">\n        <a href=\"#\" class=\"btn-primary btn-large\">Konzultace zdarma</a>\n        <a href=\"#\" class=\"btn-secondary btn-large\">Zavolejte nám</a>\n      </div>\n      <div class=\"cta-info\">\n        <div class=\"info-item\">\n          <div class=\"info-icon\">📞</div>\n          <div class=\"info-text\">+420 XXX XXX XXX</div>\n        </div>\n        <div class=\"info-item\">\n          <div class=\"info-icon\">✉️</div>\n          <div class=\"info-text\">info@maxhair.cz</div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .cta-section {\n    width: 100vw;\n    min-height: 80vh;\n    background: linear-gradient(135deg, var(--dark-brown) 0%, var(--black) 100%);\n    padding: 100px 80px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    position: relative;\n    overflow: hidden;\n  }\n\n  .cta-section::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background: url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1200') center/cover;\n    opacity: 0.1;\n    z-index: 0;\n  }\n\n  .cta-wrapper {\n    max-width: 800px;\n    width: 100%;\n    text-align: center;\n    position: relative;\n    z-index: 1;\n  }\n\n  .cta-content {\n    animation: fadeInUp 0.8s ease-out;\n  }\n\n  .cta-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 800;\n    color: var(--white);\n    margin: 0 0 24px 0;\n    letter-spacing: -1px;\n  }\n\n  .cta-description {\n    font-family: 'Inter', sans-serif;\n    font-size: 20px;\n    color: var(--white);\n    opacity: 0.9;\n    line-height: 1.6;\n    margin: 0 0 48px 0;\n  }\n\n  .cta-buttons {\n    display: flex;\n    gap: 20px;\n    justify-content: center;\n    margin-bottom: 60px;\n    flex-wrap: wrap;\n  }\n\n  .btn-large {\n    padding: 20px 56px;\n    font-size: 18px;\n  }\n\n  .cta-info {\n    display: flex;\n    gap: 60px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .info-item {\n    display: flex;\n    align-items: center;\n    gap: 12px;\n  }\n\n  .info-icon {\n    font-size: 24px;\n  }\n\n  .info-text {\n    font-family: 'Inter', sans-serif;\n    font-size: 18px;\n    color: var(--primary-gold);\n    font-weight: 600;\n  }\n</style>",
+        "executeCode": true,
+        "signature": "cta001",
+        "user_id": 1,
+        "time": 1735689604
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "ctacontainer",
+      "name": "container",
+      "parent": "ctasection",
+      "children": ["ctacode"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "ctasection",
+      "name": "section",
+      "parent": 0,
+      "children": ["ctacontainer"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "CTA | PC"
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "",
+  "version": "2.0",
+  "globalClasses": [],
+  "globalElements": []
+}
+

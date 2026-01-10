@@ -1,0 +1,45 @@
+{
+  "content": [
+    {
+      "id": "hellocode",
+      "name": "code",
+      "parent": "hellocontainer",
+      "children": [],
+      "settings": {
+        "code": "<!-- HELLO WORLD SECTION -->\n<section class=\"hello-section\">\n  <div class=\"hello-container\">\n    <h1 class=\"hello-title\">Hello World</h1>\n    <p class=\"hello-subtitle\">Vítejte na stránce maxhair.cz</p>\n  </div>\n</section>\n\n<style>\n  /* ==================== RESET ==================== */\n  * {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n  }\n\n  /* ==================== HELLO SECTION ==================== */\n  .hello-section {\n    width: 100vw;\n    height: 100vh;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    background: linear-gradient(135deg, #FFFFFF 0%, #FFF4E6 100%);\n  }\n\n  .hello-container {\n    text-align: center;\n    animation: fadeInUp 0.8s ease-out;\n  }\n\n  .hello-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(32px, 6vw, 72px);\n    font-weight: 700;\n    color: #333333;\n    margin: 0 0 20px 0;\n    letter-spacing: -1px;\n  }\n\n  .hello-subtitle {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(18px, 3vw, 24px);\n    color: #666666;\n    margin: 0;\n  }\n\n  /* ==================== ANIMATIONS ==================== */\n  @keyframes fadeInUp {\n    from {\n      opacity: 0;\n      transform: translateY(20px);\n    }\n    to {\n      opacity: 1;\n      transform: translateY(0);\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "helloworld001",
+        "user_id": 1,
+        "time": 1735689600
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "hellocontainer",
+      "name": "container",
+      "parent": "hellosection",
+      "children": ["hellocode"],
+      "settings": {
+        "_width": "100vw",
+        "_height": "100vh"
+      }
+    },
+    {
+      "id": "hellosection",
+      "name": "section",
+      "parent": 0,
+      "children": ["hellocontainer"],
+      "settings": {
+        "_width": "100vw",
+        "_height": "100vh"
+      },
+      "label": "Hello World | PC"
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "",
+  "version": "2.0",
+  "globalClasses": [],
+  "globalElements": []
+}
+

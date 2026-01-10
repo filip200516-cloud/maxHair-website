@@ -1,0 +1,46 @@
+{
+  "content": [
+    {
+      "id": "kontakt_code",
+      "name": "code",
+      "parent": "kontakt_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- KONTAKT SECTION -->\n<section class=\"kontakt-section\" id=\"kontakt\">\n  <div class=\"kontakt-content\">\n    <div class=\"section-badge\">Kontakt</div>\n    <h2 class=\"section-title\">Kontaktujte nás</h2>\n    <p class=\"section-description\">Bezplatná konzultace. Michaela vám odpoví v češtině.</p>\n    \n    <div class=\"kontakt-grid\">\n      <!-- Formulář -->\n      <div class=\"kontakt-form\">\n        <form class=\"form\" action=\"#\" method=\"post\">\n          <div class=\"form-group\">\n            <label for=\"name\">Jméno a příjmení *</label>\n            <input type=\"text\" id=\"name\" name=\"name\" required />\n          </div>\n          \n          <div class=\"form-row\">\n            <div class=\"form-group\">\n              <label for=\"email\">Email *</label>\n              <input type=\"email\" id=\"email\" name=\"email\" required />\n            </div>\n            \n            <div class=\"form-group\">\n              <label for=\"phone\">Telefon *</label>\n              <input type=\"tel\" id=\"phone\" name=\"phone\" required />\n            </div>\n          </div>\n          \n          <div class=\"form-group\">\n            <label for=\"message\">Zpráva</label>\n            <textarea id=\"message\" name=\"message\" rows=\"4\" placeholder=\"Popište vaši situaci nebo položte otázku...\"></textarea>\n          </div>\n          \n          <div class=\"form-group form-checkbox\">\n            <label>\n              <input type=\"checkbox\" name=\"gdpr\" required />\n              <span>Souhlasím se <a href=\"/gdpr\" target=\"_blank\">zpracováním osobních údajů</a> *</span>\n            </label>\n          </div>\n          \n          <button type=\"submit\" class=\"btn-submit\">Odeslat poptávku</button>\n        </form>\n      </div>\n      \n      <!-- Michaela -->\n      <div class=\"kontakt-michaela\">\n        <div class=\"michaela-photo\">\n          <div class=\"photo-placeholder\">\n            <div class=\"placeholder-text\">Fotka Michaely<br/>česká podpora<br/>přátelský úsměv</div>\n          </div>\n        </div>\n        <div class=\"michaela-info\">\n          <h3>Michaela</h3>\n          <p class=\"michaela-role\">Česká podpora 24/7</p>\n          <p class=\"michaela-description\">Pomůžu vám s vším - od konzultace až po pooperační péči. Komunikace v češtině.</p>\n          <div class=\"michaela-contact\">\n            <a href=\"mailto:Michaela@maxhair.cz\" class=\"contact-link\">\n              <i class=\"fas fa-envelope\"></i> Michaela@maxhair.cz\n            </a>\n            <a href=\"tel:+420601515323\" class=\"contact-link\">\n              <i class=\"fas fa-phone\"></i> +420 601 515 323\n            </a>\n            <a href=\"https://wa.me/420601515323\" target=\"_blank\" class=\"contact-link\">\n              <i class=\"fab fa-whatsapp\"></i> WhatsApp\n            </a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');\n  \n  .kontakt-section {\n    width: 100%;\r\n    max-width: 100vw;\r\n    box-sizing: border-box;\n    background: var(--white);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: clamp(50px, 8vw, 80px) clamp(20px, 4vw, 60px);\n  }\n\n  .kontakt-content {\n    max-width: 1200px;\n    width: 100%;\n    text-align: center;\n  }\n\n  .kontakt-grid {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: clamp(40px, 5vw, 60px);\n    margin-top: clamp(40px, 5vw, 60px);\n    align-items: start;\n  }\n\n  .kontakt-form {\n    background: var(--light-gray);\n    border-radius: clamp(16px, 2vw, 20px);\n    padding: clamp(32px, 4vw, 40px);\n  }\n\n  .form-group {\n    margin-bottom: clamp(18px, 2.2vw, 24px);\n    text-align: left;\n  }\n\n  .form-group label {\n    display: block;\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(13px, 1.6vw, 14px);\n    font-weight: 600;\n    color: var(--dark-brown);\n    margin-bottom: clamp(6px, 0.8vw, 8px);\n  }\n\n  .form-group input,\n  .form-group select,\n  .form-group textarea {\n    width: 100%;\n    padding: clamp(12px, 1.5vw, 14px) clamp(14px, 1.8vw, 16px);\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(14px, 1.7vw, 15px);\n    color: var(--dark-brown);\n    background: var(--white);\n    border: 1px solid var(--medium-gray);\n    border-radius: clamp(8px, 1vw, 10px);\n    transition: all 0.3s ease;\n  }\n\n  .form-group input:focus,\n  .form-group select:focus,\n  .form-group textarea:focus {\n    outline: none;\n    border-color: var(--primary-gold);\n    box-shadow: 0 0 0 3px rgba(229, 193, 88, 0.1);\n  }\n\n  .form-row {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: clamp(16px, 2vw, 20px);\n  }\n\n  .form-checkbox label {\n    display: flex;\n    align-items: flex-start;\n    gap: 12px;\n    font-weight: 400;\n  }\n\n  .form-checkbox input[type=\"checkbox\"] {\n    width: auto;\n    margin-top: 4px;\n  }\n\n  .form-checkbox a {\n    color: var(--primary-gold);\n    text-decoration: underline;\n  }\n\n  .btn-submit {\n    width: 100%;\n    padding: clamp(14px, 1.8vw, 18px) clamp(24px, 3vw, 32px);\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(15px, 1.8vw, 17px);\n    font-weight: 600;\n    border: none;\n    border-radius: clamp(10px, 1.2vw, 12px);\n    cursor: pointer;\n    transition: all 0.3s ease;\n    margin-top: clamp(6px, 0.8vw, 8px);\n  }\n\n  .btn-submit:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-2px);\n    box-shadow: 0 8px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  /* Michaela sekce */\n  .kontakt-michaela {\n    background: var(--light-gray);\n    border-radius: clamp(16px, 2vw, 20px);\n    padding: clamp(32px, 4vw, 40px);\n    text-align: center;\n  }\n\n  .michaela-photo {\n    margin-bottom: clamp(24px, 3vw, 32px);\n  }\n\n  .photo-placeholder {\n    width: 100%;\n    max-width: 280px;\n    height: clamp(200px, 25vw, 280px);\n    margin: 0 auto;\n    background: var(--white);\n    border-radius: clamp(12px, 1.5vw, 16px);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    border: 2px dashed var(--medium-gray);\n  }\n\n  .placeholder-text {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(12px, 1.5vw, 14px);\n    color: var(--dark-brown);\n    opacity: 0.5;\n    text-align: center;\n    line-height: 1.6;\n  }\n\n  .michaela-info h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(24px, 3vw, 28px);\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 clamp(6px, 0.8vw, 8px) 0;\n  }\n\n  .michaela-role {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(14px, 1.7vw, 16px);\n    color: var(--primary-gold);\n    font-weight: 600;\n    margin: 0 0 clamp(16px, 2vw, 20px) 0;\n  }\n\n  .michaela-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(14px, 1.7vw, 15px);\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0 0 clamp(24px, 3vw, 32px) 0;\n  }\n\n  .michaela-contact {\n    display: flex;\n    flex-direction: column;\n    gap: clamp(10px, 1.2vw, 12px);\n  }\n\n  .contact-link {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    gap: clamp(10px, 1.2vw, 12px);\n    padding: clamp(12px, 1.5vw, 14px) clamp(16px, 2vw, 20px);\n    background: var(--white);\n    color: var(--dark-brown);\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(14px, 1.7vw, 15px);\n    font-weight: 500;\n    text-decoration: none;\n    border-radius: clamp(8px, 1vw, 10px);\n    transition: all 0.3s ease;\n    border: 1px solid var(--medium-gray);\n  }\n\n  .contact-link:hover {\n    background: var(--primary-gold);\n    color: var(--black);\n    border-color: var(--primary-gold);\n    transform: translateY(-2px);\n  }\n\n  .contact-link i {\n    font-size: clamp(16px, 2vw, 18px);\n  }\n\n  @media (max-width: 992px) {\n    .kontakt-grid {\n      grid-template-columns: 1fr;\n      gap: clamp(32px, 4vw, 40px);\n    }\n    .form-row {\n      grid-template-columns: 1fr;\n    }\n  }\n\n  @media (max-width: 768px) {\n    .kontakt-section {\n      padding: clamp(40px, 6vw, 60px) clamp(20px, 4vw, 24px);\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "kontakt_maxhair",
+        "user_id": 1,
+        "time": 1735689611
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "kontakt_container",
+      "name": "container",
+      "parent": "kontakt_section",
+      "children": [
+        "kontakt_code"
+      ],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "kontakt_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "kontakt_container"
+      ],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "Kontakt | MaxHair"
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "",
+  "version": "2.0",
+  "globalClasses": [],
+  "globalElements": []
+}

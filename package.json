@@ -1,0 +1,13 @@
+{
+  "name": "maxhair-preview",
+  "version": "1.0.0",
+  "description": "Local preview system for MaxHair.cz",
+  "scripts": {
+    "start": "npx http-server -p 8000 -c-1",
+    "serve": "npx http-server -p 8000 -c-1"
+  },
+  "keywords": ["preview", "bricks", "maxhair"],
+  "author": "",
+  "license": "ISC"
+}
+

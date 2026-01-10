@@ -1,0 +1,418 @@
+{
+  "content": [
+    {
+      "id": "zeny_hero_code",
+      "name": "code",
+      "parent": "zeny_hero_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- TRANSPLANTACE VLASU zeny HERO -->\n<section class=\"zeny-hero-section\">\n  <div class=\"hero-video-wrapper\">\n    <video autoplay muted loop playsinline class=\"hero-video\">\n      <source src=\"https://mediumseagreen-gaur-406121.hostingersite.com/wp-content/uploads/2025/12/WhatsApp-Video-2025-12-13-at-14.56.52_6de6a47b.mp4\" type=\"video/mp4\">\n    </video>\n    <div class=\"hero-overlay\"></div>\n  </div>\n  <div class=\"zeny-hero-content\">\n    <div class=\"section-badge\">Služba</div>\n    <h1 class=\"hero-title\">Transplantace vlasů<br/>pro muže</h1>\n    <p class=\"hero-description\">Vraťte si sebevědomí s hustými vlasy. Trvalé řešení vypadávání vlasů.</p>\n    <div class=\"hero-price\">\n      <span class=\"price-label\">Cena od</span>\n      <span class=\"price-amount\">69,900 Kč</span>\n      <span class=\"price-note\">all-inclusive</span>\n    </div>\n    <div class=\"hero-cta-group\">\n      <a href=\"/kontakt\" class=\"btn-primary\">Bezplatná konzultace</a>\n      <a href=\"/#cenik\" class=\"btn-secondary\">Zjistit cenu</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #A67C00;\n    --dark-brown: #5A452C;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #CCCCCC;\n  }\n\n  .zeny-hero-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    min-height: 100vh;\n    position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    overflow: hidden;\n  }\n\n  .hero-video-wrapper {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    z-index: 1;\n  }\n\n  .hero-video {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n\n  .hero-overlay {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: linear-gradient(135deg, rgba(90, 69, 44, 0.85) 0%, rgba(0, 0, 0, 0.85) 100%);\n    z-index: 2;\n  }\n\n  .zeny-hero-content {\n    position: relative;\n    z-index: 3;\n    max-width: 1200px;\n    width: 100%;\n    padding: 0 80px;\n    text-align: center;\n  }\n\n  .section-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 32px;\n    border-radius: 30px;\n  }\n\n  .hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(42px, 6vw, 72px);\n    font-weight: 800;\n    color: var(--white);\n    margin: 0 0 24px 0;\n    letter-spacing: -2px;\n    line-height: 1.2;\n  }\n\n  .hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(18px, 2.5vw, 24px);\n    color: rgba(255, 255, 255, 0.9);\n    margin: 0 0 40px 0;\n    line-height: 1.6;\n    max-width: 800px;\n    margin-left: auto;\n    margin-right: auto;\n  }\n\n  .hero-price {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 8px;\n    margin-bottom: 48px;\n  }\n\n  .price-label {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: rgba(255, 255, 255, 0.8);\n    text-transform: uppercase;\n    letter-spacing: 2px;\n  }\n\n  .price-amount {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 800;\n    color: var(--white);\n  }\n\n  .price-note {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: rgba(255, 255, 255, 0.7);\n  }\n\n  .hero-cta-group {\n    display: flex;\n    gap: 20px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 10px;\n    transition: all 0.3s ease;\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-3px);\n    box-shadow: 0 10px 35px rgba(229, 193, 88, 0.5);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: transparent;\n    color: var(--white);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--white);\n    border-radius: 10px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--white);\n    color: var(--black);\n    transform: translateY(-3px);\n  }\n\n  @media (max-width: 768px) {\n    .zeny-hero-content {\n      padding: 0 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "muzi_hero_001",
+        "user_id": 1,
+        "time": 1735693000
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "zeny_hero_container",
+      "name": "container",
+      "parent": "zeny_hero_section",
+      "children": [
+        "zeny_hero_code"
+      ],
+      "settings": {
+        "_width": "100vw",
+        "_height": "100vh"
+      }
+    },
+    {
+      "id": "zeny_hero_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "zeny_hero_container"
+      ],
+      "settings": {
+        "_width": "100vw",
+        "_height": "100vh"
+      },
+      "label": "Muži Hero | MaxHair"
+    },
+    {
+      "id": "zeny_problem_code",
+      "name": "code",
+      "parent": "zeny_problem_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- PROBLEM PLEŠATĚNÍ MUŽI -->\n<section class=\"zeny-problem-section\">\n  <div class=\"zeny-problem-content\">\n    <div class=\"section-header\">\n      <div class=\"section-badge\">Problém</div>\n      <h2 class=\"section-title\">Vypadávání vlasů u žen</h2>\n      <p class=\"section-description\">Ženská alopecie má jinou příčinu než u mužů. Trvalé řešení existuje.</p>\n    </div>\n    \n    <div class=\"problem-grid\">\n      <div class=\"problem-card\">\n        <div class=\"problem-icon\">📉</div>\n        <h3>Ženská alopecie (difuzní)</h3>\n        <p>Nejčastější příčina vypadávání vlasů u žen. Difuzní řídnutí vlasů na celé hlavě, často hormonální příčiny.</p>\n      </div>\n      \n      <div class=\"problem-card\">\n        <div class=\"problem-icon\">📊</div>\n        <h3>Ludwig škála</h3>\n        <p>Znázorňuje stupeň vypadávání vlasů u žen od mírného řídnutí až po pokročilou fázi. Transplantace je účinná ve všech fázích.</p>\n        <div class=\"norwood-placeholder\">\n          <p><strong>PLACEHOLDER: Ilustrace Ludwig škály</strong></p>\n          <p>Grafické znázornění stupňů vypadávání vlasů u žen</p>\n        </div>\n      </div>\n      \n      <div class=\"problem-card\">\n        <div class=\"problem-icon\">😔</div>\n        <h3>Psychický dopad</h3>\n        <p>Ztráta sebedůvěry, úzkost, deprese. Vypadávání vlasů ovlivňuje kariéru, vztahy i osobní pohodu.</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .zeny-problem-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--white);\n  }\n\n  .zeny-problem-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .section-header {\n    text-align: center;\n    margin-bottom: 60px;\n  }\n\n  .section-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--light-gray);\n    color: var(--dark-brown);\n    font-family: 'Inter', sans-serif;\n    font-size: 12px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 20px;\n    border-radius: 30px;\n  }\n\n  .section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 800;\n    color: var(--dark-brown);\n    margin: 0 0 20px 0;\n    letter-spacing: -1px;\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: var(--dark-brown);\n    opacity: 0.7;\n    max-width: 800px;\n    margin: 0 auto;\n    line-height: 1.6;\n  }\n\n  .problem-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 32px;\n  }\n\n  .problem-card {\n    background: var(--light-gray);\n    border-radius: 20px;\n    padding: 40px 32px;\n    text-align: center;\n    transition: all 0.3s ease;\n  }\n\n  .problem-card:hover {\n    background: var(--white);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .problem-icon {\n    font-size: 56px;\n    margin-bottom: 24px;\n  }\n\n  .problem-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 22px;\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 16px 0;\n  }\n\n  .problem-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0 0 16px 0;\n  }\n\n  .norwood-placeholder {\n    margin-top: 20px;\n    padding: 20px;\n    background: rgba(229, 193, 88, 0.1);\n    border-radius: 12px;\n    border: 2px dashed var(--medium-gray);\n  }\n\n  .norwood-placeholder p {\n    font-size: 13px;\n    margin: 4px 0;\n  }\n\n  .norwood-placeholder strong {\n    color: var(--dark-brown);\n    font-weight: 600;\n  }\n\n  @media (max-width: 1200px) {\n    .problem-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .zeny-problem-section {\n      padding: 60px 24px;\n    }\n\n    .problem-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "muzi_problem_001",
+        "user_id": 1,
+        "time": 1735693001
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "zeny_problem_container",
+      "name": "container",
+      "parent": "zeny_problem_section",
+      "children": [
+        "zeny_problem_code"
+      ],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "zeny_problem_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "zeny_problem_container"
+      ],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "Muži Problém | MaxHair"
+    },
+    {
+      "id": "zeny_reseni_code",
+      "name": "code",
+      "parent": "zeny_reseni_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- ŘEŠENÍ TRANSPLANTACE -->\n<section class=\"zeny-reseni-section\">\n  <div class=\"zeny-reseni-content\">\n    <div class=\"section-header\">\n      <div class=\"section-badge\">Řešení</div>\n      <h2 class=\"section-title\">Trvalé řešení - Transplantace</h2>\n      <p class=\"section-description\">Jak vám transplantace pomůže získat zpět husté vlasy a sebevědomí.</p>\n    </div>\n    \n    <div class=\"reseni-grid\">\n      <div class=\"reseni-card\">\n        <div class=\"reseni-icon\">✅</div>\n        <h3>Trvalé řešení</h3>\n        <p>Transplantované vlasy jsou odolné vůči vypadávání. Jedná se o trvalé řešení, které vám vydrží celý život.</p>\n      </div>\n      \n      <div class=\"reseni-card\">\n        <div class=\"reseni-icon\">🌱</div>\n        <h3>Vlastní vlasy</h3>\n        <p>Používáme vaše vlastní vlasy z dárcové oblasti. Žádné syntetické materiály, všechno přirozené.</p>\n      </div>\n      \n      <div class=\"reseni-card\">\n        <div class=\"reseni-icon\">✨</div>\n        <h3>Přirozený vzhled</h3>\n        <p>Vlasy rostou přirozeně, lze je stříhat, barvit i stylovat. Vypadají jako vaše původní vlasy.</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .zeny-reseni-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n  }\n\n  .zeny-reseni-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .reseni-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 32px;\n    margin-top: 60px;\n  }\n\n  .reseni-card {\n    background: var(--white);\n    border-radius: 20px;\n    padding: 40px 32px;\n    text-align: center;\n    transition: all 0.3s ease;\n    border: 2px solid transparent;\n  }\n\n  .reseni-card:hover {\n    border-color: var(--primary-gold);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .reseni-icon {\n    font-size: 56px;\n    margin-bottom: 24px;\n  }\n\n  .reseni-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 22px;\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 16px 0;\n  }\n\n  .reseni-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0;\n  }\n\n  @media (max-width: 1200px) {\n    .reseni-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .zeny-reseni-section {\n      padding: 60px 24px;\n    }\n\n    .reseni-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "muzi_reseni_001",
+        "user_id": 1,
+        "time": 1735693002
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "zeny_reseni_container",
+      "name": "container",
+      "parent": "zeny_reseni_section",
+      "children": [
+        "zeny_reseni_code"
+      ],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "zeny_reseni_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "zeny_reseni_container"
+      ],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "Muži Řešení | MaxHair"
+    },
+    {
+      "id": "zeny_vhodna_code",
+      "name": "code",
+      "parent": "zeny_vhodna_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- PRO KOHO JE VHODNÁ -->\n<section class=\"zeny-vhodna-section\">\n  <div class=\"zeny-vhodna-content\">\n    <div class=\"section-header\">\n      <div class=\"section-badge\">Kandidáti</div>\n      <h2 class=\"section-title\">Pro koho je transplantace vhodná?</h2>\n      <p class=\"section-description\" style=\"margin-top: 20px;\"><strong>Speciální výhoda pro ženy:</strong> Často lze použít techniky bez holení hlavy!</p>\n      <p class=\"section-description\">Ideální kandidáti pro transplantaci vlasů.</p>\n    </div>\n    \n    <div class=\"kandidati-grid\">\n      <div class=\"kandidat-item\">\n        <div class=\"kandidat-number\">25+</div>\n        <h3>Věk</h3>\n        <p>Ideální věk pro transplantaci je 25 a více let. U žen je důležité, aby byla hormonální situace stabilizovaná.</p>\n      </div>\n      \n      <div class=\"kandidat-item\">\n        <div class=\"kandidat-number\">✓</div>\n        <h3>Stabilizované vypadávání</h3>\n        <p>Vypadávání by mělo být již stabilizované. U žen je důležité řešit hormonální příčiny před transplantací.</p>\n      </div>\n      \n      <div class=\"kandidat-item\">\n        <div class=\"kandidat-number\">💪</div>\n        <h3>Dostatečná dárcová oblast</h3>\n        <p>Musí být dostatek vlasů v týlní oblasti hlavy pro odebrání štěpů.</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .zeny-vhodna-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--white);\n  }\n\n  .zeny-vhodna-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .kandidati-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 32px;\n    margin-top: 60px;\n  }\n\n  .kandidat-item {\n    background: var(--light-gray);\n    border-radius: 20px;\n    padding: 40px 32px;\n    text-align: center;\n    transition: all 0.3s ease;\n  }\n\n  .kandidat-item:hover {\n    background: var(--white);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .kandidat-number {\n    font-family: 'Poppins', sans-serif;\n    font-size: 48px;\n    font-weight: 800;\n    color: var(--primary-gold);\n    margin-bottom: 20px;\n  }\n\n  .kandidat-item h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 22px;\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 16px 0;\n  }\n\n  .kandidat-item p {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0;\n  }\n\n  @media (max-width: 1200px) {\n    .kandidati-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .zeny-vhodna-section {\n      padding: 60px 24px;\n    }\n\n    .kandidati-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "muzi_vhodna_001",
+        "user_id": 1,
+        "time": 1735693003
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "zeny_vhodna_container",
+      "name": "container",
+      "parent": "zeny_vhodna_section",
+      "children": [
+        "zeny_vhodna_code"
+      ],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "zeny_vhodna_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "zeny_vhodna_container"
+      ],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "Muži Vhodná | MaxHair"
+    },
+    {
+      "id": "zeny_metody_code",
+      "name": "code",
+      "parent": "zeny_metody_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- METODY PRO MUŽE -->\n<section class=\"zeny-metody-section\">\n  <div class=\"zeny-metody-content\">\n    <div class=\"section-header\">\n      <div class=\"section-badge\">Metody</div>\n      <h2 class=\"section-title\">Metody transplantace pro ženy</h2>\n      <p class=\"section-description\" style=\"margin-top: 20px;\"><strong>DHI metoda je preferovaná</strong> pro ženy díky vyšší přesnosti a možnosti bez holení hlavy.</p>\n      <p class=\"section-description\">Používáme nejmodernější metody DHI a Sapphire FUE.</p>\n    </div>\n    \n    <div class=\"metody-grid\">\n      <div class=\"metoda-card\">\n        <div class=\"metoda-badge\">DHI</div>\n        <h3>DHI metoda</h3>\n        <p><strong>Nejpřesnější metoda</strong> - přímá implantace bez kanálků pomocí Choi implanter pen.</p>\n        <ul class=\"metoda-list\">\n          <li>Vyšší hustota</li>\n          <li>Kratší hojení</li>\n          <li>Vhodné pro jemné vlasy</li>\n        </ul>\n        <a href=\"/metoda-dhi\" class=\"metoda-link\">Více o DHI →</a>\n      </div>\n      \n      <div class=\"metoda-card\">\n        <div class=\"metoda-badge\">Sapphire FUE</div>\n        <h3>Sapphire FUE</h3>\n        <p><strong>Šetrná metoda</strong> - safírové čepelky místo ocelových pro menší trauma.</p>\n        <ul class=\"metoda-list\">\n          <li>Menší trauma pokožky</li>\n          <li>Rychlejší hojení</li>\n          <li>Vhodné pro velké plochy</li>\n        </ul>\n        <a href=\"/metoda-sapphire-fue\" class=\"metoda-link\">Více o Sapphire FUE →</a>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .zeny-metody-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n  }\n\n  .zeny-metody-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .metody-grid {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    gap: 40px;\n    margin-top: 60px;\n  }\n\n  .metoda-card {\n    background: var(--white);\n    border-radius: 24px;\n    padding: 48px 40px;\n    border: 2px solid var(--light-gray);\n    transition: all 0.3s ease;\n  }\n\n  .metoda-card:hover {\n    border-color: var(--primary-gold);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .metoda-badge {\n    display: inline-block;\n    padding: 6px 16px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 12px;\n    font-weight: 600;\n    border-radius: 20px;\n    margin-bottom: 20px;\n  }\n\n  .metoda-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 28px;\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 16px 0;\n  }\n\n  .metoda-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0 0 24px 0;\n  }\n\n  .metoda-list {\n    list-style: none;\n    padding: 0;\n    margin: 0 0 24px 0;\n  }\n\n  .metoda-list li {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: var(--dark-brown);\n    padding: 8px 0 8px 28px;\n    position: relative;\n  }\n\n  .metoda-list li::before {\n    content: '✓';\n    position: absolute;\n    left: 0;\n    color: var(--primary-gold);\n    font-weight: 700;\n  }\n\n  .metoda-link {\n    display: inline-block;\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    font-weight: 600;\n    color: var(--primary-gold);\n    text-decoration: none;\n    transition: all 0.3s ease;\n  }\n\n  .metoda-link:hover {\n    color: var(--secondary-gold);\n    transform: translateX(4px);\n  }\n\n  @media (max-width: 768px) {\n    .zeny-metody-section {\n      padding: 60px 24px;\n    }\n\n    .metody-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "muzi_metody_001",
+        "user_id": 1,
+        "time": 1735693004
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "zeny_metody_container",
+      "name": "container",
+      "parent": "zeny_metody_section",
+      "children": [
+        "zeny_metody_code"
+      ],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "zeny_metody_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "zeny_metody_container"
+      ],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "Muži Metody | MaxHair"
+    },
+    {
+      "id": "zeny_předpo_code",
+      "name": "code",
+      "parent": "zeny_předpo_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- PŘED/PO GALERIE -->\n<section class=\"zeny-predpo-section\">\n  <div class=\"zeny-predpo-content\">\n    <div class=\"section-header\">\n      <div class=\"section-badge\">Výsledky</div>\n      <h2 class=\"section-title\">Před a po transplantaci</h2>\n      <p class=\"section-description\">Podívejte se na skutečné výsledky našich klientů.</p>\n    </div>\n    \n    <div class=\"predpo-grid\">\n      <div class=\"predpo-placeholder\">\n        <div class=\"placeholder-content\">\n          <div class=\"placeholder-icon\">📸</div>\n          <p><strong>Před/po žena - přední linie</strong></p>\n          <p>Transplantace přední linie vlasů, 2800 štěpů</p>\n        </div>\n      </div>\n      \n      <div class=\"predpo-placeholder\">\n        <div class=\"placeholder-content\">\n          <div class=\"placeholder-icon\">📸</div>\n          <p><strong>Před/po žena - řídnutí temene</strong></p>\n          <p>Transplantace temene hlavy, 3000 štěpů</p>\n        </div>\n      </div>\n      \n      <div class=\"predpo-placeholder\">\n        <div class=\"placeholder-content\">\n          <div class=\"placeholder-icon\">📸</div>\n          <p><strong>Před/po žena - přední linie</strong></p>\n          <p>Transplantace přední linie, 2500 štěpů</p>\n        </div>\n      </div>\n      \n      <div class=\"predpo-placeholder\">\n        <div class=\"placeholder-content\">\n          <div class=\"placeholder-icon\">📸</div>\n          <p><strong>Před/po žena - kompletní</strong></p>\n          <p>Kompletní transplantace, 4000 štěpů</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .zeny-predpo-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--white);\n  }\n\n  .zeny-predpo-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .predpo-grid {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    gap: 32px;\n    margin-top: 60px;\n  }\n\n  .predpo-placeholder {\n    background: var(--light-gray);\n    border-radius: 20px;\n    padding: 80px 40px;\n    text-align: center;\n    border: 2px dashed var(--medium-gray);\n    min-height: 400px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .placeholder-content {\n    max-width: 400px;\n  }\n\n  .placeholder-icon {\n    font-size: 64px;\n    margin-bottom: 24px;\n  }\n\n  .placeholder-content p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-brown);\n    margin: 8px 0;\n  }\n\n  .placeholder-content strong {\n    color: var(--dark-brown);\n    font-weight: 600;\n  }\n\n  @media (max-width: 768px) {\n    .zeny-predpo-section {\n      padding: 60px 24px;\n    }\n\n    .predpo-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "muzi_predpo_001",
+        "user_id": 1,
+        "time": 1735693005
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "zeny_předpo_container",
+      "name": "container",
+      "parent": "zeny_předpo_section",
+      "children": [
+        "zeny_předpo_code"
+      ],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "zeny_předpo_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "zeny_předpo_container"
+      ],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "Muži Před/po | MaxHair"
+    },
+    {
+      "id": "zeny_zahrnuto_code",
+      "name": "code",
+      "parent": "zeny_zahrnuto_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- CO JE ZAHRNUTO -->\n<section class=\"zeny-zahrnuto-section\">\n  <div class=\"zeny-zahrnuto-content\">\n    <div class=\"section-header\">\n      <div class=\"section-badge\">All-inclusive</div>\n      <h2 class=\"section-title\">Co je zahrnuto v ceně?</h2>\n      <p class=\"section-description\">Vše zahrnuto v jednom balíčku - žádné skryté poplatky.</p>\n    </div>\n    \n    <div class=\"zahrnuto-grid\">\n      <div class=\"zahrnuto-item\">\n        <div class=\"zahrnuto-icon\">✈️</div>\n        <h4>Zpáteční letenka</h4>\n        <p>Do Istanbulu v ekonomické třídě</p>\n      </div>\n      \n      <div class=\"zahrnuto-item\">\n        <div class=\"zahrnuto-icon\">🏨</div>\n        <h4>3 noci v 5★ hotelu</h4>\n        <p>Se snídaní</p>\n      </div>\n      \n      <div class=\"zahrnuto-item\">\n        <div class=\"zahrnuto-icon\">🚗</div>\n        <h4>VIP transfery</h4>\n        <p>Letiště - hotel - klinika</p>\n      </div>\n      \n      <div class=\"zahrnuto-item\">\n        <div class=\"zahrnuto-icon\">💉</div>\n        <h4>Operace</h4>\n        <p>Neomezený počet štěpů (v rámci bezpečných limitů)</p>\n      </div>\n      \n      <div class=\"zahrnuto-item\">\n        <div class=\"zahrnuto-icon\">💊</div>\n        <h4>PRP terapie</h4>\n        <p>1 sezení zahrnuto</p>\n      </div>\n      \n      <div class=\"zahrnuto-item\">\n        <div class=\"zahrnuto-icon\">📦</div>\n        <h4>Pooperační balíček</h4>\n        <p>Léky, šampon, pěna, polštář</p>\n      </div>\n      \n      <div class=\"zahrnuto-item\">\n        <div class=\"zahrnuto-icon\">🇨🇿</div>\n        <h4>Česká podpora</h4>\n        <p>Michaela 24/7 v češtině</p>\n      </div>\n      \n      <div class=\"zahrnuto-item\">\n        <div class=\"zahrnuto-icon\">📋</div>\n        <h4>Follow-up péče</h4>\n        <p>Dlouhodobé lékařské sledování</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .zeny-zahrnuto-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n  }\n\n  .zeny-zahrnuto-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .zahrnuto-grid {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    gap: 32px;\n    margin-top: 60px;\n  }\n\n  .zahrnuto-item {\n    background: var(--white);\n    border-radius: 20px;\n    padding: 32px 24px;\n    text-align: center;\n    transition: all 0.3s ease;\n  }\n\n  .zahrnuto-item:hover {\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n    border: 2px solid var(--primary-gold);\n  }\n\n  .zahrnuto-icon {\n    font-size: 48px;\n    margin-bottom: 16px;\n  }\n\n  .zahrnuto-item h4 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 18px;\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 8px 0;\n  }\n\n  .zahrnuto-item p {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    margin: 0;\n  }\n\n  @media (max-width: 1200px) {\n    .zahrnuto-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .zeny-zahrnuto-section {\n      padding: 60px 24px;\n    }\n\n    .zahrnuto-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "muzi_zahrnuto_001",
+        "user_id": 1,
+        "time": 1735693006
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "zeny_zahrnuto_container",
+      "name": "container",
+      "parent": "zeny_zahrnuto_section",
+      "children": [
+        "zeny_zahrnuto_code"
+      ],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "zeny_zahrnuto_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "zeny_zahrnuto_container"
+      ],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "Muži Zahrnuto | MaxHair"
+    },
+    {
+      "id": "zeny_cenik_code",
+      "name": "code",
+      "parent": "zeny_cenik_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- CENÍK -->\n<section class=\"zeny-cenik-section\">\n  <div class=\"zeny-cenik-content\">\n    <div class=\"section-header\">\n      <div class=\"section-badge\">Ceník</div>\n      <h2 class=\"section-title\">Transparentní ceník</h2>\n      <p class=\"section-description\">Vše zahrnuto v ceně - žádné skryté poplatky.</p>\n    </div>\n    \n    <div class=\"cenik-grid\">\n      <div class=\"cenik-card\">\n        <div class=\"cenik-badge\">Economic</div>\n        <div class=\"cenik-price\">\n          <span class=\"price-amount\">69,900 Kč</span>\n          <span class=\"price-note\">€2,900</span>\n        </div>\n        <ul class=\"cenik-list\">\n          <li>✓ Neomezený počet štěpů</li>\n          <li>✓ 1 PRP sezení</li>\n          <li>✓ Letenka + hotel + transfery</li>\n          <li>✓ Všechny léky a péče</li>\n        </ul>\n        <a href=\"/kontakt\" class=\"cenik-button\">Vybrat balíček</a>\n      </div>\n      \n      <div class=\"cenik-card cenik-featured\">\n        <div class=\"cenik-badge cenik-badge-featured\">Nejpopulárnější</div>\n        <div class=\"cenik-badge\">Standard Plus</div>\n        <div class=\"cenik-price\">\n          <span class=\"price-amount\">81,900 Kč</span>\n          <span class=\"price-note\">€3,400</span>\n        </div>\n        <ul class=\"cenik-list\">\n          <li>✓ Vše z Economic</li>\n          <li>✓ 6měsíční plán růstu vlasů</li>\n        </ul>\n        <a href=\"/kontakt\" class=\"cenik-button\">Vybrat balíček</a>\n      </div>\n      \n      <div class=\"cenik-card\">\n        <div class=\"cenik-badge\">Premium Care</div>\n        <div class=\"cenik-price\">\n          <span class=\"price-amount\">89,200 Kč</span>\n          <span class=\"price-note\">€3,700</span>\n        </div>\n        <ul class=\"cenik-list\">\n          <li>✓ Vše z Standard Plus</li>\n          <li>✓ 1roční plán údržby vlasů</li>\n        </ul>\n        <a href=\"/kontakt\" class=\"cenik-button\">Vybrat balíček</a>\n      </div>\n    </div>\n    \n    <p class=\"cenik-note\">Všechny balíčky jsou all-inclusive. Cena je fixní bez ohledu na počet štěpů (v rámci bezpečných lékařských limitů). <a href=\"/#cenik\">Více o cenách</a></p>\n  </div>\n</section>\n\n<style>\n  .zeny-cenik-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--white);\n  }\n\n  .zeny-cenik-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .cenik-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 32px;\n    margin-top: 60px;\n  }\n\n  .cenik-card {\n    background: var(--light-gray);\n    border-radius: 24px;\n    padding: 40px 32px;\n    border: 2px solid var(--light-gray);\n    transition: all 0.3s ease;\n    position: relative;\n    display: flex;\n    flex-direction: column;\n  }\n\n  .cenik-card:hover {\n    border-color: var(--primary-gold);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .cenik-featured {\n    border-color: var(--primary-gold);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n  }\n\n  .cenik-badge {\n    display: inline-block;\n    padding: 6px 16px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 12px;\n    font-weight: 600;\n    border-radius: 20px;\n    margin-bottom: 20px;\n  }\n\n  .cenik-badge-featured {\n    background: var(--secondary-gold);\n    color: var(--white);\n    margin-bottom: 12px;\n  }\n\n  .cenik-price {\n    margin-bottom: 32px;\n  }\n\n  .price-amount {\n    display: block;\n    font-family: 'Poppins', sans-serif;\n    font-size: 42px;\n    font-weight: 800;\n    color: var(--dark-brown);\n    margin-bottom: 8px;\n  }\n\n  .price-note {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-brown);\n    opacity: 0.6;\n  }\n\n  .cenik-list {\n    list-style: none;\n    padding: 0;\n    margin: 0 0 32px 0;\n    flex-grow: 1;\n  }\n\n  .cenik-list li {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: var(--dark-brown);\n    padding: 12px 0;\n    border-bottom: 1px solid rgba(90, 69, 44, 0.1);\n  }\n\n  .cenik-list li:last-child {\n    border-bottom: none;\n  }\n\n  .cenik-button {\n    display: block;\n    width: 100%;\n    padding: 16px 32px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 12px;\n    text-align: center;\n    transition: all 0.3s ease;\n    margin-top: auto;\n  }\n\n  .cenik-button:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-2px);\n    box-shadow: 0 8px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .cenik-note {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    text-align: center;\n    margin-top: 40px;\n    line-height: 1.6;\n  }\n\n  .cenik-note a {\n    color: var(--primary-gold);\n    text-decoration: underline;\n  }\n\n  @media (max-width: 1200px) {\n    .cenik-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .zeny-cenik-section {\n      padding: 60px 24px;\n    }\n\n    .cenik-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "muzi_cenik_001",
+        "user_id": 1,
+        "time": 1735693007
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "zeny_cenik_container",
+      "name": "container",
+      "parent": "zeny_cenik_section",
+      "children": [
+        "zeny_cenik_code"
+      ],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "zeny_cenik_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "zeny_cenik_container"
+      ],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "Muži Ceník | MaxHair"
+    },
+    {
+      "id": "zeny_proces_code",
+      "name": "code",
+      "parent": "zeny_proces_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- PROCES KROK ZA KROKEM -->\n<section class=\"zeny-proces-section\">\n  <div class=\"zeny-proces-content\">\n    <div class=\"section-header\">\n      <div class=\"section-badge\">Proces</div>\n      <h2 class=\"section-title\">Jak probíhá transplantace?</h2>\n      <p class=\"section-description\">Proces od konzultace až po výsledek.</p>\n    </div>\n    \n    <div class=\"proces-timeline\">\n      <div class=\"timeline-item\">\n        <div class=\"timeline-number\">1</div>\n        <div class=\"timeline-content\">\n          <h3>Konzultace</h3>\n          <p>Bezplatná konzultace online nebo osobně. Vyhodnotíme vaši situaci a navrhneme plán.</p>\n        </div>\n      </div>\n      \n      <div class=\"timeline-item\">\n        <div class=\"timeline-number\">2</div>\n        <div class=\"timeline-content\">\n          <h3>Příprava</h3>\n          <p>Zařídíme letenku, hotel, transport. Poskytneme instrukce pro přípravu na zákrok.</p>\n        </div>\n      </div>\n      \n      <div class=\"timeline-item\">\n        <div class=\"timeline-number\">3</div>\n        <div class=\"timeline-content\">\n          <h3>Operace</h3>\n          <p>Zákrok trvá 6-8 hodin v lokální anestezii. Odběr a implantace štěpů.</p>\n        </div>\n      </div>\n      \n      <div class=\"timeline-item\">\n        <div class=\"timeline-number\">4</div>\n        <div class=\"timeline-content\">\n          <h3>Hojení</h3>\n          <p>První týdny hojení. Poskytujeme detailní instrukce a follow-up péči.</p>\n        </div>\n      </div>\n      \n      <div class=\"timeline-item\">\n        <div class=\"timeline-number\">5</div>\n        <div class=\"timeline-content\">\n          <h3>Růst</h3>\n          <p>Nové vlasy začínají růst po 3-4 měsících. Plný výsledek po 12-18 měsících.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .zeny-proces-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n  }\n\n  .zeny-proces-content {\n    max-width: 1000px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .proces-timeline {\n    margin-top: 60px;\n  }\n\n  .timeline-item {\n    display: flex;\n    gap: 32px;\n    margin-bottom: 48px;\n    align-items: flex-start;\n  }\n\n  .timeline-item:last-child {\n    margin-bottom: 0;\n  }\n\n  .timeline-number {\n    width: 60px;\n    height: 60px;\n    background: var(--primary-gold);\n    color: var(--black);\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-family: 'Poppins', sans-serif;\n    font-size: 28px;\n    font-weight: 800;\n    flex-shrink: 0;\n  }\n\n  .timeline-content {\n    flex: 1;\n  }\n\n  .timeline-content h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 24px;\n    font-weight: 700;\n    color: var(--dark-brown);\n    margin: 0 0 12px 0;\n  }\n\n  .timeline-content p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0;\n  }\n\n  @media (max-width: 768px) {\n    .zeny-proces-section {\n      padding: 60px 24px;\n    }\n\n    .timeline-item {\n      flex-direction: column;\n      gap: 20px;\n    }\n\n    .timeline-number {\n      width: 50px;\n      height: 50px;\n      font-size: 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "muzi_proces_001",
+        "user_id": 1,
+        "time": 1735693008
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "zeny_proces_container",
+      "name": "container",
+      "parent": "zeny_proces_section",
+      "children": [
+        "zeny_proces_code"
+      ],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "zeny_proces_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "zeny_proces_container"
+      ],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "Muži Proces | MaxHair"
+    },
+    {
+      "id": "zeny_faq_code",
+      "name": "code",
+      "parent": "zeny_faq_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- FAQ PRO MUŽE -->\n<section class=\"zeny-faq-section\">\n  <div class=\"zeny-faq-content\">\n    <div class=\"section-header\">\n      <div class=\"section-badge\">FAQ</div>\n      <h2 class=\"section-title\">Časté otázky o transplantaci pro ženy</h2>\n    </div>\n    \n    <div class=\"faq-list\">\n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Je transplantace bolestivá?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Zákrok probíhá v lokální anestezii, takže během operace necítíte žádnou bolest. Po zákroku může být mírný diskomfort, který obvykle odezní během několika dní.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Jak dlouho trvá transplantace?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Zákrok trvá obvykle 6-8 hodin v závislosti na počtu štěpů. Celý pobyt v Istanbulu je 3 noci - den před operací, den operace a den po operaci.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Kdy uvidím výsledky?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Nové vlasy začínají růst po 3-4 měsících. Plný výsledek je viditelný po 12-18 měsících. Během této doby poskytujeme follow-up péči a konzultace.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Mohu transplantovat i při pokročilém plešatění?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Ano, transplantace je možná i při pokročilém vypadávání vlasů (Ludwig II-III). Během konzultace zjistíme, zda máte dostatečnou dárcovou oblast pro požadovaný výsledek.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Musím si oholit hlavu?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>U žen je často možné použít techniky bez holení hlavy! DHI metoda umožňuje transplantaci i bez nutnosti holení. Vaše vlasy lze zachovat, což je velká výhoda pro ženy.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .zeny-faq-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--white);\n  }\n\n  .zeny-faq-content {\n    max-width: 1000px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .faq-list {\n    margin-top: 60px;\n  }\n\n  .faq-item {\n    border-bottom: 2px solid var(--light-gray);\n    margin-bottom: 0;\n  }\n\n  .faq-item:last-child {\n    border-bottom: none;\n  }\n\n  .faq-question {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 24px 0;\n    background: transparent;\n    border: none;\n    cursor: pointer;\n    text-align: left;\n    font-family: 'Poppins', sans-serif;\n    font-size: 20px;\n    font-weight: 600;\n    color: var(--dark-brown);\n    transition: all 0.3s ease;\n  }\n\n  .faq-question:hover {\n    color: var(--primary-gold);\n  }\n\n  .faq-icon {\n    font-size: 28px;\n    font-weight: 300;\n    color: var(--primary-gold);\n    transition: transform 0.3s ease;\n  }\n\n  .faq-item.active .faq-icon {\n    transform: rotate(45deg);\n  }\n\n  .faq-answer {\n    max-height: 0;\n    overflow: hidden;\n    transition: max-height 0.3s ease;\n  }\n\n  .faq-item.active .faq-answer {\n    max-height: 500px;\n  }\n\n  .faq-answer p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.6;\n    padding: 0 0 24px 0;\n    margin: 0;\n  }\n\n  @media (max-width: 768px) {\n    .zeny-faq-section {\n      padding: 60px 24px;\n    }\n\n    .faq-question {\n      font-size: 18px;\n      padding: 20px 0;\n    }\n  }\n</style>\n\n<script>\n  document.addEventListener('DOMContentLoaded', function() {\n    const faqItems = document.querySelectorAll('.faq-item');\n    faqItems.forEach(item => {\n      const question = item.querySelector('.faq-question');\n      question.addEventListener('click', () => {\n        const isActive = item.classList.contains('active');\n        faqItems.forEach(i => i.classList.remove('active'));\n        if (!isActive) {\n          item.classList.add('active');\n        }\n      });\n    });\n  });\n</script>",
+        "executeCode": true,
+        "signature": "muzi_faq_001",
+        "user_id": 1,
+        "time": 1735693009
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "zeny_faq_container",
+      "name": "container",
+      "parent": "zeny_faq_section",
+      "children": [
+        "zeny_faq_code"
+      ],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "zeny_faq_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "zeny_faq_container"
+      ],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "Muži FAQ | MaxHair"
+    },
+    {
+      "id": "zeny_cta_code",
+      "name": "code",
+      "parent": "zeny_cta_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- CTA SEKCE -->\n<section class=\"zeny-cta-section\">\n  <div class=\"zeny-cta-content\">\n    <h2 class=\"cta-title\">Připraveni získat zpět husté vlasy?</h2>\n    <p class=\"cta-description\">Získejte bezplatnou konzultaci a zjistěte, zda je transplantace vhodná právě pro vás.</p>\n    <div class=\"cta-buttons\">\n      <a href=\"/kontakt\" class=\"btn-primary\">Bezplatná konzultace</a>\n      <a href=\"/#cenik\" class=\"btn-secondary\">Zjistit cenu</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  .zeny-cta-section {\n    width: 100%;\n    max-width: 100vw;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: linear-gradient(135deg, rgba(90, 69, 44, 0.95) 0%, rgba(0, 0, 0, 0.9) 100%);\n    text-align: center;\n  }\n\n  .zeny-cta-content {\n    max-width: 800px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .cta-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 800;\n    color: var(--white);\n    margin: 0 0 24px 0;\n    letter-spacing: -1px;\n  }\n\n  .cta-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(18px, 2.5vw, 22px);\n    color: rgba(255, 255, 255, 0.9);\n    margin: 0 0 48px 0;\n    line-height: 1.6;\n  }\n\n  .cta-buttons {\n    display: flex;\n    gap: 20px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 10px;\n    transition: all 0.3s ease;\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-3px);\n    box-shadow: 0 10px 35px rgba(229, 193, 88, 0.5);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: transparent;\n    color: var(--white);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--white);\n    border-radius: 10px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--white);\n    color: var(--black);\n    transform: translateY(-3px);\n  }\n\n  @media (max-width: 768px) {\n    .zeny-cta-section {\n      padding: 60px 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "muzi_cta_001",
+        "user_id": 1,
+        "time": 1735693010
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "zeny_cta_container",
+      "name": "container",
+      "parent": "zeny_cta_section",
+      "children": [
+        "zeny_cta_code"
+      ],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "zeny_cta_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "zeny_cta_container"
+      ],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "Muži CTA | MaxHair"
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "",
+  "version": "2.0",
+  "globalClasses": [],
+  "globalElements": []
+}

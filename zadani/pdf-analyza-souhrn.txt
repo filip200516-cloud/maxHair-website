@@ -1,0 +1,23 @@
+SOUHRN ANALÝZY PDF SOUBORŮ
+============================================================
+
+abclinic.com:
+  Celkem PDF: 7
+  Analyzované klíčové soubory: 1
+
+hairagain.cz:
+  Celkem PDF: 39
+  Analyzované klíčové soubory: 9
+
+newhair.cz:
+  Celkem PDF: 118
+  Analyzované klíčové soubory: 1
+
+premier-clinic.cz:
+  Celkem PDF: 4
+  Analyzované klíčové soubory: 0
+
+transplantacevlasuturecko.cz:
+  Celkem PDF: 64
+  Analyzované klíčové soubory: 1
+

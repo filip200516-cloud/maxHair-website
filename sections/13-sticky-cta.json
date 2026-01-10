@@ -1,0 +1,42 @@
+{
+  "content": [
+    {
+      "id": "sticky_code",
+      "name": "code",
+      "parent": "sticky_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- STICKY CTA -->\n<div class=\"sticky-cta\" id=\"sticky-cta\">\n  <a href=\"#kontakt\" class=\"sticky-button\">\n    <span class=\"sticky-icon\">📞</span>\n    <span class=\"sticky-text\">Bezplatná konzultace</span>\n  </a>\n</div>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #A67C00;\n    --dark-brown: #5A452C;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #CCCCCC;\n  }\n\n  .sticky-cta {\n    position: fixed;\n    bottom: 32px;\n    right: 32px;\n    top: auto;\n    left: auto;\n    z-index: 998;\n    animation: slideInRight 0.5s ease-out;\n  }\n\n  .sticky-button {\n    display: flex;\n    align-items: center;\n    gap: 12px;\n    padding: 18px 32px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 700;\n    text-decoration: none;\n    border-radius: 50px;\n    box-shadow: 0 8px 32px rgba(229, 193, 88, 0.5);\n    transition: all 0.3s ease;\n  }\n\n  .sticky-button:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-4px) scale(1.05);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.6);\n  }\n\n  .sticky-icon {\n    font-size: 24px;\n    animation: pulse 2s ease-in-out infinite;\n  }\n\n  .sticky-text {\n    white-space: nowrap;\n  }\n\n  @keyframes slideInRight {\n    from {\n      opacity: 0;\n      transform: translateX(100px);\n    }\n    to {\n      opacity: 1;\n      transform: translateX(0);\n    }\n  }\n\n  @keyframes pulse {\n    0%, 100% {\n      transform: scale(1);\n    }\n    50% {\n      transform: scale(1.15);\n    }\n  }\n\n  /* Hide on mobile */\n  @media (max-width: 768px) {\n    .sticky-cta {\n      bottom: 20px;\n      right: 20px;\n    }\n    .sticky-button {\n      padding: 16px 24px;\n      font-size: 14px;\n    }\n    .sticky-text {\n      display: none;\n    }\n    .sticky-icon {\n      font-size: 28px;\n    }\n  }\n\n  /* Hide when in contact section */\n  .sticky-cta.hide {\n    opacity: 0;\n    pointer-events: none;\n  }\n</style>\n\n<script>\n  // Hide sticky CTA when in contact section (pokud existuje)\n  (function() {\n    const stickyCta = document.getElementById('sticky-cta');\n    const kontaktSection = document.getElementById('kontakt');\n    \n    if (!stickyCta) return;\n    \n    // Pokud není kontakt sekce, nech tlačítko vždy viditelné\n    if (!kontaktSection) return;\n    \n    window.addEventListener('scroll', function() {\n      const kontaktRect = kontaktSection.getBoundingClientRect();\n      const isInKontakt = kontaktRect.top < window.innerHeight && kontaktRect.bottom > 0;\n      \n      if (isInKontakt) {\n        stickyCta.classList.add('hide');\n      } else {\n        stickyCta.classList.remove('hide');\n      }\n    });\n  })();\n</script>",
+        "executeCode": true,
+        "signature": "sticky_maxhair",
+        "user_id": 1,
+        "time": 1735689612
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "sticky_container",
+      "name": "container",
+      "parent": "sticky_section",
+      "children": [
+        "sticky_code"
+      ],
+      "settings": {}
+    },
+    {
+      "id": "sticky_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "sticky_container"
+      ],
+      "settings": {},
+      "label": "Sticky CTA | MaxHair"
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "",
+  "version": "2.0",
+  "globalClasses": [],
+  "globalElements": []
+}

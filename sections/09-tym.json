@@ -1,0 +1,46 @@
+{
+  "content": [
+    {
+      "id": "tym_code",
+      "name": "code",
+      "parent": "tym_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- NÁŠ TÝM SECTION -->\n<section class=\"tym-section\" id=\"tym\">\n  <div class=\"tym-content\">\n    <div class=\"section-badge\">Náš tým</div>\n    <h2 class=\"section-title\">Náš Tým</h2>\n    <p class=\"section-description\">Zkušení lékaři s mezinárodními certifikacemi a letitou praxí v oblasti transplantace vlasů. Náš tým tvoří certifikovaní chirurgové a asistenté, kteří společně provedli tisíce úspěšných zákroků metodami DHI a Sapphire FUE.</p>\n    \n    <div class=\"tym-image-wrapper\">\n      <img src=\"https://mediumseagreen-gaur-406121.hostingersite.com/wp-content/uploads/2025/12/staff.jpg\" alt=\"Tým MaxHair\" class=\"tym-image\" />\n    </div>\n    \n    <a href=\"/o-nas\" class=\"btn-tym\">Poznejte náš tým</a>\n  </div>\n</section>\n\n<style>\n  .tym-section {\n    width: 100%;\r\n    max-width: 100vw;\r\n    box-sizing: border-box;\n    background: var(--white);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: clamp(50px, 8vw, 80px) clamp(20px, 4vw, 60px);\n  }\n\n  .tym-content {\n    max-width: 1000px;\n    width: 100%;\n    text-align: center;\n  }\n\n  .section-badge {\n    display: inline-block;\n    padding: clamp(6px, 1vw, 8px) clamp(16px, 2.5vw, 24px);\n    background: rgba(229, 193, 88, 0.1);\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(11px, 1.3vw, 13px);\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: clamp(16px, 2vw, 24px);\n    border-radius: 30px;\n    border: 1px solid var(--primary-gold);\n  }\n\n  .section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(32px, 4vw, 48px);\n    font-weight: 800;\n    color: var(--dark-brown);\n    margin: 0 0 clamp(16px, 2vw, 24px) 0;\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(15px, 2vw, 18px);\n    color: var(--dark-brown);\n    opacity: 0.7;\n    line-height: 1.7;\n    margin: 0 0 clamp(40px, 5vw, 60px) 0;\n    max-width: 800px;\n    margin-left: auto;\n    margin-right: auto;\n  }\n\n  .tym-image-wrapper {\n    margin: 0 0 clamp(40px, 5vw, 60px) 0;\n    border-radius: clamp(20px, 2.5vw, 24px);\n    overflow: hidden;\n    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);\n    transition: all 0.3s ease;\n    max-width: 1000px;\n    margin-left: auto;\n    margin-right: auto;\n  }\n\n  .tym-image-wrapper:hover {\n    box-shadow: 0 20px 60px rgba(229, 193, 88, 0.25);\n    transform: translateY(-4px);\n  }\n\n  .tym-image {\n    width: 100%;\n    max-height: clamp(300px, 35vw, 450px);\n    height: clamp(300px, 35vw, 450px);\n    display: block;\n    object-fit: cover;\n    object-position: center;\n  }\n\n  .btn-tym {\n    display: inline-block;\n    padding: clamp(14px, 1.8vw, 18px) clamp(32px, 4vw, 48px);\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(15px, 1.8vw, 17px);\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: clamp(10px, 1.2vw, 12px);\n    transition: all 0.3s ease;\n    box-shadow: 0 4px 16px rgba(229, 193, 88, 0.3);\n  }\n\n  .btn-tym:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-3px);\n    box-shadow: 0 10px 35px rgba(229, 193, 88, 0.5);\n  }\n\n  @media (max-width: 768px) {\n    .tym-section {\n      padding: clamp(40px, 6vw, 60px) clamp(20px, 4vw, 24px);\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "tym_maxhair",
+        "user_id": 1,
+        "time": 1735689608
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "tym_container",
+      "name": "container",
+      "parent": "tym_section",
+      "children": [
+        "tym_code"
+      ],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "tym_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "tym_container"
+      ],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "Náš tým | MaxHair"
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "",
+  "version": "2.0",
+  "globalClasses": [],
+  "globalElements": []
+}

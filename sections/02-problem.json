@@ -1,0 +1,46 @@
+{
+  "content": [
+    {
+      "id": "problem_code",
+      "name": "code",
+      "parent": "problem_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- PROBLEM SECTION -->\n<section class=\"problem-section\">\n  <div class=\"problem-content\">\n    <div class=\"problem-badge\">Potýkáte se s vypadáváním vlasů?</div>\n    <h2 class=\"problem-title\">Znáte ten pocit...</h2>\n    <div class=\"problem-grid\">\n      <div class=\"problem-card\">\n        <div class=\"problem-icon\">😔</div>\n        <h3>Ztráta sebedůvěry</h3>\n        <p>Vypadávání vlasů ovlivňuje vaše sebevědomí a psychickou pohodu každý den.</p>\n      </div>\n      <div class=\"problem-card\">\n        <div class=\"problem-icon\">💸</div>\n        <h3>Neúspěšné léčby</h3>\n        <p>Utratili jste tisíce za šampóny a doplňky, které vám nepomohly.</p>\n      </div>\n      <div class=\"problem-card\">\n        <div class=\"problem-icon\">🏥</div>\n        <h3>Drahé řešení v ČR</h3>\n        <p>Transplantace v českých klinikách stojí 150 000 Kč a více - příliš drahé.</p>\n      </div>\n    </div>\n    <a href=\"#reseni\" class=\"btn-primary\">Máme řešení</a>\n  </div>\n</section>\n\n<style>\n  .problem-section {\n    width: 100%;\r\n    max-width: 100vw;\r\n    box-sizing: border-box;\n    min-height: 60vh;\n    background: linear-gradient(135deg, #2c2416 0%, #1a1410 100%);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: clamp(40px, 8vw, 80px);\n  }\n\n  .problem-content {\n    max-width: 1200px;\n    width: 100%;\n    text-align: center;\n  }\n\n  .problem-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: rgba(229, 193, 88, 0.2);\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 24px;\n    border-radius: 30px;\n    border: 1px solid var(--primary-gold);\n  }\n\n  .problem-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 800;\n    color: var(--white);\n    margin: 0 0 60px 0;\n    letter-spacing: -1px;\n  }\n\n  .problem-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 40px;\n    margin-bottom: 60px;\n  }\n\n  .problem-card {\n    background: rgba(255, 255, 255, 0.05);\n    border: 1px solid rgba(229, 193, 88, 0.2);\n    border-radius: 16px;\n    padding: 40px 32px;\n    transition: all 0.3s ease;\n  }\n\n  .problem-card:hover {\n    background: rgba(255, 255, 255, 0.08);\n    border-color: var(--primary-gold);\n    transform: translateY(-8px);\n  }\n\n  .problem-icon {\n    font-size: 48px;\n    margin-bottom: 20px;\n  }\n\n  .problem-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 22px;\n    font-weight: 700;\n    color: var(--white);\n    margin: 0 0 16px 0;\n  }\n\n  .problem-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: rgba(255, 255, 255, 0.7);\n    line-height: 1.6;\n    margin: 0;\n  }\n\n  @media (max-width: 992px) {\n    .problem-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "problem_maxhair",
+        "user_id": 1,
+        "time": 1735689601
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "problem_container",
+      "name": "container",
+      "parent": "problem_section",
+      "children": [
+        "problem_code"
+      ],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "problem_section",
+      "name": "section",
+      "parent": 0,
+      "children": [
+        "problem_container"
+      ],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "Problem | MaxHair"
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "",
+  "version": "2.0",
+  "globalClasses": [],
+  "globalElements": []
+}
