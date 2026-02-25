@@ -1,0 +1,9 @@
+# Video-to-Cursor tools - Python dependencies
+# Install: pip install -r requirements-video.txt
+
+# Method 1: llm-video-frames (best for GPT-4o)
+llm>=0.25
+llm-video-frames
+
+# Method 3: Whisper for audio/transcript
+# whisper-ctranslate2  # Uncomment if needed

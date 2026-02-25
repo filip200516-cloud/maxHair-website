@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Config files (obsahují citlivé údaje)
+config.json
+přístupy.md
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Cursor
+.cursor-initial-prompt.md
+
+# Temporary files
+*.tmp
+*.temp

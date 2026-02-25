@@ -1,0 +1,10 @@
+<div class="packeta_header">
+	<div n:class="packeta_logo, $isCzechLocale ? 'packeta_logo-cs'">
+		{if true === $isCzechLocale}
+			<img src="{$logoZasilkovna}" alt="{$translations['packeta']}">
+		{else}
+			<img src="{$logoPacketa}" alt="{$translations['packeta']}">
+		{/if}
+	</div>
+	<h1 n:ifcontent>{$translations['title']}</h1>
+</div>

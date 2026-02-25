@@ -1,0 +1,40 @@
+# WordPress citlivé soubory
+wp-config.php
+.htaccess
+
+# Uploads (příliš velké pro Git)
+wp-content/uploads/
+
+# Cache a logy
+wp-content/cache/
+wp-content/wflogs/
+*.log
+debug.log
+error_log
+
+# Systémové soubory
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Node
+node_modules/
+
+# Zálohy
+*.bak
+*.backup
+*~
+
+# Video-to-Cursor extracted frames (regenerate as needed)
+device-frames/
+
+# Video-to-Cursor source videos (too large for GitHub 100MB limit)
+video-to-cursor/*.MP4
+video-to-cursor/*.mp4
+video-to-cursor/*.mov

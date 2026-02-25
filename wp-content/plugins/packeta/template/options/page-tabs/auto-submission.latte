@@ -1,0 +1,36 @@
+<form n:name=$form>
+	<table class="form-table packetery_settings" role="presentation">
+		<tr>
+			<th scope="row">
+				<label n:name=allow />
+			</th>
+			<td>
+				<input n:name=allow class="packetery-js-wizard-auto-submission-enabled">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<div class="packetery-help-block">
+					<p>{$translations['packetAutoSubmissionMappingDescription']}</p>
+				</div>
+			</td>
+		</tr>
+
+		<tbody class="packetery-js-wizard-auto-submission-mapping">
+		{foreach $form[payment_method_events]->getComponents() as $paymentMethodEvents}
+			<tr>
+				<th scope="row">
+					<label n:name=$paymentMethodEvents[event] />
+				</th>
+				<td>
+					<select n:name=$paymentMethodEvents[event]></select>
+				</td>
+			</tr>
+		{/foreach}
+		</tbody>
+
+	</table>
+	<p class="submit">
+		<button n:name=save class="button button-primary packetery-js-wizard-settings-save-button">{$translations['saveChanges']}</button>
+	</p>
+</form>

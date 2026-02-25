@@ -1,0 +1,157 @@
+/* ===== Mockups Product Editor ===== */
+.mockup-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mockup-editor h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Výběr mockupu */
+.mockup-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.mockup-selector img {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: all .2s ease;
+}
+
+.mockup-selector img.active {
+  border-color: #2271b1;
+  box-shadow: 0 0 8px rgba(34,113,177,0.5);
+}
+
+/* Upload printu */
+.print-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.print-upload button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background .2s;
+}
+
+.print-upload button:hover {
+  background: #eee;
+}
+
+/* Náhled mockupu */
+.mockup-preview {
+  position: relative;
+  display: inline-block;
+  max-width: 500px;
+  width: 100%;
+}
+
+.mockup-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.mockup-print {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: move;
+  max-width: 80%;
+  max-height: 80%;
+  pointer-events: none; /* jen pro náhled */
+}
+
+/* Render tlačítko */
+.render-btn {
+  background: #2271b1;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background .2s;
+}
+
+.render-btn:hover {
+  background: #195c8d;
+}
+
+/* ===== Galerie renderů (mockup_render CPT) ===== */
+.mockup-renders {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.mockup-renders img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.mockup-renders img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Per-image grid v metaboxu produktu */
+#mockup_multi_sizes .ms-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:12px;
+}
+#mockup_multi_sizes .ms-card{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  box-shadow:0 1px 2px rgba(0,0,0,.04);
+  overflow:hidden;
+  transition:box-shadow .12s ease, transform .12s ease;
+}
+#mockup_multi_sizes .ms-card:hover{
+  transform:translateY(-1px);
+  box-shadow:0 6px 16px rgba(0,0,0,.06);
+}
+#mockup_multi_sizes .ms-canvas{
+  width:100%;
+  height:auto;
+  display:block;
+  background:#f6f7f7;
+}
+#mockup_multi_sizes .ms-controls{
+  padding:10px 12px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-wrap:wrap;
+  border-top:1px solid #eef2f7;
+}
+#mockup_multi_sizes .ms-controls strong{
+  font-size:12px;
+  color:#374151;
+}
+#mockup_multi_sizes .ms-controls .ms-custom{
+  width:70px;
+}
+

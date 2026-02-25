@@ -1,0 +1,93 @@
+.editor-styles-wrapper .reacg-wrapper img,
+.reacg-wrapper img,
+.editor-styles-wrapper .reacg-wrapper ul,
+.reacg-wrapper ul,
+.editor-styles-wrapper .reacg-wrapper li,
+.reacg-wrapper li {
+  margin: 0;
+  padding: 0;
+}
+
+.reacg-wrapper li::marker {
+  content: "";
+}
+
+.editor-styles-wrapper .reacg-wrapper .reacg-settings input,
+.reacg-wrapper .reacg-settings input {
+  border: none;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+.editor-styles-wrapper .MuiSwitch-switchBase input[type=checkbox] {
+  position: absolute !important;
+}
+
+.reacg-lightbox.yarl__portal.yarl__portal_open {
+  z-index: 1000000;
+}
+
+.react-lightbox__background div,
+.reacg-slideshow div {
+  box-sizing: content-box;
+}
+
+/* For Elementor and Divi builder. */
+.elementor-widget-container .button-primary,
+.reacg_module .button-primary {
+  background: #2271b1;
+  border-color: #2271b1;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 3px;
+}
+
+
+.elementor-widget-container .button-primary:hover,
+.reacg_module .button-primary:hover {
+  background: #135e96;
+  border-color: #135e96;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.elementor-widget-container .button-secondary,
+.reacg_module .button-secondary {
+  background: #f6f7f7;
+  border-color: #2271b1;
+  color: #2271b1;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 3px;
+}
+
+.elementor-widget-container .button-secondary:hover,
+.reacg_module .button-secondary:hover {
+  background: #f0f0f1;
+  border-color: #0a4b78;
+  color: #0a4b78;
+  border-radius: 3px;
+}
+/* Remove unnecessary empty are from the bottom when there is no data to show.*/
+.reacg-elementor-icon.elementor-widget-empty-icon {
+  display: none !important;
+}
+/* Remove empty widget background if the gallery options are hidden.*/
+.elementor-widget-reacg-elementor.elementor-widget-empty {
+  background-color: transparent !important;
+}
+
+/* Divi builder module. */
+.et-db #et-boc .et-l .et-fb-modules-list li[class^="reacg"] svg {
+  padding-bottom: 6px;
+  margin-top: 5px;
+}
+
+/* WP Bakery builder element. */
+.vc_element-icon.reacg-icon {
+  background-image: url(../images/icon.svg);
+}

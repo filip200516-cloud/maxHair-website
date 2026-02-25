@@ -1,0 +1,159 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-10T17:16:57+00:00\n"
+"PO-Revision-Date: 2025-06-10 19:18+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+"X-Domain: wpify-core\n"
+
+#: src/Abstracts/AbstractModule.php:242 src/Abstracts/AbstractPlugin.php:187
+#: src/Admin/Settings.php:670
+msgid "Settings"
+msgstr "Nastavenia"
+
+#: src/Abstracts/AbstractPlugin.php:191
+msgid "Get more plugins and support"
+msgstr "Viac pluginov a podpora"
+
+#: src/Abstracts/AbstractPlugin.php:216 src/Admin/Settings.php:613
+#: src/Admin/Settings.php:639 src/Admin/Settings.php:844
+#: src/Admin/Settings.php:965
+msgid "Documentation"
+msgstr "Dokumentácia"
+
+#: src/Abstracts/AbstractPlugin.php:238
+msgid ""
+"Your %1$s plugin licence is not activated yet. Please <a "
+"href=\"%2$s\">activate the domain</a> by connecting it with your WPify "
+"account!"
+msgstr ""
+"Vaša licencia pre plugin %1$s ešte nie je aktivovaná. Prosím, <a "
+"href=\"%2$s\">aktivujte doménu</a> prepojením s vaším WPify účtom!"
+
+#: src/Admin/Settings.php:48
+msgid "WPify Woo"
+msgstr "WPify Woo"
+
+#: src/Admin/Settings.php:394
+msgid "WPify Plugins"
+msgstr "WPify Pluginy"
+
+#: src/Admin/Settings.php:395
+msgid "WPify"
+msgstr "WPify"
+
+#: src/Admin/Settings.php:406
+msgid "WPify Plugins Dashboard"
+msgstr "Hlavný panel WPify pluginov"
+
+#: src/Admin/Settings.php:407 src/Admin/Settings.php:903
+msgid "Dashboard"
+msgstr "Hlavný panel"
+
+#: src/Admin/Settings.php:415
+msgid "WPify Plugins Support"
+msgstr "Podpora WPify pluginov"
+
+#: src/Admin/Settings.php:416 src/Admin/Settings.php:968
+msgid "Support"
+msgstr "Podpora"
+
+#: src/Admin/Settings.php:512
+msgid "Installed plugins"
+msgstr "Nainštalované pluginy"
+
+#: src/Admin/Settings.php:518
+msgid "Our other plugins"
+msgstr "Naše ďalšie pluginy"
+
+#: src/Admin/Settings.php:586
+msgid "Please, activate the license."
+msgstr "Prosím, aktivujte licenciu."
+
+#: src/Admin/Settings.php:596
+msgid "New version %s available."
+msgstr "Nová verzia %s k dispozícii."
+
+#: src/Admin/Settings.php:657
+msgid "Deactivate"
+msgstr "Deaktivovať"
+
+#: src/Admin/Settings.php:682
+msgid "Activate"
+msgstr "Aktivovať"
+
+#: src/Admin/Settings.php:694
+msgid "Get plugin"
+msgstr "Získať plugin"
+
+#: src/Admin/Settings.php:732
+msgid "WPify News"
+msgstr "Novinky WPify"
+
+#: src/Admin/Settings.php:807
+msgid "How do the pricing plans work?"
+msgstr "Ako fungujú cenové plány?"
+
+#: src/Admin/Settings.php:808
+msgid ""
+"When you purchase the plugin, you receive support and updates for one year. "
+"After this period, the license will automatically renew."
+msgstr ""
+"Keď si zakúpite plugin, získate podporu a aktualizácie na jeden rok. Po "
+"uplynutí tejto doby sa licencia automaticky obnoví."
+
+#: src/Admin/Settings.php:811
+msgid "Will the plugin work if I do not renew my license?"
+msgstr "Bude plugin fungovať, ak neobnovím svoju licenciu?"
+
+#: src/Admin/Settings.php:812
+msgid ""
+"Yes, the plugin will continue to work, but you will no longer have access to "
+"updates and support."
+msgstr ""
+"Áno, plugin bude naďalej fungovať, ale už nebudete mať prístup k "
+"aktualizáciám a podpore."
+
+#: src/Admin/Settings.php:815
+msgid "I need a feature that the plugin does not currently support."
+msgstr "Potrebujem funkciu, ktorú plugin zatiaľ nepodporuje."
+
+#: src/Admin/Settings.php:816
+msgid "Let us know, and we will consider adding the requested functionality."
+msgstr "Dajte nám vedieť a zvážime pridanie požadovanej funkcie."
+
+#: src/Admin/Settings.php:822
+msgid "Support page"
+msgstr "Stránka podpory"
+
+#: src/Admin/Settings.php:829
+msgid "Frequently Asked Questions"
+msgstr "Často kladené otázky"
+
+#: src/Admin/Settings.php:841
+msgid "Do you have any other questions?"
+msgstr "Máte ešte nejaké otázky?"
+
+#: src/Admin/Settings.php:842
+msgid ""
+"Check out the plugin documentation to see if your question is already "
+"answered."
+msgstr ""
+"Pozrite si dokumentáciu pluginu, či už neobsahuje odpoveď na vašu otázku."
+
+#: src/Admin/Settings.php:850
+msgid "If you haven’t found the answer, email us at:"
+msgstr "Ak ste nenašli odpoveď, napíšte nám na e-mail:"
+
+#~ msgid "Your license has been activated."
+#~ msgstr "Vaša licencia bola aktivovaná."
+
+#~ msgid "Your license has been deactivated."
+#~ msgstr "Vaša licencia bola deaktivovaná."

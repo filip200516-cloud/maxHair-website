@@ -1,0 +1,19 @@
+============================================
+  JMENOVÁNÍ OBRÁZKŮ PRO SEKCI „JAK PROBÍHÁ TRANSPLANTACE?“
+============================================
+
+Umístěte svých 5 obrázků do této složky (assets) a pojmenujte je PŘESNĚ takto:
+
+  1. proces-1-konzultace.png   … krok Konzultace
+  2. proces-2-priprava.png    … krok Příprava
+  3. proces-3-zakrok.png      … krok Zákrok
+  4. proces-4-hojeni.png      … krok Hojení
+  5. proces-5-rust.png        … krok Růst
+
+Cesta k této složce:
+  d:\Software\Apps\MaxHair.cz-main\assets
+
+Po zkopírování obrázků s těmito názvy obnovte stránku:
+  http://localhost:3000/transplantace-vlasu-muzi
+
+Obrázky se zobrazí v sekci #proces.

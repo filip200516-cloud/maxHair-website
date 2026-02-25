@@ -1,0 +1,27 @@
+============================================
+  NAHRÁT TĚCHTO 5 OBRÁZKŮ NA MAXHAIR.CZ
+============================================
+
+Stránka "Jak probíhá transplantace?" očekává obrázky na těchto adresách:
+
+  Společné (muži i ženy, kroky 1–4):
+  https://maxhair.cz/wp-content/uploads/2026/02/proces-1-konzultace.png
+  https://maxhair.cz/wp-content/uploads/2026/02/proces-2-priprava.png
+  https://maxhair.cz/wp-content/uploads/2026/02/proces-3-zakrok.png
+  https://maxhair.cz/wp-content/uploads/2026/02/proces-4-hojeni.png
+
+  Krok 5 – pouze ženy:
+  https://maxhair.cz/wp-content/uploads/2026/02/proces-5-rust.png
+
+  Krok 5 – pouze muži (stejná barva pozadí jako kroky 1–4):
+  https://maxhair.cz/wp-content/uploads/2026/02/proces-5-rust-muzi.png
+
+CO UDĚLAT:
+1. Přihlaste se do WordPressu na maxhair.cz (wp-admin).
+2. Média → Přidat nové.
+3. Nahrajte ze složky assets/: proces-1-konzultace.png … proces-4-hojeni.png, proces-5-rust.png, proces-5-rust-muzi.png.
+4. DŮLEŽITÉ: Ponechejte přesně tyto názvy souborů (WordPress je uloží do 2026/02/ a URL budou sedět).
+5. proces-5-rust-muzi.png musí mít stejné světlé pozadí jako ostatní procesní obrázky.
+6. Po nahrání obnovte stránky Transplantace vlasů pro muže a pro ženy.
+
+Pokud WordPress soubory přejmenuje (např. přidá čísla), zkopírujte z knihovny médií URL každého obrázku a v Bricks v sekci Proces u každého obrázku vložte tu URL do pole Odkaz obrázku.

@@ -1,0 +1,36 @@
+{
+  "wordpress": {
+    "url": "https://your-wordpress-site.com",
+    "username": "your-username",
+    "password": "",
+    "applicationPassword": ""
+  },
+  "bricks": {
+    "licenseKey": "d663003f17eaefce68fb6eee304b63e6",
+    "pluginZip": "bricks.2.0.zip"
+  },
+  "local": {
+    "projectPath": "C:\\Users\\YourUser\\Documents\\YourProject",
+    "pagesPath": "pages",
+    "sectionsPath": "sections",
+    "componentsPath": "."
+  },
+  "mapping": {
+    "pages": {
+      "about": "about",
+      "contact": "contact"
+    },
+    "components": {
+      "header": "header",
+      "footer": "footer",
+      "homepage": "homepage"
+    }
+  },
+  "templateNames": {
+    "header": "Header",
+    "footer": "Footer"
+  },
+  "bricksMetaKey": "_bricks_page_content"
+}
+
+

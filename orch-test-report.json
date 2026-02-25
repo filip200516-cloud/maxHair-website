@@ -1,0 +1,37 @@
+{
+  "testRun": {
+    "timestamp": "2026-02-17",
+    "url": "http://localhost:3000",
+    "mode": "orchestrator-fix",
+    "duration": "single pass"
+  },
+  "tests": [
+    { "id": "hero-001", "name": "Hero section text readable", "status": "PASS", "note": "Overlay div re-added for contrast" },
+    { "id": "hero-002", "name": "Hero CTA Prohlédnout výsledky → /reference", "status": "PASS", "note": "Link present in JSON" },
+    { "id": "content-001", "name": "Norwood scale illustration", "status": "PASS", "note": "Wikimedia Commons image integrated" },
+    { "id": "nav-001", "name": "Homepage loads", "status": "PASS" },
+    { "id": "nav-002", "name": "Transplantace muži page loads", "status": "PASS" }
+  ],
+  "fixesApplied": [
+    {
+      "issue": "Hero text readability – background overlaying text",
+      "type": "html",
+      "file": "pages/transplantace-vlasu-muzi.json",
+      "change": "Re-added <div class=\"hero-overlay\"></div> between hero-bg-wrapper and content (had been removed when replacing video with image)",
+      "specialist": "fix-executor / html structure"
+    },
+    {
+      "issue": "Missing Norwood scale illustration",
+      "type": "content",
+      "file": "pages/transplantace-vlasu-muzi.json",
+      "change": "Replaced placeholder with Wikimedia Commons Norwood scale image (CC0), added .norwood-image-wrap and caption",
+      "specialist": "fix-executor / content"
+    }
+  ],
+  "summary": {
+    "total": 5,
+    "passed": 5,
+    "failed": 0,
+    "fixesApplied": 2
+  }
+}

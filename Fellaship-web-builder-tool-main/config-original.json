@@ -1,0 +1,52 @@
+{
+  "wordpress": {
+    "url": "https://maxhair.cz",
+    "username": "kozar.filip@email.cz",
+    "applicationPassword": "fDtz 4fQx Vxtb VYiv 6xPs QXu5"
+  },
+  "ssh": {
+    "host": "92.113.19.58",
+    "port": 65002,
+    "username": "u946900008",
+    "password": "123SSH_Fellaship"
+  },
+  "bricks": {
+    "licenseKey": "d663003f17eaefce68fb6eee304b63e6",
+    "pluginZip": "bricks.2.0.zip"
+  },
+  "local": {
+    "projectPath": "d:\\Software\\Apps\\MaxHair.cz-main",
+    "pagesPath": "pages",
+    "sectionsPath": "sections",
+    "componentsPath": "."
+  },
+  "mapping": {
+    "pages": {
+      "homepage": "homepage",
+      "o-nas": "o-nas",
+      "kontakt": "kontakt",
+      "reference": "reference",
+      "faq": "faq",
+      "transplantace-vlasu-muzi": "transplantace-vlasu-muzi",
+      "transplantace-vlasu-zeny": "transplantace-vlasu-zeny",
+      "transplantace-vousu": "transplantace-vousu",
+      "transplantace-oboci": "transplantace-oboci",
+      "prp-terapie": "prp-terapie",
+      "metoda-dhi": "metoda-dhi",
+      "metoda-sapphire-fue": "metoda-sapphire-fue",
+      "vop": "vop",
+      "gdpr": "gdpr",
+      "cookies": "cookies",
+      "dekujeme": "dekujeme"
+    },
+    "components": {
+      "header": "header-maxhair",
+      "footer": "footer-maxhair"
+    }
+  },
+  "templateNames": {
+    "header": "Header",
+    "footer": "Footer"
+  },
+  "bricksMetaKey": "_bricks_page_content"
+}

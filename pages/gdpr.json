@@ -1,0 +1,113 @@
+[
+  {
+    "id": "gdpr_hero_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "gdpr_hero_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "GDPR Hero | MaxHair"
+  },
+  {
+    "id": "gdpr_hero_container",
+    "name": "container",
+    "parent": "gdpr_hero_section",
+    "children": [
+      "gdpr_hero_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "gdpr_hero_code",
+    "name": "code",
+    "parent": "gdpr_hero_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- GDPR HERO SECTION -->\n<section class=\"gdpr-hero-section\">\n  <div class=\"gdpr-hero-content\">\n    <span class=\"mh-badge\">PRÁVNÍ DOKUMENTY</span>\n    <h1 class=\"hero-title\">Ochrana osobních údajů</h1>\n    <p class=\"hero-description\">MaxHair.cz - Zásady ochrany osobních údajů v souladu s GDPR</p>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #D4AF37;\n    --dark-gray: #1A1A1A;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #333333;\n  }\n\n  .gdpr-hero-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 50vh;\n    background: linear-gradient(135deg, var(--dark-gray) 0%, #3d2f1e 100%);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 120px 80px 80px 80px;\n    text-align: center;\n  }\n\n  .gdpr-hero-content {\n    max-width: 1000px;\n    width: 100%;\n  }\n\n  .section-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: rgba(229, 193, 88, 0.2);\n    color: #000000;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 24px;\n    border-radius: 30px;\n    border: 1px solid var(--primary-gold);\n  }\n\n  .hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 64px);\n    font-weight: 800;\n    color: var(--white);\n    margin: 0 0 24px 0;\n    letter-spacing: -1px;\n    line-height: 1.2;\n  }\n\n  .hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: rgba(255, 255, 255, 0.8);\n    margin: 0;\n    line-height: 1.6;\n  }\n\n  @media (max-width: 768px) {\n    .gdpr-hero-section {\n      padding: 100px 24px 60px 24px;\n      min-height: 100vh;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "c3b22df246ab0ae1b09fcf0362519b7f",
+      "user_id": 1,
+      "time": 1768569032
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "gdpr_content_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "gdpr_content_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "GDPR Content | MaxHair"
+  },
+  {
+    "id": "gdpr_content_container",
+    "name": "container",
+    "parent": "gdpr_content_section",
+    "children": [
+      "gdpr_content_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "gdpr_content_code",
+    "name": "code",
+    "parent": "gdpr_content_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- GDPR CONTENT SECTION -->\n<section class=\"gdpr-content-section\">\n  <div class=\"gdpr-content-wrapper\">\n    <div class=\"gdpr-content\">\n      \n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">1. Správce osobních údajů</h2>\n        <div class=\"gdpr-text\">\n          <p><strong>MaxHair.cz</strong></p>\n          <p>Izzet Paşa Mah. Yeni Yol Cad.<br/>Nurol Tower No: 3 / 303<br/>Şişli / ISTANBUL<br/>Turecko</p>\n          <p><strong>Kontaktní osoba pro ochranu osobních údajů:</strong><br/>Soukromá česká klientská podpora<br/>Email: info@maxhair.cz<br/>Telefon: +420 601 515 323</p>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">2. Účel zpracování osobních údajů</h2>\n        <div class=\"gdpr-text\">\n          <p>Osobní údaje zpracováváme za následujícími účely:</p>\n          <ul class=\"gdpr-list\">\n            <li><strong>Poskytování služeb:</strong> Zpracování objednávek, komunikace s klienty, organizace zákroků</li>\n            <li><strong>Komunikace:</strong> Odpovědi na dotazy, konzultace, informování o službách</li>\n            <li><strong>Platby:</strong> Zpracování plateb a fakturace</li>\n            <li><strong>Právní povinnosti:</strong> Plnění zákonných povinností (účetnictví, daně)</li>\n            <li><strong>Marketing:</strong> Odesílání informací o službách (pouze se souhlasem)</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">3. Rozsah zpracovaných údajů</h2>\n        <div class=\"gdpr-text\">\n          <p>Zpracováváme následující kategorie osobních údajů:</p>\n          <ul class=\"gdpr-list\">\n            <li><strong>Identifikační údaje:</strong> Jméno, příjmení, datum narození</li>\n            <li><strong>Kontaktní údaje:</strong> Email, telefon, adresa</li>\n            <li><strong>Údaje o službě:</strong> Informace o požadované službě, zdravotní stav (pokud je relevantní)</li>\n            <li><strong>Platební údaje:</strong> Informace o platbě (ne ukládáme čísla platebních karet)</li>\n            <li><strong>Technické údaje:</strong> IP adresa, cookies, údaje o prohlížeči</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">4. Právní základ zpracování</h2>\n        <div class=\"gdpr-text\">\n          <p>Osobní údaje zpracováváme na základě:</p>\n          <ul class=\"gdpr-list\">\n            <li><strong>Souhlas subjektu údajů</strong> - pro marketingové účely</li>\n            <li><strong>Plán smlouvy</strong> - pro poskytování služeb</li>\n            <li><strong>Právní povinnost</strong> - pro plnění zákonných povinností</li>\n            <li><strong>Oprávněný zájem</strong> - pro zlepšování služeb a komunikaci</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">5. Doba uchování údajů</h2>\n        <div class=\"gdpr-text\">\n          <p>Osobní údaje uchováváme:</p>\n          <ul class=\"gdpr-list\">\n            <li><strong>Po dobu trvání smluvního vztahu</strong> a následně po dobu potřebnou pro plnění právních povinností</li>\n            <li><strong>Účetní doklady:</strong> 10 let podle zákona</li>\n            <li><strong>Marketingové údaje:</strong> Do odvolání souhlasu</li>\n            <li><strong>Technické údaje:</strong> Podle nastavení cookies (viz <a href=\"/cookies\" class=\"gdpr-link\">Zásady cookies</a>)</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">6. Práva subjektu údajů</h2>\n        <div class=\"gdpr-text\">\n          <p>Máte právo:</p>\n          <ul class=\"gdpr-list\">\n            <li><strong>Právo na přístup</strong> - získat informace o zpracovávaných údajích</li>\n            <li><strong>Právo na opravu</strong> - opravit nepřesné údaje</li>\n            <li><strong>Právo na výmaz</strong> - požádat o smazání údajů (\"právo být zapomenut\")</li>\n            <li><strong>Právo na omezení zpracování</strong> - omezit zpracování údajů</li>\n            <li><strong>Právo na přenositelnost</strong> - získat údaje ve strukturovaném formátu</li>\n            <li><strong>Právo vznést námitku</strong> - proti zpracování údajů</li>\n            <li><strong>Právo odvolat souhlas</strong> - kdykoli odvolat souhlas se zpracováním</li>\n            <li><strong>Právo podat stížnost</strong> - u Úřadu pro ochranu osobních údajů</li>\n          </ul>\n          <p>Pro uplatnění práv nás kontaktujte na: <a href=\"mailto:info@maxhair.cz\" class=\"gdpr-link\">info@maxhair.cz</a></p>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">7. Předávání údajů třetím stranám</h2>\n        <div class=\"gdpr-text\">\n          <p>Osobní údaje můžeme předat:</p>\n          <ul class=\"gdpr-list\">\n            <li><strong>Poskytovatelům služeb:</strong> IT služby, hosting, platební brány (pouze v nezbytném rozsahu)</li>\n            <li><strong>Úřadům:</strong> Pokud to vyžaduje zákon</li>\n            <li><strong>Klinice v Istanbulu:</strong> Pro poskytování služeb (organizace zákroku)</li>\n          </ul>\n          <p>Údaje nepředáváme do třetích zemí mimo EU, kromě Turecka, kde probíhá zákrok.</p>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">8. Zabezpečení údajů</h2>\n        <div class=\"gdpr-text\">\n          <p>Pro zabezpečení osobních údajů používáme:</p>\n          <ul class=\"gdpr-list\">\n            <li>Šifrování dat při přenosu (SSL/TLS)</li>\n            <li>Bezpečné uložení údajů</li>\n            <li>Omezený přístup k údajům pouze oprávněným osobám</li>\n            <li>Pravidelné aktualizace bezpečnostních opatření</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">9. Cookies</h2>\n        <div class=\"gdpr-text\">\n          <p>Naše webové stránky používají cookies. Podrobné informace o používání cookies naleznete v <a href=\"/cookies\" class=\"gdpr-link\">Zásadách používání cookies</a>.</p>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">10. Kontakt</h2>\n        <div class=\"gdpr-text\">\n          <p>Pro dotazy ohledně ochrany osobních údajů nás kontaktujte:</p>\n          <p><strong>Email:</strong> <a href=\"mailto:info@maxhair.cz\" class=\"gdpr-link\">info@maxhair.cz</a><br/><strong>Telefon:</strong> <a href=\"tel:+420601515323\" class=\"gdpr-link\">+420 601 515 323</a></p>\n          <p><strong>Úřad pro ochranu osobních údajů:</strong><br/>Pplk. Sochora 27<br/>170 00 Praha 7<br/>Email: posta@uoou.cz<br/>Web: <a href=\"https://www.uoou.cz\" target=\"_blank\" rel=\"noopener\" class=\"gdpr-link\">www.uoou.cz</a></p>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">11. Změny zásad</h2>\n        <div class=\"gdpr-text\">\n          <p>Tyto zásady mohou být čas od času aktualizovány. Aktuální verze je vždy dostupná na této stránce. Datum poslední aktualizace: 1. ledna 2025.</p>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</section>\n\n<style>\n  .gdpr-content-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: auto;\n    background: var(--white);\n    padding: 80px 80px;\n  }\n\n  .gdpr-content-wrapper {\n    max-width: 1000px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .gdpr-content {\n    background: var(--white);\n  }\n\n  .gdpr-section {\n    margin-bottom: 60px;\n  }\n\n  .gdpr-section:last-child {\n    margin-bottom: 0;\n  }\n\n  .gdpr-section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(24px, 3vw, 32px);\n    font-weight: 700;\n    color: var(--primary-gold);\n    margin: 0 0 24px 0;\n    padding-bottom: 16px;\n    border-bottom: 2px solid var(--light-gray);\n  }\n\n  .gdpr-text {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(15px, 1.8vw, 17px);\n    line-height: 1.8;\n    color: var(--dark-gray);\n  }\n\n  .gdpr-text p {\n    margin: 0 0 20px 0;\n  }\n\n  .gdpr-text p:last-child {\n    margin-bottom: 0;\n  }\n\n  .gdpr-text strong {\n    font-weight: 600;\n    color: var(--dark-gray);\n  }\n\n  .gdpr-list {\n    margin: 20px 0 20px 30px;\n    padding: 0;\n    list-style: disc;\n  }\n\n  .gdpr-list li {\n    margin-bottom: 12px;\n    line-height: 1.7;\n  }\n\n  .gdpr-link {\n    color: var(--primary-gold);\n    text-decoration: underline;\n    transition: color 0.3s ease;\n  }\n\n  .gdpr-link:hover {\n    color: var(--secondary-gold);\n  }\n\n  @media (max-width: 768px) {\n    .gdpr-content-section {\n      padding: 60px 24px;\n    }\n\n    .gdpr-section {\n      margin-bottom: 40px;\n    }\n\n    .gdpr-list {\n      margin-left: 20px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "9c41794c0513ec3db2202842888f5812",
+      "user_id": 1,
+      "time": 1768569032
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "gdpr_cta_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "gdpr_cta_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "GDPR CTA | MaxHair"
+  },
+  {
+    "id": "gdpr_cta_container",
+    "name": "container",
+    "parent": "gdpr_cta_section",
+    "children": [
+      "gdpr_cta_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "gdpr_cta_code",
+    "name": "code",
+    "parent": "gdpr_cta_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- GDPR CTA SECTION -->\n<section class=\"gdpr-cta-section\">\n  <div class=\"gdpr-cta-content\">\n    <h2 class=\"cta-title\">Máte dotazy k ochraně osobních údajů?</h2>\n    <p class=\"cta-description\">Kontaktujte nás, rádi vám vše vysvětlíme</p>\n    <div class=\"cta-buttons\">\n      <a href=\"/kontakt\" class=\"btn-primary\">Kontaktovat nás</a>\n      <a href=\"/\" class=\"btn-secondary\">Zpět na homepage</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  .gdpr-cta-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 40vh;\n    background: var(--light-gray);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 80px;\n  }\n\n  .gdpr-cta-content {\n    max-width: 800px;\n    width: 100%;\n    text-align: center;\n  }\n\n  .cta-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(28px, 4vw, 40px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 16px 0;\n  }\n\n  .cta-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 18px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    margin: 0 0 40px 0;\n  }\n\n  .cta-buttons {\n    display: flex;\n    gap: 24px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 16px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 8px;\n    transition: all 0.3s ease;\n    box-shadow: 0 4px 16px rgba(229, 193, 88, 0.3);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-2px);\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 16px 40px;\n    background: transparent;\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--primary-gold);\n    border-radius: 8px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--primary-gold);\n    color: var(--black);\n  }\n\n  @media (max-width: 768px) {\n    .gdpr-cta-section {\n      padding: 60px 24px;\n    }\n\n    .cta-buttons {\n      flex-direction: column;\n      align-items: center;\n    }\n\n    .btn-primary,\n    .btn-secondary {\n      width: 100%;\n      max-width: 300px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "5549926fe82373bd94091d6ca40d21d3",
+      "user_id": 1,
+      "time": 1768569032
+    },
+    "themeStyles": []
+  }
+]

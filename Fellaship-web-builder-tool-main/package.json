@@ -1,0 +1,34 @@
+{
+  "name": "fellaship-web-builder-tool",
+  "version": "1.0.0",
+  "description": "Fellaship Web Builder Tool - Univerzální nástroj pro synchronizaci Bricks Builder s WordPress (Cursor AI-friendly)",
+  "main": "sync.js",
+  "type": "module",
+  "scripts": {
+    "pull": "node sync.js pull",
+    "push": "node sync.js push",
+    "install-bricks": "node sync.js install-bricks",
+    "setup": "node sync.js setup",
+    "auto-prompt": "node auto-prompt.js",
+    "setup-wp": "node setup-wordpress.js",
+    "dev": "node local-server.js",
+    "postinstall": "node auto-prompt.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "axios": "^1.6.0",
+    "form-data": "^4.0.0",
+    "fs-extra": "^11.1.1",
+    "ssh2-sftp-client": "^12.0.1"
+  },
+  "keywords": [
+    "wordpress",
+    "bricks",
+    "sync",
+    "fellaship",
+    "web-builder",
+    "bricks-builder"
+  ],
+  "author": "Fellaship",
+  "license": "MIT"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "staff_section",
+  "name": "section",
+  "parent": 0,
+  "children": ["staff_container"],
+  "settings": {
+    "_width": "100vw",
+    "padding": {
+      "top": "80px",
+      "bottom": "80px"
+    },
+    "backgroundColor": "#FFFFFF"
+  },
+  "label": "Staff Section"
+}

@@ -1,0 +1,113 @@
+[
+  {
+    "id": "cookies_hero_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "cookies_hero_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Cookies Hero | MaxHair"
+  },
+  {
+    "id": "cookies_hero_container",
+    "name": "container",
+    "parent": "cookies_hero_section",
+    "children": [
+      "cookies_hero_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "cookies_hero_code",
+    "name": "code",
+    "parent": "cookies_hero_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- COOKIES HERO SECTION -->\n<section class=\"cookies-hero-section\">\n  <div class=\"cookies-hero-content\">\n    <span class=\"mh-badge\">PRÁVNÍ DOKUMENTY</span>\n    <h1 class=\"hero-title\">Zásady používání cookies</h1>\n    <p class=\"hero-description\">Informace o používání cookies na webových stránkách MaxHair.cz</p>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #D4AF37;\n    --dark-gray: #1A1A1A;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #333333;\n  }\n\n  .cookies-hero-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 50vh;\n    background: linear-gradient(135deg, var(--dark-gray) 0%, #3d2f1e 100%);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 120px 80px 80px 80px;\n    text-align: center;\n  }\n\n  .cookies-hero-content {\n    max-width: 1000px;\n    width: 100%;\n  }\n\n  .section-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: rgba(229, 193, 88, 0.2);\n    color: #000000;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 24px;\n    border-radius: 30px;\n    border: 1px solid var(--primary-gold);\n  }\n\n  .hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 64px);\n    font-weight: 800;\n    color: var(--white);\n    margin: 0 0 24px 0;\n    letter-spacing: -1px;\n    line-height: 1.2;\n  }\n\n  .hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: rgba(255, 255, 255, 0.8);\n    margin: 0;\n    line-height: 1.6;\n  }\n\n  @media (max-width: 768px) {\n    .cookies-hero-section {\n      padding: 100px 24px 60px 24px;\n      min-height: 100vh;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "5dfdeecf91598dba19e311d56aa3d9fe",
+      "user_id": 1,
+      "time": 1768569031
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "cookies_content_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "cookies_content_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Cookies Content | MaxHair"
+  },
+  {
+    "id": "cookies_content_container",
+    "name": "container",
+    "parent": "cookies_content_section",
+    "children": [
+      "cookies_content_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "cookies_content_code",
+    "name": "code",
+    "parent": "cookies_content_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- COOKIES CONTENT SECTION -->\n<section class=\"cookies-content-section\">\n  <div class=\"cookies-content-wrapper\">\n    <div class=\"cookies-content\">\n      \n      <div class=\"cookies-section\">\n        <h2 class=\"cookies-section-title\">1. Co jsou cookies?</h2>\n        <div class=\"cookies-text\">\n          <p>Cookies jsou malé textové soubory, které se ukládají do vašeho zařízení (počítač, tablet, mobilní telefon) při návštěvě webových stránek. Cookies umožňují webovým stránkám zapamatovat si vaše preference a zlepšit tak vaši uživatelskou zkušenost.</p>\n          <p>Cookies samy o sobě neobsahují žádné osobní údaje a nemohou poškodit vaše zařízení ani soubory.</p>\n        </div>\n      </div>\n\n      <div class=\"cookies-section\">\n        <h2 class=\"cookies-section-title\">2. Jaké cookies používáme?</h2>\n        <div class=\"cookies-text\">\n          <p>Na našich webových stránkách používáme následující typy cookies:</p>\n          \n          <h3 class=\"cookies-subtitle\">2.1 Nezbytné cookies</h3>\n          <p>Tyto cookies jsou nutné pro fungování webových stránek a nelze je vypnout. Zajišťují základní funkce jako navigace, přístup k zabezpečeným oblastem webu a ukládání preferencí.</p>\n          <ul class=\"cookies-list\">\n            <li>Session cookies - pro udržení přihlášení</li>\n            <li>Bezpečnostní cookies - pro ochranu proti útokům</li>\n            <li>Preferenční cookies - pro uložení vašich nastavení</li>\n          </ul>\n\n          <h3 class=\"cookies-subtitle\">2.2 Analytické cookies</h3>\n          <p>Tyto cookies nám pomáhají pochopit, jak návštěvníci používají naše webové stránky. Shromažďují anonymní informace o počtu návštěvníků, nejnavštěvovanějších stránkách a způsobu navigace.</p>\n          <ul class=\"cookies-list\">\n            <li>Google Analytics - analýza návštěvnosti</li>\n            <li>Statistiky stránek - základní metriky</li>\n          </ul>\n          <p><strong>Použití:</strong> Tyto cookies používáme pouze se souhlasem uživatele.</p>\n\n          <h3 class=\"cookies-subtitle\">2.3 Marketingové cookies</h3>\n          <p>Tyto cookies se používají pro zobrazování relevantních reklam a měření efektivity marketingových kampaní.</p>\n          <ul class=\"cookies-list\">\n            <li>Reklamní cookies - pro personalizaci reklam</li>\n            <li>Sledovací cookies - pro měření konverzí</li>\n          </ul>\n          <p><strong>Použití:</strong> Tyto cookies používáme pouze se souhlasem uživatele.</p>\n        </div>\n      </div>\n\n      <div class=\"cookies-section\">\n        <h2 class=\"cookies-section-title\">3. Jak cookies spravovat?</h2>\n        <div class=\"cookies-text\">\n          <p>Můžete kdykoli změnit nastavení cookies ve vašem prohlížeči. Většina prohlížečů umožňuje:</p>\n          <ul class=\"cookies-list\">\n            <li>Blokovat všechny cookies</li>\n            <li>Blokovat pouze cookies třetích stran</li>\n            <li>Mazat existující cookies</li>\n            <li>Upozornit před uložením cookies</li>\n          </ul>\n          <p><strong>Návody pro jednotlivé prohlížeče:</strong></p>\n          <ul class=\"cookies-list\">\n            <li><strong>Google Chrome:</strong> Nastavení → Soukromí a zabezpečení → Cookies</li>\n            <li><strong>Mozilla Firefox:</strong> Možnosti → Soukromí a zabezpečení → Cookies</li>\n            <li><strong>Safari:</strong> Předvolby → Soukromí → Cookies</li>\n            <li><strong>Microsoft Edge:</strong> Nastavení → Cookies a oprávnění webu</li>\n          </ul>\n          <p><strong>Poznámka:</strong> Blokování cookies může ovlivnit funkčnost některých částí webových stránek.</p>\n        </div>\n      </div>\n\n      <div class=\"cookies-section\">\n        <h2 class=\"cookies-section-title\">4. Cookies třetích stran</h2>\n        <div class=\"cookies-text\">\n          <p>Některé cookies na našich stránkách jsou nastaveny třetími stranami, například:</p>\n          <ul class=\"cookies-list\">\n            <li><strong>Google Analytics</strong> - pro analýzu návštěvnosti</li>\n            <li><strong>Sociální sítě</strong> - pro sdílení obsahu (Facebook, Instagram)</li>\n            <li><strong>Reklamní sítě</strong> - pokud používáme reklamní služby</li>\n          </ul>\n          <p>Tyto cookies podléhají zásadám ochrany osobních údajů příslušných třetích stran.</p>\n        </div>\n      </div>\n\n      <div class=\"cookies-section\">\n        <h2 class=\"cookies-section-title\">5. Jak cookies odmítnout?</h2>\n        <div class=\"cookies-text\">\n          <p>Při první návštěvě našich webových stránek se zobrazí banner s informací o cookies. Můžete:</p>\n          <ul class=\"cookies-list\">\n            <li><strong>Přijmout všechny cookies</strong> - souhlasíte s použitím všech typů cookies</li>\n            <li><strong>Přijmout pouze nezbytné</strong> - souhlasíte pouze s cookies nutnými pro fungování webu</li>\n            <li><strong>Odmítnout marketingové cookies</strong> - odmítnete marketingové a analytické cookies</li>\n          </ul>\n          <p>Své preference můžete kdykoli změnit v nastavení cookies (odkaz v patičce webu).</p>\n        </div>\n      </div>\n\n      <div class=\"cookies-section\">\n        <h2 class=\"cookies-section-title\">6. Změny zásad</h2>\n        <div class=\"cookies-text\">\n          <p>Tyto zásady používání cookies mohou být čas od času aktualizovány. Aktuální verze je vždy dostupná na této stránce. Datum poslední aktualizace: 1. ledna 2025.</p>\n        </div>\n      </div>\n\n      <div class=\"cookies-section\">\n        <h2 class=\"cookies-section-title\">7. Kontakt</h2>\n        <div class=\"cookies-text\">\n          <p>Pro dotazy ohledně cookies nás kontaktujte:</p>\n          <p><strong>Email:</strong> <a href=\"mailto:Michaela@maxhair.cz\" class=\"cookies-link\">Michaela@maxhair.cz</a><br/><strong>Telefon:</strong> <a href=\"tel:+420601515323\" class=\"cookies-link\">+420 601 515 323</a></p>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</section>\n\n<style>\n  .cookies-content-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: auto;\n    background: var(--white);\n    padding: 80px 80px;\n  }\n\n  .cookies-content-wrapper {\n    max-width: 1000px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .cookies-content {\n    background: var(--white);\n  }\n\n  .cookies-section {\n    margin-bottom: 60px;\n  }\n\n  .cookies-section:last-child {\n    margin-bottom: 0;\n  }\n\n  .cookies-section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(24px, 3vw, 32px);\n    font-weight: 700;\n    color: var(--primary-gold);\n    margin: 0 0 24px 0;\n    padding-bottom: 16px;\n    border-bottom: 2px solid var(--light-gray);\n  }\n\n  .cookies-subtitle {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(20px, 2.5vw, 24px);\n    font-weight: 600;\n    color: var(--dark-gray);\n    margin: 32px 0 16px 0;\n  }\n\n  .cookies-text {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(15px, 1.8vw, 17px);\n    line-height: 1.8;\n    color: var(--dark-gray);\n  }\n\n  .cookies-text p {\n    margin: 0 0 20px 0;\n  }\n\n  .cookies-text p:last-child {\n    margin-bottom: 0;\n  }\n\n  .cookies-text strong {\n    font-weight: 600;\n    color: var(--dark-gray);\n  }\n\n  .cookies-list {\n    margin: 20px 0 20px 30px;\n    padding: 0;\n    list-style: disc;\n  }\n\n  .cookies-list li {\n    margin-bottom: 12px;\n    line-height: 1.7;\n  }\n\n  .cookies-link {\n    color: var(--primary-gold);\n    text-decoration: underline;\n    transition: color 0.3s ease;\n  }\n\n  .cookies-link:hover {\n    color: var(--secondary-gold);\n  }\n\n  @media (max-width: 768px) {\n    .cookies-content-section {\n      padding: 60px 24px;\n    }\n\n    .cookies-section {\n      margin-bottom: 40px;\n    }\n\n    .cookies-list {\n      margin-left: 20px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "85e615c223244a598ec003b9d367db43",
+      "user_id": 1,
+      "time": 1768569031
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "cookies_cta_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "cookies_cta_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Cookies CTA | MaxHair"
+  },
+  {
+    "id": "cookies_cta_container",
+    "name": "container",
+    "parent": "cookies_cta_section",
+    "children": [
+      "cookies_cta_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "cookies_cta_code",
+    "name": "code",
+    "parent": "cookies_cta_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- COOKIES CTA SECTION -->\n<section class=\"cookies-cta-section\">\n  <div class=\"cookies-cta-content\">\n    <h2 class=\"cta-title\">Máte dotazy k cookies?</h2>\n    <p class=\"cta-description\">Kontaktujte nás, rádi vám vše vysvětlíme</p>\n    <div class=\"cta-buttons\">\n      <a href=\"/kontakt\" class=\"btn-primary\">Kontaktovat nás</a>\n      <a href=\"/\" class=\"btn-secondary\">Zpět na homepage</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  .cookies-cta-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 40vh;\n    background: var(--light-gray);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 80px;\n  }\n\n  .cookies-cta-content {\n    max-width: 800px;\n    width: 100%;\n    text-align: center;\n  }\n\n  .cta-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(28px, 4vw, 40px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 16px 0;\n  }\n\n  .cta-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 18px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    margin: 0 0 40px 0;\n  }\n\n  .cta-buttons {\n    display: flex;\n    gap: 24px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 16px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 8px;\n    transition: all 0.3s ease;\n    box-shadow: 0 4px 16px rgba(229, 193, 88, 0.3);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-2px);\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 16px 40px;\n    background: transparent;\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--primary-gold);\n    border-radius: 8px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--primary-gold);\n    color: var(--black);\n  }\n\n  @media (max-width: 768px) {\n    .cookies-cta-section {\n      padding: 60px 24px;\n    }\n\n    .cta-buttons {\n      flex-direction: column;\n      align-items: center;\n    }\n\n    .btn-primary,\n    .btn-secondary {\n      width: 100%;\n      max-width: 300px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "4bae7ff2dced7eff64d3e3d6104cb5cf",
+      "user_id": 1,
+      "time": 1768569031
+    },
+    "themeStyles": []
+  }
+]

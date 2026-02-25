@@ -1,0 +1,18 @@
+/* /inc/mockup-single-admin.css */
+.mockup-single-box { margin-top:8px; }
+.mockup-pick-row { display:flex; gap:8px; margin-bottom:8px; }
+
+.mockup-single-thumb{
+  position:relative; width:100%; max-width:420px;
+  aspect-ratio:1/1; background:#f6f7f7; border:1px solid #dcdcde; border-radius:6px;
+  overflow:hidden; cursor:crosshair;
+}
+.mockup-single-thumb.is-empty{ display:flex; align-items:center; justify-content:center; color:#777; }
+.mockup-single-thumb img{ width:100%; height:100%; object-fit:contain; display:block; }
+.mockup-marker{
+  position:absolute; width:14px; height:14px; border-radius:50%;
+  background: rgba(0,0,0,0); border:2px solid #1e1e1e;
+  transform: translate(-50%, -50%); pointer-events:none; box-shadow:0 0 0 2px #fff inset;
+}
+.mockup-fields{ display:flex; gap:8px; margin-top:8px; align-items:center; }
+.mockup-fields input[type="number"]{ width:90px; }

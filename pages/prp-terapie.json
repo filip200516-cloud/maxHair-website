@@ -1,0 +1,411 @@
+[
+  {
+    "id": "prp_hero_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "prp_hero_container"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_height": "100vh"
+    },
+    "label": "PRP Hero | MaxHair"
+  },
+  {
+    "id": "prp_hero_container",
+    "name": "container",
+    "parent": "prp_hero_section",
+    "children": [
+      "prp_hero_code"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_height": "100vh"
+    }
+  },
+  {
+    "id": "prp_hero_code",
+    "name": "code",
+    "parent": "prp_hero_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- PRP TERAPIE HERO -->\n<section class=\"prp-hero-section\">\n  <div class=\"hero-video-wrapper\">\n    <video autoplay muted loop playsinline class=\"hero-video\">\n      <source src=\"https://mediumseagreen-gaur-406121.hostingersite.com/wp-content/uploads/2025/12/WhatsApp-Video-2025-12-13-at-14.56.52_6de6a47b.mp4\" type=\"video/mp4\">\n    </video>\n    <div class=\"hero-overlay\"></div>\n  </div>\n  <div class=\"prp-hero-content\">\n    <span class=\"mh-badge\">DOPLŇKOVÁ</span>\n    <h1 class=\"hero-title\" style=\"color: #ffffff !important;\">PRP Terapie<br/>Plazma bohatá na destičky</h1>\n    <p class=\"hero-description\" style=\"color: rgba(255,255,255,0.9) !important;\">Podpořte růst a hustotu vlasů pomocí vlastní krve. Přírodní léčba vypadávání vlasů.</p>\n    <div class=\"hero-price\">\n      <span class=\"price-label\">Zahrnuto v ceně</span>\n      <span class=\"price-amount\">Transplantace</span>\n      <span class=\"price-note\">podpůrná technika k transplantaci, není nabízena jako samostatná služba</span>\n    </div>\n    <div class=\"hero-cta-group\">\n      <a href=\"/kontakt\" class=\"btn-primary\">Bezplatná konzultace</a>\n      <a href=\"/#cenik\" class=\"btn-secondary\">Zjistit cenu</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #A67C00;\n    --dark-gray: #1A1A1A;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #CCCCCC;\n  }\n\n  .prp-hero-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 100vh;\n    position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    overflow: hidden;\n  }\n\n  .hero-video-wrapper {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    z-index: 1;\n  }\n\n  .hero-video {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n  }\n\n  .hero-overlay {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: linear-gradient(135deg, rgba(90, 69, 44, 0.85) 0%, rgba(0, 0, 0, 0.85) 100%);\n    z-index: 2;\n  }\n\n  .prp-hero-content {\n    position: relative;\n    z-index: 3;\n    max-width: 1200px;\n    width: 100%;\n    padding: 0 80px;\n    text-align: center;\n  }\n\n  .prp-hero-section .mh-badge,\n  .prp-hero-content .mh-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--primary-gold) !important;\n    color: var(--black) !important;\n    -webkit-text-fill-color: var(--black) !important;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    border-radius: 30px;\n    margin-bottom: 24px;\n    border: none;\n  }\n\n  .mh-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--primary-gold) !important;\n    color: var(--black) !important;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    border-radius: 30px;\n    margin-bottom: 20px;\n    border: none;\n  }\n\n  .hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(42px, 6vw, 72px);\n    font-weight: 700;\n    color: var(--white);\n    margin: 0 0 24px 0;\n    letter-spacing: normal;\n    line-height: 1.2;\n  }\n\n  .hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(18px, 2.5vw, 24px);\n    color: rgba(255, 255, 255, 0.9);\n    margin: 0 0 40px 0;\n    line-height: 1.6;\n    max-width: 800px;\n    margin-left: auto;\n    margin-right: auto;\n  }\n\n  .hero-price {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 8px;\n    margin-bottom: 48px;\n  }\n\n  .price-label {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: rgba(255, 255, 255, 0.8);\n    text-transform: uppercase;\n    letter-spacing: 2px;\n  }\n\n  .price-amount {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 700;\n    color: var(--white);\n  }\n\n  .price-note {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: rgba(255, 255, 255, 0.7);\n  }\n\n  .hero-cta-group {\n    display: flex;\n    gap: 20px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 10px;\n    transition: all 0.3s ease;\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-3px);\n    box-shadow: 0 10px 35px rgba(229, 193, 88, 0.5);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: transparent;\n    color: var(--white);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--white);\n    border-radius: 10px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--white);\n    color: var(--black);\n    transform: translateY(-3px);\n  }\n\n  @media (max-width: 768px) {\n    .prp-hero-content {\n      padding: 0 24px;\n    }\n  }\n\n  /* Hero text vždy světlý (bílý) na tmavém pozadí */\n  .prp-hero-section .hero-title,\n  .prp-hero-section .price-label,\n  .prp-hero-section .price-amount,\n  .prp-hero-section .price-note { color: #ffffff !important; }\n  .prp-hero-section .hero-description { color: rgba(255,255,255,0.9) !important; }\n</style>",
+      "executeCode": true,
+      "signature": "50389be056c97db0df4822c3d3eb84a0",
+      "user_id": 1,
+      "time": 1768569036
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "prp_problem_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "prp_problem_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "PRP Problém | MaxHair"
+  },
+  {
+    "id": "prp_problem_container",
+    "name": "container",
+    "parent": "prp_problem_section",
+    "children": [
+      "prp_problem_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "prp_problem_code",
+    "name": "code",
+    "parent": "prp_problem_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- PROBLÉM VYPADÁVÁNÍ VLASŮ -->\n<section class=\"prp-problem-section\">\n  <div class=\"prp-problem-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">PROBLÉM</span>\n      <h2 class=\"section-title\">Proč vlasy vypadávají?</h2>\n      <p class=\"section-description\">Vypadávání vlasů může mít mnoho příčin. PRP terapie pomáhá stimulovat růst vlasů přirozenou cestou.</p>\n    </div>\n    \n    <div class=\"problem-grid\">\n      <div class=\"problem-card\">\n        <div class=\"problem-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M3 22V18\"/>\n            <path d=\"M7 22V14\"/>\n            <path d=\"M11 22V10\"/>\n            <path d=\"M15 22V16\"/>\n            <path d=\"M19 22V12\"/>\n            <path d=\"M21 22H3\"/>\n            <path d=\"M3 10L8 5L13 9L21 2\"/>\n          </svg>\n        </div>\n        <h3>Řídnutí vlasů</h3>\n        <p>Postupné ztenčování vlasů je prvním signálem. PRP může zpomalit tento proces a podpořit růst nových vlasů.</p>\n      </div>\n      \n      <div class=\"problem-card\">\n        <div class=\"problem-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <circle cx=\"12\" cy=\"10\" r=\"6\"/>\n            <path d=\"M7 6C8 4 10 3 12 3C14 3 16 4 17 6\"/>\n            <path d=\"M8 19L6 22\"/>\n            <path d=\"M10 18L9 22\"/>\n            <path d=\"M14 18L15 22\"/>\n            <path d=\"M16 19L18 22\"/>\n          </svg>\n        </div>\n        <h3>Oslabené folikuly</h3>\n        <p>Vlasové folikuly ztrácejí živiny a energii. PRP dodává růstové faktory přímo do pokožky hlavy.</p>\n      </div>\n      \n      <div class=\"problem-card\">\n        <div class=\"problem-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <circle cx=\"12\" cy=\"12\" r=\"10\"/>\n            <path d=\"M8 15s1.5-2 4-2 4 2 4 2\"/>\n            <line x1=\"9\" y1=\"9\" x2=\"9.01\" y2=\"9\"/>\n            <line x1=\"15\" y1=\"9\" x2=\"15.01\" y2=\"9\"/>\n          </svg>\n        </div>\n        <h3>Psychický dopad</h3>\n        <p>Ztráta sebedůvěry ovlivňuje kariéru i vztahy. PRP terapie nabízí přirozené řešení bez chirurgického zákroku.</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .prp-problem-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--white);\n  }\n\n  .prp-problem-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .section-header {\n    text-align: center;\n    margin-bottom: 60px;\n  }\n\n  .prp-problem-section .section-header .mh-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--primary-gold) !important;\n    color: var(--black) !important;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 20px;\n    border-radius: 30px;\n  }\n\n  .section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 20px 0;\n    letter-spacing: normal;\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    max-width: 800px;\n    margin: 0 auto;\n    line-height: 1.6;\n    text-align: center;\n  }\n\n  .problem-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 32px;\n  }\n\n  .problem-card {\n    background: var(--light-gray);\n    border-radius: 20px;\n    padding: 40px 32px;\n    text-align: center;\n    transition: all 0.3s ease;\n  }\n\n  .problem-card:hover {\n    background: var(--white);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .problem-icon {\n    width: 56px;\n    height: 56px;\n    margin: 0 auto 24px;\n    color: var(--primary-gold);\n  }\n\n  .problem-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .problem-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 22px;\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 16px 0;\n  }\n\n  .problem-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0 0 16px 0;\n  }\n\n  .norwood-placeholder {\n    margin-top: 20px;\n    padding: 20px;\n    background: rgba(229, 193, 88, 0.1);\n    border-radius: 12px;\n    border: 2px dashed var(--medium-gray);\n  }\n\n  .norwood-placeholder p {\n    font-size: 13px;\n    margin: 4px 0;\n  }\n\n  .norwood-placeholder strong {\n    color: var(--dark-gray);\n    font-weight: 600;\n  }\n\n  @media (max-width: 1200px) {\n    .problem-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .prp-problem-section {\n      padding: 60px 24px;\n    }\n\n    .problem-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "97b6b5f3918f1e0eda5b2213c3f3ad18",
+      "user_id": 1,
+      "time": 1768569036
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "prp_reseni_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "prp_reseni_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "PRP Proces | MaxHair"
+  },
+  {
+    "id": "prp_reseni_container",
+    "name": "container",
+    "parent": "prp_reseni_section",
+    "children": [
+      "prp_reseni_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "prp_reseni_code",
+    "name": "code",
+    "parent": "prp_reseni_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- ŘEŠENÍ PRP -->\n<section class=\"prp-reseni-section\">\n  <div class=\"prp-reseni-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">PROCES</span>\n      <h2 class=\"section-title\">Jak PRP terapie funguje?</h2>\n      <p class=\"section-description\">Jednoduchý proces využívající přirozené hojivé vlastnosti vaší vlastní krve.</p>\n    </div>\n    \n    <div class=\"reseni-grid\">\n      <div class=\"reseni-card\">\n        <div class=\"reseni-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M12 2.69L12 2.69C12 2.69 6 9.69 6 14C6 17.31 8.69 20 12 20C15.31 20 18 17.31 18 14C18 9.69 12 2.69 12 2.69Z\"/>\n            <path d=\"M12 17C10.34 17 9 15.66 9 14\"/>\n          </svg>\n        </div>\n        <h3>Odběr krve</h3>\n        <p>Odebereme malé množství vaší krve (cca 20-30 ml) z paže, podobně jako při běžném odběru krve.</p>\n      </div>\n      \n      <div class=\"reseni-card\">\n        <div class=\"reseni-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <circle cx=\"12\" cy=\"12\" r=\"10\"/>\n            <path d=\"M12 6V12L16 16\"/>\n          </svg>\n        </div>\n        <h3>Centrifugace</h3>\n        <p>Krev se zpracuje v centrifugaci, která oddělí krevní destičky a plazmu od ostatních složek krve.</p>\n      </div>\n      \n      <div class=\"reseni-card\">\n        <div class=\"reseni-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M18 2L22 6\"/>\n            <path d=\"M7.5 20.5L3.5 16.5L15 5L19 9L7.5 20.5Z\"/>\n            <path d=\"M15 5L19 9\"/>\n            <path d=\"M11 9L15 13\"/>\n            <path d=\"M7.5 20.5L2 22L3.5 16.5\"/>\n          </svg>\n        </div>\n        <h3>Aplikace do pokožky</h3>\n        <p>PRP plazma se aplikuje do pokožky hlavy pomocí mikrojehel. Růstové faktory pak stimulují folikuly.</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .prp-reseni-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n  }\n\n  .prp-reseni-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .reseni-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 32px;\n    margin-top: 60px;\n  }\n\n  .reseni-card {\n    background: var(--white);\n    border-radius: 20px;\n    padding: 40px 32px;\n    text-align: center;\n    transition: all 0.3s ease;\n    border: 2px solid transparent;\n  }\n\n  .reseni-card:hover {\n    border-color: var(--primary-gold);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .reseni-icon {\n    width: 56px;\n    height: 56px;\n    margin: 0 auto 24px;\n    color: var(--primary-gold);\n  }\n\n  .reseni-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .reseni-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 22px;\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 16px 0;\n  }\n\n  .reseni-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0;\n  }\n\n  @media (max-width: 1200px) {\n    .reseni-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .prp-reseni-section {\n      padding: 60px 24px;\n    }\n\n    .reseni-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "cea3b32133077f342749ffc4c7a7883a",
+      "user_id": 1,
+      "time": 1768569036
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "prp_vhodna_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "prp_vhodna_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "PRP Kandidáti | MaxHair"
+  },
+  {
+    "id": "prp_vhodna_container",
+    "name": "container",
+    "parent": "prp_vhodna_section",
+    "children": [
+      "prp_vhodna_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "prp_vhodna_code",
+    "name": "code",
+    "parent": "prp_vhodna_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- PRO KOHO JE VHODNÁ -->\n<section class=\"prp-vhodna-section\">\n  <div class=\"prp-vhodna-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">KANDIDÁTI</span>\n      <h2 class=\"section-title\">Pro koho je PRP terapie vhodná?</h2>\n      <p class=\"section-description\">PRP terapie je vhodná pro širokou škálu pacientů s různými potřebami.</p>\n    </div>\n    \n    <div class=\"kandidati-grid\">\n      <div class=\"kandidat-item\">\n        <div class=\"kandidat-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M18 2L22 6\"/>\n            <path d=\"M7.5 20.5L3.5 16.5L15 5L19 9L7.5 20.5Z\"/>\n            <path d=\"M15 5L19 9\"/>\n            <path d=\"M11 9L15 13\"/>\n            <path d=\"M7.5 20.5L2 22L3.5 16.5\"/>\n          </svg>\n        </div>\n        <h3>Po transplantaci</h3>\n        <p>PRP je zahrnuto v ceně transplantace a podporuje hojení a růst transplantovaných vlasů.</p>\n      </div>\n      \n      <div class=\"kandidat-item\">\n        <div class=\"kandidat-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <circle cx=\"12\" cy=\"10\" r=\"6\"/>\n            <path d=\"M7 6C8 4 10 3 12 3C14 3 16 4 17 6\"/>\n            <path d=\"M8 19L6 22\"/>\n            <path d=\"M10 18L9 22\"/>\n            <path d=\"M14 18L15 22\"/>\n            <path d=\"M16 19L18 22\"/>\n          </svg>\n        </div>\n        <h3>Řídnutí vlasů</h3>\n        <p>PRP může být použito i samostatně při řídnutí vlasů, jako prevence nebo léčba.</p>\n      </div>\n      \n      <div class=\"kandidat-item\">\n        <div class=\"kandidat-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/>\n            <path d=\"M9 12l2 2 4-4\"/>\n          </svg>\n        </div>\n        <h3>Prevence</h3>\n        <p>PRP lze použít i preventivně, aby se zpomalilo vypadávání vlasů a zachovala jejich kvalita.</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .prp-vhodna-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--white);\n  }\n\n  .prp-vhodna-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .kandidati-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 32px;\n    margin-top: 60px;\n  }\n\n  .kandidat-item {\n    background: var(--light-gray);\n    border-radius: 20px;\n    padding: 40px 32px;\n    text-align: center;\n    transition: all 0.3s ease;\n  }\n\n  .kandidat-item:hover {\n    background: var(--white);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .kandidat-icon {\n    width: 56px;\n    height: 56px;\n    margin: 0 auto 20px;\n    color: var(--primary-gold);\n  }\n\n  .kandidat-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .kandidat-item h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 22px;\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 16px 0;\n  }\n\n  .kandidat-item p {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0;\n  }\n\n  @media (max-width: 1200px) {\n    .kandidati-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .prp-vhodna-section {\n      padding: 60px 24px;\n    }\n\n    .kandidati-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "896ce43c6c046757a219f51f6ae14897",
+      "user_id": 1,
+      "time": 1768569036
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "prp_metody_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "prp_metody_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "PRP Výhody | MaxHair"
+  },
+  {
+    "id": "prp_metody_container",
+    "name": "container",
+    "parent": "prp_metody_section",
+    "children": [
+      "prp_metody_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "prp_metody_code",
+    "name": "code",
+    "parent": "prp_metody_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- VÝHODY PRP -->\n<section class=\"prp-metody-section\">\n  <div class=\"prp-metody-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">VÝHODY</span>\n      <h2 class=\"section-title\">Proč zvolit PRP terapii?</h2>\n      <p class=\"section-description\">PRP terapie nabízí řadu výhod jako přirozená metoda podpory růstu vlasů.</p>\n    </div>\n    \n    <div class=\"metody-grid\">\n      <div class=\"metoda-card\">\n        <div class=\"metoda-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z\"/>\n            <path d=\"M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12\"/>\n          </svg>\n        </div>\n        <h3>100% přírodní</h3>\n        <p><strong>Vlastní krev</strong> - žádné cizí látky, žádné alergické reakce. Používáme pouze vaši vlastní krev.</p>\n        <ul class=\"metoda-list\">\n          <li>Bez chemikálií</li>\n          <li>Bez vedlejších účinků</li>\n          <li>Biokompatibilní</li>\n        </ul>\n        <a href=\"/kontakt\" class=\"metoda-link\">Získejte konzultaci →</a>\n      </div>\n      \n      <div class=\"metoda-card\">\n        <div class=\"metoda-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M13 2L3 14H12L11 22L21 10H12L13 2Z\"/>\n          </svg>\n        </div>\n        <h3>Rychlý proces</h3>\n        <p><strong>30-45 minut</strong> - celý proces trvá pouze krátkou dobu. Můžete se vrátit k běžným aktivitám ihned.</p>\n        <ul class=\"metoda-list\">\n          <li>Minimální diskomfort</li>\n          <li>Bez rekonvalescence</li>\n          <li>Ambulantní zákrok</li>\n        </ul>\n        <a href=\"/kontakt\" class=\"metoda-link\">Získejte konzultaci →</a>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .prp-metody-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n  }\n\n  .prp-metody-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .metody-grid {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    gap: 40px;\n    margin-top: 60px;\n  }\n\n  .metoda-card {\n    background: var(--white);\n    border-radius: 24px;\n    padding: 48px 40px;\n    border: 2px solid var(--light-gray);\n    transition: all 0.3s ease;\n  }\n\n  .metoda-card:hover {\n    border-color: var(--primary-gold);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .metoda-icon {\n    width: 56px;\n    height: 56px;\n    margin-bottom: 24px;\n    color: var(--primary-gold);\n  }\n\n  .metoda-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .metoda-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 28px;\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 16px 0;\n  }\n\n  .metoda-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0 0 24px 0;\n  }\n\n  .metoda-list {\n    list-style: none;\n    padding: 0;\n    margin: 0 0 24px 0;\n  }\n\n  .metoda-list li {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: var(--dark-gray);\n    padding: 8px 0 8px 28px;\n    position: relative;\n  }\n\n  .metoda-list li::before {\n    content: '✓';\n    position: absolute;\n    left: 0;\n    color: var(--primary-gold);\n    font-weight: 700;\n  }\n\n  .metoda-link {\n    display: inline-block;\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    font-weight: 600;\n    color: var(--primary-gold);\n    text-decoration: none;\n    transition: all 0.3s ease;\n  }\n\n  .metoda-link:hover {\n    color: var(--secondary-gold);\n    transform: translateX(4px);\n  }\n\n  @media (max-width: 768px) {\n    .prp-metody-section {\n      padding: 60px 24px;\n    }\n\n    .metody-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "44b86af6d48ff62235d8aaa69bcfbc24",
+      "user_id": 1,
+      "time": 1768569036
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "prp_předpo_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "prp_předpo_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "PRP Před/po | MaxHair"
+  },
+  {
+    "id": "prp_předpo_container",
+    "name": "container",
+    "parent": "prp_předpo_section",
+    "children": [
+      "prp_předpo_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "prp_předpo_code",
+    "name": "code",
+    "parent": "prp_předpo_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- PRP PROCES GALERIE -->\n<section class=\"prp-predpo-section\">\n  <div class=\"prp-predpo-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">GALERIE</span>\n      <h2 class=\"section-title\">PRP terapie v praxi</h2>\n      <p class=\"section-description\">Podívejte se, jak PRP terapie probíhá na naší klinice.</p>\n    </div>\n    \n    <div class=\"predpo-grid\">\n      <div class=\"predpo-placeholder\">\n        <div class=\"placeholder-content\">\n          <div class=\"placeholder-icon\">\n            <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <path d=\"M12 2.69L12 2.69C12 2.69 6 9.69 6 14C6 17.31 8.69 20 12 20C15.31 20 18 17.31 18 14C18 9.69 12 2.69 12 2.69Z\"/>\n              <path d=\"M12 17C10.34 17 9 15.66 9 14\"/>\n            </svg>\n          </div>\n          <p><strong>Ilustrace PRP procesu</strong></p>\n          <p>Odběr krve → Centrifugace → Aplikace</p>\n        </div>\n      </div>\n      \n      <div class=\"predpo-placeholder\">\n        <div class=\"placeholder-content\">\n          <div class=\"placeholder-icon\">\n            <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <circle cx=\"12\" cy=\"12\" r=\"10\"/>\n              <path d=\"M12 6V12L16 14\"/>\n            </svg>\n          </div>\n          <p><strong>Centrifuga a zkumavky</strong></p>\n          <p>Zařízení pro zpracování PRP</p>\n        </div>\n      </div>\n      \n      <div class=\"predpo-placeholder\">\n        <div class=\"placeholder-content\">\n          <div class=\"placeholder-icon\">\n            <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <path d=\"M18 2L22 6\"/>\n              <path d=\"M7.5 20.5L3.5 16.5L15 5L19 9L7.5 20.5Z\"/>\n              <path d=\"M15 5L19 9\"/>\n              <path d=\"M11 9L15 13\"/>\n              <path d=\"M7.5 20.5L2 22L3.5 16.5\"/>\n            </svg>\n          </div>\n          <p><strong>Aplikace PRP do pokožky</strong></p>\n          <p>Proces aplikace PRP do pokožky hlavy</p>\n        </div>\n      </div>\n      \n      <div class=\"predpo-placeholder\">\n        <div class=\"placeholder-content\">\n          <div class=\"placeholder-icon\">\n            <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n              <path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/>\n              <path d=\"M9 12l2 2 4-4\"/>\n            </svg>\n          </div>\n          <p><strong>PRP + Transplantace</strong></p>\n          <p>Kombinace PRP s transplantací pro lepší výsledky</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .prp-predpo-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--white);\n  }\n\n  .prp-predpo-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .predpo-grid {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    gap: 32px;\n    margin-top: 60px;\n  }\n\n  .predpo-placeholder {\n    background: var(--light-gray);\n    border-radius: 20px;\n    padding: 80px 40px;\n    text-align: center;\n    border: 2px dashed var(--medium-gray);\n    min-height: 300px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .placeholder-content {\n    max-width: 400px;\n  }\n\n  .placeholder-icon {\n    width: 64px;\n    height: 64px;\n    margin: 0 auto 24px;\n    color: var(--primary-gold);\n  }\n\n  .placeholder-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .placeholder-content p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-gray);\n    margin: 8px 0;\n  }\n\n  .placeholder-content strong {\n    color: var(--dark-gray);\n    font-weight: 600;\n  }\n\n  @media (max-width: 768px) {\n    .prp-predpo-section {\n      padding: 60px 24px;\n    }\n\n    .predpo-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "5335374896633c0eb5d063b0bed5accf",
+      "user_id": 1,
+      "time": 1768569036
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "prp_zahrnuto_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "prp_zahrnuto_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "PRP Zahrnuto | MaxHair"
+  },
+  {
+    "id": "prp_zahrnuto_container",
+    "name": "container",
+    "parent": "prp_zahrnuto_section",
+    "children": [
+      "prp_zahrnuto_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "prp_zahrnuto_code",
+    "name": "code",
+    "parent": "prp_zahrnuto_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- CO JE ZAHRNUTO V PRP -->\n<section class=\"prp-zahrnuto-section\">\n  <div class=\"prp-zahrnuto-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">PRP TERAPIE</span>\n      <h2 class=\"section-title\">Co je zahrnuto v PRP terapii?</h2>\n      <p class=\"section-description\">Kompletní péče v rámci PRP terapie - před, během i po zákroku.</p>\n    </div>\n    \n    <div class=\"zahrnuto-columns\">\n      <!-- Levý sloupec - Před a během -->\n      <div class=\"zahrnuto-box\">\n        <h3 class=\"zahrnuto-box-title\">Konzultace a zákrok</h3>\n        <ul class=\"zahrnuto-list\">\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <path d=\"M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">Bezplatná konzultace</span>\n          </li>\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <path d=\"M12 2.69L12 2.69C12 2.69 6 9.69 6 14C6 17.31 8.69 20 12 20C15.31 20 18 17.31 18 14C18 9.69 12 2.69 12 2.69Z\"/>\n                <path d=\"M12 17C10.34 17 9 15.66 9 14\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">Odběr a zpracování krve</span>\n          </li>\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <path d=\"M18 2L22 6\"/>\n                <path d=\"M7.5 20.5L3.5 16.5L15 5L19 9L7.5 20.5Z\"/>\n                <path d=\"M15 5L19 9\"/>\n                <path d=\"M11 9L15 13\"/>\n                <path d=\"M7.5 20.5L2 22L3.5 16.5\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">Aplikace PRP plazmy</span>\n          </li>\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <circle cx=\"12\" cy=\"12\" r=\"10\"/>\n                <path d=\"M12 6V12L16 14\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">Celková doba cca 30-45 min</span>\n          </li>\n        </ul>\n      </div>\n      \n      <!-- Pravý sloupec - Podpora a péče -->\n      <div class=\"zahrnuto-box\">\n        <h3 class=\"zahrnuto-box-title\">Péče po zákroku</h3>\n        <ul class=\"zahrnuto-list\">\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <path d=\"M9 12L11 14L15 10\"/>\n                <path d=\"M12 3L14.5 5.5L18 5L17.5 8.5L20 11L17.5 13.5L18 17L14.5 16.5L12 19L9.5 16.5L6 17L6.5 13.5L4 11L6.5 8.5L6 5L9.5 5.5L12 3Z\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">Instrukce pro domácí péči</span>\n          </li>\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">Česká podpora 24/7</span>\n          </li>\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"/>\n                <line x1=\"16\" y1=\"2\" x2=\"16\" y2=\"6\"/>\n                <line x1=\"8\" y1=\"2\" x2=\"8\" y2=\"6\"/>\n                <line x1=\"3\" y1=\"10\" x2=\"21\" y2=\"10\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">Follow-up konzultace</span>\n          </li>\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/>\n                <path d=\"M9 12l2 2 4-4\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">Sledování výsledků</span>\n          </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .prp-zahrnuto-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n  }\n\n  .prp-zahrnuto-content {\n    max-width: 1000px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .zahrnuto-columns {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 32px;\n    margin-top: 60px;\n  }\n\n  .zahrnuto-box {\n    background: #FFFDF8;\n    border-radius: 20px;\n    padding: 36px 40px;\n    box-shadow: 0 8px 40px rgba(212, 168, 75, 0.15), 0 0 60px rgba(212, 168, 75, 0.08);\n    position: relative;\n  }\n\n  .zahrnuto-box::before {\n    content: '';\n    position: absolute;\n    top: -2px;\n    left: -2px;\n    right: -2px;\n    bottom: -2px;\n    background: linear-gradient(135deg, rgba(212, 168, 75, 0.3) 0%, rgba(212, 168, 75, 0.1) 50%, rgba(212, 168, 75, 0.3) 100%);\n    border-radius: 22px;\n    z-index: -1;\n    filter: blur(8px);\n  }\n\n  .zahrnuto-box-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: 20px;\n    font-weight: 600;\n    color: #1A1A1A;\n    margin: 0 0 28px 0;\n    font-style: italic;\n    text-align: left;\n  }\n\n  .zahrnuto-list {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    gap: 18px;\n  }\n\n  .zahrnuto-list li {\n    display: flex;\n    align-items: center;\n    gap: 16px;\n  }\n\n  .zahrnuto-icon {\n    width: 26px;\n    height: 26px;\n    min-width: 26px;\n    color: #D4A84B;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-shrink: 0;\n  }\n\n  .zahrnuto-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .zahrnuto-text {\n    font-family: 'Inter', sans-serif;\n    font-size: 17px;\n    color: #1A1A1A;\n    font-weight: 500;\n    text-align: left;\n  }\n\n  @media (max-width: 768px) {\n    .zahrnuto-columns {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n\n    .zahrnuto-box {\n      padding: 28px;\n    }\n\n    .zahrnuto-box-title {\n      font-size: 18px;\n    }\n\n    .zahrnuto-text {\n      font-size: 16px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "ebe6e283bb32fe17cf80b6dc20140b1c",
+      "user_id": 1,
+      "time": 1768569036
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "prp_cenik_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "prp_cenik_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "PRP Ceník | MaxHair"
+  },
+  {
+    "id": "prp_cenik_container",
+    "name": "container",
+    "parent": "prp_cenik_section",
+    "children": [
+      "prp_cenik_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "prp_cenik_code",
+    "name": "code",
+    "parent": "prp_cenik_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- PRP CENÍK -->\n<section class=\"prp-cenik-section\">\n  <div class=\"prp-cenik-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">CENÍK</span>\n      <h2 class=\"section-title\">Cena PRP terapie</h2>\n      <p class=\"section-description\">PRP terapie je zahrnuta v ceně transplantace, nebo ji můžete absolvovat samostatně.</p>\n    </div>\n    \n    <div class=\"cenik-grid prp-cenik-two\">\n      <!-- S transplantací -->\n      <div class=\"cenik-card cenik-featured\">\n        <div class=\"cenik-header\">\n          <h3 class=\"cenik-name\">S transplantací</h3>\n          <p class=\"cenik-subtitle\">Zahrnuto v ceně</p>\n        </div>\n        <div class=\"cenik-price\">\n          <span class=\"price-amount\"><span class=\"price-number\">Zdarma</span></span>\n          <span class=\"price-euro\">v rámci balíčku</span>\n        </div>\n        <ul class=\"cenik-list\">\n          <li>1× PRP sezení zahrnuto</li>\n          <li>Podporuje hojení po transplantaci</li>\n          <li>Stimuluje růst nových vlasů</li>\n          <li>Zlepšuje kvalitu vlasů</li>\n          <li>Aplikace přímo na klinice</li>\n        </ul>\n        <a href=\"/transplantace-vlasu-muzi\" class=\"cenik-button cenik-button-filled\">Více o transplantaci</a>\n      </div>\n      \n      <!-- Samostatně -->\n      <div class=\"cenik-card\">\n        <div class=\"cenik-header\">\n          <h3 class=\"cenik-name\">Samostatná PRP</h3>\n          <p class=\"cenik-subtitle\">Bez transplantace</p>\n        </div>\n        <div class=\"cenik-price\">\n          <span class=\"price-amount\"><span class=\"price-number\">Individuální</span></span>\n          <span class=\"price-euro\">cena dle konzultace</span>\n        </div>\n        <ul class=\"cenik-list\">\n          <li>Prevence vypadávání vlasů</li>\n          <li>Podpora růstu při řídnutí</li>\n          <li>Série sezení pro optimální výsledky</li>\n          <li>Konzultace zdarma</li>\n          <li>Bezpečná a přírodní léčba</li>\n        </ul>\n        <a href=\"/kontakt\" class=\"cenik-button cenik-button-outline\">Nezávazná konzultace</a>\n      </div>\n    </div>\n    \n    <!-- Info boxy -->\n    <div class=\"cenik-info-boxes\">\n      <div class=\"info-box\">\n        <div class=\"info-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n            <path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\" stroke=\"#D4A84B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n            <path d=\"M9 12l2 2 4-4\" stroke=\"#D4A84B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n          </svg>\n        </div>\n        <div class=\"info-content\">\n          <h4>Proč PRP s transplantací?</h4>\n          <p>PRP urychluje hojení, podporuje růst transplantovaných vlasů a zlepšuje celkový výsledek transplantace.</p>\n        </div>\n      </div>\n      <div class=\"info-box\">\n        <div class=\"info-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n            <path d=\"M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z\" stroke=\"#D4A84B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n            <path d=\"M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12\" stroke=\"#D4A84B\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n          </svg>\n        </div>\n        <div class=\"info-content\">\n          <h4>100% přírodní</h4>\n          <p>PRP využívá pouze vaši vlastní krev - žádné cizí látky, žádné alergické reakce, maximální bezpečnost.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .prp-cenik-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: #F5F0E8;\n  }\n\n  .prp-cenik-content {\n    max-width: 1200px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .cenik-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 24px;\n    margin-top: 60px;\n  }\n\n  .prp-cenik-two {\n    grid-template-columns: repeat(2, 1fr);\n    max-width: 800px;\n    margin-left: auto;\n    margin-right: auto;\n  }\n\n  .cenik-card {\n    background: #FFFDF8;\n    border-radius: 16px;\n    padding: 40px 32px;\n    display: flex;\n    flex-direction: column;\n    transition: all 0.3s ease;\n  }\n\n  .cenik-card:hover {\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.15);\n    transform: translateY(-4px);\n  }\n\n  .cenik-header {\n    text-align: center;\n    margin-bottom: 24px;\n  }\n\n  .cenik-name {\n    font-family: 'Poppins', sans-serif;\n    font-size: 28px;\n    font-weight: 700;\n    color: #1A1A1A;\n    margin: 0 0 4px 0;\n  }\n\n  .cenik-subtitle {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: #8A7A6A;\n    margin: 0;\n    font-style: italic;\n  }\n\n  .cenik-price {\n    text-align: center;\n    margin-bottom: 32px;\n  }\n\n  .price-amount {\n    display: block;\n    margin-bottom: 4px;\n  }\n\n  .price-number {\n    font-family: 'Poppins', sans-serif;\n    font-size: 48px;\n    font-weight: 700;\n    color: #D4A84B;\n    letter-spacing: normal;\n  }\n\n  .price-currency {\n    font-family: 'Poppins', sans-serif;\n    font-size: 24px;\n    font-weight: 600;\n    color: #D4A84B;\n  }\n\n  .price-euro {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: #8A7A6A;\n  }\n\n  .cenik-list {\n    list-style: none;\n    padding: 0;\n    margin: 0 0 32px 0;\n    flex-grow: 1;\n  }\n\n  .cenik-list li {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: #1A1A1A;\n    padding: 10px 0 10px 24px;\n    position: relative;\n    line-height: 1.4;\n  }\n\n  .cenik-list li::before {\n    content: '';\n    position: absolute;\n    left: 0;\n    top: 50%;\n    transform: translateY(-50%);\n    width: 8px;\n    height: 8px;\n    background: #D4A84B;\n    border-radius: 50%;\n  }\n\n  .cenik-button {\n    display: block;\n    width: 100%;\n    padding: 16px 32px;\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 30px;\n    text-align: center;\n    transition: all 0.3s ease;\n    margin-top: auto;\n    box-sizing: border-box;\n  }\n\n  .cenik-button-outline {\n    background: transparent;\n    border: 2px solid #D4A84B;\n    color: #D4A84B;\n  }\n\n  .cenik-button-outline:hover {\n    background: #D4A84B;\n    color: #000;\n  }\n\n  .cenik-button-filled {\n    background: #D4A84B;\n    border: 2px solid #D4A84B;\n    color: #000;\n  }\n\n  .cenik-button-filled:hover {\n    background: #C49A3F;\n    border-color: #C49A3F;\n  }\n\n  @media (max-width: 1024px) {\n    .cenik-grid {\n      grid-template-columns: 1fr;\n      max-width: 400px;\n      margin-left: auto;\n      margin-right: auto;\n    }\n  }\n\n  @media (max-width: 768px) {\n    .prp-cenik-section {\n      padding: 60px 24px;\n    }\n\n    .cenik-card {\n      padding: 32px 24px;\n    }\n\n    .price-number {\n      font-size: 40px;\n    }\n\n    .price-currency {\n      font-size: 20px;\n    }\n  }\n\n  /* Info boxy */\n  .cenik-info-boxes {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    gap: 24px;\n    margin-top: 48px;\n  }\n\n  .info-box {\n    background: #FFFDF8;\n    border-radius: 16px;\n    padding: 32px;\n    display: flex;\n    align-items: flex-start;\n    gap: 20px;\n  }\n\n  .info-icon {\n    width: 48px;\n    height: 48px;\n    flex-shrink: 0;\n  }\n\n  .info-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .info-content h4 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 18px;\n    font-weight: 700;\n    color: #1A1A1A;\n    margin: 0 0 8px 0;\n  }\n\n  .info-content p {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: #1A1A1A;\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0;\n  }\n\n  @media (max-width: 768px) {\n    .cenik-info-boxes {\n      grid-template-columns: 1fr;\n    }\n\n    .info-box {\n      padding: 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "6ce88ef6a544e2f86e2a2eeca4fa6f79",
+      "user_id": 1,
+      "time": 1768569036
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "prp_proces_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "prp_proces_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "PRP Průběh | MaxHair"
+  },
+  {
+    "id": "prp_proces_container",
+    "name": "container",
+    "parent": "prp_proces_section",
+    "children": [
+      "prp_proces_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "prp_proces_code",
+    "name": "code",
+    "parent": "prp_proces_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- PRP PROCES KROK ZA KROKEM -->\n<section class=\"prp-proces-section\">\n  <div class=\"prp-proces-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">PRŮBĚH</span>\n      <h2 class=\"section-title\">Jak probíhá PRP terapie?</h2>\n      <p class=\"section-description\">Jednoduchý proces od konzultace až po výsledek.</p>\n    </div>\n    \n    <div class=\"proces-timeline\">\n      <div class=\"timeline-item\">\n        <div class=\"timeline-number\">1</div>\n        <div class=\"timeline-content\">\n          <h3>Konzultace</h3>\n          <p>Bezplatná konzultace online nebo osobně. Vyhodnotíme vaši situaci a navrhneme plán léčby.</p>\n        </div>\n      </div>\n      \n      <div class=\"timeline-item\">\n        <div class=\"timeline-number\">2</div>\n        <div class=\"timeline-content\">\n          <h3>Odběr krve</h3>\n          <p>Odebereme malé množství krve (cca 20-30 ml) z paže, podobně jako při běžném krevním odběru.</p>\n        </div>\n      </div>\n      \n      <div class=\"timeline-item\">\n        <div class=\"timeline-number\">3</div>\n        <div class=\"timeline-content\">\n          <h3>Zpracování</h3>\n          <p>Krev se zpracuje v centrifugaci, která oddělí krevní destičky a plazmu bohatou na růstové faktory.</p>\n        </div>\n      </div>\n      \n      <div class=\"timeline-item\">\n        <div class=\"timeline-number\">4</div>\n        <div class=\"timeline-content\">\n          <h3>Aplikace</h3>\n          <p>PRP plazma se aplikuje do pokožky hlavy pomocí mikrojehel. Celý proces trvá cca 30-45 minut.</p>\n        </div>\n      </div>\n      \n      <div class=\"timeline-item\">\n        <div class=\"timeline-number\">5</div>\n        <div class=\"timeline-content\">\n          <h3>Výsledky</h3>\n          <p>První výsledky jsou viditelné po 2-3 měsících. Optimální účinek po 6-12 měsících pravidelné léčby.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .prp-proces-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n  }\n\n  .prp-proces-content {\n    max-width: 1000px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .proces-timeline {\n    margin-top: 60px;\n  }\n\n  .timeline-item {\n    display: flex;\n    gap: 32px;\n    margin-bottom: 48px;\n    align-items: flex-start;\n  }\n\n  .timeline-item:last-child {\n    margin-bottom: 0;\n  }\n\n  .timeline-number {\n    width: 60px;\n    height: 60px;\n    background: var(--primary-gold);\n    color: var(--black);\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-family: 'Poppins', sans-serif;\n    font-size: 28px;\n    font-weight: 700;\n    flex-shrink: 0;\n  }\n\n  .timeline-content {\n    flex: 1;\n  }\n\n  .timeline-content h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 24px;\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 12px 0;\n  }\n\n  .timeline-content p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0;\n  }\n\n  @media (max-width: 768px) {\n    .prp-proces-section {\n      padding: 60px 24px;\n    }\n\n    .timeline-item {\n      flex-direction: column;\n      gap: 20px;\n    }\n\n    .timeline-number {\n      width: 50px;\n      height: 50px;\n      font-size: 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "f6d4b4269128319795ceb2f74e1a59da",
+      "user_id": 1,
+      "time": 1768569036
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "prp_faq_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "prp_faq_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "PRP FAQ | MaxHair"
+  },
+  {
+    "id": "prp_faq_container",
+    "name": "container",
+    "parent": "prp_faq_section",
+    "children": [
+      "prp_faq_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "prp_faq_code",
+    "name": "code",
+    "parent": "prp_faq_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- FAQ PRP -->\n<section class=\"prp-faq-section\">\n  <div class=\"prp-faq-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">FAQ</span>\n      <h2 class=\"section-title\">Časté otázky o PRP terapii</h2>\n    </div>\n    \n    <div class=\"faq-list\">\n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Je PRP terapie bolestivá?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>PRP terapie je téměř bezbolestná. Používáme lokální anestezii při aplikaci a proces trvá jen cca 30-45 minut. Po zákroku můžete pokračovat v běžných aktivitách.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Jak dlouho trvá PRP terapie?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Celý proces PRP trvá cca 30-45 minut. Odběr krve cca 5 minut, centrifugace 10-15 minut, aplikace 10-15 minut. Celý proces probíhá v jeden den.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Kdy uvidím výsledky?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Po PRP terapii můžete vidět první výsledky po 2-3 měsících. Optimální výsledky jsou viditelné po 6-12 měsících. Růstové faktory začínají působit postupně.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Pro koho je PRP vhodné?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>PRP je vhodné pro většinu lidí. Kontraindikace jsou velmi vzácné (např. poruchy srážlivosti krve). Během konzultace zjistíme, zda je PRP pro vás vhodné.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Kolik stojí PRP terapie?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>PRP terapie je zahrnuta v ceně transplantace. Pokud chcete PRP samostatně (bez transplantace), cena je individuální. <a href=\"/kontakt\">Kontaktujte nás</a> pro více informací.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .prp-faq-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--white);\n  }\n\n  .prp-faq-content {\n    max-width: 1000px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .prp-faq-section .faq-list {\n    margin-top: 60px;\n  }\n\n  .prp-faq-section .faq-item {\n    border-bottom: 2px solid var(--light-gray);\n    margin-bottom: 0;\n  }\n\n  .prp-faq-section .faq-item:last-child {\n    border-bottom: none;\n  }\n\n  .prp-faq-section .faq-question {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 24px 0;\n    background: transparent;\n    border: none;\n    cursor: pointer;\n    text-align: left;\n    font-family: 'Poppins', sans-serif;\n    font-size: 20px;\n    font-weight: 600;\n    color: var(--dark-gray);\n    transition: all 0.3s ease;\n  }\n\n  .prp-faq-section .faq-question:hover {\n    color: var(--primary-gold);\n  }\n\n  .prp-faq-section .faq-icon {\n    font-size: 28px;\n    font-weight: 300;\n    color: var(--primary-gold);\n    transition: transform 0.3s ease;\n  }\n\n  .prp-faq-section .faq-item.active .faq-icon {\n    transform: rotate(45deg);\n  }\n\n  .prp-faq-section .faq-answer {\n    max-height: 0;\n    overflow: hidden;\n    transition: max-height 0.3s ease;\n  }\n\n  .prp-faq-section .faq-item.active .faq-answer {\n    max-height: 500px;\n  }\n\n  .prp-faq-section .faq-answer p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.6;\n    padding: 0 0 24px 0;\n    margin: 0;\n  }\n\n  @media (max-width: 768px) {\n    .prp-faq-section {\n      padding: 60px 24px;\n    }\n\n    .prp-faq-section .faq-question {\n      font-size: 18px;\n      padding: 20px 0;\n    }\n  }\n</style>\n\n<script>\n  // FAQ Accordion - All Sections\n  (function() {\n    function initAllFAQ() {\n      var containers = document.querySelectorAll('.faq-list, .faq-items, .faq-grid');\n      for (var c = 0; c < containers.length; c++) {\n        var faqContainer = containers[c];\n        if (faqContainer.dataset.faqInit) continue;\n        faqContainer.dataset.faqInit = 'true';\n        (function(container) {\n          container.addEventListener('click', function(e) {\n            var question = e.target.closest('.faq-question');\n            if (!question) return;\n            var item = question.closest('.faq-item');\n            if (!item) return;\n            var isActive = item.classList.contains('active');\n            var allItems = container.querySelectorAll('.faq-item');\n            for (var i = 0; i < allItems.length; i++) {\n              allItems[i].classList.remove('active');\n            }\n            if (!isActive) {\n              item.classList.add('active');\n            }\n          });\n        })(faqContainer);\n      }\n    }\n    if (document.readyState === 'loading') {\n      document.addEventListener('DOMContentLoaded', initAllFAQ);\n    } else {\n      initAllFAQ();\n    }\n    setTimeout(initAllFAQ, 100);\n    setTimeout(initAllFAQ, 500);\n  })();\n</script>",
+      "executeCode": true,
+      "signature": "8fc6c1a4be186c0fbfbb279ecdcc93e9",
+      "user_id": 1,
+      "time": 1768569036
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "prp_cta_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "prp_cta_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "PRP CTA | MaxHair"
+  },
+  {
+    "id": "prp_cta_container",
+    "name": "container",
+    "parent": "prp_cta_section",
+    "children": [
+      "prp_cta_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "prp_cta_code",
+    "name": "code",
+    "parent": "prp_cta_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- CTA SEKCE -->\n<section class=\"prp-cta-section\">\n  <div class=\"prp-cta-content\">\n    <h2 class=\"cta-title\">Zajímá vás PRP terapie?</h2>\n    <p class=\"cta-description\">Získejte bezplatnou konzultaci a zjistěte, zda je PRP terapie vhodná právě pro vás.</p>\n    <div class=\"cta-buttons\">\n      <a href=\"/kontakt\" class=\"btn-primary\">Bezplatná konzultace</a>\n      <a href=\"/#cenik\" class=\"btn-secondary\">Zjistit cenu</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  .prp-cta-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n    text-align: center;\n  }\n\n  .prp-cta-content {\n    max-width: 800px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .cta-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 24px 0;\n    letter-spacing: normal;\n  }\n\n  .cta-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(18px, 2.5vw, 22px);\n    color: var(--dark-gray);\n    opacity: 0.8;\n    margin: 0 0 48px 0;\n    line-height: 1.6;\n  }\n\n  .cta-buttons {\n    display: flex;\n    gap: 20px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 10px;\n    transition: all 0.3s ease;\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-3px);\n    box-shadow: 0 10px 35px rgba(229, 193, 88, 0.5);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: transparent;\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--primary-gold);\n    border-radius: 10px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--primary-gold);\n    color: var(--black);\n    transform: translateY(-3px);\n  }\n\n  @media (max-width: 768px) {\n    .prp-cta-section {\n      padding: 60px 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "c390920cac68b7d17c3697ba4384b1b4",
+      "user_id": 1,
+      "time": 1768569036
+    },
+    "themeStyles": []
+  }
+]

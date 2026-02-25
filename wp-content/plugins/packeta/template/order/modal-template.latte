@@ -1,0 +1,105 @@
+<script type="text/template" id="tmpl-wc-packetery-modal-view-order">
+	<div class="wc-backbone-modal" data-packetery-modal>
+		{form $form, 'id' => 'order-modal-edit-form', 'data-order-id' => "{{ data.order.id }}", 'data-nonce' => $nonce, 'data-order-save-url' => $orderSaveUrl}
+			<div class="wc-backbone-modal-content">
+				<section class="wc-backbone-modal-main" role="main">
+					<header class="wc-backbone-modal-header">
+						<h1>{php esc_html_e( sprintf( $translations['order#%s'], '{{ data.order.custom_number }}' ) )}</h1>
+						<div class="modal-close modal-close-link dashicons dashicons-no-alt">
+							<span class="screen-reader-text">{$translations['closeModalPanel']}</span>
+						</div>
+					</header>
+					<div class="notice is-dismissible hidden">
+						<p></p>
+						<button type="button" class="notice-dismiss">
+							<span class="screen-reader-text"></span>
+						</button>
+					</div>
+					<article>
+						<div class="wc-order-preview-table-wrapper">
+							<table>
+								<tbody>
+								<tr>
+									<td>
+										{label packeteryWeight /}
+										<span title="{$translations['weightIsManual']}" class="{{ data.order.manualWeightIconExtraClass }}dashicons dashicons-lock"></span>
+									</td>
+									<td>
+										{input packeteryWeight, value:'{{ data.order.packeteryWeight }}', class: 'packetery-js-wizard-modal-weight'}
+										{input packeteryOriginalWeight value:'{{ data.order.packeteryOriginalWeight }}'}
+									</td>
+								</tr>
+								<# if (data.order.requiresSizeDimensions) { #>
+								<tr>
+									<td>{label packeteryLength /}</td>
+									<td>{input packeteryLength value:'{{ data.order.packeteryLength }}', class: 'packetery-js-wizard-modal-length'}</td>
+								</tr>
+								<tr>
+									<td>{label packeteryWidth /}</td>
+									<td>{input packeteryWidth value:'{{ data.order.packeteryWidth }}', class: 'packetery-js-wizard-modal-width'}</td>
+								</tr>
+								<tr>
+									<td>{label packeteryHeight /}</td>
+									<td>{input packeteryHeight value:'{{ data.order.packeteryHeight }}', class: 'packetery-js-wizard-modal-height'}</td>
+								</tr>
+								<# } #>
+								<# if ( data.order.allowsAdultContent ) { #>
+								<tr>
+									<td>{label packeteryAdultContent: /}</td>
+									<td>
+										<input type="checkbox" name="packeteryAdultContent" class="packetery-js-wizard-modal-adult-content"
+										<# if ( data.order.packeteryAdultContent ) { #>
+										checked
+										<# } #>
+										>
+									</td>
+								</tr>
+								<# } #>
+								<# if ( data.order.hasCod ) { #>
+								<tr>
+									<td>
+										{label packeteryCOD /}
+										<span title="{$translations['codIsManual']}" class="{{ data.order.manualCodIconExtraClass }}dashicons dashicons-lock"></span>
+									</td>
+									<td>
+										{input packeteryCOD value:'{{ data.order.packeteryCOD }}', class: 'packetery-js-wizard-modal-cod'}
+										{input packeteryCalculatedCod value:'{{ data.order.packeteryCalculatedCod }}'}
+									</td>
+								</tr>
+								<# } #>
+								<tr>
+									<td>
+										{label packeteryValue /}
+										<span title="{$translations['valueIsManual']}" class="{{ data.order.manualValueIconExtraClass }}dashicons dashicons-lock"></span>
+									</td>
+									<td>
+										{input packeteryValue value:'{{ data.order.packeteryValue }}', class: 'packetery-js-wizard-modal-value'}
+										{input packeteryCalculatedValue value:'{{ data.order.packeteryCalculatedValue }}'}
+									</td>
+								</tr>
+								<# if ( data.order.hasDeliverOn ) { #>
+								<tr class="{{ data.order.packeteryDeliverOnClass }}">
+									<td>{label packeteryDeliverOn /}</td>
+									<td>{input packeteryDeliverOn value:'{{ data.order.packeteryDeliverOn }}', class: 'date-picker packetery-js-wizard-modal-deliver-on'}</td>
+								</tr>
+								<# } #>
+								</tbody>
+							</table>
+						</div>
+					</article>
+					<footer>
+						<div class="inner">
+							<div id="publishing-action">
+								<span class="spinner"></span>
+								{* TODO: button-sencondary doesn't exist, fixing the typo has no effect on code. Needs to be investigated. *}
+								{input cancel, 'class' => 'button button-sencondary button-large modal-close modal-close-link'}
+								{input submit, 'class' => 'button button-primary button-large'}
+							</div>
+						</div>
+					</footer>
+				</section>
+			</div>
+		{/form}
+	</div>
+	<div class="wc-backbone-modal-backdrop modal-close"></div>
+</script>

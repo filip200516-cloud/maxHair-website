@@ -1,0 +1,109 @@
+{
+  "source": "MaxHair - revize webu 2.pdf",
+  "extractedAt": "2026-02-06",
+  "testUrl": "http://localhost:3000",
+  "purpose": "Checklist for testing website against PDF revision requirements",
+  "sections": [
+    {
+      "id": "horni-banner",
+      "name": "Horní banner",
+      "requirements": [
+        {"id": "hb-1", "req": "Add text next to logo", "status": "PARTIAL", "note": "Logo has MAX HAIR text"},
+        {"id": "hb-2", "req": "Remove Transplantace obočí from services", "status": "PASS"},
+        {"id": "hb-3", "req": "Rename Reference to Výsledky", "status": "PASS"},
+        {"id": "hb-4", "req": "FAQ - possible add to top banner", "status": "PENDING"}
+      ]
+    },
+    {
+      "id": "barvy-design",
+      "name": "Barvy & Design",
+      "requirements": [
+        {"id": "bd-1", "req": "Color palette: black, gray, white", "status": "PASS"},
+        {"id": "bd-2", "req": "Gold and yellow accents (must stand out well)", "status": "PASS"},
+        {"id": "bd-3", "req": "DO NOT use brown color", "status": "PASS"}
+      ]
+    },
+    {
+      "id": "hero",
+      "name": "Hero page",
+      "requirements": [
+        {"id": "h-1", "req": "Video background: must not overpower text, but recognizable", "status": "PASS"},
+        {"id": "h-2", "req": "WhatsApp icon: always visible + in bottom right corner of website", "status": "FAIL", "note": "No floating WhatsApp widget"},
+        {"id": "h-3", "req": "Hero text with 95% uchycení štěpů", "status": "PARTIAL", "note": "95% in stats, not in paragraph"}
+      ]
+    },
+    {
+      "id": "sluzby",
+      "name": "Naše služby",
+      "requirements": [
+        {"id": "s-1", "req": "Section = our services (not methods)", "status": "PASS"},
+        {"id": "s-2", "req": "Headline: Individuální řešení transplantace vlasů", "status": "PASS"},
+        {"id": "s-3", "req": "Services: Muži, Ženy, Vousy", "status": "PASS"},
+        {"id": "s-4", "req": "Add photo to each service", "status": "PASS"}
+      ]
+    },
+    {
+      "id": "proc-maxhair",
+      "name": "Proč MaxHair",
+      "requirements": [
+        {"id": "pm-1", "req": "Headline: Kompletní péče bez prostředníků", "status": "PASS"},
+        {"id": "pm-2", "req": "Subheadline and all 6 benefits as specified in PDF", "status": "PASS"}
+      ]
+    },
+    {
+      "id": "cenik",
+      "name": "Ceník",
+      "requirements": [
+        {"id": "c-1", "req": "2 price options: 69,900 Kč / 2850€, 75,500 Kč / 3,100€", "status": "PASS"},
+        {"id": "c-2", "req": "Explanatory text about price difference (letenka)", "status": "PASS"},
+        {"id": "c-3", "req": "Add Zpáteční letenka Turkish Airlines to flight option", "status": "PASS"},
+        {"id": "c-4", "req": "Same bullet list for both columns", "status": "PASS"}
+      ]
+    },
+    {
+      "id": "faq",
+      "name": "FAQ",
+      "requirements": [
+        {"id": "faq-1", "req": "Hide Zobrazit všechny otázky button", "status": "PENDING", "note": "Zobrazit všechny reference in testimonials"},
+        {"id": "faq-2", "req": "Replace with Nenašli jste odpověď? linking to contact form", "status": "PASS"}
+      ]
+    },
+    {
+      "id": "kontakt",
+      "name": "Kontakt",
+      "requirements": [
+        {"id": "k-1", "req": "Emphasize WhatsApp as main communication", "status": "PASS"},
+        {"id": "k-2", "req": "Subheadline: Nejrychlejší cesta je WhatsApp - odpovíme do pár minut", "status": "PASS"},
+        {"id": "k-3", "req": "WhatsApp number visible", "status": "PASS"},
+        {"id": "k-4", "req": "Email: info@maxhair.cz", "status": "PASS"},
+        {"id": "k-5", "req": "Green CTA: Napsat na WhatsApp", "status": "PASS"},
+        {"id": "k-6", "req": "Remove: newsletter signup", "status": "PASS", "note": "No newsletter in footer"},
+        {"id": "k-7", "req": "Keep only: WhatsApp, IG, FB social icons", "status": "PASS"},
+        {"id": "k-8", "req": "Address: virtual address in Czech Republic", "status": "PASS"}
+      ]
+    },
+    {
+      "id": "o-nas",
+      "name": "O nás",
+      "requirements": [
+        {"id": "on-1", "req": "Headline: Přímé spojení na prémiovou kliniku v Istanbulu", "status": "PASS"},
+        {"id": "on-2", "req": "Remove Jak jsme vznikli a v čem jsme jiní section", "status": "PENDING"},
+        {"id": "on-3", "req": "Zakladatel: Change 12 years -> 8 years", "status": "PASS"},
+        {"id": "on-4", "req": "V čem jsme jiní: 15+ years -> 8 years", "status": "FAIL"},
+        {"id": "on-5", "req": "Merve Altun: new bio text as in PDF", "status": "FAIL"},
+        {"id": "on-6", "req": "Remove numbers from team section", "status": "FAIL"},
+        {"id": "on-7", "req": "Replace stats with CTA: Bezplatná lékařská analýza", "status": "PARTIAL", "note": "Has Bezplatná konzultace"},
+        {"id": "on-8", "req": "Remove certifikace, replace with photo", "status": "FAIL"},
+        {"id": "on-9", "req": "Remove Naše čísla mluví za nás section", "status": "FAIL"},
+        {"id": "on-10", "req": "Prohlédnout reference -> Prohlédnout výsledky", "status": "PASS"}
+      ]
+    }
+  ],
+  "summary": {
+    "pass": 29,
+    "fail": 6,
+    "partial": 4,
+    "pending": 3,
+    "total": 42
+  }
+}

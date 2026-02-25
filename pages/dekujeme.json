@@ -1,0 +1,160 @@
+[
+  {
+    "id": "dekujeme_hero_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "dekujeme_hero_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Děkujeme Hero | MaxHair"
+  },
+  {
+    "id": "dekujeme_hero_container",
+    "name": "container",
+    "parent": "dekujeme_hero_section",
+    "children": [
+      "dekujeme_hero_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "dekujeme_hero_code",
+    "name": "code",
+    "parent": "dekujeme_hero_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- DEKUJEME HERO SECTION -->\n<section class=\"dekujeme-hero-section\">\n  <div class=\"dekujeme-hero-content\">\n    <div class=\"success-icon\">\n      <svg viewBox=\"0 0 100 100\" class=\"checkmark\">\n        <circle cx=\"50\" cy=\"50\" r=\"45\" fill=\"none\" stroke=\"var(--white)\" stroke-width=\"4\" class=\"circle\"/>\n        <path d=\"M 30 50 L 45 65 L 70 35\" fill=\"none\" stroke=\"var(--white)\" stroke-width=\"5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"check\"/>\n      </svg>\n    </div>\n    <h1 class=\"hero-title\">Děkujeme za vaši zprávu!</h1>\n    <p class=\"hero-description\">Vaše poptávka byla úspěšně odeslána. Brzy se vám ozveme.</p>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #D4AF37;\n    --dark-gray: #1A1A1A;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #333333;\n  }\n\n  .dekujeme-hero-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 60vh;\n    background: linear-gradient(135deg, var(--primary-gold) 0%, var(--secondary-gold) 100%);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 120px 80px 80px 80px;\n    text-align: center;\n  }\n\n  .dekujeme-hero-content {\n    max-width: 800px;\n    width: 100%;\n  }\n\n  .success-icon {\n    width: 120px;\n    height: 120px;\n    margin: 0 auto 40px;\n    animation: scaleIn 0.5s ease-out;\n  }\n\n  .checkmark {\n    width: 100%;\n    height: 100%;\n  }\n\n  .circle {\n    stroke-dasharray: 283;\n    stroke-dashoffset: 283;\n    animation: drawCircle 0.8s ease-out forwards;\n  }\n\n  .check {\n    stroke-dasharray: 50;\n    stroke-dashoffset: 50;\n    animation: drawCheck 0.5s ease-out 0.5s forwards;\n  }\n\n  @keyframes scaleIn {\n    from {\n      transform: scale(0);\n      opacity: 0;\n    }\n    to {\n      transform: scale(1);\n      opacity: 1;\n    }\n  }\n\n  @keyframes drawCircle {\n    to {\n      stroke-dashoffset: 0;\n    }\n  }\n\n  @keyframes drawCheck {\n    to {\n      stroke-dashoffset: 0;\n    }\n  }\n\n  .hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 800;\n    color: var(--black);\n    margin: 0 0 24px 0;\n    letter-spacing: -1px;\n    line-height: 1.2;\n  }\n\n  .hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(18px, 2.5vw, 22px);\n    color: var(--black);\n    opacity: 0.9;\n    margin: 0;\n    line-height: 1.6;\n  }\n\n  @media (max-width: 768px) {\n    .dekujeme-hero-section {\n      padding: 100px 24px 60px 24px;\n      min-height: 100vh;\n    }\n\n    .success-icon {\n      width: 100px;\n      height: 100px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "a1c42ca2a64743979583939a60ae290b",
+      "user_id": 1,
+      "time": 1768569031
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "dekujeme_timeline_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "dekujeme_timeline_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Děkujeme Timeline | MaxHair"
+  },
+  {
+    "id": "dekujeme_timeline_container",
+    "name": "container",
+    "parent": "dekujeme_timeline_section",
+    "children": [
+      "dekujeme_timeline_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "dekujeme_timeline_code",
+    "name": "code",
+    "parent": "dekujeme_timeline_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- DEKUJEME TIMELINE SECTION -->\n<section class=\"dekujeme-timeline-section\">\n  <div class=\"dekujeme-timeline-content\">\n    <h2 class=\"section-title\">Co se stane dál?</h2>\n    <p class=\"section-description\">Postupujeme rychle a efektivně</p>\n    \n    <div class=\"timeline\">\n      <div class=\"timeline-item\">\n        <div class=\"timeline-number\">1</div>\n        <div class=\"timeline-content\">\n          <h3>Do 24 hodin vás kontaktujeme</h3>\n          <p>Naše česká podpora vám odpoví a probere s vámi vaše potřeby a očekávání.</p>\n        </div>\n      </div>\n      \n      <div class=\"timeline-item\">\n        <div class=\"timeline-number\">2</div>\n        <div class=\"timeline-content\">\n          <h3>Probereme vaše potřeby</h3>\n          <p>Společně zjistíme, jaká služba je pro vás nejvhodnější a navrhneme individuální plán.</p>\n        </div>\n      </div>\n      \n      <div class=\"timeline-item\">\n        <div class=\"timeline-number\">3</div>\n        <div class=\"timeline-content\">\n          <h3>Navrhneme individuální plán</h3>\n          <p>Připravíme pro vás detailní návrh včetně ceny, termínu a všech potřebných informací.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .dekujeme-timeline-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: auto;\n    background: var(--white);\n    padding: 100px 80px;\n    overflow-x: hidden;\n  }\n\n  .dekujeme-timeline-content {\n    max-width: 1000px;\n    width: 100%;\n    margin: 0 auto;\n    text-align: center;\n  }\n\n  .section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(32px, 4vw, 48px);\n    font-weight: 800;\n    color: var(--dark-gray);\n    margin: 0 0 16px 0;\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    margin: 0 0 60px 0;\n    text-align: center;\n  }\n\n  .timeline {\n    display: flex;\n    flex-direction: column;\n    gap: 40px;\n    position: relative;\n    padding-left: 60px;\n  }\n\n  .timeline-item {\n    display: flex;\n    gap: 32px;\n    align-items: flex-start;\n    position: relative;\n    text-align: left;\n  }\n\n  .timeline-number {\n    width: 60px;\n    height: 60px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Poppins', sans-serif;\n    font-size: 28px;\n    font-weight: 800;\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-shrink: 0;\n    position: absolute;\n    left: -30px;\n    box-shadow: 0 4px 16px rgba(229, 193, 88, 0.3);\n  }\n\n  .timeline-content {\n    flex: 1;\n    padding-top: 8px;\n    margin-left: 56px;\n  }\n\n  .timeline-content h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(20px, 2.5vw, 24px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 12px 0;\n  }\n\n  .timeline-content p {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(15px, 1.8vw, 17px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.7;\n    margin: 0;\n  }\n\n  @media (max-width: 768px) {\n    .dekujeme-timeline-section {\n      padding: 60px 24px;\n    }\n\n    .timeline {\n      padding-left: 50px;\n    }\n\n    .timeline-number {\n      width: 50px;\n      height: 50px;\n      font-size: 24px;\n      left: -25px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "2ae8f6fd40e0c166ee592c9d1c553385",
+      "user_id": 1,
+      "time": 1768569031
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "dekujeme_contact_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "dekujeme_contact_container"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_background": {
+        "color": {
+          "hex": "#FFFFFF"
+        }
+      }
+    },
+    "label": "Děkujeme Contact | MaxHair"
+  },
+  {
+    "id": "dekujeme_contact_container",
+    "name": "container",
+    "parent": "dekujeme_contact_section",
+    "children": [
+      "dekujeme_contact_code"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_background": {
+        "color": {
+          "hex": "#FFFFFF"
+        }
+      }
+    }
+  },
+  {
+    "id": "dekujeme_contact_code",
+    "name": "code",
+    "parent": "dekujeme_contact_container",
+    "children": [],
+    "settings": {
+      "code": "<div class=\"dkj-contact-wrap\">\n  <h2 class=\"dkj-contact-heading\">Potřebujete urgentní odpověď?</h2>\n  <p class=\"dkj-contact-sub\">Kontaktujte nás přímo</p>\n  <div class=\"dkj-contact-grid\">\n    <div class=\"dkj-card\">\n      <div class=\"dkj-card-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#E5C158\" stroke-width=\"2\" width=\"48\" height=\"48\"><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/><path d=\"M22 6L12 13 2 6\"/></svg></div>\n      <h3 class=\"dkj-card-title\">Email</h3>\n      <a href=\"mailto:info@maxhair.cz\" class=\"dkj-card-link\">info@maxhair.cz</a>\n      <p class=\"dkj-card-note\">Odpovídáme do 2 hodin</p>\n    </div>\n    <div class=\"dkj-card\">\n      <div class=\"dkj-card-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#E5C158\" stroke-width=\"2\" width=\"48\" height=\"48\"><path d=\"M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z\"/></svg></div>\n      <h3 class=\"dkj-card-title\">Telefon</h3>\n      <a href=\"tel:+420601515323\" class=\"dkj-card-link\">+420 601 515 323</a>\n      <p class=\"dkj-card-note\">Dostupná 24/7</p>\n    </div>\n    <div class=\"dkj-card\">\n      <div class=\"dkj-card-icon\"><svg viewBox=\"0 0 24 24\" fill=\"#E5C158\" width=\"48\" height=\"48\"><path d=\"M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z\"/></svg></div>\n      <h3 class=\"dkj-card-title\">WhatsApp</h3>\n      <a href=\"https://wa.me/420601515323\" target=\"_blank\" class=\"dkj-card-link\">Napsat zprávu</a>\n      <p class=\"dkj-card-note\">Rychlá komunikace</p>\n    </div>\n  </div>\n</div>\n\n<style>\n  #brxe-dekujeme_contact_section,\n  #brxe-dekujeme_contact_section > *,\n  #brxe-dekujeme_contact_container,\n  #brxe-dekujeme_contact_container > *,\n  #brxe-dekujeme_contact_code,\n  #brxe-dekujeme_contact_code > * {\n    background: #FFFFFF !important;\n    background-color: #FFFFFF !important;\n  }\n\n  .dkj-contact-wrap {\n    width: 100%;\n    max-width: 1400px;\n    margin: 0 auto;\n    padding: 100px 80px;\n    text-align: center;\n    background: #FFFFFF !important;\n    background-color: #FFFFFF !important;\n    color: #1A1A1A;\n    box-sizing: border-box;\n  }\n\n  .dkj-contact-heading {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(28px, 4vw, 40px);\n    font-weight: 700;\n    color: #1A1A1A !important;\n    margin: 0 0 16px 0;\n    background: transparent !important;\n    background-color: transparent !important;\n  }\n\n  .dkj-contact-sub {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 18px);\n    color: #666666 !important;\n    margin: 0 0 60px 0;\n    background: transparent !important;\n    background-color: transparent !important;\n  }\n\n  .dkj-contact-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 40px;\n    background: transparent !important;\n    background-color: transparent !important;\n  }\n\n  .dkj-card {\n    background: #FFFFFF !important;\n    background-color: #FFFFFF !important;\n    border: 1px solid #E8E8E8;\n    border-radius: 24px;\n    padding: 48px 40px;\n    text-align: center;\n    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;\n    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);\n  }\n\n  .dkj-card:hover {\n    transform: translateY(-8px);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    border-color: #E5C158;\n  }\n\n  .dkj-card-icon {\n    width: 56px;\n    height: 56px;\n    margin: 0 auto 24px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    background: transparent !important;\n    background-color: transparent !important;\n  }\n\n  .dkj-card-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: 24px;\n    font-weight: 700;\n    color: #1A1A1A !important;\n    margin: 0 0 16px 0;\n    background: transparent !important;\n    background-color: transparent !important;\n  }\n\n  .dkj-card-link {\n    display: block;\n    font-family: 'Inter', sans-serif;\n    font-size: 18px;\n    font-weight: 600;\n    color: #E5C158 !important;\n    text-decoration: none;\n    margin-bottom: 12px;\n    transition: color 0.3s ease;\n    background: transparent !important;\n    background-color: transparent !important;\n  }\n\n  .dkj-card-link:hover {\n    color: #D4AF37 !important;\n  }\n\n  .dkj-card-note {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: #888888 !important;\n    margin: 0;\n    background: transparent !important;\n    background-color: transparent !important;\n  }\n\n  @media (max-width: 768px) {\n    .dkj-contact-wrap {\n      padding: 60px 24px;\n    }\n    .dkj-contact-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "4ff29534711ba9a8640ae59c198813cc",
+      "user_id": 1,
+      "time": 1768569031
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "dekujeme_cta_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "dekujeme_cta_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Děkujeme CTA | MaxHair"
+  },
+  {
+    "id": "dekujeme_cta_container",
+    "name": "container",
+    "parent": "dekujeme_cta_section",
+    "children": [
+      "dekujeme_cta_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "dekujeme_cta_code",
+    "name": "code",
+    "parent": "dekujeme_cta_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- DEKUJEME CTA SECTION -->\n<section class=\"dekujeme-cta-section\">\n  <div class=\"dekujeme-cta-content\">\n    <h2 class=\"cta-title\">Mezitím si můžete prohlédnout</h2>\n    <p class=\"cta-description\">Reference našich spokojených klientů</p>\n    <div class=\"cta-buttons\">\n      <a href=\"/reference\" class=\"btn-primary\">Prohlédnout reference</a>\n      <a href=\"/\" class=\"btn-secondary\">Zpět na homepage</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  .dekujeme-cta-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 40vh;\n    background: var(--white);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 80px;\n  }\n\n  .dekujeme-cta-content {\n    max-width: 800px;\n    width: 100%;\n    text-align: center;\n  }\n\n  .cta-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(28px, 4vw, 40px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 16px 0;\n  }\n\n  .cta-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 18px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    margin: 0 0 40px 0;\n  }\n\n  .cta-buttons {\n    display: flex;\n    gap: 24px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 16px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 8px;\n    transition: all 0.3s ease;\n    box-shadow: 0 4px 16px rgba(229, 193, 88, 0.3);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-2px);\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 16px 40px;\n    background: transparent;\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--primary-gold);\n    border-radius: 8px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--primary-gold);\n    color: var(--black);\n  }\n\n  @media (max-width: 768px) {\n    .dekujeme-cta-section {\n      padding: 60px 24px;\n    }\n\n    .cta-buttons {\n      flex-direction: column;\n      align-items: center;\n    }\n\n    .btn-primary,\n    .btn-secondary {\n      width: 100%;\n      max-width: 300px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "3753cf3bee0e3222a5c9d576996c3a49",
+      "user_id": 1,
+      "time": 1768569031
+    },
+    "themeStyles": []
+  }
+]

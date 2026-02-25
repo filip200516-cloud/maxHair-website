@@ -1,0 +1,168 @@
+[
+  {
+    "id": "kontakt_hero_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "kontakt_hero_container"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_cssCustom": "%root% { background: transparent !important; padding: 0 !important; margin: 0 !important; max-width: 100% !important; width: 100% !important; }"
+    },
+    "label": "Kontakt Hero | MaxHair"
+  },
+  {
+    "id": "kontakt_hero_container",
+    "name": "container",
+    "parent": "kontakt_hero_section",
+    "children": [
+      "kontakt_hero_code"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_cssCustom": "%root% { background: transparent !important; padding: 0 !important; margin: 0 !important; max-width: 100% !important; width: 100% !important; }"
+    }
+  },
+  {
+    "id": "kontakt_hero_code",
+    "name": "code",
+    "parent": "kontakt_hero_container",
+    "children": [],
+    "settings": {
+      "code": "<script>(function(){var url='https://maxhair.cz/wp-content/uploads/2026/02/Layer0.png';function fix(){var h=document.querySelector('#brx-header,#main-header,header');if(!h)return;var links=h.querySelectorAll('a[href=\"/\"],a[href*=\"maxhair.cz/\"]');for(var i=0;i<links.length;i++){var a=links[i];if(a.closest('nav'))continue;var txt=(a.textContent||'').trim();if(txt.indexOf('MAX')>=0||txt.indexOf('HAIR')>=0||(!a.querySelector('img')&&txt.length<30)){var img=a.querySelector('img');if(img)img.src=url;else a.innerHTML='<img src=\"'+url+'\" alt=\"MaxHair\" style=\"height:40px;width:auto;max-height:50px\">';return}}}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fix);else fix();setTimeout(fix,300);setTimeout(fix,1000);})();</script>\n<!-- KONTAKT HERO SECTION -->\n<section class=\"kontakt-hero-section\">\n  <div class=\"kontakt-hero-content\">\n    <div class=\"hero-badge\">KONTAKT</div>\n    <h1 class=\"hero-title\" style=\"color: var(--black) !important; -webkit-text-fill-color: var(--black) !important; opacity: 1;\">Chcete úvodní konzultaci zdarma, nebo máte dotazy?</h1>\n    <p class=\"hero-description\" style=\"color: #1A1A1A !important; -webkit-text-fill-color: #1A1A1A !important;\">Kontaktujte nás, nejrychlejší jsme na WhatsAppu.</p>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #D4AF37;\n    --dark-gray: #1A1A1A;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #333333;\n  }\n\n  .kontakt-hero-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 50vh;\n    background: linear-gradient(135deg, rgba(255, 253, 247, 1) 0%, rgba(251, 245, 232, 1) 40%, rgba(245, 235, 216, 1) 100%);\n    background-color: var(--black);\n    color: #1A1A1A !important;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 120px 80px 80px 80px;\n    text-align: center;\n  }\n\n  .kontakt-hero-content {\n    max-width: 1000px;\n    width: 100%;\n  }\n\n  .kontakt-hero-section .hero-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: rgba(229, 193, 88, 0.15);\n    border: 1px solid var(--primary-gold);\n    color: #000000 !important;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    border-radius: 30px;\n    margin-bottom: 24px;\n  }\n\n  .kontakt-hero-section .hero-title,\n  .kontakt-hero-section .kontakt-hero-content .hero-title,\n  .kontakt-hero-section h1,\n  .kontakt-hero-section h1.hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 64px);\n    font-weight: 700;\n    color: var(--black) !important;\n    -webkit-text-fill-color: var(--black) !important;\n    opacity: 1;\n    margin: 0 0 24px 0;\n    letter-spacing: normal;\n    line-height: 1.2;\n  }\n\n  .kontakt-hero-section .hero-description,\n  .kontakt-hero-section .kontakt-hero-content .hero-description,\n  .kontakt-hero-section p,\n  .kontakt-hero-section p.hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: #1A1A1A !important;\n    -webkit-text-fill-color: #1A1A1A !important;\n    opacity: 0.85;\n    margin: 0;\n    line-height: 1.6;\n  }\n\n  @media (max-width: 768px) {\n    .kontakt-hero-section {\n      padding: 100px 24px 60px 24px;\n      min-height: 100vh; min-height: 100svh;\n    }\n  }\n\n  /* Fix Bricks wrapper backgrounds */\n  .brxe-section {\n    background: transparent !important;\n    padding: 0 !important;\n    margin: 0 !important;\n  }\n  .brxe-container {\n    background: transparent !important;\n    padding: 0 !important;\n    margin: 0 !important;\n    max-width: 100% !important;\n    width: 100% !important;\n  }\n  body {\n    background: #FFFFFF !important;\n  }\n\n  /* Zabránit horizontálnímu přetékání na celé stránce Kontakt */\n  html, body {\n    overflow-x: hidden !important;\n    max-width: 100vw !important;\n  }\n</style>",
+      "executeCode": true,
+      "signature": "af19cf408ba7cf7ae0b15883d7e0079c",
+      "user_id": 1,
+      "time": 1768569033
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "kontakt_main_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "kontakt_main_container"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_cssCustom": "%root% { background: transparent !important; padding: 0 !important; margin: 0 !important; max-width: 100% !important; width: 100% !important; }"
+    },
+    "label": "Kontakt Main | MaxHair"
+  },
+  {
+    "id": "kontakt_main_container",
+    "name": "container",
+    "parent": "kontakt_main_section",
+    "children": [
+      "kontakt_main_code"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_cssCustom": "%root% { background: transparent !important; padding: 0 !important; margin: 0 !important; max-width: 100% !important; width: 100% !important; }"
+    }
+  },
+  {
+    "id": "kontakt_main_code",
+    "name": "code",
+    "parent": "kontakt_main_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- KONTAKT MAIN SECTION -->\n<section class=\"kontakt-section\" id=\"kontakt\">\n  <div class=\"kontakt-content\">\n    <div class=\"kontakt-grid\">\n      <!-- Kontaktní údaje - WhatsApp zdůrazněn -->\n      <div class=\"kontakt-info\">\n        <div class=\"contact-item-block\">\n          <h3 class=\"contact-label\">WhatsApp</h3>\n          <a href=\"https://wa.me/420601515323\" target=\"_blank\" rel=\"noopener\" class=\"contact-value\">+420 601 515 323</a>\n        </div>\n        <div class=\"contact-item-block\">\n          <h3 class=\"contact-label\">Email</h3>\n          <a href=\"mailto:info@maxhair.cz\" class=\"contact-value\">info@maxhair.cz</a>\n        </div>\n        <a href=\"https://wa.me/420601515323\" target=\"_blank\" rel=\"noopener\" class=\"btn-whatsapp\">\n          <i class=\"fab fa-whatsapp\"></i> Napsat na WhatsApp\n        </a>\n        <div class=\"contact-item-block\">\n          <h3 class=\"contact-label\">Adresa</h3>\n          <p class=\"contact-value\">Vinohradská 1, 120 00 Praha 2<br>Česká republika</p>\n        </div>\n        <div class=\"kontakt-social\">\n          <a href=\"https://wa.me/420601515323\" class=\"social-link social-whatsapp\" aria-label=\"WhatsApp\" target=\"_blank\" rel=\"noopener\"><i class=\"fab fa-whatsapp\"></i></a>\n          <a href=\"https://instagram.com/maxhair.cz\" class=\"social-link\" aria-label=\"Instagram\" target=\"_blank\" rel=\"noopener\"><i class=\"fab fa-instagram\"></i></a>\n          <a href=\"https://facebook.com/maxhair.cz\" class=\"social-link\" aria-label=\"Facebook\" target=\"_blank\" rel=\"noopener\"><i class=\"fab fa-facebook-f\"></i></a>\n        </div>\n      </div>\n      \n      <!-- Formulář -->\n      <div class=\"kontakt-form\">\n        <form class=\"form\" id=\"kontakt-contact-form\" novalidate>\n          <div class=\"form-group\">\n            <label for=\"name\">Jméno a příjmení *</label>\n            <input type=\"text\" id=\"name\" name=\"name\" required />\n          </div>\n          <div class=\"form-row\">\n            <div class=\"form-group\">\n              <label for=\"email\">Email *</label>\n              <input type=\"email\" id=\"email\" name=\"email\" required />\n            </div>\n            <div class=\"form-group\">\n              <label for=\"phone\">Telefon *</label>\n              <input type=\"tel\" id=\"phone\" name=\"phone\" required />\n            </div>\n          </div>\n          <div class=\"form-group\">\n            <label for=\"message\">Vaše otázka *</label>\n            <textarea id=\"message\" name=\"message\" rows=\"4\" required placeholder=\"Popište vaši situaci nebo položte otázku...\"></textarea>\n          </div>\n          <div class=\"form-group form-checkbox\">\n            <label>\n              <input type=\"checkbox\" name=\"gdpr\" required />\n              <span>Souhlasím se <a href=\"/gdpr\" target=\"_blank\">zpracováním osobních údajů</a> *</span>\n            </label>\n          </div>\n          <div class=\"kontakt-form-error\" style=\"display:none;color:#e74c3c;font-family:'Inter',sans-serif;font-size:14px;margin-bottom:12px;padding:12px;background:rgba(231,76,60,.08);border-radius:8px;\"></div>\n          <button type=\"submit\" class=\"btn-submit\" id=\"kontakt-submit-btn\">Odeslat poptávku</button>\n        </form>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');\n  \n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #D4AF37;\n    --dark-gray: #1A1A1A;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #333333;\n    --whatsapp-green: #25D366;\n  }\n  \n  .kontakt-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    background: #F5F5F5;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: clamp(50px, 8vw, 80px) clamp(20px, 4vw, 60px);\n    overflow-x: hidden;\n  }\n\n  .kontakt-content {\n    max-width: 1200px;\n    width: 100%;\n    min-width: 0;\n    overflow-x: hidden;\n  }\n\n  .kontakt-grid {\n    display: grid;\n    grid-template-columns: 1fr 1.2fr;\n    gap: clamp(40px, 5vw, 60px);\n    align-items: start;\n    min-width: 0;\n  }\n\n  .kontakt-info,\n  .kontakt-form {\n    min-width: 0;\n  }\n\n  .kontakt-info {\n    background: #FFFFFF;\n    border-radius: clamp(16px, 2vw, 20px);\n    padding: clamp(32px, 4vw, 40px);\n    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);\n    border: 1px solid rgba(229, 193, 88, 0.2);\n  }\n\n  .contact-item-block {\n    margin-bottom: clamp(20px, 2.5vw, 24px);\n  }\n\n  .contact-item-block:last-of-type {\n    margin-bottom: 0;\n  }\n\n  .contact-label {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(12px, 1.5vw, 13px);\n    font-weight: 600;\n    color: var(--dark-gray);\n    margin: 0 0 6px 0;\n    text-transform: uppercase;\n    letter-spacing: 0.5px;\n  }\n\n  .contact-value {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 18px);\n    color: var(--dark-gray);\n    text-decoration: none;\n    display: block;\n    line-height: 1.5;\n  }\n\n  .contact-value:hover {\n    color: var(--primary-gold);\n  }\n\n  .kontakt-info .contact-value:not(a) {\n    color: var(--dark-gray);\n    opacity: 0.9;\n  }\n\n  .btn-whatsapp {\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    gap: 10px;\n    width: 100%;\n    padding: clamp(14px, 1.8vw, 18px) clamp(24px, 3vw, 32px);\n    background: var(--whatsapp-green);\n    color: #FFFFFF !important;\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(15px, 1.8vw, 17px);\n    font-weight: 600;\n    border: none;\n    border-radius: clamp(10px, 1.2vw, 12px);\n    cursor: pointer;\n    text-decoration: none;\n    margin: clamp(24px, 3vw, 32px) 0;\n    transition: all 0.3s ease;\n    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);\n  }\n\n  .btn-whatsapp:hover {\n    background: #20bd5a;\n    transform: translateY(-2px);\n    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);\n  }\n\n  .btn-whatsapp i {\n    font-size: 20px;\n  }\n\n  .kontakt-social {\n    display: flex;\n    gap: 12px;\n    margin-top: clamp(24px, 3vw, 32px);\n  }\n\n  .kontakt-social .social-link {\n    width: 44px;\n    height: 44px;\n    background: #F5F5F5;\n    border-radius: 10px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    color: var(--dark-gray);\n    text-decoration: none;\n    transition: all 0.3s ease;\n    font-size: 18px;\n  }\n\n  .kontakt-social .social-link:hover {\n    background: var(--primary-gold);\n    color: var(--black);\n    transform: translateY(-4px);\n  }\n\n  .kontakt-social .social-whatsapp:hover {\n    background: var(--whatsapp-green);\n    color: #FFFFFF;\n  }\n\n  .kontakt-form {\n    background: #FFFFFF;\n    border-radius: clamp(16px, 2vw, 20px);\n    padding: clamp(32px, 4vw, 40px);\n    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);\n    border: 1px solid rgba(229, 193, 88, 0.2);\n  }\n\n  .form-group {\n    margin-bottom: clamp(20px, 2.5vw, 24px);\n    text-align: left;\n  }\n\n  .form-group:last-of-type {\n    margin-bottom: 0;\n  }\n\n  .form-group label {\n    display: block;\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(13px, 1.6vw, 14px);\n    font-weight: 600;\n    color: var(--dark-gray);\n    margin-bottom: clamp(8px, 1vw, 10px);\n  }\n\n  .form-group input,\n  .form-group select,\n  .form-group textarea {\n    width: 100%;\n    padding: clamp(12px, 1.5vw, 14px) clamp(14px, 1.8vw, 16px);\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(14px, 1.7vw, 15px);\n    color: var(--dark-gray);\n    background: #FAFAFA;\n    border: 1px solid #E8E8E8;\n    border-radius: clamp(8px, 1vw, 10px);\n    transition: all 0.3s ease;\n    box-sizing: border-box;\n  }\n\n  .form-group input:focus,\n  .form-group select:focus,\n  .form-group textarea:focus {\n    outline: none;\n    border-color: var(--primary-gold);\n    box-shadow: 0 0 0 3px rgba(229, 193, 88, 0.1);\n  }\n\n  .form-row {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: clamp(16px, 2vw, 20px);\n  }\n\n  .form-checkbox {\n    margin-bottom: clamp(20px, 2.5vw, 24px);\n  }\n\n  .form-checkbox label {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    font-weight: 400;\n    cursor: pointer;\n    line-height: 1.4;\n    margin-bottom: 0;\n    flex-wrap: nowrap;\n  }\n\n  .form-checkbox span {\n    display: inline;\n    white-space: normal;\n  }\n\n  .form-checkbox input[type=\"checkbox\"] {\n    width: 16px;\n    height: 16px;\n    min-width: 16px;\n    margin: 0;\n    cursor: pointer;\n    flex-shrink: 0;\n    accent-color: var(--dark-gray);\n  }\n\n  .form-checkbox a {\n    color: var(--primary-gold);\n    text-decoration: underline;\n  }\n\n  .btn-submit {\n    width: 100%;\n    padding: clamp(14px, 1.8vw, 18px) clamp(24px, 3vw, 32px);\n    background: linear-gradient(135deg, var(--primary-gold) 0%, var(--secondary-gold) 100%);\n    color: var(--dark-gray);\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(15px, 1.8vw, 17px);\n    font-weight: 600;\n    border: none;\n    border-radius: clamp(10px, 1.2vw, 12px);\n    cursor: pointer;\n    transition: all 0.3s ease;\n    margin-top: 0;\n  }\n\n  .btn-submit:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-2px);\n    box-shadow: 0 8px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  @media (max-width: 992px) {\n    .kontakt-grid {\n      grid-template-columns: 1fr;\n      gap: clamp(32px, 4vw, 40px);\n    }\n    .form-row {\n      grid-template-columns: 1fr;\n    }\n  }\n\n  @media (max-width: 768px) {\n    .kontakt-section {\n      padding: clamp(40px, 6vw, 60px) clamp(16px, 4vw, 24px);\n    }\n  }\n\n  @media (max-width: 480px) {\n    .kontakt-section {\n      padding: 32px 16px;\n    }\n  }\n\n  #brxe-kontakt_main_section,\n  #brxe-kontakt_main_container,\n  #brxe-kontakt_main_code {\n    overflow-x: hidden !important;\n    max-width: 100% !important;\n  }\n  .btn-submit.kontakt-loading{opacity:.7;pointer-events:none;position:relative}\n  .btn-submit.kontakt-loading::after{content:'';width:18px;height:18px;border:2px solid transparent;border-top-color:currentColor;border-radius:50%;animation:kontaktSpin .6s linear infinite;display:inline-block;vertical-align:middle;margin-left:8px}\n  @keyframes kontaktSpin{to{transform:rotate(360deg)}}\n</style>\n<script>\n(function(){function initForm(){var form=document.getElementById('kontakt-contact-form');if(!form||form.dataset.init)return;form.dataset.init='1';form.addEventListener('submit',function(e){e.preventDefault();var btn=document.getElementById('kontakt-submit-btn');var errEl=form.querySelector('.kontakt-form-error');errEl.style.display='none';var name=form.querySelector('[name=name]').value.trim();var email=form.querySelector('[name=email]').value.trim();var phone=form.querySelector('[name=phone]').value.trim();var message=form.querySelector('[name=message]').value.trim();var gdpr=form.querySelector('[name=gdpr]').checked;if(!name||!email||!phone){errEl.textContent='Vyplňte prosím všechna povinná pole.';errEl.style.display='block';return}if(!/^[^@]+@[^@]+\\.[^@]+$/.test(email)){errEl.textContent='Zadejte prosím platný email.';errEl.style.display='block';return}if(!gdpr){errEl.textContent='Musíte souhlasit se zpracováním osobních údajů.';errEl.style.display='block';return}btn.classList.add('kontakt-loading');btn.textContent='Odesílání...';var data=new FormData();data.append('action','maxhair_contact_submit');data.append('name',name);data.append('email',email);data.append('phone',phone);data.append('message',message);fetch((window.maxhairAjax&&window.maxhairAjax.ajaxurl)||'/wp-admin/admin-ajax.php',{method:'POST',body:data}).then(function(r){return r.json()}).then(function(r){if(r.success){window.location.href='/dekujeme'}else{errEl.textContent=r.data||'Došlo k chybě. Zkuste to prosím znovu.';errEl.style.display='block';btn.classList.remove('kontakt-loading');btn.textContent='Odeslat poptávku'}}).catch(function(){errEl.textContent='Chyba připojení. Zkuste to prosím znovu.';errEl.style.display='block';btn.classList.remove('kontakt-loading');btn.textContent='Odeslat poptávku'})})}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',initForm)}else{initForm()}setTimeout(initForm,500)})();\n</script>",
+      "executeCode": true,
+      "signature": "4fedbb216d267cb655b7572ac50d378a",
+      "user_id": 1,
+      "time": 1768569033
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "kontakt_why_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "kontakt_why_container"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_background": {
+        "color": {
+          "hex": "#FFFFFF"
+        }
+      },
+      "_cssCustom": "%root% { background: #FFFFFF !important; padding: 0 !important; margin: 0 !important; max-width: 100% !important; width: 100% !important; overflow: visible !important; }"
+    },
+    "label": "Kontakt Why | MaxHair"
+  },
+  {
+    "id": "kontakt_why_container",
+    "name": "container",
+    "parent": "kontakt_why_section",
+    "children": [
+      "kontakt_why_code"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_background": {
+        "color": {
+          "hex": "#FFFFFF"
+        }
+      },
+      "_cssCustom": "%root% { background: #FFFFFF !important; padding: 0 !important; margin: 0 !important; max-width: 100% !important; width: 100% !important; overflow: visible !important; }"
+    }
+  },
+  {
+    "id": "kontakt_why_code",
+    "name": "code",
+    "parent": "kontakt_why_container",
+    "children": [],
+    "settings": {
+      "code": "<div style=\"width:100%;max-width:1200px;margin:0 auto;padding:80px;text-align:center;background-color:#FFFFFF;color:#1A1A1A;box-sizing:border-box;\">\n  <h2 style=\"font-family:Poppins,sans-serif;font-size:clamp(32px,4vw,48px);font-weight:700;color:#1A1A1A;margin:0 0 60px 0;background:none;\">Proč nás kontaktovat?</h2>\n  <div style=\"display:grid;grid-template-columns:repeat(3,1fr);gap:32px;background:none;\">\n    <div style=\"background-color:#FFFFFF;border:1px solid #E8E8E8;border-radius:20px;padding:40px 32px;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,0.06);transition:transform 0.3s ease,box-shadow 0.3s ease;\">\n      <div style=\"margin-bottom:24px;display:flex;align-items:center;justify-content:center;background:none;\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#E5C158\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"48\" height=\"48\"><path d=\"M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z\"/></svg></div>\n      <h3 style=\"font-family:Poppins,sans-serif;font-size:22px;font-weight:700;color:#1A1A1A;margin:0 0 16px 0;background:none;\">Bezplatná konzultace</h3>\n      <p style=\"font-family:Inter,sans-serif;font-size:16px;color:#888888;line-height:1.6;margin:0;background:none;\">Konzultace je zdarma a bez závazků. Probereme vaše potřeby a navrhneme nejlepší řešení.</p>\n    </div>\n    <div style=\"background-color:#FFFFFF;border:1px solid #E8E8E8;border-radius:20px;padding:40px 32px;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,0.06);transition:transform 0.3s ease,box-shadow 0.3s ease;\">\n      <div style=\"margin-bottom:24px;display:flex;align-items:center;justify-content:center;background:none;\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#E5C158\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"48\" height=\"48\"><path d=\"M13 2L3 14h9l-1 8 10-12h-9l1-8z\"/></svg></div>\n      <h3 style=\"font-family:Poppins,sans-serif;font-size:22px;font-weight:700;color:#1A1A1A;margin:0 0 16px 0;background:none;\">Odpovídáme do 24h</h3>\n      <p style=\"font-family:Inter,sans-serif;font-size:16px;color:#888888;line-height:1.6;margin:0;background:none;\">Na všechny dotazy odpovídáme do 24 hodin. Email obvykle do 2 hodin, telefon kdykoli.</p>\n    </div>\n    <div style=\"background-color:#FFFFFF;border:1px solid #E8E8E8;border-radius:20px;padding:40px 32px;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,0.06);transition:transform 0.3s ease,box-shadow 0.3s ease;\">\n      <div style=\"margin-bottom:24px;display:flex;align-items:center;justify-content:center;background:none;\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#E5C158\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"48\" height=\"48\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"/></svg></div>\n      <h3 style=\"font-family:Poppins,sans-serif;font-size:22px;font-weight:700;color:#1A1A1A;margin:0 0 16px 0;background:none;\">Česká podpora 24/7</h3>\n      <p style=\"font-family:Inter,sans-serif;font-size:16px;color:#888888;line-height:1.6;margin:0;background:none;\">Naše česká podpora je tu pro vás kdykoli. Od konzultace až po pooperační péči.</p>\n    </div>\n  </div>\n</div>\n\n<style>\n  #brxe-kontakt_why_section,\n  #brxe-kontakt_why_section > *,\n  #brxe-kontakt_why_container,\n  #brxe-kontakt_why_container > *,\n  #brxe-kontakt_why_code,\n  #brxe-kontakt_why_code > * {\n    background: #FFFFFF !important;\n    background-color: #FFFFFF !important;\n  }\n\n  @media (max-width: 768px) {\n    #brxe-kontakt_why_code > div {\n      overflow-x: hidden !important;\n      padding: 60px 24px !important;\n      max-width: 100% !important;\n      box-sizing: border-box !important;\n    }\n    #brxe-kontakt_why_code > div > div:nth-child(2) {\n      grid-template-columns: 1fr !important;\n      gap: 24px !important;\n      min-width: 0 !important;\n    }\n  }\n\n  @media (max-width: 480px) {\n    #brxe-kontakt_why_code > div {\n      padding: 40px 16px !important;\n    }\n  }\n\n  #brxe-kontakt_why_section,\n  #brxe-kontakt_why_container,\n  #brxe-kontakt_why_code {\n    overflow-x: hidden !important;\n    max-width: 100% !important;\n  }\n\n  \n</style>\n<script>\n(function(){\n  function fix(){\n    var ids=['kontakt_why_section','kontakt_why_container','kontakt_why_code'];\n    ids.forEach(function(id){\n      var el=document.getElementById('brxe-'+id);\n      if(el){\n        el.style.setProperty('background','#FFFFFF','important');\n        el.style.setProperty('background-color','#FFFFFF','important');\n        var ch=el.children;\n        for(var i=0;i<ch.length;i++){\n          ch[i].style.setProperty('background','#FFFFFF','important');\n          ch[i].style.setProperty('background-color','#FFFFFF','important');\n        }\n      }\n    });\n  }\n  fix();\n  document.addEventListener('DOMContentLoaded',fix);\n  window.addEventListener('load',fix);\n  setTimeout(fix,500);\n  setTimeout(fix,1500);\n})();\n</script>",
+      "executeCode": true,
+      "signature": "9239dc31e90b0259cc70d55e3fe98986",
+      "user_id": 1,
+      "time": 1768569033
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "kontakt_faq_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "kontakt_faq_container"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_cssCustom": "%root% { background: transparent !important; padding: 0 !important; margin: 0 !important; max-width: 100% !important; width: 100% !important; }"
+    },
+    "label": "Kontakt FAQ | MaxHair"
+  },
+  {
+    "id": "kontakt_faq_container",
+    "name": "container",
+    "parent": "kontakt_faq_section",
+    "children": [
+      "kontakt_faq_code"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_cssCustom": "%root% { background: transparent !important; padding: 0 !important; margin: 0 !important; max-width: 100% !important; width: 100% !important; }"
+    }
+  },
+  {
+    "id": "kontakt_faq_code",
+    "name": "code",
+    "parent": "kontakt_faq_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- KONTAKT FAQ SECTION -->\n<section class=\"kontakt-faq-section\">\n  <div class=\"kontakt-faq-content\">\n    <h2 class=\"section-title\">Často kladené otázky o kontaktu</h2>\n    <div class=\"faq-items\">\n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Jak rychle odpovídáte na dotazy?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Na email odpovídáme obvykle do 2 hodin během pracovního dne. Na telefon jsme dostupní 24/7. WhatsApp zprávy odpovídáme během několika minut.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Je konzultace opravdu zdarma?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Ano, konzultace je zcela zdarma a bez závazků. Můžete se nás zeptat na cokoli ohledně transplantace vlasů, metod, cen nebo procesu. Nikdy vás nebudeme tlačit do rozhodnutí.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Můžu komunikovat v češtině?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Ano! Naše česká podpora komunikuje s vámi výhradně v češtině. Od konzultace přes organizaci cesty až po pooperační péči - vše probíhá v češtině.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Jaký je nejlepší způsob kontaktu?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Pro rychlé dotazy doporučujeme WhatsApp nebo telefon. Pro detailní dotazy je ideální email. Naše česká podpora je dostupná na všech kanálech 24/7.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #D4AF37;\n    --dark-gray: #1A1A1A;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #333333;\n  }\n\n  .kontakt-faq-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: auto;\n    background: #FAFAFA;\n    padding: 80px 80px;\n  }\n\n  .kontakt-faq-content {\n    max-width: 900px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(28px, 4vw, 40px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 40px 0;\n    text-align: center;\n  }\n\n  .kontakt-faq-section .faq-items {\n    display: flex;\n    flex-direction: column;\n    gap: 16px;\n  }\n\n  .kontakt-faq-section .faq-item {\n    background: #FFFFFF;\n    border-radius: 12px;\n    overflow: hidden;\n    transition: all 0.3s ease;\n    border: 1px solid rgba(229, 193, 88, 0.15);\n  }\n\n  .kontakt-faq-section .faq-item.active {\n    background: #FFFFFF;\n    box-shadow: 0 4px 20px rgba(229, 193, 88, 0.15);\n    border-color: rgba(229, 193, 88, 0.3);\n  }\n\n  .kontakt-faq-section .faq-question {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 24px 32px;\n    background: transparent;\n    border: none;\n    cursor: pointer;\n    text-align: left;\n    font-family: 'Poppins', sans-serif;\n    font-size: 18px;\n    font-weight: 600;\n    color: var(--dark-gray);\n    transition: all 0.3s ease;\n  }\n\n  .kontakt-faq-section .faq-question:hover {\n    color: var(--primary-gold);\n  }\n\n  .kontakt-faq-section .faq-icon {\n    width: 32px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 24px;\n    color: var(--primary-gold);\n    transition: transform 0.3s ease;\n    flex-shrink: 0;\n  }\n\n  .kontakt-faq-section .faq-item.active .faq-icon {\n    transform: rotate(45deg);\n  }\n\n  .kontakt-faq-section .faq-answer {\n    max-height: 0;\n    overflow: hidden;\n    transition: max-height 0.3s ease;\n  }\n\n  .kontakt-faq-section .faq-item.active .faq-answer {\n    max-height: 500px;\n  }\n\n  .kontakt-faq-section .faq-answer p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.7;\n    margin: 0;\n    padding: 0 32px 24px 32px;\n  }\n\n  @media (max-width: 768px) {\n    .kontakt-faq-section {\n      padding: 60px 24px;\n    }\n\n    .kontakt-faq-section .faq-question {\n      padding: 20px 24px;\n      font-size: 16px;\n    }\n\n    .kontakt-faq-section .faq-answer p {\n      padding: 0 24px 20px 24px;\n    }\n  }\n</style>\n\n<script>\n  // FAQ Accordion - All Sections\n  (function() {\n    function initAllFAQ() {\n      var containers = document.querySelectorAll('.faq-list, .faq-items, .faq-grid');\n      for (var c = 0; c < containers.length; c++) {\n        var faqContainer = containers[c];\n        if (faqContainer.dataset.faqInit) continue;\n        faqContainer.dataset.faqInit = 'true';\n        (function(container) {\n          container.addEventListener('click', function(e) {\n            var question = e.target.closest('.faq-question');\n            if (!question) return;\n            var item = question.closest('.faq-item');\n            if (!item) return;\n            var isActive = item.classList.contains('active');\n            var allItems = container.querySelectorAll('.faq-item');\n            for (var i = 0; i < allItems.length; i++) {\n              allItems[i].classList.remove('active');\n            }\n            if (!isActive) {\n              item.classList.add('active');\n            }\n          });\n        })(faqContainer);\n      }\n    }\n    if (document.readyState === 'loading') {\n      document.addEventListener('DOMContentLoaded', initAllFAQ);\n    } else {\n      initAllFAQ();\n    }\n    setTimeout(initAllFAQ, 100);\n    setTimeout(initAllFAQ, 500);\n  })();\n</script>",
+      "executeCode": true,
+      "signature": "78f4bcd304b65a1d5d20cf98bf765f8e",
+      "user_id": 1,
+      "time": 1768569033
+    },
+    "themeStyles": []
+  }
+]

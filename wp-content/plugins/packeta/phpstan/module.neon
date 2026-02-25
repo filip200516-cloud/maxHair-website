@@ -1,0 +1,17 @@
+includes:
+	- base.neon
+	- phpstan-baseline-module.neon
+parameters:
+	level: 9
+	strictRules:
+		allRules: true
+	treatPhpDocTypesAsCertain: false
+	bootstrapFiles:
+		- ../vendor/php-stubs/woocommerce-stubs/woocommerce-stubs.php
+		- ../vendor/php-stubs/woocommerce-stubs/woocommerce-packages-stubs.php
+		- ../constants.php
+	paths:
+		- ../src/Packetery/Module
+	scanDirectories:
+		- ../src/Packetery/Core
+		- ../deps

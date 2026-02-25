@@ -1,0 +1,210 @@
+# Fellaship Web Builder Tool - Cursor AI Rules
+
+## 🎯 Účel tohoto toolu
+
+Tento tool je navržen pro **použití pouze přes Cursor AI**. Uživatel by měl tool ovládat pomocí promptů, ne přímo.
+
+## 📋 TODO Systém - DŮLEŽITÉ!
+
+**VŽDY používej TODO systém pro strukturovaný workflow!**
+
+1. **Načti TODO systém:**
+   ```javascript
+   import { WORKFLOW_TODOS, displayTodos, getNextTodo, updateTodoStatus } from './workflow-todo.js';
+   ```
+
+2. **Zobraz aktuální fázi TODO uživateli:**
+   ```javascript
+   const todos = WORKFLOW_TODOS.GET_ACCESS;
+   displayTodos(todos, 'Získání přístupů');
+   ```
+
+3. **Postupuj podle TODO krok za krokem:**
+   - Zobraz instrukce z TODO (zejména pro userAction: true)
+   - Po dokončení aktualizuj: `updateTodoStatus(todos, 'todo-id', 'completed')`
+   - Přejdi na další: `getNextTodo(todos)`
+
+4. **Fáze workflow:**
+   - `INITIAL` - Počáteční setup
+   - `GET_ACCESS` - Získání přístupů (DŮLEŽITÉ: poskytni detailní instrukce pro Application Password!)
+   - `SETUP_PLUGIN` - Plugin setup
+   - `SETUP_BRICKS` - Bricks setup
+   - `DONE` - Shrnutí
+
+## 📋 Automatický workflow po pullnutí z GitHubu
+
+### 1. Automatické napromptování
+Po pullnutí toolu z GitHubu se **automaticky spustí** a AI řekne uživateli:
+- Co potřebuje (WordPress přístupy, SSH, GitHub repo)
+- **DETAILNÍ instrukce** jak získat Application Password:
+  - **⚠️ DŮLEŽITÉ:** Application Password musí být nejdřív ZAPNUTO v Hostingeru!
+  - WordPress Dashboard → **Hostinger záložka** → Tools → Application Passwords → Toggle ON
+  - Pak Users → Your Profile → Application Passwords → vytvořit nový
+- Jak založit GitHub repo
+
+### 2. Uložení přístupů
+AI automaticky uloží všechny přístupy do `přístupy.md` pomocí `save-access.js`
+
+### 3. Automatický setup WordPressu - FÁZE 1
+AI automaticky spustí `node setup-wordpress.js`, který:
+- Nahraje plugin přes SSH
+- **POZASTAVÍ setup** a řekne uživateli, aby aktivoval plugin ručně
+- **ČEKÁ** na zprávu od uživatele: "Plugin je aktivní" nebo "Aktivoval jsem plugin"
+
+### 4. Automatický setup WordPressu - FÁZE 2 (po aktivaci pluginu)
+Když uživatel napíše, že plugin je aktivní, AI pokračuje:
+- Nainstaluje Bricks
+- Aktivuje licenci
+- Nastaví Bricks Settings
+- Vytvoří Homepage
+- Nastaví WordPress Reading
+- Vytvoří Templates
+
+### 4. Tvorba stránky (lokálně)
+- AI načte `inspirace.json` jako referenci pro správnou strukturu
+- **⚠️ DŮLEŽITÉ: AI VŽDY použije CODE ELEMENTY pro design (section → container → code), ne normální Bricks elementy (heading, text, button)!**
+- AI vytvoří JSON soubor lokálně s POVINNOU strukturou (id, parent, children jako pole stringů)
+- Struktura: `section` (root) → `container` → `code` (s HTML/CSS/JS)
+- **AI SPUSTÍ LOKÁLNÍ SERVER:** `node local-server.js` nebo `npm run dev`
+- **AI AUTOMATICKY OTEVŘE PROHLÍŽEČ** na `http://localhost:3000`
+- Uživatel upravuje lokálně a vidí změny v prohlížeči
+- **AI NIKDY nepushuje bez předchozího spuštění lokálního serveru!**
+- Když řekne "pushni to", AI pushne na WordPress + GitHub
+
+## Hlavní principy
+
+1. **VŽDY nejdřív načti config.json** - všechna konfigurace je tam, žádné hardcoded hodnoty
+2. **VŽDY otestuj připojení** před jakoukoliv akcí: `node sync.js setup`
+3. **NIKDY nehardcoduj cesty, názvy projektů, nebo specifické hodnoty** - vše z config.json
+4. **VŽDY pushni templates samostatně** - používej `node sync.js push-templates`, ne `node sync.js push`
+   - **⚠️ DŮLEŽITÉ:** Templates používají jiné meta klíče než pages (`_bricks_page_header_2` / `_bricks_page_footer_2`)
+   - Viz `TEMPLATES-VS-PAGES-EXPLAINED.md` pro detailní rozdíly
+5. **VŽDY ověř podepisování** - probíhá automaticky, ale zkontroluj výstup - mělo by být vidět "✅ Podepsáno X code elementů"
+   - **⚠️ DŮLEŽITÉ:** Podepisování MUSÍ proběhnout po každém pushnutí (pages i templates)!
+   - Pro templates je potřeba ještě manuálně requestnout podpisy v Bricks Settings
+6. **VŽDY ulož přístupy** - použij `save-access.js` pro uložení do `přístupy.md`
+7. **VŽDY spusť lokální server** - při tvorbě stránky použij `npm run dev`
+
+## Workflow pro běžné úkoly
+
+### Instalace Bricks Builder
+1. Zkontroluj `config.json` → `bricks.pluginZip` (soubor musí existovat)
+2. Spusť: `node sync.js install-bricks`
+3. Po instalaci připomeň uživateli aktivaci editace stránek v Bricks Settings
+
+### Push stránky
+1. Zkontroluj `config.json` → `local.projectPath`, `local.pagesPath`, `mapping.pages`
+2. Ověř, zda soubor existuje: `{projectPath}/{pagesPath}/{slug}.json`
+3. Spusť: `node sync.js push`
+4. Ověř výstup - mělo by být vidět "✅ Podepsáno X code elementů"
+
+### Push templates (Header/Footer)
+1. Zkontroluj `config.json` → `mapping.components.header` a `mapping.components.footer`
+2. Ověř, zda soubory existují v `{projectPath}/{componentsPath}/`
+3. Spusť: `node sync.js push-templates` (NE `node sync.js push`!)
+4. **⚠️ DŮLEŽITÉ:** Templates používají JINÉ meta klíče než pages:
+   - Header templates: `_bricks_page_header_2` (kromě standardních `_bricks_page_content` a `_bricks_page_content_2`)
+   - Footer templates: `_bricks_page_footer_2` (kromě standardních `_bricks_page_content` a `_bricks_page_content_2`)
+   - Bricks editor hledá obsah v těchto specifických meta klíčích!
+   - Bez těchto klíčů struktura nebude viditelná v Bricks editoru!
+5. Ověř výstup - mělo by být vidět "✅ Podepsáno X code elementů"
+6. **⚠️ DŮLEŽITÉ:** Po pushnutí templates je potřeba manuálně requestnout podpisy v Bricks Settings → Templates → [Template] → Request Signatures
+
+### Instalace/aktualizace pluginu
+1. Plugin soubor: `bricks-api-endpoint.php` (v root složce toolu)
+2. Pokud máš SSH přístup v config.json: `node update-plugin-ssh.js`
+3. Jinak poskytni instrukce pro ruční upload přes Hostinger hPanel
+
+## Struktura Bricks JSON
+
+**⚠️ DŮLEŽITÉ: Pro design používej CODE ELEMENTY, ne normální Bricks elementy!**
+
+Správná struktura:
+```
+section (root, parent: 0)
+  └── container (parent: section_id)
+      └── code (parent: container_id, obsahuje HTML/CSS/JS)
+```
+
+Bricks očekává obsah jako **pole elementů**, ne celý objekt:
+```json
+{
+  "content": [
+    { 
+      "id": "hero_section",
+      "name": "section", 
+      "parent": 0,
+      "children": ["hero_container"],
+      "settings": {...} 
+    },
+    { 
+      "id": "hero_container",
+      "name": "container",
+      "parent": "hero_section",
+      "children": ["hero_code"],
+      "settings": {...} 
+    },
+    { 
+      "id": "hero_code",
+      "name": "code", 
+      "parent": "hero_container",
+      "children": [],
+      "settings": { 
+        "code": "<!-- HTML/CSS/JS -->",
+        "executeCode": true,
+        "signature": "",
+        "user_id": 0,
+        "time": 0
+      } 
+    }
+  ]
+}
+```
+
+Tool automaticky extrahuje `content` pole pomocí `bricks-handler.js` → `prepareBricksForMeta()`.
+
+## Podepisování code elementů
+
+- **⚠️ DŮLEŽITÉ: MUSÍ se podepisovat po KAŽDÉM pushnutí!**
+- Probíhá **automaticky** po každém pushnutí (pages i templates)
+- Endpoint: `POST /wp-json/bricks/v1/regenerate-signatures/{id}`
+- Bez podpisů se code elementy nespustí
+- Každý code element musí mít: `signature`, `user_id`, `time`, `executeCode: true`
+- **Pro templates:** Po automatickém podepisování je potřeba ještě manuálně requestnout podpisy v Bricks Settings → Templates → [Template] → Request Signatures
+
+## Časté chyby a řešení
+
+- **401 Unauthorized**: Zkontroluj `config.json` → `wordpress.applicationPassword`
+- **404 Not Found**: Plugin `bricks-api-endpoint.php` není aktivní nebo permalinks nejsou aktualizované
+- **Critical error**: Bricks obsah není ve správném formátu - zkontroluj strukturu JSON
+- **Code elementy se nespouští**: Chybí podpisy - zkontroluj, zda proběhlo podepisování
+
+## Důležité soubory
+
+- `sync.js` - Hlavní skript (push, pull, install, setup)
+- `wp-api.js` - WordPress REST API klient
+- `bricks-handler.js` - Handler pro Bricks JSON data
+- `bricks-api-endpoint.php` - WordPress plugin (MUSÍ být na serveru)
+- `config.json` - Veškerá konfigurace (NIKDY necommitovat!)
+- `PUSHING-TEMPLATES.md` - Detailní workflow pro pushování templates
+- `TEMPLATES-VS-PAGES-EXPLAINED.md` - Vysvětlení rozdílů mezi pages a templates
+- `BRICKS-JSON-GUIDE.md` - Průvodce tvorbou Bricks JSON struktury
+
+## Pravidla pro kódování
+
+1. Všechny cesty z `config.json` → `local.*`
+2. Všechny názvy souborů z `config.json` → `mapping.*`
+3. Žádné hardcoded reference na konkrétní projekty
+4. Všechny chybové hlášky by měly obsahovat návod, jak problém vyřešit
+
+## 📚 Dokumentace pro AI
+
+**Před pushnutím templates si POVINNĚ přečti:**
+- `PUSHING-TEMPLATES.md` - Workflow pro pushování templates
+- `TEMPLATES-VS-PAGES-EXPLAINED.md` - Proč templates potřebují jiné meta klíče
+
+**Klíčové rozdíly Pages vs. Templates:**
+- **Pages:** `node sync.js push` → ukládá do `_bricks_page_content` a `_bricks_page_content_2`
+- **Templates:** `node sync.js push-templates` → ukládá do `_bricks_page_content`, `_bricks_page_content_2` + `_bricks_page_header_2` (header) nebo `_bricks_page_footer_2` (footer)
+- **Podepisování:** Automatické pro oba typy, ale pro templates je potřeba ještě manuálně requestnout v Bricks Settings
+

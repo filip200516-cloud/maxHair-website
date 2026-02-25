@@ -1,0 +1,113 @@
+[
+  {
+    "id": "vop_hero_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "vop_hero_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "VOP Hero | MaxHair"
+  },
+  {
+    "id": "vop_hero_container",
+    "name": "container",
+    "parent": "vop_hero_section",
+    "children": [
+      "vop_hero_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "vop_hero_code",
+    "name": "code",
+    "parent": "vop_hero_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- VOP HERO SECTION -->\n<section class=\"vop-hero-section\">\n  <div class=\"vop-hero-content\">\n    <span class=\"mh-badge\">PRÁVNÍ DOKUMENTY</span>\n    <h1 class=\"hero-title\">Všeobecné obchodní podmínky</h1>\n    <p class=\"hero-description\">MaxHair.cz - Všeobecné obchodní podmínky platné od 1. ledna 2025</p>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #D4AF37;\n    --dark-gray: #1A1A1A;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #333333;\n  }\n\n  .vop-hero-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 50vh;\n    background: linear-gradient(135deg, var(--dark-gray) 0%, #3d2f1e 100%);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 120px 80px 80px 80px;\n    text-align: center;\n  }\n\n  .vop-hero-content {\n    max-width: 1000px;\n    width: 100%;\n  }\n\n  .section-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: rgba(229, 193, 88, 0.2);\n    color: #000000;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 24px;\n    border-radius: 30px;\n    border: 1px solid var(--primary-gold);\n  }\n\n  .hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 64px);\n    font-weight: 800;\n    color: var(--white);\n    margin: 0 0 24px 0;\n    letter-spacing: -1px;\n    line-height: 1.2;\n  }\n\n  .hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: rgba(255, 255, 255, 0.8);\n    margin: 0;\n    line-height: 1.6;\n  }\n\n  @media (max-width: 768px) {\n    .vop-hero-section {\n      padding: 100px 24px 60px 24px;\n      min-height: 100vh;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "5cc33ef62e8f45ddefdebdd0976ee5d7",
+      "user_id": 1,
+      "time": 1768569038
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "vop_content_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "vop_content_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "VOP Content | MaxHair"
+  },
+  {
+    "id": "vop_content_container",
+    "name": "container",
+    "parent": "vop_content_section",
+    "children": [
+      "vop_content_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "vop_content_code",
+    "name": "code",
+    "parent": "vop_content_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- VOP CONTENT SECTION -->\n<section class=\"vop-content-section\">\n  <div class=\"vop-content-wrapper\">\n    <div class=\"vop-content\">\n      \n      <div class=\"vop-section\">\n        <h2 class=\"vop-section-title\">1. Úvodní ustanovení</h2>\n        <div class=\"vop-text\">\n          <p>Tyto Všeobecné obchodní podmínky (dále jen „VOP\") upravují vzájemná práva a povinnosti mezi poskytovatelem služeb MaxHair.cz (dále jen „Poskytovatel\") a klientem (dále jen „Klient\") při poskytování služeb transplantace vlasů a souvisejících služeb.</p>\n          <p>Poskytovatel: MaxHair.cz, Izzet Paşa Mah. Yeni Yol Cad. Nurol Tower No: 3 / 303, Şişli / ISTANBUL, Turecko</p>\n          <p>Tyto VOP se vztahují na všechny služby poskytované prostřednictvím webových stránek www.maxhair.cz a dalších komunikačních kanálů.</p>\n        </div>\n      </div>\n\n      <div class=\"vop-section\">\n        <h2 class=\"vop-section-title\">2. Předmět služeb</h2>\n        <div class=\"vop-text\">\n          <p>Poskytovatel poskytuje následující služby:</p>\n          <ul class=\"vop-list\">\n            <li>Transplantace vlasů (muži, ženy)</li>\n            <li>Transplantace vousů</li>\n            <li>Transplantace obočí</li>\n            <li>PRP terapie</li>\n            <li>Související služby (konzultace, organizace cesty, ubytování, transport)</li>\n          </ul>\n          <p>Všechny služby jsou poskytovány v Turecku v klinice MaxHair v Istanbulu.</p>\n        </div>\n      </div>\n\n      <div class=\"vop-section\">\n        <h2 class=\"vop-section-title\">3. Ceny a platby</h2>\n        <div class=\"vop-text\">\n          <p><strong>3.1 Ceny služeb</strong></p>\n          <p>Všechny ceny jsou uvedeny v českých korunách (CZK) včetně DPH, pokud je DPH aplikovatelné. Ceny jsou orientační a mohou se lišit podle individuálních potřeb klienta.</p>\n          <p><strong>3.2 Platba</strong></p>\n          <p>Klient je povinen uhradit cenu služby předem nebo podle dohody s Poskytovatelem. Platba může být provedena bankovním převodem, platební kartou nebo jiným dohodnutým způsobem.</p>\n          <p><strong>3.3 Storno poplatky</strong></p>\n          <p>V případě zrušení objednávky klientem:</p>\n          <ul class=\"vop-list\">\n            <li>Více než 30 dní před zákrokem: vrácení 100% zálohy</li>\n            <li>15-30 dní před zákrokem: storno poplatek 30% z ceny</li>\n            <li>Méně než 15 dní před zákrokem: storno poplatek 50% z ceny</li>\n            <li>Méně než 7 dní před zákrokem: storno poplatek 100% z ceny</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"vop-section\">\n        <h2 class=\"vop-section-title\">4. Rezervace a konzultace</h2>\n        <div class=\"vop-text\">\n          <p><strong>4.1 Konzultace</strong></p>\n          <p>Konzultace je bezplatná a může probíhat online (email, WhatsApp) nebo osobně. Během konzultace Poskytovatel posoudí vhodnost zákroku a navrhne individuální plán.</p>\n          <p><strong>4.2 Rezervace</strong></p>\n          <p>Rezervace zákroku je závazná po uhrazení zálohy nebo celé částky podle dohody. Poskytovatel si vyhrazuje právo odmítnout zákrok, pokud není vhodný pro klienta.</p>\n        </div>\n      </div>\n\n      <div class=\"vop-section\">\n        <h2 class=\"vop-section-title\">5. Průběh zákroku</h2>\n        <div class=\"vop-text\">\n          <p><strong>5.1 Příprava</strong></p>\n          <p>Klient je povinen dodržet instrukce Poskytovatele před zákrokem (např. přestat kouřit, vyhnout se určitým lékům, atd.).</p>\n          <p><strong>5.2 Zákrok</strong></p>\n          <p>Zákrok probíhá v lokální anestezii a trvá 6-8 hodin v závislosti na rozsahu. Klient může během zákroku sledovat filmy nebo odpočívat.</p>\n          <p><strong>5.3 Po zákroku</strong></p>\n          <p>Klient obdrží detailní instrukce pro pooperační péči. Poskytovatel poskytuje online follow-up konzultace zdarma.</p>\n        </div>\n      </div>\n\n      <div class=\"vop-section\">\n        <h2 class=\"vop-section-title\">6. Záruka a odpovědnost</h2>\n        <div class=\"vop-text\">\n          <p><strong>6.1 Záruka</strong></p>\n          <p>Poskytovatel garantuje kvalitu zákroku a použití osvědčených metod. Transplantované vlasy jsou trvalé a odolné vůči vypadávání.</p>\n          <p><strong>6.2 Odpovědnost</strong></p>\n          <p>Poskytovatel nenese odpovědnost za komplikace způsobené nedodržením instrukcí klientem nebo za zdravotní komplikace, které nejsou v přímé souvislosti se zákrokem.</p>\n          <p><strong>6.3 Reklamace</strong></p>\n          <p>V případě reklamace kontaktujte Poskytovatele do 30 dnů od zákroku. Reklamace budou řešeny individuálně.</p>\n        </div>\n      </div>\n\n      <div class=\"vop-section\">\n        <h2 class=\"vop-section-title\">7. Ochrana osobních údajů</h2>\n        <div class=\"vop-text\">\n          <p>Poskytovatel zpracovává osobní údaje klienta v souladu s Nařízením GDPR (EU) 2016/679. Podrobné informace o zpracování osobních údajů naleznete v <a href=\"/gdpr\" class=\"vop-link\">Zásadách ochrany osobních údajů</a>.</p>\n        </div>\n      </div>\n\n      <div class=\"vop-section\">\n        <h2 class=\"vop-section-title\">8. Závěrečná ustanovení</h2>\n        <div class=\"vop-text\">\n          <p><strong>8.1 Změny VOP</strong></p>\n          <p>Poskytovatel si vyhrazuje právo změnit tyto VOP. Změny budou zveřejněny na webových stránkách.</p>\n          <p><strong>8.2 Řešení sporů</strong></p>\n          <p>V případě sporů se strany zavazují pokusit se o mimosoudní řešení. Pokud se nedohodnou, spory budou řešeny u příslušného soudu v Turecku.</p>\n          <p><strong>8.3 Platnost</strong></p>\n          <p>Tyto VOP nabývají účinnosti dnem 1. ledna 2025 a vztahují se na všechny objednávky uzavřené od tohoto data.</p>\n          <p><strong>8.4 Kontakt</strong></p>\n          <p>Pro dotazy ohledně VOP kontaktujte:</p>\n          <p>Email: Michaela@maxhair.cz<br/>Telefon: +420 601 515 323<br/>Adresa: Izzet Paşa Mah. Yeni Yol Cad. Nurol Tower No: 3 / 303, Şişli / ISTANBUL, Turecko</p>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</section>\n\n<style>\n  .vop-content-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: auto;\n    background: var(--white);\n    padding: 80px 80px;\n  }\n\n  .vop-content-wrapper {\n    max-width: 1000px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .vop-content {\n    background: var(--white);\n  }\n\n  .vop-section {\n    margin-bottom: 60px;\n  }\n\n  .vop-section:last-child {\n    margin-bottom: 0;\n  }\n\n  .vop-section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(24px, 3vw, 32px);\n    font-weight: 700;\n    color: var(--primary-gold);\n    margin: 0 0 24px 0;\n    padding-bottom: 16px;\n    border-bottom: 2px solid var(--light-gray);\n  }\n\n  .vop-text {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(15px, 1.8vw, 17px);\n    line-height: 1.8;\n    color: var(--dark-gray);\n  }\n\n  .vop-text p {\n    margin: 0 0 20px 0;\n  }\n\n  .vop-text p:last-child {\n    margin-bottom: 0;\n  }\n\n  .vop-text strong {\n    font-weight: 600;\n    color: var(--dark-gray);\n  }\n\n  .vop-list {\n    margin: 20px 0 20px 30px;\n    padding: 0;\n    list-style: disc;\n  }\n\n  .vop-list li {\n    margin-bottom: 12px;\n    line-height: 1.7;\n  }\n\n  .vop-link {\n    color: var(--primary-gold);\n    text-decoration: underline;\n    transition: color 0.3s ease;\n  }\n\n  .vop-link:hover {\n    color: var(--secondary-gold);\n  }\n\n  @media (max-width: 768px) {\n    .vop-content-section {\n      padding: 60px 24px;\n    }\n\n    .vop-section {\n      margin-bottom: 40px;\n    }\n\n    .vop-list {\n      margin-left: 20px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "173ff7375b2f4f0d37b2b10dcb859551",
+      "user_id": 1,
+      "time": 1768569038
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "vop_cta_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "vop_cta_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "VOP CTA | MaxHair"
+  },
+  {
+    "id": "vop_cta_container",
+    "name": "container",
+    "parent": "vop_cta_section",
+    "children": [
+      "vop_cta_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "vop_cta_code",
+    "name": "code",
+    "parent": "vop_cta_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- VOP CTA SECTION -->\n<section class=\"vop-cta-section\">\n  <div class=\"vop-cta-content\">\n    <h2 class=\"cta-title\">Máte dotazy k obchodním podmínkám?</h2>\n    <p class=\"cta-description\">Kontaktujte nás, rádi vám vše vysvětlíme</p>\n    <div class=\"cta-buttons\">\n      <a href=\"/kontakt\" class=\"btn-primary\">Kontaktovat nás</a>\n      <a href=\"/\" class=\"btn-secondary\">Zpět na homepage</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  .vop-cta-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 40vh;\n    background: var(--light-gray);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 80px;\n  }\n\n  .vop-cta-content {\n    max-width: 800px;\n    width: 100%;\n    text-align: center;\n  }\n\n  .cta-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(28px, 4vw, 40px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 16px 0;\n  }\n\n  .cta-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 18px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    margin: 0 0 40px 0;\n  }\n\n  .cta-buttons {\n    display: flex;\n    gap: 24px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 16px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 8px;\n    transition: all 0.3s ease;\n    box-shadow: 0 4px 16px rgba(229, 193, 88, 0.3);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-2px);\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 16px 40px;\n    background: transparent;\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--primary-gold);\n    border-radius: 8px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--primary-gold);\n    color: var(--black);\n  }\n\n  @media (max-width: 768px) {\n    .vop-cta-section {\n      padding: 60px 24px;\n    }\n\n    .cta-buttons {\n      flex-direction: column;\n      align-items: center;\n    }\n\n    .btn-primary,\n    .btn-secondary {\n      width: 100%;\n      max-width: 300px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "80159d0ff0ef8a3a3bc7e53f7fec1783",
+      "user_id": 1,
+      "time": 1768569038
+    },
+    "themeStyles": []
+  }
+]

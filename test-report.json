@@ -1,0 +1,117 @@
+{
+  "testRun": {
+    "timestamp": "2026-02-06T12:00:00Z",
+    "url": "https://maxhair.cz",
+    "duration": "~2min",
+    "status": "COMPLETED_WITH_ISSUES"
+  },
+  "screenshots": [
+    {
+      "name": "initial-load-desktop.png",
+      "viewport": "1920x1080",
+      "description": "Initial desktop page load - full page"
+    },
+    {
+      "name": "tablet-view.png",
+      "viewport": "768x1024",
+      "description": "Tablet responsive view"
+    },
+    {
+      "name": "mobile-view.png",
+      "viewport": "375x812",
+      "description": "Mobile responsive view"
+    }
+  ],
+  "tests": [
+    {
+      "id": "layout-001",
+      "name": "Page load test",
+      "status": "PASS",
+      "description": "Page loads without errors"
+    },
+    {
+      "id": "layout-002",
+      "name": "Desktop navigation visibility",
+      "status": "FAIL",
+      "error": "Desktop navigation menu not visible - shows mobile hamburger menu at 1920x1080",
+      "severity": "HIGH",
+      "suggestedFix": "Check CSS breakpoints for header/navigation. The desktop menu should display at widths >= 1024px"
+    },
+    {
+      "id": "layout-003",
+      "name": "Hero section display",
+      "status": "PASS",
+      "description": "Hero section with title, subtitle and CTA buttons displays correctly"
+    },
+    {
+      "id": "layout-004",
+      "name": "Statistics section",
+      "status": "PASS",
+      "description": "5000+ clients, 95% success rate, 15+ years displayed"
+    },
+    {
+      "id": "responsive-001",
+      "name": "Tablet layout (768px)",
+      "status": "PASS",
+      "description": "Layout adapts correctly for tablet"
+    },
+    {
+      "id": "responsive-002",
+      "name": "Mobile layout (375px)",
+      "status": "PASS",
+      "description": "Layout adapts correctly for mobile"
+    },
+    {
+      "id": "interactive-001",
+      "name": "FAQ accordion buttons",
+      "status": "PASS",
+      "description": "6 FAQ accordion buttons present and accessible"
+    },
+    {
+      "id": "interactive-002",
+      "name": "Contact form",
+      "status": "PASS",
+      "description": "Form fields present: name, email, phone, message, checkbox, submit button"
+    },
+    {
+      "id": "interactive-003",
+      "name": "CTA buttons",
+      "status": "PASS",
+      "description": "WhatsApp and pricing CTA buttons present"
+    },
+    {
+      "id": "console-001",
+      "name": "Console errors",
+      "status": "PASS",
+      "description": "No JavaScript errors in console (only browser warnings)"
+    },
+    {
+      "id": "network-001",
+      "name": "Network requests",
+      "status": "PASS",
+      "description": "No failed network requests"
+    }
+  ],
+  "consoleErrors": [],
+  "networkErrors": [],
+  "summary": {
+    "total": 11,
+    "passed": 10,
+    "failed": 1,
+    "warnings": 0
+  },
+  "failedTests": [
+    {
+      "testId": "layout-002",
+      "issue": "Desktop navigation menu not visible at 1920x1080 - shows hamburger menu instead",
+      "type": "css",
+      "severity": "HIGH",
+      "suggestedFix": "Check CSS media queries for header navigation. Desktop menu should display at viewport width >= 1024px. Likely issue with breakpoint definition or CSS specificity."
+    }
+  ],
+  "handoff": {
+    "to": "fix-executor",
+    "priority": ["css"],
+    "issueCount": 1
+  }
+}

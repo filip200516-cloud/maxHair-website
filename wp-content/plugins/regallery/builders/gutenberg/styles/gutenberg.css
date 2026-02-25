@@ -1,0 +1,75 @@
+.reacg-setup-wizard {
+  text-align: center;
+  padding: 10px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  img {
+    border-radius: 15px;
+  }
+  .reacg-setup-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    .reacg-create-gallery,
+    .reacg-galleries-list {
+      border: 1px solid #8c8f94;
+      font-weight: revert;
+      width: 230px;
+      font-size: 20px;
+      line-height: 2;
+      color: #2c3338;
+      box-shadow: none;
+      border-radius: 3px;
+      min-height: 30px;
+      -webkit-appearance: none;
+      background-color: #fff;
+      background-size: 16px 16px;
+      cursor: pointer;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .reacg-galleries-list option:not(:first-child) {
+      text-align: left;
+    }
+  }
+}
+
+.reacg-spinner__wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+  z-index: 1;
+}
+
+.reacg-gutenberg-settings {
+  .reacg_item {
+    width: 69px;
+    height: 69px;
+  }
+  .reacg-cover {
+    width: 60px;
+    height: 60px;
+  }
+  .reacg-cover.dashicons:before,
+  .reacg-cover.reacg-dynamic.dashicons:after {
+    font-size: 35px;
+  }
+  .reacg_item_new .reacg_item_image {
+    background-size: 60px;
+  }
+  .reacg-galleries-list {
+    width: calc(100% - 32px);
+    margin: 16px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  #reacg-gallery-images {
+    margin: 14px;
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "testRun": {
+    "timestamp": "2026-02-06T14:00:00Z",
+    "url": "https://maxhair.cz",
+    "duration": "~5min",
+    "status": "COMPLETED_WITH_ISSUES",
+    "testedBy": "ux-swarm-controller"
+  },
+
+  "responsiveReport": {
+    "totalViewports": 5,
+    "viewportsPassed": 2,
+    "viewportsFailed": 3,
+    "overallScore": 50,
+    "results": [
+      {
+        "viewport": "Mobile S (320x568)",
+        "status": "FAIL",
+        "issues": [
+          {
+            "id": "resp-001",
+            "severity": "CRITICAL",
+            "problem": "Desktop navigation menu displays instead of hamburger menu",
+            "detail": "Full desktop nav bar (O nas, Sluzby, Metody, Cenik, Vysledky, Kontakt, phone) shown at 320px width, overflowing far beyond viewport",
+            "impact": "Navigation is completely unusable on small mobile devices"
+          },
+          {
+            "id": "resp-002",
+            "severity": "CRITICAL",
+            "problem": "Hero text and content overflow / cut off on left side",
+            "detail": "H1 title 'Transplantace vlasu s ceskou podporou' is clipped on the left edge. Stats (5000+, 95%) also clipped. CTA buttons partially hidden.",
+            "impact": "Core messaging and call-to-action invisible to mobile users"
+          },
+          {
+            "id": "resp-003",
+            "severity": "HIGH",
+            "problem": "Page content only occupies left portion of screen, large white gap on right",
+            "detail": "Content is pushed to the left side with massive empty white space on the right half of the viewport",
+            "impact": "Very poor visual presentation, looks broken"
+          }
+        ]
+      },
+      {
+        "viewport": "Mobile M (375x812)",
+        "status": "FAIL",
+        "issues": [
+          {
+            "id": "resp-004",
+            "severity": "CRITICAL",
+            "problem": "Same desktop navigation overflow as Mobile S",
+            "detail": "Desktop nav bar still shows at 375px, not switching to mobile hamburger menu"
+          },
+          {
+            "id": "resp-005",
+            "severity": "CRITICAL",
+            "problem": "Hero content still cut off on left, white gap on right",
+            "detail": "Same layout issue as 320px - content shifted left, right side empty"
+          }
+        ]
+      },
+      {
+        "viewport": "Tablet Portrait (768x1024)",
+        "status": "FAIL",
+        "issues": [
+          {
+            "id": "resp-006",
+            "severity": "HIGH",
+            "problem": "Desktop navigation still showing full menu at tablet size",
+            "detail": "At 768px the full desktop nav bar displays. While it fits better than mobile, it should ideally use a hamburger or simplified menu at this breakpoint",
+            "impact": "Navigation items are small and cramped"
+          }
+        ]
+      },
+      {
+        "viewport": "Tablet Landscape (1024x768)",
+        "status": "PASS",
+        "issues": [],
+        "notes": "Layout works well at this width. Navigation fits. Content properly sized."
+      },
+      {
+        "viewport": "Desktop (1920x1080)",
+        "status": "PASS",
+        "issues": [],
+        "notes": "Full desktop layout displays correctly. Navigation bar visible with all items. Hero, services, pricing, testimonials, FAQ, contact form, and footer all render properly."
+      }
+    ]
+  },
+
+  "visualAuditReport": {
+    "overallScore": 82,
+    "categories": {
+      "colors": {
+        "score": 88,
+        "findings": [
+          "PASS: Cohesive dark theme (dark gray/black background) with gold/yellow accents",
+          "PASS: Green WhatsApp CTA button provides strong contrast",
+          "PASS: White text on dark hero section has good contrast",
+          "PASS: Light sections (white background) with dark text is readable",
+          "NOTE: Gold/yellow accent color (#D4A843 approx) used consistently for badges and highlights"
+        ]
+      },
+      "typography": {
+        "score": 85,
+        "findings": [
+          "PASS: Clear heading hierarchy H1 > H2 > H3 > H4",
+          "PASS: H1 is large and prominent on hero",
+          "PASS: Body text is readable size",
+          "PASS: Font pairing is clean and modern",
+          "NOTE: H3 and H4 in benefits section could have more size differentiation"
+        ]
+      },
+      "spacing": {
+        "score": 85,
+        "findings": [
+          "PASS: Good whitespace between sections",
+          "PASS: Service cards have adequate breathing room",
+          "PASS: Benefits grid (01-06) well-spaced with consistent gaps",
+          "PASS: Pricing cards have clear separation",
+          "NOTE: Some sections feel quite tall with excessive vertical padding on desktop"
+        ]
+      },
+      "hierarchy": {
+        "score": 80,
+        "findings": [
+          "PASS: Hero section has clear visual hierarchy - badge > H1 > subtitle > CTAs > stats",
+          "PASS: Services section with cards draws attention to offerings",
+          "PASS: Pricing comparison (Bez letenky vs S letenkou) is well-structured",
+          "WARN: 'Nezavazna poptavka' CTA buttons in pricing could be more visually distinct - the outlined version doesn't stand out enough",
+          "PASS: FAQ accordion is clean and scannable"
+        ]
+      },
+      "accessibility": {
+        "score": 78,
+        "findings": [
+          "PASS: Skip links present ('Preskocit na hlavni obsah', 'Preskocit na zapati')",
+          "PASS: Form fields have required states marked",
+          "PASS: Heading levels used properly (H1 > H2 > H3 > H4)",
+          "WARN: No visible hamburger/mobile menu - mobile users cannot navigate",
+          "WARN: Checkbox for GDPR consent appears readonly - may confuse users",
+          "NOTE: All interactive elements (buttons, links) are present in accessibility tree"
+        ]
+      }
+    }
+  },
+
+  "uxAnalysisReport": {
+    "overallScore": 72,
+    "personaScores": {
+      "firstTimeVisitor": {
+        "score": 85,
+        "notes": "Value proposition is immediately clear on desktop: hair transplant clinic with Czech support, premium service, transparent pricing. Trust signals present (5000+ clients, 95% success, 15+ years). Clear CTAs."
+      },
+      "averageUser": {
+        "score": 78,
+        "notes": "Desktop experience is good. Navigation is logical (O nas, Sluzby, Metody, Cenik, Vysledky, Kontakt). Contact options are prominently displayed (WhatsApp, phone, email). Pricing is transparent with two clear options."
+      },
+      "mobileOnly": {
+        "score": 35,
+        "notes": "CRITICAL: Mobile experience is essentially broken. No hamburger menu means users cannot navigate. Content is cut off. Hero text is illegible. This persona would immediately leave the site."
+      },
+      "techSavvy": {
+        "score": 82,
+        "notes": "Clean, modern design on desktop. No unnecessary steps. Multiple contact options. Skip links for keyboard navigation. FAQ section is scannable."
+      },
+      "accessibilityUser": {
+        "score": 75,
+        "notes": "Good accessibility tree structure. Skip links present. Headings properly nested. Form labels present. However, mobile navigation failure means keyboard/screen-reader users on mobile cannot navigate."
+      }
+    },
+    "categoryScores": {
+      "firstImpression": {
+        "score": 88,
+        "findings": [
+          "PASS: Purpose clear within 5 seconds - hair transplant clinic",
+          "PASS: Value proposition prominent - Czech support, 5* hotel, VIP transfer",
+          "PASS: Trust signals visible - 5000+ clients, 95% success rate, 15+ years",
+          "PASS: Professional dark design with gold accents conveys premium service",
+          "PASS: Primary CTA (WhatsApp) is green and eye-catching"
+        ]
+      },
+      "navigation": {
+        "score": 55,
+        "findings": [
+          "PASS: Desktop nav has logical categories",
+          "PASS: Footer has organized links (Sluzby, Informace, Kontakt)",
+          "PASS: Phone number always visible in nav bar",
+          "FAIL: No hamburger menu on mobile/tablet - navigation completely broken below ~1024px",
+          "FAIL: Navigation bar does not collapse or adapt at any breakpoint",
+          "NOTE: Dropdown arrows on 'O nas', 'Sluzby', 'Metody' suggest submenus exist"
+        ]
+      },
+      "callsToAction": {
+        "score": 85,
+        "findings": [
+          "PASS: Primary CTA 'Napsat na WhatsApp' is green, prominent, and above the fold",
+          "PASS: Secondary CTA 'Zobrazit cenik' with outline style provides clear alternative",
+          "PASS: 'Nezavazna poptavka' buttons in pricing section",
+          "PASS: Contact section offers 3 channels (WhatsApp, phone, email) with response times",
+          "PASS: CTA buttons have adequate size for desktop touch targets"
+        ]
+      },
+      "formsAndInputs": {
+        "score": 80,
+        "findings": [
+          "PASS: Contact form has 4 fields - name, email, phone (required), message (optional)",
+          "PASS: Required fields marked with asterisk",
+          "PASS: GDPR consent checkbox present with link to privacy policy",
+          "PASS: Submit button clearly labeled 'Odeslat poptavku'",
+          "WARN: Checkbox shows readonly state - needs verification that it works",
+          "NOTE: No visible inline validation indicators"
+        ]
+      },
+      "cognitiveLoad": {
+        "score": 82,
+        "findings": [
+          "PASS: Content is scannable with clear section headings",
+          "PASS: Services broken into 3 clear cards (Muzi, Zeny, Vousy)",
+          "PASS: Benefits presented in numbered grid (01-06)",
+          "PASS: Pricing simplified to just 2 options",
+          "PASS: FAQ addresses common concerns in expandable format",
+          "NOTE: Page is long but well-sectioned with visual breaks"
+        ]
+      }
+    },
+    "findings": [
+      {
+        "id": "ux-001",
+        "category": "Navigation",
+        "severity": "CRITICAL",
+        "issue": "No mobile/tablet responsive navigation - hamburger menu missing",
+        "recommendation": "Add responsive hamburger menu that activates below 1024px breakpoint",
+        "userImpact": "Mobile users (50%+ of traffic) cannot navigate the site at all",
+        "type": "css"
+      },
+      {
+        "id": "ux-002",
+        "category": "Layout",
+        "severity": "CRITICAL",
+        "issue": "Content shifts left and gets clipped on mobile viewports",
+        "recommendation": "Fix CSS responsive layout - content should be centered and contained within viewport at all sizes",
+        "userImpact": "Hero messaging, CTAs, and stats invisible on mobile",
+        "type": "css"
+      },
+      {
+        "id": "ux-003",
+        "category": "Forms",
+        "severity": "MEDIUM",
+        "issue": "GDPR checkbox appears as readonly in accessibility tree",
+        "recommendation": "Verify checkbox is actually interactive. Remove readonly attribute if present.",
+        "userImpact": "Users may not be able to submit the form if checkbox doesn't work",
+        "type": "html"
+      },
+      {
+        "id": "ux-004",
+        "category": "Visual Hierarchy",
+        "severity": "LOW",
+        "issue": "Pricing CTA 'Nezavazna poptavka' (outlined style on left card) is less prominent than ideal",
+        "recommendation": "Consider making both pricing CTAs filled/solid style, or add hover effects",
+        "userImpact": "Users might overlook the lower-price option CTA",
+        "type": "css"
+      }
+    ]
+  },
+
+  "consoleErrors": [],
+  "networkErrors": [],
+
+  "summary": {
+    "responsiveScore": 50,
+    "visualAuditScore": 82,
+    "uxAnalysisScore": 72,
+    "overallScore": 68,
+    "passThreshold": 80,
+    "verdict": "NOT READY FOR DEPLOYMENT",
+    "criticalIssues": 2,
+    "highIssues": 1,
+    "mediumIssues": 1,
+    "lowIssues": 1
+  },
+
+  "strengths": [
+    "Professional, premium dark design with gold accents matching hair transplant clinic branding",
+    "Clear value proposition visible immediately on desktop",
+    "Strong trust signals (5000+ clients, 95% success, 15+ years experience)",
+    "Transparent pricing with two clear options (69,900 Kc / 75,500 Kc)",
+    "Multiple contact channels (WhatsApp, phone, email) with response time promises",
+    "Well-structured content flow: Hero > Services > Benefits > Pricing > Testimonials > FAQ > Contact",
+    "Clean FAQ accordion with 6 relevant questions",
+    "3 client testimonials with names and procedure details",
+    "No JavaScript console errors",
+    "No failed network requests",
+    "Good accessibility tree with skip links and proper heading hierarchy",
+    "Footer well-organized with 3 columns (Sluzby, Informace, Kontakt) + legal links"
+  ],
+
+  "criticalFixes": [
+    {
+      "priority": 1,
+      "issue": "Mobile navigation completely broken - no hamburger menu",
+      "type": "css",
+      "description": "The header navigation does not switch to a mobile hamburger menu at any breakpoint. At 320-768px, the full desktop menu bar overflows, making navigation impossible for mobile users.",
+      "suggestedFix": "Add CSS media query to hide desktop nav and show hamburger toggle below 1024px. Implement mobile drawer/overlay menu.",
+      "files": ["header-maxhair.json"],
+      "effort": "MEDIUM",
+      "impact": "CRITICAL - affects 50%+ of users"
+    },
+    {
+      "priority": 2,
+      "issue": "Content layout broken on mobile - shifted left, clipped, white gap on right",
+      "type": "css",
+      "description": "On mobile viewports (320-425px), the page content is shifted to the left with text and elements being clipped. A large white gap appears on the right side of the viewport.",
+      "suggestedFix": "Check for fixed-width elements or overflow issues in the hero section and main content wrapper. Ensure max-width: 100% and overflow-x: hidden on body/main containers.",
+      "files": ["homepage.json"],
+      "effort": "MEDIUM",
+      "impact": "CRITICAL - core content invisible on mobile"
+    }
+  ],
+
+  "improvements": [
+    {
+      "priority": "HIGH",
+      "description": "Verify GDPR checkbox is interactive (currently shows readonly state)",
+      "effort": "LOW",
+      "impact": "Form submission may be blocked"
+    },
+    {
+      "priority": "MEDIUM",
+      "description": "Add form validation feedback (inline error messages)",
+      "effort": "MEDIUM",
+      "impact": "Better user experience during form submission"
+    },
+    {
+      "priority": "MEDIUM",
+      "description": "Make both pricing CTA buttons equally prominent",
+      "effort": "LOW",
+      "impact": "Better conversion on lower-price option"
+    },
+    {
+      "priority": "LOW",
+      "description": "Increase H3/H4 size differentiation in benefits section",
+      "effort": "LOW",
+      "impact": "Clearer visual hierarchy"
+    },
+    {
+      "priority": "LOW",
+      "description": "Consider reducing excessive vertical padding between sections on desktop",
+      "effort": "LOW",
+      "impact": "Less scrolling needed"
+    }
+  ]
+}

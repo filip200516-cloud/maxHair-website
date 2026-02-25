@@ -1,0 +1,77 @@
+{
+  "content": [
+    {
+      "id": "hero_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["hero_container"],
+      "settings": {
+        "_width": "100vw",
+        "_height": "100vh"
+      },
+      "label": "Hero Section"
+    },
+    {
+      "id": "hero_container",
+      "name": "container",
+      "parent": "hero_section",
+      "children": ["hero_code"],
+      "settings": {
+        "_width": "100vw",
+        "_height": "100vh"
+      }
+    },
+    {
+      "id": "hero_code",
+      "name": "code",
+      "parent": "hero_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- HERO SECTION -->\n<section class=\"hero-section\">\n  <div class=\"hero-content\">\n    <h1 class=\"hero-title\">Vítejte na našem webu</h1>\n    <p class=\"hero-description\">Toto je ukázková stránka vytvořená pomocí Bricks Builder.</p>\n    <div class=\"hero-cta-group\">\n      <a href=\"/kontakt\" class=\"btn-primary\">Kontaktujte nás</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-color: #007bff;\n    --secondary-color: #6c757d;\n    --text-dark: #333333;\n    --text-light: #666666;\n    --white: #FFFFFF;\n  }\n\n  * {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n  }\n\n  .hero-section {\n    width: 100%;\n    max-width: 100vw;\n    min-height: 100vh;\n    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 80px 20px;\n  }\n\n  .hero-content {\n    max-width: 1200px;\n    width: 100%;\n    text-align: center;\n    color: var(--white);\n  }\n\n  .hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(32px, 5vw, 64px);\n    font-weight: 800;\n    margin: 0 0 24px 0;\n    line-height: 1.2;\n  }\n\n  .hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    margin: 0 0 32px 0;\n    opacity: 0.9;\n    line-height: 1.6;\n  }\n\n  .hero-cta-group {\n    display: flex;\n    gap: 16px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 14px 32px;\n    background: var(--white);\n    color: var(--primary-color);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 8px;\n    transition: all 0.3s ease;\n    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);\n  }\n\n  .btn-primary:hover {\n    transform: translateY(-3px);\n    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);\n  }\n\n  @media (max-width: 768px) {\n    .hero-section {\n      padding: 60px 20px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "",
+        "user_id": 0,
+        "time": 0
+      },
+      "themeStyles": []
+    },
+    {
+      "id": "features_section",
+      "name": "section",
+      "parent": 0,
+      "children": ["features_container"],
+      "settings": {
+        "_width": "100vw"
+      },
+      "label": "Features Section"
+    },
+    {
+      "id": "features_container",
+      "name": "container",
+      "parent": "features_section",
+      "children": ["features_code"],
+      "settings": {
+        "_width": "100vw"
+      }
+    },
+    {
+      "id": "features_code",
+      "name": "code",
+      "parent": "features_container",
+      "children": [],
+      "settings": {
+        "code": "<!-- FEATURES SECTION -->\n<section class=\"features-section\">\n  <div class=\"features-content\">\n    <h2 class=\"section-title\">Naše služby</h2>\n    <div class=\"features-grid\">\n      <div class=\"feature-card\">\n        <h3>Funkce 1</h3>\n        <p>Popis první funkce.</p>\n      </div>\n      <div class=\"feature-card\">\n        <h3>Funkce 2</h3>\n        <p>Popis druhé funkce.</p>\n      </div>\n      <div class=\"feature-card\">\n        <h3>Funkce 3</h3>\n        <p>Popis třetí funkce.</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .features-section {\n    width: 100%;\n    max-width: 100vw;\n    background: #f5f5f5;\n    padding: 80px 20px;\n  }\n\n  .features-content {\n    max-width: 1200px;\n    margin: 0 auto;\n    text-align: center;\n  }\n\n  .section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(28px, 4vw, 48px);\n    font-weight: 700;\n    color: var(--text-dark, #333);\n    margin: 0 0 60px 0;\n  }\n\n  .features-grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\n    gap: 30px;\n    margin-top: 40px;\n  }\n\n  .feature-card {\n    background: var(--white, #fff);\n    padding: 40px 30px;\n    border-radius: 12px;\n    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);\n    transition: all 0.3s ease;\n  }\n\n  .feature-card:hover {\n    transform: translateY(-8px);\n    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);\n  }\n\n  .feature-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 24px;\n    font-weight: 600;\n    color: var(--text-dark, #333);\n    margin: 0 0 16px 0;\n  }\n\n  .feature-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--text-light, #666);\n    line-height: 1.6;\n    margin: 0;\n  }\n\n  @media (max-width: 768px) {\n    .features-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+        "executeCode": true,
+        "signature": "",
+        "user_id": 0,
+        "time": 0
+      },
+      "themeStyles": []
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "",
+  "version": "2.0",
+  "globalClasses": [],
+  "globalElements": []
+}

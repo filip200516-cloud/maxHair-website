@@ -1,0 +1,261 @@
+[
+  {
+    "id": "sapphire_hero_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "sapphire_hero_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Sapphire FUE Hero | MaxHair"
+  },
+  {
+    "id": "sapphire_hero_container",
+    "name": "container",
+    "parent": "sapphire_hero_section",
+    "children": [
+      "sapphire_hero_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "sapphire_hero_code",
+    "name": "code",
+    "parent": "sapphire_hero_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- SAPPHIRE FUE HERO SECTION -->\n<section class=\"sapphire-hero-section\">\n  <div class=\"sapphire-hero-content\">\n    <span class=\"mh-badge\">METODA</span>\n    <h1 class=\"hero-title\" style=\"color: #ffffff !important;\">Sapphire FUE<br/>Safírová transplantace</h1>\n    <p class=\"hero-description\" style=\"color: rgba(255,255,255,0.9) !important;\">Šetrná metoda transplantace vlasů se safírovými čepelkami. Menší řezy, rychlejší hojení.</p>\n    <div class=\"hero-cta-group\">\n      <a href=\"#kontakt\" class=\"btn-primary\">Bezplatná konzultace</a>\n      <a href=\"#cenik\" class=\"btn-secondary\">Zjistit cenu</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #D4AF37;\n    --dark-gray: #1A1A1A;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #333333;\n  }\n\n  .sapphire-hero-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 80vh;\n    background: linear-gradient(135deg, rgba(90, 69, 44, 0.95) 0%, rgba(0, 0, 0, 0.9) 100%);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: clamp(60px, 10vh, 120px) clamp(20px, 5vw, 80px);\n    position: relative;\n    overflow: hidden;\n  }\n\n  .sapphire-hero-content {\n    max-width: 1200px;\n    width: 100%;\n    text-align: center;\n    position: relative;\n    z-index: 1;\n  }\n\n  .sapphire-hero-section .mh-badge,\n  .sapphire-hero-content .mh-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--primary-gold) !important;\n    color: var(--black) !important;\n    -webkit-text-fill-color: var(--black) !important;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    border-radius: 30px;\n    margin-bottom: 24px;\n    border: none;\n  }\n\n  .mh-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--primary-gold) !important;\n    color: var(--black) !important;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    border-radius: 30px;\n    margin-bottom: 20px;\n    border: none;\n  }\n\n  .hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(42px, 6vw, 72px);\n    font-weight: 700;\n    color: var(--white);\n    margin: 0 0 24px 0;\n    letter-spacing: normal;\n    line-height: 1.2;\n  }\n\n  .hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(18px, 2.5vw, 24px);\n    color: rgba(255, 255, 255, 0.9);\n    margin: 0 0 48px 0;\n    line-height: 1.6;\n    max-width: 800px;\n    margin-left: auto;\n    margin-right: auto;\n  }\n\n  .hero-cta-group {\n    display: flex;\n    gap: 20px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 10px;\n    transition: all 0.3s ease;\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-3px);\n    box-shadow: 0 10px 35px rgba(229, 193, 88, 0.5);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: transparent;\n    color: var(--white);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--white);\n    border-radius: 10px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--white);\n    color: var(--black);\n    transform: translateY(-3px);\n  }\n\n  @media (max-width: 768px) {\n    .sapphire-hero-section {\n      padding: 60px 24px;\n      min-height: 100vh;\n    }\n  }\n  .sapphire-hero-section .hero-title { color: #ffffff !important; }\n  .sapphire-hero-section .hero-description { color: rgba(255,255,255,0.9) !important; }\n</style>",
+      "executeCode": true,
+      "signature": "69067eae85b4081365c607a296013dcb",
+      "user_id": 1,
+      "time": 1768569034
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "sapphire_co_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "sapphire_co_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Sapphire FUE Co je | MaxHair"
+  },
+  {
+    "id": "sapphire_co_container",
+    "name": "container",
+    "parent": "sapphire_co_section",
+    "children": [
+      "sapphire_co_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "sapphire_co_code",
+    "name": "code",
+    "parent": "sapphire_co_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- CO JE sapphire SECTION -->\n<section class=\"sapphire-co-section\">\n  <div class=\"sapphire-co-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">TECHNOLOGIE</span>\n      <h2 class=\"section-title\">Co je sapphire metoda?</h2>\n      <p class=\"section-description\">Follicular Unit Extraction se safĂ­rovĂ˝mi ÄŤepelkami je nejmodernější metoda transplantace vlasů, která umožňuje přímou implantaci štěpů bez předchozího vytváření kanálků.</p>\n    </div>\n    \n    <div class=\"sapphire-explanation-grid\">\n      <div class=\"explanation-card\">\n        <div class=\"card-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 2L22 6\"/><path d=\"M7.5 20.5L3.5 16.5L15 5L19 9L7.5 20.5Z\"/><path d=\"M15 5L19 9\"/><path d=\"M11 9L15 13\"/><path d=\"M7.5 20.5L2 22L3.5 16.5\"/><path d=\"M9 11L13 15\"/></svg></div>\n        <h3>safĂ­rovĂ© ÄŤepelky</h3>\n        <p>Speciální nástroj, který kombinuje vytvoření kanálku a implantaci štěpu v jednom kroku. Zajišťuje přesné umístění každého vlasu.</p>\n      </div>\n      \n      <div class=\"explanation-card\">\n        <div class=\"card-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><circle cx=\"12\" cy=\"12\" r=\"6\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg></div>\n        <h3>Přímá implantace</h3>\n        <p>Štěpy se implantují přímo do pokožky bez předchozího vytváření kanálků. Tím se minimalizuje trauma a zkracuje doba hojení.</p>\n      </div>\n      \n      <div class=\"explanation-card\">\n        <div class=\"card-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13 2L3 14H12L11 22L21 10H12L13 2Z\"/></svg></div>\n        <h3>Bez kanálků</h3>\n        <p>Oproti klasické FUE metodě není potřeba nejdřív vytvářet kanálky. Choi pen vše zvládne najednou - rychleji a přesněji.</p>\n      </div>\n    </div>\n    \n    <div class=\"sapphire-placeholder\">\n      <div class=\"placeholder-content\">\n        <div class=\"placeholder-icon\">📸</div>\n        <p><strong>Ilustrace safĂ­rovĂ© ÄŤepelky</strong></p>\n        <p>Fotografie speciálního nástroje používaného při sapphire metodě</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .sapphire-co-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--white);\n  }\n\n  .sapphire-co-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .section-header {\n    text-align: center;\n    margin-bottom: 60px;\n  }\n\n  .sapphire-co-section .section-header .mh-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--primary-gold) !important;\n    color: var(--black) !important;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 20px;\n    border-radius: 30px;\n  }\n\n  .section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 20px 0;\n    letter-spacing: normal;\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    max-width: 800px;\n    margin: 0 auto;\n    line-height: 1.6;\n    text-align: center;\n  }\n\n  .sapphire-explanation-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 32px;\n    margin-bottom: 60px;\n  }\n\n  .explanation-card {\n    background: var(--light-gray);\n    border-radius: 20px;\n    padding: 40px 32px;\n    text-align: center;\n    transition: all 0.3s ease;\n  }\n\n  .explanation-card:hover {\n    background: var(--white);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .card-icon {\n    width: 56px;\n    height: 56px;\n    margin: 0 auto 24px;\n    color: var(--primary-gold);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n  \n  .card-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .explanation-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 22px;\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 16px 0;\n  }\n\n  .explanation-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0;\n  }\n\n  .sapphire-placeholder {\n    background: var(--light-gray);\n    border-radius: 20px;\n    padding: 80px 40px;\n    text-align: center;\n    border: 2px dashed var(--medium-gray);\n  }\n\n  .placeholder-content {\n    max-width: 600px;\n    margin: 0 auto;\n  }\n\n  .placeholder-icon {\n    width: 64px;\n    height: 64px;\n    margin: 0 auto 24px;\n    color: var(--medium-gray);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n  \n  .placeholder-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .placeholder-content p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-gray);\n    margin: 8px 0;\n  }\n\n  .placeholder-content strong {\n    color: var(--dark-gray);\n    font-weight: 600;\n  }\n\n  @media (max-width: 1200px) {\n    .sapphire-explanation-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .sapphire-co-section {\n      padding: 60px 24px;\n    }\n\n    .sapphire-explanation-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "c67de0371a1953a472bf8051a9d56bbe",
+      "user_id": 1,
+      "time": 1768569034
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "sapphire_proces_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "sapphire_proces_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Sapphire FUE Proces | MaxHair"
+  },
+  {
+    "id": "sapphire_proces_container",
+    "name": "container",
+    "parent": "sapphire_proces_section",
+    "children": [
+      "sapphire_proces_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "sapphire_proces_code",
+    "name": "code",
+    "parent": "sapphire_proces_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- JAK SAPPHIRE FUNGUJE SECTION -->\n<section class=\"sapphire-proces-section\">\n  <div class=\"sapphire-proces-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">PROCES</span>\n      <h2 class=\"section-title\">Jak Sapphire FUE funguje?</h2>\n      <p class=\"section-description\">Proces Sapphire FUE transplantace probíhá v několika krocích, které zajišťují maximální přesnost a přirozený výsledek.</p>\n    </div>\n    \n    <div class=\"proces-layout\">\n      <div class=\"timeline-column\">\n        <h3 class=\"timeline-title\">5 kroků Sapphire FUE procesu</h3>\n        <div class=\"timeline\">\n          <div class=\"timeline-item\">\n            <div class=\"timeline-number\">1</div>\n            <div class=\"timeline-content\">\n              <h4>Odběr štěpů z dárcové oblasti</h4>\n              <p>Jednotlivé folikulární jednotky se odeberou z dárcové oblasti (obvykle týl hlavy) pomocí mikrochirurgických nástrojů. Každý štěp obsahuje 1-4 vlasy.</p>\n            </div>\n          </div>\n          \n          <div class=\"timeline-item\">\n            <div class=\"timeline-number\">2</div>\n            <div class=\"timeline-content\">\n              <h4>Příprava štěpů</h4>\n              <p>Odebrané štěpy se pečlivě třídí a připravují pod mikroskopem. Zajišťuje se jejich kvalita a životaschopnost před implantací.</p>\n            </div>\n          </div>\n          \n          <div class=\"timeline-item\">\n            <div class=\"timeline-number\">3</div>\n            <div class=\"timeline-content\">\n              <h4>Vytvoření kanálků safírovými čepelkami</h4>\n              <p>Safírové čepelky vytvoří přesné kanálky v pokožce. Safír je tvrdší než kov, což umožňuje menší řezy a rychlejší hojení.</p>\n            </div>\n          </div>\n          \n          <div class=\"timeline-item\">\n            <div class=\"timeline-number\">4</div>\n            <div class=\"timeline-content\">\n              <h4>Implantace štěpů</h4>\n              <p>Připravené štěpy se pečlivě implantují do vytvořených kanálků. Safírové čepelky zajišťují přesné umístění každého vlasu.</p>\n            </div>\n          </div>\n          \n          <div class=\"timeline-item\">\n            <div class=\"timeline-number\">5</div>\n            <div class=\"timeline-content\">\n              <h4>Hojení a růst</h4>\n              <p>Po implantaci následuje fáze hojení. Nové vlasy začínají růst po 3-4 měsících a plný výsledek je viditelný po 12-18 měsících.</p>\n            </div>\n          </div>\n        </div>\n      </div>\n      \n      <div class=\"video-column\">\n        <div class=\"video-wrapper\">\n          <video controls class=\"sapphire-video\">\n            <source src=\"https://mediumseagreen-gaur-406121.hostingersite.com/wp-content/uploads/2025/12/WhatsApp-Video-2025-12-13-at-14.56.52_6de6a47b.mp4\" type=\"video/quicktime\">\n            <source src=\"https://mediumseagreen-gaur-406121.hostingersite.com/wp-content/uploads/2025/12/WhatsApp-Video-2025-12-13-at-14.56.52_6de6a47b.mp4\" type=\"video/mp4\">\n            Váš prohlížeč nepodporuje video tag.\n          </video>\n        </div>\n        <p class=\"video-caption\">Video ukázka Sapphire FUE transplantace pomocí safírových čepel</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .sapphire-proces-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n  }\n\n  .sapphire-proces-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .proces-layout {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: clamp(40px, 5vw, 60px);\n    margin-top: 60px;\n    align-items: start;\n  }\n\n  .timeline-column {\n    padding-right: clamp(20px, 3vw, 40px);\n    border-right: 2px solid var(--medium-gray);\n  }\n\n  .timeline-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(20px, 2.5vw, 28px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 clamp(24px, 3vw, 32px) 0;\n  }\n\n  .timeline {\n    margin: 0;\n  }\n\n  .timeline-item {\n    display: flex;\n    gap: clamp(16px, 2vw, 24px);\n    margin-bottom: clamp(24px, 3vw, 32px);\n    align-items: flex-start;\n  }\n\n  .timeline-item:last-child {\n    margin-bottom: 0;\n  }\n\n  .timeline-number {\n    width: clamp(40px, 5vw, 50px);\n    height: clamp(40px, 5vw, 50px);\n    background: var(--primary-gold);\n    color: var(--black);\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(18px, 2.2vw, 22px);\n    font-weight: 700;\n    flex-shrink: 0;\n  }\n\n  .timeline-content {\n    flex: 1;\n  }\n\n  .timeline-content h4 {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(16px, 2vw, 18px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 clamp(8px, 1vw, 10px) 0;\n  }\n\n  .timeline-content p {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(13px, 1.6vw, 14px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.5;\n    margin: 0;\n  }\n\n  .video-column {\n    padding-left: clamp(20px, 3vw, 40px);\n    display: flex;\n    flex-direction: column;\n  }\n\n  .video-wrapper {\n    width: 100%;\n    position: relative;\n    padding-bottom: 56.25%; /* 16:9 aspect ratio */\n    border-radius: clamp(16px, 2vw, 20px);\n    overflow: hidden;\n    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);\n    margin-bottom: clamp(16px, 2vw, 24px);\n    background: #000;\n  }\n\n  .sapphire-video {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    display: block;\n  }\n\n  .video-caption {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(12px, 1.5vw, 14px);\n    color: var(--dark-gray);\n    opacity: 0.6;\n    margin: 0;\n    text-align: center;\n  }\n\n  @media (max-width: 992px) {\n    .proces-layout {\n      grid-template-columns: 1fr;\n      gap: clamp(40px, 5vw, 60px);\n    }\n\n    .timeline-column {\n      padding-right: 0;\n      border-right: none;\n      border-bottom: 2px solid var(--medium-gray);\n      padding-bottom: clamp(30px, 4vw, 40px);\n    }\n\n    .video-column {\n      padding-left: 0;\n    }\n  }\n\n  @media (max-width: 768px) {\n    .sapphire-proces-section {\n      padding: 60px 24px;\n    }\n\n    .timeline-item {\n      flex-direction: column;\n      gap: clamp(12px, 1.5vw, 16px);\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "66999124d383161fa10257bc2c58ccd6",
+      "user_id": 1,
+      "time": 1768569034
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "sapphire_vyhody_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "sapphire_vyhody_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Sapphire FUE Výhody | MaxHair"
+  },
+  {
+    "id": "sapphire_vyhody_container",
+    "name": "container",
+    "parent": "sapphire_vyhody_section",
+    "children": [
+      "sapphire_vyhody_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "sapphire_vyhody_code",
+    "name": "code",
+    "parent": "sapphire_vyhody_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- VYHODY sapphire SECTION -->\n<section class=\"sapphire-vyhody-section\">\n  <div class=\"sapphire-vyhody-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">VÝHODY</span>\n      <h2 class=\"section-title\">Proč zvolit sapphire metodu?</h2>\n      <p class=\"section-description\">sapphire metoda nabízí řadu výhod oproti klasickým metodám transplantace vlasů.</p>\n    </div>\n    \n    <div class=\"vyhody-grid\">\n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 3V21H21\"/><path d=\"M7 16L12 11L15 14L21 8\"/><path d=\"M17 8H21V12\"/></svg></div>\n        <h3>Vyšší hustota</h3>\n        <p>Díky přesnému umístění každého štěpu lze dosáhnout vyšší hustoty vlasů než u klasických metod.</p>\n      </div>\n      \n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13 2L3 14H12L11 22L21 10H12L13 2Z\"/></svg></div>\n        <h3>Kratší hojení</h3>\n        <p>Minimální trauma pokožky znamená rychlejší hojení a kratší dobu rekonvalescence.</p>\n      </div>\n      \n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z\"/><path d=\"M19 19L20.09 21.26L23 22L20.09 22.74L19 25L17.91 22.74L15 22L17.91 21.26L19 19Z\"/></svg></div>\n        <h3>Přirozenější vzhled</h3>\n        <p>Přesné umístění každého vlasu zajišťuje přirozený směr růstu a vzhled.</p>\n      </div>\n      \n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"M21 21L16.65 16.65\"/></svg></div>\n        <h3>Minimální jizvy</h3>\n        <p>Díky menším řezům a přesné práci zůstávají jen minimální jizvy, které jsou téměř neviditelné.</p>\n      </div>\n      \n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><circle cx=\"12\" cy=\"12\" r=\"6\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg></div>\n        <h3>Přesné umístění</h3>\n        <p>Choi pen umožňuje přesné umístění každého štěpu podle přirozeného směru růstu vlasů.</p>\n      </div>\n      \n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9V21H18V9\"/><path d=\"M6 9C6 7.89543 6.89543 7 8 7H16C17.1046 7 18 7.89543 18 9V9\"/><path d=\"M9 3V7\"/><path d=\"M15 3V7\"/><path d=\"M12 13V17\"/><path d=\"M10 11H14\"/></svg></div>\n        <h3>Vhodné pro jemné vlasy</h3>\n        <p>sapphire metoda je ideální pro jemné vlasy a oblasti, kde je potřeba maximální přesnost.</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .sapphire-vyhody-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(50px, 6vw, 80px) clamp(20px, 4vw, 60px);\n    background: var(--white);\n  }\n\n  .sapphire-vyhody-content {\n    max-width: 1200px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .section-header {\n    text-align: center;\n    margin-bottom: clamp(30px, 4vw, 40px);\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(14px, 1.8vw, 16px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    max-width: 700px;\n    margin: 0 auto;\n    line-height: 1.6;\n  }\n\n  .vyhody-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: clamp(20px, 2.5vw, 24px);\n    margin-top: clamp(30px, 4vw, 40px);\n  }\n\n  .vyhoda-card {\n    background: transparent;\n    padding: clamp(20px, 2.5vw, 24px);\n    text-align: left;\n    border-bottom: 1px solid var(--light-gray);\n  }\n\n  .vyhoda-card:last-child {\n    border-bottom: none;\n  }\n\n  .vyhoda-icon {\n    width: clamp(24px, 3vw, 28px);\n    height: clamp(24px, 3vw, 28px);\n    margin-bottom: clamp(12px, 1.5vw, 16px);\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    color: var(--primary-gold);\n  }\n  \n  .vyhoda-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .vyhoda-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(16px, 2vw, 18px);\n    font-weight: 600;\n    color: var(--dark-gray);\n    margin: 0 0 clamp(8px, 1vw, 10px) 0;\n  }\n\n  .vyhoda-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(13px, 1.6vw, 14px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.5;\n    margin: 0;\n  }\n\n  @media (max-width: 992px) {\n    .vyhody-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .sapphire-vyhody-section {\n      padding: clamp(40px, 5vw, 60px) clamp(20px, 3vw, 24px);\n    }\n\n    .vyhody-grid {\n      grid-template-columns: 1fr;\n      gap: clamp(16px, 2vw, 20px);\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "6000a9b0614d68e769313b66c4d1d06e",
+      "user_id": 1,
+      "time": 1768569034
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "sapphire_porovnani_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "sapphire_porovnani_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Sapphire FUE Porovnání | MaxHair"
+  },
+  {
+    "id": "sapphire_porovnani_container",
+    "name": "container",
+    "parent": "sapphire_porovnani_section",
+    "children": [
+      "sapphire_porovnani_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "sapphire_porovnani_code",
+    "name": "code",
+    "parent": "sapphire_porovnani_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- sapphire VS FUE SECTION -->\n<section class=\"sapphire-porovnani-section\">\n  <div class=\"sapphire-porovnani-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">POROVNÁNÍ</span>\n      <h2 class=\"section-title\">sapphire vs. Klasická FUE</h2>\n      <p class=\"section-description\">Porovnejte si rozdíly mezi sapphire metodou a klasickou FUE metodou.</p>\n    </div>\n    \n    <div class=\"porovnani-table\">\n      <div class=\"table-header\">\n        <div class=\"table-cell\">Kritérium</div>\n        <div class=\"table-cell\">sapphire</div>\n        <div class=\"table-cell\">Klasická FUE</div>\n      </div>\n      \n      <div class=\"table-row\">\n        <div class=\"table-cell\">Způsob implantace</div>\n        <div class=\"table-cell\">Přímá implantace Choi penem</div>\n        <div class=\"table-cell\">Nejdřív kanálky, pak implantace</div>\n      </div>\n      \n      <div class=\"table-row\">\n        <div class=\"table-cell\">Trauma pokožky</div>\n        <div class=\"table-cell\">Minimální</div>\n        <div class=\"table-cell\">Větší</div>\n      </div>\n      \n      <div class=\"table-row\">\n        <div class=\"table-cell\">Doba hojení</div>\n        <div class=\"table-cell\">Kratší</div>\n        <div class=\"table-cell\">Delší</div>\n      </div>\n      \n      <div class=\"table-row\">\n        <div class=\"table-cell\">Hustota vlasů</div>\n        <div class=\"table-cell\">Vyšší</div>\n        <div class=\"table-cell\">Nižší</div>\n      </div>\n      \n      <div class=\"table-row\">\n        <div class=\"table-cell\">Přesnost umístění</div>\n        <div class=\"table-cell\">Maximální</div>\n        <div class=\"table-cell\">Dobrá</div>\n      </div>\n      \n      <div class=\"table-row\">\n        <div class=\"table-cell\">Vhodné pro</div>\n        <div class=\"table-cell\">Jemné vlasy, vysoká hustota</div>\n        <div class=\"table-cell\">Všeobecné použití</div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .sapphire-porovnani-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(50px, 6vw, 70px) clamp(20px, 4vw, 60px);\n    background: var(--light-gray);\n  }\n\n  .sapphire-porovnani-content {\n    max-width: 1000px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .section-header {\n    text-align: center;\n    margin-bottom: clamp(30px, 4vw, 40px);\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(14px, 1.8vw, 16px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    max-width: 700px;\n    margin: 0 auto;\n    line-height: 1.6;\n  }\n\n  .porovnani-table {\n    margin-top: clamp(30px, 4vw, 40px);\n    background: var(--white);\n    border-radius: clamp(12px, 1.5vw, 16px);\n    overflow: hidden;\n    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);\n  }\n\n  .table-header {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    background: var(--primary-gold);\n    color: var(--black);\n  }\n\n  .table-row {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    border-bottom: 1px solid var(--light-gray);\n  }\n\n  .table-row:last-child {\n    border-bottom: none;\n  }\n\n  .table-cell {\n    padding: clamp(16px, 2vw, 20px) clamp(20px, 2.5vw, 24px);\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(14px, 1.7vw, 15px);\n    line-height: 1.5;\n  }\n\n  .table-header .table-cell {\n    font-weight: 700;\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(15px, 1.8vw, 16px);\n  }\n\n  .table-row:nth-child(even) {\n    background: var(--light-gray);\n  }\n\n  @media (max-width: 768px) {\n    .sapphire-porovnani-section {\n      padding: clamp(40px, 5vw, 50px) clamp(20px, 3vw, 24px);\n    }\n\n    .table-header,\n    .table-row {\n      grid-template-columns: 1fr;\n    }\n\n    .table-cell {\n      padding: clamp(14px, 1.8vw, 16px) clamp(16px, 2vw, 18px);\n    }\n\n    .table-cell:first-child {\n      font-weight: 600;\n      background: var(--primary-gold);\n      color: var(--black);\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "b1fb9ec6098bc26e5ada94a66f84f61e",
+      "user_id": 1,
+      "time": 1768569034
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "sapphire_faq_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "sapphire_faq_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Sapphire FUE FAQ | MaxHair"
+  },
+  {
+    "id": "sapphire_faq_container",
+    "name": "container",
+    "parent": "sapphire_faq_section",
+    "children": [
+      "sapphire_faq_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "sapphire_faq_code",
+    "name": "code",
+    "parent": "sapphire_faq_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- sapphire FAQ SECTION -->\n<section class=\"sapphire-faq-section\">\n  <div class=\"sapphire-faq-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">FAQ</span>\n      <h2 class=\"section-title\">Časté otázky o sapphire metodě</h2>\n    </div>\n    \n    <div class=\"faq-list\">\n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Je sapphire metoda bolestivá?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>sapphire metoda se provádí v lokální anestezii, takže během zákroku necítíte žádnou bolest. Po zákroku může být mírný diskomfort, který obvykle odezní během několika dní.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Jak dlouho trvá sapphire transplantace?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Doba trvání závisí na počtu štěpů. Obvykle trvá 6-8 hodin. sapphire metoda může být rychlejší než klasická FUE díky efektivnějšímu procesu implantace.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Kdy uvidím výsledky sapphire transplantace?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Nové vlasy začínají růst po 3-4 měsících. Plný výsledek je viditelný po 12-18 měsících. sapphire metoda může mít rychlejší růst díky minimálnímu traumatu.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Je sapphire vhodná pro každého?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>sapphire je ideální pro kandidáty, kteří potřebují vysokou hustotu nebo mají jemné vlasy. Během konzultace zjistíme, zda je sapphire pro vás vhodná metoda.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Kolik stojí sapphire transplantace?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Cena sapphire transplantace začíná od 69,900 Kč v rámci našich all-inclusive balíčků. Cena zahrnuje vše - letenku, hotel, transport i operaci. <a href=\"/#cenik\">Více o cenách</a></p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .sapphire-faq-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--white);\n  }\n\n  .sapphire-faq-content {\n    max-width: 1000px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .sapphire-faq-section .faq-list {\n    margin-top: 60px;\n  }\n\n  .sapphire-faq-section .faq-item {\n    border-bottom: 2px solid var(--light-gray);\n    margin-bottom: 0;\n  }\n\n  .sapphire-faq-section .faq-item:last-child {\n    border-bottom: none;\n  }\n\n  .sapphire-faq-section .faq-question {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 24px 0;\n    background: transparent;\n    border: none;\n    cursor: pointer;\n    text-align: left;\n    font-family: 'Poppins', sans-serif;\n    font-size: 20px;\n    font-weight: 600;\n    color: var(--dark-gray);\n    transition: all 0.3s ease;\n  }\n\n  .sapphire-faq-section .faq-question:hover {\n    color: var(--primary-gold);\n  }\n\n  .sapphire-faq-section .faq-icon {\n    font-size: 28px;\n    font-weight: 300;\n    color: var(--primary-gold);\n    transition: transform 0.3s ease;\n  }\n\n  .faq-item.active .sapphire-faq-section .faq-icon {\n    transform: rotate(45deg);\n  }\n\n  .sapphire-faq-section .faq-answer {\n    max-height: 0;\n    overflow: hidden;\n    transition: max-height 0.3s ease;\n  }\n\n  .faq-item.active .sapphire-faq-section .faq-answer {\n    max-height: 500px;\n  }\n\n  .sapphire-faq-section .faq-answer p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.6;\n    padding: 0 0 24px 0;\n    margin: 0;\n  }\n\n  .sapphire-faq-section .faq-answer a {\n    color: var(--primary-gold);\n    text-decoration: underline;\n  }\n\n  @media (max-width: 768px) {\n    .sapphire-faq-section {\n      padding: 60px 24px;\n    }\n\n    .sapphire-faq-section .faq-question {\n      font-size: 18px;\n      padding: 20px 0;\n    }\n  }\n</style>\n\n<script>\n  // FAQ Accordion - All Sections\n  (function() {\n    function initAllFAQ() {\n      var containers = document.querySelectorAll('.faq-list, .faq-items, .faq-grid');\n      for (var c = 0; c < containers.length; c++) {\n        var faqContainer = containers[c];\n        if (faqContainer.dataset.faqInit) continue;\n        faqContainer.dataset.faqInit = 'true';\n        (function(container) {\n          container.addEventListener('click', function(e) {\n            var question = e.target.closest('.faq-question');\n            if (!question) return;\n            var item = question.closest('.faq-item');\n            if (!item) return;\n            var isActive = item.classList.contains('active');\n            var allItems = container.querySelectorAll('.faq-item');\n            for (var i = 0; i < allItems.length; i++) {\n              allItems[i].classList.remove('active');\n            }\n            if (!isActive) {\n              item.classList.add('active');\n            }\n          });\n        })(faqContainer);\n      }\n    }\n    if (document.readyState === 'loading') {\n      document.addEventListener('DOMContentLoaded', initAllFAQ);\n    } else {\n      initAllFAQ();\n    }\n    setTimeout(initAllFAQ, 100);\n    setTimeout(initAllFAQ, 500);\n  })();\n</script>",
+      "executeCode": true,
+      "signature": "9f202b38cfa25453fd9045220bcd7b67",
+      "user_id": 1,
+      "time": 1768569034
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "sapphire_cta_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "sapphire_cta_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Sapphire FUE CTA | MaxHair"
+  },
+  {
+    "id": "sapphire_cta_container",
+    "name": "container",
+    "parent": "sapphire_cta_section",
+    "children": [
+      "sapphire_cta_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "sapphire_cta_code",
+    "name": "code",
+    "parent": "sapphire_cta_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- sapphire CTA SECTION -->\n<section class=\"sapphire-cta-section\">\n  <div class=\"sapphire-cta-content\">\n    <h2 class=\"cta-title\">Zajímá vás sapphire metoda?</h2>\n    <p class=\"cta-description\">Získejte bezplatnou konzultaci a zjistěte, zda je sapphire metoda vhodná právě pro vás.</p>\n    <div class=\"cta-buttons\">\n      <a href=\"/kontakt\" class=\"btn-primary\">Bezplatná konzultace</a>\n      <a href=\"/#cenik\" class=\"btn-secondary\">Zjistit cenu</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  .sapphire-cta-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n    text-align: center;\n  }\n\n  .sapphire-cta-content {\n    max-width: 800px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .cta-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 24px 0;\n    letter-spacing: normal;\n  }\n\n  .cta-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(18px, 2.5vw, 22px);\n    color: var(--dark-gray);\n    opacity: 0.8;\n    margin: 0 0 48px 0;\n    line-height: 1.6;\n  }\n\n  .cta-buttons {\n    display: flex;\n    gap: 20px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 10px;\n    transition: all 0.3s ease;\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-3px);\n    box-shadow: 0 10px 35px rgba(229, 193, 88, 0.5);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: transparent;\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--primary-gold);\n    border-radius: 10px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--primary-gold);\n    color: var(--black);\n    transform: translateY(-3px);\n  }\n\n  @media (max-width: 768px) {\n    .sapphire-cta-section {\n      padding: 60px 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "f0b0f5ce054624b2e3cddd52f2431b63",
+      "user_id": 1,
+      "time": 1768569034
+    },
+    "themeStyles": []
+  }
+]
