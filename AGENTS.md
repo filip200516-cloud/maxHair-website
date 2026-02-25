@@ -43,6 +43,18 @@ curl -s -X POST -u "$WP_USER:$WP_APP_PASSWORD" "https://maxhair.cz/wp-json/brick
 
 This purges LiteSpeed Cache, WordPress object cache, Bricks transients, and opcache in one call.
 
+### Typical push workflow
+
+1. Edit JSON files in `/workspace/pages/` or `/workspace/header-maxhair.json` / `footer-maxhair.json`
+2. Push to WordPress: `cd /workspace/Fellaship-web-builder-tool-main && node sync.js push-all`
+3. Clear cache: `curl -s -X POST -u "kozar.filip@email.cz:fDtz 4fQx Vxtb VYiv 6xPs QXu5" "https://maxhair.cz/wp-json/bricks/v1/purge-all-cache"`
+4. Commit + push to GitHub: `git add . && git commit -m "..." && git push -u origin master`
+5. Verify on https://www.maxhair.cz (hard refresh)
+
+### Mobile viewport height: use 100svh, never 100dvh
+
+Hero sections must use `100svh` (stable viewport height), not `100vh` or `100dvh`. Using `100dvh` causes jarring hero resizes when the mobile browser toolbar appears/disappears. The pattern is: `min-height: 100vh; min-height: 100svh;` (vh as fallback for older browsers, svh as the actual value).
+
 ### No lint/test/build pipeline
 
 This project has no automated tests, linter, or build step. Verification is done by checking the live site and the local preview servers.
