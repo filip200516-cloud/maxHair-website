@@ -35,7 +35,13 @@ See `CURSOR-AI-GUIDE.md` and `QUICK-START-AI.md` in the tool directory for the f
 
 ### Hostinger cache
 
-After every successful push to the live site, **you must clear the Hostinger cache** for changes to appear on www.maxhair.cz. This is done through the Hostinger hPanel (external action — the agent cannot do this directly).
+After every successful push to the live site, **you must clear the cache** for changes to appear on www.maxhair.cz. The Bricks API endpoint plugin provides a cache-purge REST endpoint:
+
+```bash
+curl -s -X POST -u "$WP_USER:$WP_APP_PASSWORD" "https://maxhair.cz/wp-json/bricks/v1/purge-all-cache"
+```
+
+This purges LiteSpeed Cache, WordPress object cache, Bricks transients, and opcache in one call.
 
 ### No lint/test/build pipeline
 
