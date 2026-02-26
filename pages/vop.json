@@ -7,7 +7,8 @@
       "vop_hero_container"
     ],
     "settings": {
-      "_width": "100%"
+      "_width": "100%",
+      "_height": "100svh"
     },
     "label": "VOP Hero | MaxHair"
   },
@@ -19,7 +20,8 @@
       "vop_hero_code"
     ],
     "settings": {
-      "_width": "100%"
+      "_width": "100%",
+      "_height": "100svh"
     }
   },
   {
