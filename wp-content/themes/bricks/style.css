@@ -24,6 +24,13 @@ html {
   scroll-padding-top: 80px;
 }
 
+/* ===== HERO 100svh - celá výška obrazovky (homepage mh-hero na všech viewportech) ===== */
+.brxe-section:has(.mh-hero),
+.brxe-section:has(.mh-hero) .brxe-container,
+.brxe-section:has(.mh-hero) .brxe-code {
+  min-height: 100vh !important;
+  min-height: 100svh !important;
+}
 /* ===== HERO 100vh MOBILE FIX - prevent resize on scroll (iOS Safari) ===== */
 /* Use 100svh = stable viewport, no jump when address bar hides */
 @media (max-width: 900px) {
@@ -40,7 +47,9 @@ html {
   .brxe-section:has(.onas-hero-section) .brxe-container,
   .brxe-section:has(.vousy-hero-section) .brxe-container,
   .brxe-section:has(.muzi-hero-section) .brxe-container,
-  .brxe-section:has(.zeny-hero-section) .brxe-container {
+  .brxe-section:has(.zeny-hero-section) .brxe-container,
+  .brxe-section:has(.mh-hero) .brxe-container,
+  .brxe-section:has(.mh-hero) .brxe-code {
     min-height: 100svh !important;
     min-height: 100dvh !important;
     height: auto !important;

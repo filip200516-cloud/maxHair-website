@@ -59,6 +59,13 @@ Hero sections must use `100svh` (stable viewport height), not `100vh` or `100dvh
 
 This project has no automated tests, linter, or build step. Verification is done by checking the live site and the local preview servers.
 
+### Generated images (Cursor)
+
+Images created with the **Generate Image** tool are saved under the Cursor project folder, not the workspace:
+
+- **Path:** `C:\Users\kozar\.cursor\projects\d-Software-Apps-MaxHair-cz-main\assets\` (Windows)
+- **Usage:** When uploading generated images to WordPress via `upload-media.js`, use this absolute path (e.g. `.../assets/dhi-metoda.png`). The workspace folder `.../MaxHair.cz-main/assets/` is a different location.
+
 ### Credentials
 
 The WordPress API credentials and SSH credentials for Hostinger are stored in `config-original.json` (committed). The active `config.json` is generated from it with adapted paths. If credentials are rotated, update `config-original.json` and recreate `config.json`.

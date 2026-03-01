@@ -38,3 +38,6 @@ device-frames/
 video-to-cursor/*.MP4
 video-to-cursor/*.mp4
 video-to-cursor/*.mov
+
+# Stažené materiály z Google Drive (skript scripts/sync-drive.ps1)
+assets/drive-materials/

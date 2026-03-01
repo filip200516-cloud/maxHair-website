@@ -26,11 +26,14 @@ const baseURL = config.wordpress.url;
 const username = config.wordpress.username;
 const password = (config.wordpress.applicationPassword || '').replace(/\s+/g, '');
 
+const ext = path.extname(imagePath).toLowerCase();
+  const mime = ext === '.png' ? 'image/png' : (ext === '.jpg' || ext === '.jpeg') ? 'image/jpeg' : 'image/png';
+
 async function uploadMedia() {
   const formData = new FormData();
   formData.append('file', fs.createReadStream(imagePath), {
     filename: path.basename(imagePath),
-    contentType: 'image/png'
+    contentType: mime
   });
 
   try {
