@@ -1,0 +1,39 @@
+[
+  {
+    "id": "blog_list_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "blog_list_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Blog Listing | MaxHair"
+  },
+  {
+    "id": "blog_list_container",
+    "name": "container",
+    "parent": "blog_list_section",
+    "children": [
+      "blog_list_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "blog_list_code",
+    "name": "code",
+    "parent": "blog_list_container",
+    "children": [],
+    "settings": {
+      "code": "<script>\n(function(){\n  var title = 'Hair Transplant Blog | MaxHair';\n  var desc = 'Practical articles about hair transplantation, pricing, DHI and Sapphire FUE methods, and transparent decision-making without hidden fees.';\n  var canonical = 'https://www.maxhair.cz/en-blog';\n  var ogImage = 'https://maxhair.cz/wp-content/uploads/2026/03/dhi-metoda-1-scaled.png';\n\n  document.title = title;\n\n  function setMeta(name, content, attr){\n    var key = attr || 'name';\n    var selector = key + '=\"' + name + '\"';\n    var el = document.head.querySelector('meta[' + selector + ']');\n    if(!el){\n      el = document.createElement('meta');\n      el.setAttribute(key, name);\n      document.head.appendChild(el);\n    }\n    el.setAttribute('content', content);\n  }\n\n  function setLink(rel, href){\n    var el = document.head.querySelector('link[rel=\"' + rel + '\"]');\n    if(!el){\n      el = document.createElement('link');\n      el.setAttribute('rel', rel);\n      document.head.appendChild(el);\n    }\n    el.setAttribute('href', href);\n  }\n\n  setMeta('description', desc);\n  setMeta('viewport', 'width=device-width, initial-scale=1');\n  setMeta('robots', 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1');\n  setMeta('og:title', title, 'property');\n  setMeta('og:description', desc, 'property');\n  setMeta('og:type', 'website', 'property');\n  setMeta('og:url', canonical, 'property');\n  setMeta('og:image', ogImage, 'property');\n  setMeta('twitter:card', 'summary_large_image');\n  setMeta('twitter:title', title);\n  setMeta('twitter:description', desc);\n  setMeta('twitter:image', ogImage);\n  setLink('canonical', canonical);\n})();\n</script>\n\n<section class=\"mh-blog-listing\">\n  <div class=\"mh-blog-listing-inner\">\n    <header class=\"mh-blog-head\">\n      <span class=\"mh-blog-badge\">MAXHAIR BLOG</span>\n      <h1>Insights Without the Fluff.<br><span>Hair Transplants. Straight Talk.</span></h1>\n      <p class=\"mh-blog-subcopy\">Practical articles, industry experience, and a transparent look at prices and the entire hair transplant process.</p>\n    </header>\n\n    <div class=\"mh-blog-grid\">\n      <article class=\"mh-blog-card\">\n        <a class=\"mh-blog-card-link\" href=\"/en-blog/en-hair-transplant-agencies-czech-republic\" aria-label=\"Hair Transplant Agencies in the Czech Republic\">\n          <div class=\"mh-blog-thumb\" role=\"img\" aria-label=\"Hair transplant article thumbnail\"></div>\n          <div class=\"mh-blog-card-body\">\n            <div class=\"mh-blog-meta\">\n              <span>Mar 18, 2026</span>\n              <span>7 min read</span>\n            </div>\n            <h2>Hair Transplant Agencies in the Czech Republic: The Middleman Adding a Markup</h2>\n            <p>How the agency model works, why prices often increase by tens of thousands of crowns, and when it makes sense to go directly to a clinic.</p>\n            <span class=\"mh-blog-readmore\">Read Article \u2192</span>\n          </div>\n        </a>\n      </article>\n    </div>\n  </div>\n</section>\n\n<style>\n:root{--mh-gold:#E5C158;--mh-gold-dark:#D4AF37;--mh-black:#101010;--mh-charcoal:#1A1A1A;--mh-white:#fff;--mh-bg:#F5F5F5}\n.mh-blog-listing{background:#f4f4f5;padding:118px 24px 90px;position:relative;overflow:hidden}\n.mh-blog-listing:before{content:'';position:absolute;inset:-20% -12% auto;z-index:0;height:460px;background:radial-gradient(circle at 22% 24%,rgba(229,193,88,.23),transparent 52%),radial-gradient(circle at 84% 14%,rgba(229,193,88,.17),transparent 46%)}\n.mh-blog-listing-inner{max-width:1180px;margin:0 auto;position:relative;z-index:1}\n.mh-blog-head{max-width:980px;margin:0 auto 34px;text-align:center;padding:36px 28px 44px;border-radius:28px;background:linear-gradient(180deg,#101010 0%,#171717 100%);box-shadow:0 16px 42px rgba(0,0,0,.26)}\n.mh-blog-badge{display:inline-block;padding:8px 18px;border-radius:999px;background:rgba(229,193,88,.2);border:1px solid rgba(229,193,88,.6);font:600 12px/1 'Inter',sans-serif;letter-spacing:1.7px;color:#f6e6ba;text-transform:uppercase;margin-bottom:22px}\n.mh-blog-head h1{font:700 clamp(34px,6vw,66px)/1.05 'Poppins',sans-serif;color:#fff;margin:0 0 18px;letter-spacing:-.02em}\n.mh-blog-head h1 span{color:var(--mh-gold)}\n.mh-blog-subcopy{display:none !important}\n.mh-blog-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}\n.mh-blog-card{background:var(--mh-white);border-radius:26px;overflow:hidden;box-shadow:0 24px 62px rgba(16,16,16,.16);border:1px solid rgba(26,26,26,.1);transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}\n.mh-blog-card:hover{transform:translateY(-7px);box-shadow:0 30px 78px rgba(16,16,16,.24);border-color:rgba(229,193,88,.5)}\n.mh-blog-card-link{display:grid;grid-template-columns:42% 58%;text-decoration:none;color:inherit}\n.mh-blog-thumb{min-height:330px;position:relative;overflow:hidden}\n.mh-blog-thumb:before{content:'';position:absolute;inset:0;background:url('https://maxhair.cz/wp-content/uploads/2026/03/dhi-metoda-1-scaled.png') center/cover no-repeat;transform:scale(1.03);transition:transform .45s ease,filter .45s ease;filter:saturate(1.08) contrast(1.05)}\n.mh-blog-thumb:after{content:'';position:absolute;inset:0;background:linear-gradient(130deg,rgba(8,8,8,.62) 0%,rgba(8,8,8,.18) 48%,rgba(8,8,8,.52) 100%)}\n.mh-blog-card:hover .mh-blog-thumb:before{transform:scale(1.08);filter:saturate(1.14) contrast(1.08)}\n.mh-blog-card-body{padding:34px 34px 30px;display:flex;flex-direction:column;justify-content:space-between;gap:16px}\n.mh-blog-meta{display:flex;gap:16px;align-items:center;flex-wrap:wrap}\n.mh-blog-meta span{font:500 12px/1 'Inter',sans-serif;letter-spacing:1px;color:#7a7a7a;text-transform:uppercase}\n.mh-blog-card h2{font:700 clamp(24px,3vw,36px)/1.2 'Poppins',sans-serif;color:#171717;margin:0}\n.mh-blog-card p{font:400 16px/1.75 'Inter',sans-serif;color:#454545;margin:0}\n.mh-blog-readmore{font:600 14px/1 'Inter',sans-serif;letter-spacing:.6px;color:#1a1a1a;display:inline-flex;align-items:center;gap:8px}\n.mh-blog-card:hover .mh-blog-readmore{color:#000;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--mh-gold)}\n@media(max-width:940px){.mh-blog-listing{padding:86px 18px 70px;background:#f4f4f5}.mh-blog-head{margin-bottom:26px;padding:28px 18px 32px;border-radius:22px}.mh-blog-card-link{grid-template-columns:1fr}.mh-blog-thumb{min-height:230px}}\n@media(max-width:520px){.mh-blog-listing{padding:78px 14px 56px}.mh-blog-card{border-radius:20px}.mh-blog-head h1{font-size:clamp(30px,10vw,42px)}.mh-blog-card-body{padding:22px 18px 20px}.mh-blog-card p{font-size:15px}}\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 0,
+      "time": 0
+    },
+    "themeStyles": []
+  }
+]

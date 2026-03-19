@@ -1,0 +1,115 @@
+[
+  {
+    "id": "gdpr_hero_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "gdpr_hero_container"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_height": "auto"
+    },
+    "label": "GDPR Hero | MaxHair"
+  },
+  {
+    "id": "gdpr_hero_container",
+    "name": "container",
+    "parent": "gdpr_hero_section",
+    "children": [
+      "gdpr_hero_code"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_height": "auto"
+    }
+  },
+  {
+    "id": "gdpr_hero_code",
+    "name": "code",
+    "parent": "gdpr_hero_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- GDPR HERO SECTION -->\n<section class=\"gdpr-hero-section\">\n  <div class=\"gdpr-hero-content\">\n    <span class=\"mh-badge\">LEGAL DOCUMENTS</span>\n    <h1 class=\"hero-title\">Privacy Policy</h1>\n    <p class=\"hero-description\">MaxHair.cz - Privacy Policy in accordance with GDPR</p>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #D4AF37;\n    --dark-gray: #1A1A1A;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #333333;\n  }\n\n  .gdpr-hero-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 50svh;\n    background: linear-gradient(135deg, var(--dark-gray) 0%, #3d2f1e 100%);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 120px 80px 80px 80px;\n    text-align: center;\n    margin: 0 !important;\n  }\n\n  .gdpr-hero-content {\n    max-width: 1000px;\n    width: 100%;\n  }\n\n  .section-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: rgba(229, 193, 88, 0.2);\n    color: #000000;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 24px;\n    border-radius: 30px;\n    border: 1px solid var(--primary-gold);\n  }\n\n  .hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 64px);\n    font-weight: 800;\n    color: var(--white);\n    margin: 0 0 24px 0;\n    letter-spacing: -1px;\n    line-height: 1.2;\n  }\n\n  .hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: rgba(255, 255, 255, 0.8);\n    margin: 0;\n    line-height: 1.6;\n  }\n\n  @media (max-width: 768px) {\n    .gdpr-hero-section {\n      padding: 100px 24px 60px 24px;\n      min-height: 50svh;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "gdpr_content_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "gdpr_content_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "GDPR Content | MaxHair"
+  },
+  {
+    "id": "gdpr_content_container",
+    "name": "container",
+    "parent": "gdpr_content_section",
+    "children": [
+      "gdpr_content_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "gdpr_content_code",
+    "name": "code",
+    "parent": "gdpr_content_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- GDPR CONTENT SECTION -->\n<section class=\"gdpr-content-section\">\n  <div class=\"gdpr-content-wrapper\">\n    <div class=\"gdpr-content\">\n      \n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">1. Data Controller</h2>\n        <div class=\"gdpr-text\">\n          <p><strong>MaxHair.cz</strong></p>\n          <p>Izzet Pa\u015fa Mah. Yeni Yol Cad.<br/>Nurol Tower No: 3 / 303<br/>\u015ei\u015fli / ISTANBUL<br/>Turkey</p>\n          <p><strong>Data Protection Contact Person:</strong><br/>Private Czech Client Support<br/>Email: info@maxhair.cz<br/>Phone: +420 601 515 323</p>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">2. Purpose of Personal Data Processing</h2>\n        <div class=\"gdpr-text\">\n          <p>We process personal data for the following purposes:</p>\n          <ul class=\"gdpr-list\">\n            <li><strong>Service Provision:</strong> Processing orders, communicating with clients, organizing procedures</li>\n            <li><strong>Communication:</strong> Responding to inquiries, consultations, informing about services</li>\n            <li><strong>Payments:</strong> Processing payments and invoicing</li>\n            <li><strong>Legal Obligations:</strong> Fulfilling legal obligations (accounting, taxes)</li>\n            <li><strong>Marketing:</strong> Sending service information (only with consent)</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">3. Scope of Processed Data</h2>\n        <div class=\"gdpr-text\">\n          <p>We process the following categories of personal data:</p>\n          <ul class=\"gdpr-list\">\n            <li><strong>Identification Data:</strong> First name, last name, date of birth</li>\n            <li><strong>Contact Data:</strong> Email, phone number, address</li>\n            <li><strong>Service Data:</strong> Information about the requested service, health status (if relevant)</li>\n            <li><strong>Payment Data:</strong> Payment information (we do not store credit card numbers)</li>\n            <li><strong>Technical Data:</strong> IP address, cookies, browser data</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">4. Legal Basis for Processing</h2>\n        <div class=\"gdpr-text\">\n          <p>We process personal data based on:</p>\n          <ul class=\"gdpr-list\">\n            <li><strong>Data Subject Consent</strong> - for marketing purposes</li>\n            <li><strong>Contract Performance</strong> - for service provision</li>\n            <li><strong>Legal Obligation</strong> - for fulfilling legal obligations</li>\n            <li><strong>Legitimate Interest</strong> - for improving services and communication</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">5. Data Retention Period</h2>\n        <div class=\"gdpr-text\">\n          <p>We retain personal data:</p>\n          <ul class=\"gdpr-list\">\n            <li><strong>For the duration of the contractual relationship</strong> and subsequently for the period necessary to fulfill legal obligations</li>\n            <li><strong>Accounting Documents:</strong> 10 years as required by law</li>\n            <li><strong>Marketing Data:</strong> Until consent is withdrawn</li>\n            <li><strong>Technical Data:</strong> According to cookie settings (see <a href=\"/en-cookies\" class=\"gdpr-link\">Cookie Policy</a>)</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">6. Data Subject Rights</h2>\n        <div class=\"gdpr-text\">\n          <p>You have the right to:</p>\n          <ul class=\"gdpr-list\">\n            <li><strong>Right of Access</strong> - obtain information about processed data</li>\n            <li><strong>Right to Rectification</strong> - correct inaccurate data</li>\n            <li><strong>Right to Erasure</strong> - request deletion of data (\"right to be forgotten\")</li>\n            <li><strong>Right to Restriction of Processing</strong> - restrict data processing</li>\n            <li><strong>Right to Data Portability</strong> - obtain data in a structured format</li>\n            <li><strong>Right to Object</strong> - to data processing</li>\n            <li><strong>Right to Withdraw Consent</strong> - withdraw consent to processing at any time</li>\n            <li><strong>Right to Lodge a Complaint</strong> - with the Data Protection Authority</li>\n          </ul>\n          <p>To exercise your rights, contact us at: <a href=\"mailto:info@maxhair.cz\" class=\"gdpr-link\">info@maxhair.cz</a></p>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">7. Data Transfer to Third Parties</h2>\n        <div class=\"gdpr-text\">\n          <p>We may transfer personal data to:</p>\n          <ul class=\"gdpr-list\">\n            <li><strong>Service Providers:</strong> IT services, hosting, payment gateways (only to the necessary extent)</li>\n            <li><strong>Authorities:</strong> If required by law</li>\n            <li><strong>Clinic in Istanbul:</strong> For service provision (procedure organization)</li>\n          </ul>\n          <p>We do not transfer data to third countries outside the EU, except Turkey, where the procedure takes place.</p>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">8. Data Security</h2>\n        <div class=\"gdpr-text\">\n          <p>To secure personal data, we use:</p>\n          <ul class=\"gdpr-list\">\n            <li>Data encryption during transfer (SSL/TLS)</li>\n            <li>Secure data storage</li>\n            <li>Restricted access to data only for authorized persons</li>\n            <li>Regular updates of security measures</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">9. Cookies</h2>\n        <div class=\"gdpr-text\">\n          <p>Our website uses cookies. Detailed information about cookie usage can be found in our <a href=\"/en-cookies\" class=\"gdpr-link\">Cookie Policy</a>.</p>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">10. Contact</h2>\n        <div class=\"gdpr-text\">\n          <p>For questions regarding personal data protection, contact us:</p>\n          <p><strong>Email:</strong> <a href=\"mailto:info@maxhair.cz\" class=\"gdpr-link\">info@maxhair.cz</a><br/><strong>Phone:</strong> <a href=\"tel:+420601515323\" class=\"gdpr-link\">+420 601 515 323</a></p>\n          <p><strong>Office for Personal Data Protection:</strong><br/>Pplk. Sochora 27<br/>170 00 Praha 7<br/>Email: posta@uoou.cz<br/>Web: <a href=\"https://www.uoou.cz\" target=\"_blank\" rel=\"noopener\" class=\"gdpr-link\">www.uoou.cz</a></p>\n        </div>\n      </div>\n\n      <div class=\"gdpr-section\">\n        <h2 class=\"gdpr-section-title\">11. Policy Changes</h2>\n        <div class=\"gdpr-text\">\n          <p>This policy may be updated from time to time. The current version is always available on this page. Date of last update: January 1, 2025.</p>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</section>\n\n<style>\n  .gdpr-content-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: auto;\n    background: #F5F5F5 !important;\n    padding: 48px 24px 64px;\n    margin: 0 !important;\n  }\n\n  .gdpr-content-wrapper {\n    max-width: 720px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .gdpr-content {\n    background: #FFFFFF;\n    border-radius: 16px;\n    padding: 48px 40px;\n    box-shadow: 0 2px 12px rgba(0,0,0,0.06);\n  }\n\n  .gdpr-section {\n    margin-bottom: 36px;\n  }\n\n  .gdpr-section:last-child {\n    margin-bottom: 0;\n  }\n\n  .gdpr-section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(18px, 2.2vw, 22px);\n    font-weight: 700;\n    color: #1A1A1A !important;\n    margin: 0 0 16px 0;\n    padding-left: 16px;\n    border-left: 4px solid var(--primary-gold);\n    line-height: 1.4;\n  }\n\n  .gdpr-text {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    line-height: 1.75;\n    color: #333333;\n  }\n\n  .gdpr-text p {\n    margin: 0 0 14px 0;\n  }\n\n  .gdpr-text p:last-child {\n    margin-bottom: 0;\n  }\n\n  .gdpr-text strong {\n    font-weight: 600;\n    color: #1A1A1A;\n  }\n\n  .gdpr-list {\n    margin: 12px 0 16px 24px;\n    padding: 0;\n    list-style: disc;\n  }\n\n  .gdpr-list li {\n    margin-bottom: 8px;\n    line-height: 1.6;\n  }\n\n  .gdpr-link {\n    color: #B8860B;\n    text-decoration: none;\n    border-bottom: 1px solid rgba(184,134,11,0.3);\n    transition: color 0.2s ease, border-color 0.2s ease;\n  }\n  .gdpr-link:hover {\n    color: var(--primary-gold);\n    border-bottom-color: var(--primary-gold);\n  }\n\n  @media (max-width: 768px) {\n    .gdpr-content-section {\n      padding: 32px 16px 48px;\n    }\n    .gdpr-content {\n      padding: 32px 24px;\n      border-radius: 12px;\n    }\n    .gdpr-section {\n      margin-bottom: 28px;\n    }\n    .gdpr-section-title {\n      padding-left: 12px;\n      border-left-width: 3px;\n    }\n    .gdpr-list {\n      margin-left: 20px;\n    }\n  }\n\n  @media (max-width: 480px) {\n    .gdpr-content {\n      padding: 24px 20px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "gdpr_cta_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "gdpr_cta_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "GDPR CTA | MaxHair"
+  },
+  {
+    "id": "gdpr_cta_container",
+    "name": "container",
+    "parent": "gdpr_cta_section",
+    "children": [
+      "gdpr_cta_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "gdpr_cta_code",
+    "name": "code",
+    "parent": "gdpr_cta_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- GDPR CTA SECTION -->\n<section class=\"gdpr-cta-section\">\n  <div class=\"gdpr-cta-content\">\n    <h2 class=\"cta-title\">Have questions about personal data protection?</h2>\n    <p class=\"cta-description\">Contact us, we'll be happy to explain everything</p>\n    <div class=\"cta-buttons\">\n      <a href=\"/en-contact\" class=\"btn-primary\">Contact Us</a>\n      <a href=\"/en-home\" class=\"btn-secondary\">Back to Homepage</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  .gdpr-cta-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 40vh;\n    background: #F5F5F5 !important;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 80px;\n    margin: 0 !important;\n  }\n\n  .gdpr-cta-content {\n    max-width: 800px;\n    width: 100%;\n    text-align: center;\n  }\n\n  .cta-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(28px, 4vw, 40px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 16px 0;\n  }\n\n  .cta-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 18px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    margin: 0 0 40px 0;\n  }\n\n  .cta-buttons {\n    display: flex;\n    gap: 24px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 16px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 8px;\n    transition: all 0.3s ease;\n    box-shadow: 0 4px 16px rgba(229, 193, 88, 0.3);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-2px);\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 16px 40px;\n    background: transparent;\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--primary-gold);\n    border-radius: 8px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--primary-gold);\n    color: var(--black);\n  }\n\n  @media (max-width: 768px) {\n    .gdpr-cta-section {\n      padding: 60px 24px;\n    }\n\n    .cta-buttons {\n      flex-direction: column;\n      align-items: center;\n    }\n\n    .btn-primary,\n    .btn-secondary {\n      width: 100%;\n      max-width: 300px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  }
+]

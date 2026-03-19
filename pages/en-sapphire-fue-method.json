@@ -1,0 +1,189 @@
+[
+  {
+    "id": "sapphire_hero_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "sapphire_hero_container"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_height": "100svh"
+    },
+    "label": "Sapphire FUE Hero | MaxHair"
+  },
+  {
+    "id": "sapphire_hero_container",
+    "name": "container",
+    "parent": "sapphire_hero_section",
+    "children": [
+      "sapphire_hero_code"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_height": "100svh"
+    }
+  },
+  {
+    "id": "sapphire_hero_code",
+    "name": "code",
+    "parent": "sapphire_hero_container",
+    "children": [],
+    "settings": {
+      "code": "<script>(function(){var sectionId='brxe-sapphire_hero_section';if(!window.matchMedia('(max-width: 900px)').matches)return;function getSvhPx(){var d=document.createElement('div');d.style.cssText='height:100svh;position:absolute;top:-9999px;left:0;visibility:hidden;';document.body.appendChild(d);var h=d.offsetHeight;document.body.removeChild(d);return h;}function lockHero(){var section=document.getElementById(sectionId);var container=section?section.querySelector('.brxe-container'):null;var h=getSvhPx();if(section){section.style.height=h+'px';section.style.minHeight=h+'px';section.style.maxHeight=h+'px';}if(container){container.style.height=h+'px';container.style.minHeight=h+'px';container.style.maxHeight=h+'px';}}if(document.body)lockHero();if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',lockHero);else setTimeout(lockHero,0);setTimeout(lockHero,100);})();</script>\n<script>(function(){var d=document;if(!window.matchMedia('(max-width: 900px)').matches)return;function fix(){var section=d.getElementById('brxe-sapphire_hero_section');var container=d.getElementById('brxe-sapphire_hero_container');var code=d.getElementById('brxe-sapphire_hero_code');if(section){section.style.setProperty('background','#1A1A1A','important');section.style.setProperty('padding','0','important');section.style.setProperty('margin','0','important');}if(container){container.style.setProperty('background','#1A1A1A','important');container.style.setProperty('padding','0','important');container.style.setProperty('margin','0','important');}if(code){code.style.setProperty('background','transparent','important');code.style.setProperty('padding','0','important');code.style.setProperty('margin','0','important');}}function run(){fix();var t=0;var iv=setInterval(function(){fix();t+=200;if(t>=1500)clearInterval(iv);},200);}if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',run);else run();})();</script>\n<!-- SAPPHIRE FUE HERO SECTION -->\n<section class=\"sapphire-hero-section\">\n  <div class=\"sapphire-hero-bg-image\" role=\"img\" aria-hidden=\"true\"></div>\n  <div class=\"sapphire-hero-content\">\n    <span class=\"mh-badge\">METHODS</span>\n    <h1 class=\"hero-title\" style=\"color: #ffffff !important;\">Sapphire FUE<br/>Sapphire Transplantation</h1>\n    <p class=\"hero-description\" style=\"color: rgba(255,255,255,0.9) !important;\">A gentle hair transplant method using sapphire blades. Suitable for larger areas and higher graft counts.</p>\n    <div class=\"hero-cta-group\">\n      <a href=\"/en-contact\" class=\"btn-primary\">Free consultation</a>\n      <a href=\"/en-home#pricing\" class=\"btn-secondary\">Check price</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #D4AF37;\n    --dark-gray: #1A1A1A;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #333333;\n  }\n\n  .sapphire-hero-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 100vh; min-height: 100svh;\n    background: linear-gradient(135deg, rgba(90, 69, 44, 0.75) 0%, rgba(0, 0, 0, 0.8) 100%);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: clamp(60px, 10vh, 120px) clamp(20px, 5vw, 80px);\n    position: relative;\n    overflow: hidden;\n  }\n\n  .sapphire-hero-bg-image {\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background-image: url(https://maxhair.cz/wp-content/uploads/2026/03/hero-muzi-3-1-scaled.jpg);\n    background-size: cover;\n    background-position: center;\n    z-index: 0;\n    opacity: 0.4;\n  }\n\n  .sapphire-hero-section::after {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background: linear-gradient(135deg, rgba(90, 69, 44, 0.7) 0%, rgba(0, 0, 0, 0.75) 100%);\n    z-index: 0;\n    pointer-events: none;\n  }\n\n  .sapphire-hero-content {\n    max-width: 1200px;\n    width: 100%;\n    text-align: center;\n    position: relative;\n    z-index: 2;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .sapphire-hero-section .mh-badge,\n  .sapphire-hero-content .mh-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--primary-gold) !important;\n    color: var(--black) !important;\n    -webkit-text-fill-color: var(--black) !important;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    border-radius: 30px;\n    margin-bottom: 24px;\n    border: none;\n  }\n\n  .mh-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--primary-gold) !important;\n    color: var(--black) !important;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    border-radius: 30px;\n    margin-bottom: 20px;\n    border: none;\n  }\n\n  .hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(42px, 6vw, 72px);\n    font-weight: 700;\n    color: var(--white);\n    margin: 0 0 24px 0;\n    letter-spacing: normal;\n    line-height: 1.2;\n  }\n\n  .hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(18px, 2.5vw, 24px);\n    color: rgba(255, 255, 255, 0.9);\n    margin: 0 0 48px 0;\n    line-height: 1.6;\n    max-width: 800px;\n    margin-left: auto;\n    margin-right: auto;\n  }\n\n  .hero-cta-group {\n    display: flex;\n    gap: 20px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 10px;\n    transition: all 0.3s ease;\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-3px);\n    box-shadow: 0 10px 35px rgba(229, 193, 88, 0.5);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: transparent;\n    color: var(--white);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--white);\n    border-radius: 10px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--white);\n    color: var(--black);\n    transform: translateY(-3px);\n  }\n\n  @media (max-width: 768px) {\n    .sapphire-hero-section {\n      padding: calc(var(--mh-header-height,64px) + 12px) 20px 32px;\n      min-height: 100vh;\n      min-height: 100svh;\n    }\n    .sapphire-hero-section .mh-badge { font-size: 11px; padding: 6px 14px; margin-bottom: 12px; }\n    .sapphire-hero-section .hero-title { font-size: clamp(26px, 6vw, 32px); margin-bottom: 12px; }\n    .sapphire-hero-section .hero-description { font-size: 14px; line-height: 1.45; margin-bottom: 28px; }\n    .sapphire-hero-section .hero-cta-group { gap: 12px; flex-direction: column; }\n    .sapphire-hero-section .btn-primary, .sapphire-hero-section .btn-secondary { padding: 12px 24px; font-size: 14px; }\n  }\n  @media (max-width: 480px) {\n    .sapphire-hero-section { padding: calc(var(--mh-header-height,64px) + 8px) 16px 24px; }\n    .sapphire-hero-section .hero-title { font-size: 24px; margin-bottom: 10px; }\n    .sapphire-hero-section .hero-description { font-size: 13px; margin-bottom: 20px; }\n    .sapphire-hero-section .btn-primary, .sapphire-hero-section .btn-secondary { padding: 10px 20px; font-size: 13px; }\n  }\n  @media (max-width: 900px) {\n    #brxe-sapphire_hero_section,\n    #brxe-sapphire_hero_container { background: #1A1A1A !important; min-height: 100vh; min-height: 100svh; min-height: calc(100svh + 80px); max-height: none; height: auto; overflow: hidden; }\n    main#brx-content { background: #1A1A1A !important; }\n    #brxe-sapphire_hero_container .brxe-code { min-height: 100%; height: 100%; padding: 0 !important; margin: 0 !important; background: transparent !important; position: absolute !important; top: 0 !important; left: 0 !important; right: 0 !important; bottom: 0 !important; }\n    #brxe-sapphire_hero_code { background: transparent !important; padding: 0 !important; margin: 0 !important; height: 100% !important; min-height: 100% !important; position: absolute !important; top: 0 !important; left: 0 !important; right: 0 !important; bottom: 0 !important; }\n    #brxe-sapphire_hero_container { position: relative !important; }\n    .sapphire-hero-section { min-height: 100% !important; height: 100% !important; max-height: none !important; overflow: hidden; }\n    #brxe-sapphire_hero_section { margin-bottom: -120px !important; padding-bottom: 0 !important; }\n    #brxe-sapphire_co_section { margin-top: -120px !important; padding-top: 120px !important; }\n  }\n  @media (min-width: 901px) { #brxe-sapphire_hero_section, #brxe-sapphire_hero_container { min-height: 100vh !important; min-height: 100svh !important; height: 100svh !important; background: #1A1A1A !important; overflow: hidden; } #brxe-sapphire_hero_code { height: 100% !important; min-height: 100% !important; } .sapphire-hero-section, .sapphire-hero-content { min-height: 100% !important; height: 100% !important; } }\n  .sapphire-hero-section .hero-title { color: #ffffff !important; }\n  .sapphire-hero-section .hero-description { color: rgba(255,255,255,0.9) !important; }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "sapphire_co_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "sapphire_co_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Sapphire FUE Co je | MaxHair"
+  },
+  {
+    "id": "sapphire_co_container",
+    "name": "container",
+    "parent": "sapphire_co_section",
+    "children": [
+      "sapphire_co_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "sapphire_co_code",
+    "name": "code",
+    "parent": "sapphire_co_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- WHAT IS SAPPHIRE SECTION -->\n<section class=\"sapphire-co-section\">\n  <div class=\"sapphire-co-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">TECHNOLOGY</span>\n      <h2 class=\"section-title\">What is the Sapphire FUE Method?</h2>\n      <p class=\"section-description\">Sapphire FUE is a modern hair transplant method in which micro-channels are created using a sapphire blade, into which grafts are then implanted. This technique allows precise planning of hair direction and distribution and is suitable even for larger procedures.</p>\n    </div>\n    \n    <div class=\"sapphire-explanation-grid\">\n      <div class=\"explanation-card\">\n        <div class=\"card-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 2L22 6\"/><path d=\"M7.5 20.5L3.5 16.5L15 5L19 9L7.5 20.5Z\"/><path d=\"M15 5L19 9\"/><path d=\"M11 9L15 13\"/><path d=\"M7.5 20.5L2 22L3.5 16.5\"/><path d=\"M9 11L13 15\"/></svg></div>\n        <h3>Sapphire blade</h3>\n        <p>A specialized pen made of synthetic sapphire is used to create precise micro-channels in the transplant area. It allows controlled depth and direction of the incision with minimal impact on surrounding tissue.</p>\n      </div>\n      \n      <div class=\"explanation-card\">\n        <div class=\"card-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><circle cx=\"12\" cy=\"12\" r=\"6\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg></div>\n        <h3>Channel creation</h3>\n        <p>The doctor first creates micro-channels with the sapphire pen in the areas where grafts will subsequently be implanted. The channels determine the future direction, density, and natural distribution of hair.</p>\n      </div>\n      \n      <div class=\"explanation-card\">\n        <div class=\"card-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13 2L3 14H12L11 22L21 10H12L13 2Z\"/></svg></div>\n        <h3>Suitable for larger areas</h3>\n        <p>Pre-created channels enable systematic and efficient work with a higher number of grafts, covering larger areas.</p>\n      </div>\n    </div>\n    \n    <div class=\"sapphire-placeholder sapphire-image-wrap\">\n      <img src=\"https://maxhair.cz/wp-content/uploads/2026/03/safir-cepelka.jpg\" alt=\"Illustration of the sapphire blade - specialized instrument used in the Sapphire method\" loading=\"lazy\" class=\"sapphire-placeholder-img\" />\n    </div>\n    <p class=\"sapphire-image-caption\">Photo of the specialized instrument used in the Sapphire FUE method</p>\n  </div>\n</section>\n\n<style>\n  .sapphire-co-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--white);\n  }\n\n  .sapphire-co-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .section-header {\n    text-align: center;\n    margin-bottom: 60px;\n  }\n\n  .sapphire-co-section .section-header .mh-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--primary-gold) !important;\n    color: var(--black) !important;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 20px;\n    border-radius: 30px;\n  }\n\n  .section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 20px 0;\n    letter-spacing: normal;\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    max-width: 800px;\n    margin: 0 auto;\n    line-height: 1.6;\n    text-align: center;\n  }\n\n  .sapphire-explanation-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 32px;\n    margin-bottom: 60px;\n  }\n\n  .explanation-card {\n    background: var(--light-gray);\n    border-radius: 20px;\n    padding: 40px 32px;\n    text-align: center;\n    transition: all 0.3s ease;\n  }\n\n  .explanation-card:hover {\n    background: var(--white);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .card-icon {\n    width: 56px;\n    height: 56px;\n    margin: 0 auto 24px;\n    color: var(--primary-gold);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n  \n  .card-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .explanation-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 22px;\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 16px 0;\n  }\n\n  .explanation-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0;\n  }\n\n  .sapphire-placeholder {\n    background: var(--light-gray);\n    border-radius: 20px;\n    padding: 80px 40px;\n    text-align: center;\n    border: 2px dashed var(--medium-gray);\n  }\n\n  .sapphire-placeholder.sapphire-image-wrap {\n    padding: 0;\n    border: none;\n    overflow: hidden;\n    border-radius: 20px;\n    background: transparent;\n  }\n\n  .sapphire-placeholder-img {\n    width: 100%;\n    height: auto;\n    display: block;\n    object-fit: cover;\n    max-height: 400px;\n  }\n\n  .sapphire-image-caption {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: var(--dark-gray);\n    opacity: 0.7;\n    text-align: center;\n    margin: 12px 0 0 0;\n    padding: 0;\n    background: transparent !important;\n  }\n\n  .placeholder-content {\n    max-width: 600px;\n    margin: 0 auto;\n  }\n\n  .placeholder-icon {\n    width: 64px;\n    height: 64px;\n    margin: 0 auto 24px;\n    color: var(--medium-gray);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n  \n  .placeholder-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .placeholder-content p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-gray);\n    margin: 8px 0;\n  }\n\n  .placeholder-content strong {\n    color: var(--dark-gray);\n    font-weight: 600;\n  }\n\n  @media (max-width: 1200px) {\n    .sapphire-explanation-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .sapphire-co-section {\n      padding: 60px 24px;\n    }\n\n    .sapphire-explanation-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "sapphire_proces_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "sapphire_proces_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Sapphire FUE Proces | MaxHair"
+  },
+  {
+    "id": "sapphire_proces_container",
+    "name": "container",
+    "parent": "sapphire_proces_section",
+    "children": [
+      "sapphire_proces_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "sapphire_proces_code",
+    "name": "code",
+    "parent": "sapphire_proces_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- HOW SAPPHIRE WORKS SECTION -->\n<section class=\"sapphire-proces-section\">\n  <div class=\"sapphire-proces-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">PROCESS</span>\n      <h2 class=\"section-title\">How does Sapphire FUE work?</h2>\n      <p class=\"section-description\">The Sapphire FUE transplant process takes place in several steps that ensure maximum precision and natural results.</p>\n    </div>\n    \n    <div class=\"proces-layout\">\n      <div class=\"timeline-column\">\n        <h3 class=\"timeline-title\">5 steps of the Sapphire FUE Method</h3>\n        <div class=\"timeline\">\n          <div class=\"timeline-item\">\n            <div class=\"timeline-number\">1</div>\n            <div class=\"timeline-content\">\n              <h4>Graft extraction</h4>\n              <p>Hair follicular units are extracted from the donor area (most commonly the back of the head) using micro-surgical instruments. Each graft contains 1 to 4 hairs.</p>\n            </div>\n          </div>\n          \n          <div class=\"timeline-item\">\n            <div class=\"timeline-number\">2</div>\n            <div class=\"timeline-content\">\n              <h4>Graft sorting</h4>\n              <p>Extracted grafts are carefully sorted by hair count to achieve the most natural result possible. Single-hair grafts are primarily used to create the front hairline, while multi-hair grafts are implanted into other areas to achieve optimal density.</p>\n            </div>\n          </div>\n          \n          <div class=\"timeline-item\">\n            <div class=\"timeline-number\">3</div>\n            <div class=\"timeline-content\">\n              <h4>Creating micro-channels</h4>\n              <p>The doctor uses the sapphire blade to create micro-channels in the transplant area. These determine the future depth, angle, and direction of hair growth. They allow precise planning of density and overall graft distribution.</p>\n            </div>\n          </div>\n          \n          <div class=\"timeline-item\">\n            <div class=\"timeline-number\">4</div>\n            <div class=\"timeline-content\">\n              <h4>Graft implantation</h4>\n              <p>Sorted grafts are then carefully placed into the pre-created micro-channels. Thanks to this systematic preparation, it is possible to efficiently work with a higher number of grafts and ensure even, natural coverage of the transplanted area.</p>\n            </div>\n          </div>\n          \n          <div class=\"timeline-item\">\n            <div class=\"timeline-number\">5</div>\n            <div class=\"timeline-content\">\n              <h4>Healing and growth</h4>\n              <p>The healing phase follows the procedure. During the first weeks, transplanted hair may naturally shed (known as shock loss). New hair begins to grow after 3-4 months, and full results are visible after 12-18 months.</p>\n            </div>\n          </div>\n        </div>\n      </div>\n      \n      <div class=\"video-column\">\n        <div class=\"video-wrapper\">\n          <video controls class=\"sapphire-video\">\n            <source src=\"https://maxhair.cz/wp-content/uploads/2026/03/FUE_web.mov\" type=\"video/quicktime\">\n            <source src=\"https://maxhair.cz/wp-content/uploads/2026/03/FUE_web.mov\" type=\"video/mp4\">\n            Your browser does not support the video tag.\n          </video>\n        </div>\n        <p class=\"video-caption\">Video demonstration of Sapphire FUE transplantation using the sapphire blade</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .sapphire-proces-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n  }\n\n  .sapphire-proces-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .proces-layout {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: clamp(40px, 5vw, 60px);\n    margin-top: 60px;\n    align-items: center;\n  }\n\n  .timeline-column {\n    padding-right: clamp(20px, 3vw, 40px);\n    border-right: 2px solid var(--medium-gray);\n  }\n\n  .timeline-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(20px, 2.5vw, 28px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 clamp(24px, 3vw, 32px) 0;\n  }\n\n  .timeline {\n    margin: 0;\n  }\n\n  .timeline-item {\n    display: flex;\n    gap: clamp(16px, 2vw, 24px);\n    margin-bottom: clamp(24px, 3vw, 32px);\n    align-items: flex-start;\n  }\n\n  .timeline-item:last-child {\n    margin-bottom: 0;\n  }\n\n  .timeline-number {\n    width: clamp(40px, 5vw, 50px);\n    height: clamp(40px, 5vw, 50px);\n    background: var(--primary-gold);\n    color: var(--black);\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(18px, 2.2vw, 22px);\n    font-weight: 700;\n    flex-shrink: 0;\n  }\n\n  .timeline-content {\n    flex: 1;\n  }\n\n  .timeline-content h4 {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(16px, 2vw, 18px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 clamp(8px, 1vw, 10px) 0;\n  }\n\n  .timeline-content p {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(13px, 1.6vw, 14px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.5;\n    margin: 0;\n  }\n\n  .video-column {\n    padding-left: clamp(20px, 3vw, 40px);\n    display: flex;\n    flex-direction: column;\n  }\n\n  .video-wrapper {\n    width: 100%;\n    position: relative;\n    padding-bottom: 56.25%; /* 16:9 aspect ratio */\n    border-radius: clamp(16px, 2vw, 20px);\n    overflow: hidden;\n    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);\n    margin-bottom: clamp(16px, 2vw, 24px);\n    background: #000;\n  }\n\n  .sapphire-video {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    display: block;\n  }\n\n  .video-caption {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(12px, 1.5vw, 14px);\n    color: var(--dark-gray);\n    opacity: 0.6;\n    margin: 0;\n    text-align: center;\n  }\n\n  @media (max-width: 992px) {\n    .proces-layout {\n      grid-template-columns: 1fr;\n      gap: clamp(40px, 5vw, 60px);\n    }\n\n    .timeline-column {\n      padding-right: 0;\n      border-right: none;\n      border-bottom: 2px solid var(--medium-gray);\n      padding-bottom: clamp(30px, 4vw, 40px);\n    }\n\n    .video-column {\n      padding-left: 0;\n    }\n  }\n\n  @media (max-width: 768px) {\n    .sapphire-proces-section {\n      padding: 60px 24px;\n    }\n\n    .timeline-item {\n      flex-direction: column;\n      gap: clamp(12px, 1.5vw, 16px);\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "sapphire_vyhody_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "sapphire_vyhody_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Sapphire FUE Výhody | MaxHair"
+  },
+  {
+    "id": "sapphire_vyhody_container",
+    "name": "container",
+    "parent": "sapphire_vyhody_section",
+    "children": [
+      "sapphire_vyhody_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "sapphire_vyhody_code",
+    "name": "code",
+    "parent": "sapphire_vyhody_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- SAPPHIRE BENEFITS SECTION -->\n<section class=\"sapphire-vyhody-section\">\n  <div class=\"sapphire-vyhody-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">BENEFITS</span>\n      <h2 class=\"section-title\">Why choose Sapphire FUE?</h2>\n      <p class=\"section-description\">Ideal for larger areas and working with higher graft counts</p>\n    </div>\n    \n    <div class=\"vyhody-grid\">\n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z\"/><path d=\"M19 19L20.09 21.26L23 22L20.09 22.74L19 25L17.91 22.74L15 22L17.91 21.26L19 19Z\"/></svg></div>\n        <h3>Natural hair distribution</h3>\n        <p>The direction and depth of micro-channels determine future hair growth, enabling a natural appearance even with larger procedures.</p>\n      </div>\n      \n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M18 2L22 6\"/><path d=\"M7.5 20.5L3.5 16.5L15 5L19 9L7.5 20.5Z\"/><path d=\"M15 5L19 9\"/><path d=\"M11 9L15 13\"/><path d=\"M7.5 20.5L2 22L3.5 16.5\"/><path d=\"M9 11L13 15\"/></svg></div>\n        <h3>Precise channel creation</h3>\n        <p>The sapphire blade enables creation of each channel with high precision following the natural hair growth direction.</p>\n      </div>\n      \n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13 2L3 14H12L11 22L21 10H12L13 2Z\"/></svg></div>\n        <h3>Larger scope</h3>\n        <p>The Sapphire FUE method is ideal for more advanced hair loss and larger transplant areas.</p>\n      </div>\n      \n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 3V21H21\"/><path d=\"M7 16L12 11L15 14L21 8\"/><path d=\"M17 8H21V12\"/></svg></div>\n        <h3>Higher graft count</h3>\n        <p>Thanks to pre-created micro-channels, implantation can be systematically planned to achieve high hair density using a higher number of grafts.</p>\n      </div>\n      \n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><circle cx=\"12\" cy=\"12\" r=\"6\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/></svg></div>\n        <h3>Hairline reconstruction</h3>\n        <p>The method is also suitable for designing a completely new natural hairline, especially for complete front area reconstruction.</p>\n      </div>\n      \n      <div class=\"vyhoda-card\">\n        <div class=\"vyhoda-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"M21 21L16.65 16.65\"/></svg></div>\n        <h3>Minimal scarring</h3>\n        <p>Thanks to micro-surgical instruments, only tiny micro-dots remain in the donor area, which are virtually invisible after healing.</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .sapphire-vyhody-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(50px, 6vw, 80px) clamp(20px, 4vw, 60px);\n    background: var(--white);\n  }\n\n  .sapphire-vyhody-content {\n    max-width: 1200px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .section-header {\n    text-align: center;\n    margin-bottom: clamp(30px, 4vw, 40px);\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(14px, 1.8vw, 16px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    max-width: 700px;\n    margin: 0 auto;\n    line-height: 1.6;\n  }\n\n  .vyhody-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: clamp(20px, 2.5vw, 24px);\n    margin-top: clamp(30px, 4vw, 40px);\n  }\n\n  .vyhoda-card {\n    background: transparent;\n    padding: clamp(20px, 2.5vw, 24px);\n    text-align: left;\n    border-bottom: 1px solid var(--light-gray);\n  }\n\n  .vyhoda-card:last-child {\n    border-bottom: none;\n  }\n\n  .vyhoda-icon {\n    width: clamp(24px, 3vw, 28px);\n    height: clamp(24px, 3vw, 28px);\n    margin-bottom: clamp(12px, 1.5vw, 16px);\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    color: var(--primary-gold);\n  }\n  \n  .vyhoda-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .vyhoda-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(16px, 2vw, 18px);\n    font-weight: 600;\n    color: var(--dark-gray);\n    margin: 0 0 clamp(8px, 1vw, 10px) 0;\n  }\n\n  .vyhoda-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(13px, 1.6vw, 14px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.5;\n    margin: 0;\n  }\n\n  @media (max-width: 992px) {\n    .vyhody-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .sapphire-vyhody-section {\n      padding: clamp(40px, 5vw, 60px) clamp(20px, 3vw, 24px);\n    }\n\n    .vyhody-grid {\n      grid-template-columns: 1fr;\n      gap: clamp(16px, 2vw, 20px);\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "sapphire_cta_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "sapphire_cta_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Sapphire FUE CTA | MaxHair"
+  },
+  {
+    "id": "sapphire_cta_container",
+    "name": "container",
+    "parent": "sapphire_cta_section",
+    "children": [
+      "sapphire_cta_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "sapphire_cta_code",
+    "name": "code",
+    "parent": "sapphire_cta_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- SAPPHIRE CTA SECTION -->\n<section class=\"sapphire-cta-section\">\n  <div class=\"sapphire-cta-content\">\n    <h2 class=\"cta-title\">Interested in the Sapphire method?</h2>\n    <p class=\"cta-description\">Get a free consultation and find out if the Sapphire method is right for you.</p>\n    <div class=\"cta-buttons\">\n      <a href=\"/en-contact\" class=\"btn-primary\">Free consultation</a>\n      <a href=\"/en-home#pricing\" class=\"btn-secondary\">Check price</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  .sapphire-cta-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n    text-align: center;\n  }\n\n  .sapphire-cta-content {\n    max-width: 800px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .cta-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 24px 0;\n    letter-spacing: normal;\n  }\n\n  .cta-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(18px, 2.5vw, 22px);\n    color: var(--dark-gray);\n    opacity: 0.8;\n    margin: 0 0 48px 0;\n    line-height: 1.6;\n  }\n\n  .cta-buttons {\n    display: flex;\n    gap: 20px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 10px;\n    transition: all 0.3s ease;\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-3px);\n    box-shadow: 0 10px 35px rgba(229, 193, 88, 0.5);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: transparent;\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--primary-gold);\n    border-radius: 10px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--primary-gold);\n    color: var(--black);\n    transform: translateY(-3px);\n  }\n\n  @media (max-width: 768px) {\n    .sapphire-cta-section {\n      padding: 60px 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  }
+]

@@ -1,0 +1,337 @@
+[
+  {
+    "id": "vousy_hero_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "vousy_hero_container"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_height": "100svh"
+    },
+    "label": "Muži Hero | MaxHair"
+  },
+  {
+    "id": "vousy_hero_container",
+    "name": "container",
+    "parent": "vousy_hero_section",
+    "children": [
+      "vousy_hero_code"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_height": "100svh"
+    }
+  },
+  {
+    "id": "vousy_hero_code",
+    "name": "code",
+    "parent": "vousy_hero_container",
+    "children": [],
+    "settings": {
+      "code": "<script>(function(){var sectionId='brxe-vousy_hero_section';function getSvhPx(){var d=document.createElement('div');d.style.cssText='height:100svh;position:absolute;top:-9999px;left:0;visibility:hidden;';document.body.appendChild(d);var h=d.offsetHeight;document.body.removeChild(d);return h;}function lockHero(){var section=document.getElementById(sectionId);var container=section?section.querySelector('.brxe-container'):null;var h=getSvhPx();if(section){section.style.height=h+'px';section.style.minHeight=h+'px';section.style.maxHeight=h+'px';}if(container){container.style.height=h+'px';container.style.minHeight=h+'px';container.style.maxHeight=h+'px';}}if(!window.matchMedia('(max-width: 900px)').matches)return;if(document.body)lockHero();if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',lockHero);else setTimeout(lockHero,0);setTimeout(lockHero,100);})();</script>\n<script>(function(){var d=document;if(!window.matchMedia('(max-width: 900px)').matches)return;function fix(){var section=d.getElementById('brxe-vousy_hero_section');var container=d.getElementById('brxe-vousy_hero_container');var code=d.getElementById('brxe-vousy_hero_code');if(section){section.style.setProperty('background','#1A1A1A','important');section.style.setProperty('padding','0','important');section.style.setProperty('margin','0','important');}if(container){container.style.setProperty('background','#1A1A1A','important');container.style.setProperty('padding','0','important');container.style.setProperty('margin','0','important');}if(code){code.style.setProperty('background','transparent','important');code.style.setProperty('padding','0','important');code.style.setProperty('margin','0','important');}}function run(){fix();var t=0;var iv=setInterval(function(){fix();t+=200;if(t>=1500)clearInterval(iv);},200);}if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',run);else run();})();</script>\n<!-- BEARD TRANSPLANT HERO -->\n<section class=\"vousy-hero-section\">\n  <div class=\"hero-video-wrapper\">\n    <div class=\"hero-bg-collage\">\n    <div class=\"hero-bg-cell\" style=\"background-image:url(https://maxhair.cz/wp-content/uploads/2026/03/IMG_1535-scaled.jpg)\"></div>\n    <div class=\"hero-bg-cell\" style=\"background-image:url(https://maxhair.cz/wp-content/uploads/2026/03/hero-muzi-2-1-scaled.jpg)\"></div>\n    <div class=\"hero-bg-cell\" style=\"background-image:url(https://maxhair.cz/wp-content/uploads/2026/03/IMG_7963-scaled.jpg)\"></div>\n  </div>\n    <div class=\"hero-overlay\"></div>\n  </div>\n  <div class=\"vousy-hero-content\">\n    <span class=\"mh-badge\">SERVICE</span>\n    <h1 class=\"hero-title\" style=\"color: #ffffff !important;\">Beard Transplant</h1>\n    <p class=\"hero-description\" style=\"color: rgba(255,255,255,0.9) !important;\">A full beard with natural density and proper growth direction. Individual plan and Czech-speaking support.</p>\n    <div class=\"hero-price\">\n      <span class=\"price-label\">Price from</span>\n      <span class=\"price-amount\">69,900 CZK</span>\n    </div>\n    <div class=\"hero-cta-group\">\n      <a href=\"/en-contact\" class=\"btn-primary\">Free consultation</a>\n      <a href=\"#proces\" class=\"btn-secondary\">How it works</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #A67C00;\n    --dark-gray: #1A1A1A;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #CCCCCC;\n  }\n\n  .vousy-hero-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 100vh; min-height: 100svh;\n    min-height: 100%; height: 100%;\n    position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    overflow: hidden;\n  }\n\n  .hero-video-wrapper {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    min-height: 100%;\n    z-index: 1;\n    background: #1A1A1A;\n  }\n\n  .hero-bg-collage {\n    display: flex;\n    position: absolute;\n    inset: 0;\n    width: 100%;\n    height: 100%;\n    min-height: 100%;\n    z-index: 0;\n  }\n\n  .hero-bg-cell {\n    flex: 1;\n    background-size: cover;\n    background-position: center;\n    background-repeat: no-repeat;\n  }\n\n  .hero-overlay {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    min-height: 100%;\n    background: linear-gradient(135deg, rgba(90, 69, 44, 0.85) 0%, rgba(0, 0, 0, 0.85) 100%);\n    z-index: 2;\n  }\n\n  .vousy-hero-content {\n    position: relative;\n    z-index: 3;\n    max-width: 1200px;\n    width: 100%;\n    padding: 0 80px;\n    text-align: center;\n  }\n\n  .vousy-hero-section .mh-badge,\n  .vousy-hero-content .mh-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--primary-gold) !important;\n    color: var(--black) !important;\n    -webkit-text-fill-color: var(--black) !important;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    border-radius: 30px;\n    margin-bottom: 24px;\n    border: none;\n  }\n\n  .mh-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--primary-gold) !important;\n    color: var(--black) !important;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    border-radius: 30px;\n    margin-bottom: 20px;\n    border: none;\n  }\n\n  .hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(42px, 6vw, 72px);\n    font-weight: 700;\n    color: var(--white);\n    margin: 0 0 24px 0;\n    letter-spacing: normal;\n    line-height: 1.2;\n  }\n\n  .hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(18px, 2.5vw, 24px);\n    color: rgba(255, 255, 255, 0.9);\n    margin: 0 0 40px 0;\n    line-height: 1.6;\n    max-width: 800px;\n    margin-left: auto;\n    margin-right: auto;\n  }\n\n  .hero-price {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 8px;\n    margin-bottom: 48px;\n  }\n\n  .price-label {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: rgba(255, 255, 255, 0.8);\n    text-transform: uppercase;\n    letter-spacing: 2px;\n  }\n\n  .price-amount {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 700;\n    color: var(--white);\n  }\n\n  .price-note {\n    font-family: 'Inter', sans-serif;\n    font-size: 14px;\n    color: rgba(255, 255, 255, 0.7);\n  }\n\n  .hero-cta-group {\n    display: flex;\n    gap: 20px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 10px;\n    transition: all 0.3s ease;\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-3px);\n    box-shadow: 0 10px 35px rgba(229, 193, 88, 0.5);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: transparent;\n    color: var(--white);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--white);\n    border-radius: 10px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--white);\n    color: var(--black);\n    transform: translateY(-3px);\n  }\n\n  @media (max-width: 900px) {\n    .hero-bg-collage .hero-bg-cell:nth-child(n+2) { display: none !important; }\n    .hero-bg-collage .hero-bg-cell:first-child { flex: 1; }\n    #brxe-vousy_hero_section,\n    #brxe-vousy_hero_container { background: #1A1A1A !important; min-height: 100vh; min-height: 100svh; min-height: calc(100svh + 80px); max-height: none; height: auto; overflow: hidden; }\n    main#brx-content { background: #1A1A1A !important; }\n    #brxe-vousy_hero_container .brxe-code { min-height: 100%; height: 100%; padding: 0 !important; margin: 0 !important; background: transparent !important; position: absolute !important; top: 0 !important; left: 0 !important; right: 0 !important; bottom: 0 !important; }\n    #brxe-vousy_hero_code { background: transparent !important; padding: 0 !important; margin: 0 !important; height: 100% !important; min-height: 100% !important; position: absolute !important; top: 0 !important; left: 0 !important; right: 0 !important; bottom: 0 !important; }\n    #brxe-vousy_hero_container { position: relative !important; }\n    .vousy-hero-section { min-height: 100% !important; height: 100% !important; max-height: none !important; overflow: hidden; }\n    #brxe-vousy_hero_code .hero-video-wrapper,\n    #brxe-vousy_hero_code .hero-overlay { min-height: 100% !important; height: 100% !important; }\n    #brxe-vousy_hero_section { margin-bottom: -120px !important; padding-bottom: 0 !important; }\n    #brxe-vousy_problem_section { margin-top: -120px !important; padding-top: 120px !important; }\n  }\n  @media (max-width: 768px) {\n    .vousy-hero-content { padding: calc(var(--mh-header-height,64px) + 12px) 20px 24px; }\n    .vousy-hero-section { min-height: 100vh; min-height: 100svh; }\n    .vousy-hero-section .mh-badge { font-size: 11px; padding: 6px 14px; margin-bottom: 12px; }\n    .vousy-hero-section .hero-title { font-size: clamp(26px, 6vw, 32px); margin-bottom: 12px; }\n    .vousy-hero-section .hero-description { font-size: 14px; line-height: 1.45; margin-bottom: 20px; }\n    .vousy-hero-section .hero-price { margin-bottom: 24px; }\n    .vousy-hero-section .price-amount { font-size: 28px; }\n    .vousy-hero-section .hero-cta-group { gap: 12px; flex-direction: column; }\n    .vousy-hero-section .btn-primary, .vousy-hero-section .btn-secondary { padding: 12px 24px; font-size: 14px; }\n  }\n  @media (max-width: 480px) {\n    .vousy-hero-content { padding: calc(var(--mh-header-height,64px) + 8px) 16px 16px; }\n    .vousy-hero-section .hero-title { font-size: 24px; margin-bottom: 10px; }\n    .vousy-hero-section .hero-description { font-size: 13px; margin-bottom: 14px; }\n    .vousy-hero-section .hero-price { margin-bottom: 16px; }\n    .vousy-hero-section .price-amount { font-size: 24px; }\n    .vousy-hero-section .btn-primary, .vousy-hero-section .btn-secondary { padding: 10px 20px; font-size: 13px; }\n  }\n  @media (min-width: 901px) { #brxe-vousy_hero_section, #brxe-vousy_hero_container { min-height: 100vh !important; min-height: 100svh !important; height: 100svh !important; background: #1A1A1A !important; overflow: hidden; } #brxe-vousy_hero_code { height: 100% !important; min-height: 100% !important; } .vousy-hero-section, #brxe-vousy_hero_code .hero-video-wrapper, #brxe-vousy_hero_code .hero-overlay { min-height: 100% !important; height: 100% !important; } }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "vousy_problem_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "vousy_problem_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Muži Problém | MaxHair"
+  },
+  {
+    "id": "vousy_problem_container",
+    "name": "container",
+    "parent": "vousy_problem_section",
+    "children": [
+      "vousy_problem_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "vousy_problem_code",
+    "name": "code",
+    "parent": "vousy_problem_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- BEARD GROWTH ISSUES -->\n<section class=\"vousy-problem-section\">\n  <div class=\"vousy-problem-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">PROBLEM</span>\n      <h2 class=\"section-title\">Why beard transplant?</h2>\n      <p class=\"section-description\">Are you troubled by gaps in your beard, uneven growth or insufficient density? A permanent solution exists.</p>\n    </div>\n    \n    <div class=\"problem-grid\">\n      <div class=\"problem-card\">\n        <div class=\"problem-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <circle cx=\"12\" cy=\"8\" r=\"4\"/>\n            <path d=\"M6 21V19C6 16.7909 7.79086 15 10 15H14C16.2091 15 18 16.7909 18 19V21\"/>\n            <path d=\"M9 8.5C9 8.5 9.5 8 10 8\"/>\n            <path d=\"M15 8.5C15 8.5 14.5 8 14 8\"/>\n            <path d=\"M9.5 10.5C9.5 10.5 10.5 10 12 10C13.5 10 14.5 10.5 14.5 10.5\"/>\n          </svg>\n        </div>\n        <h3>Genetics</h3>\n        <p>For most men, beard density and shape are genetically determined. Even with normal testosterone levels, the beard shape may be uneven and density low.</p>\n      </div>\n      \n      <div class=\"problem-card\">\n        <div class=\"problem-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M8 2H16\"/>\n            <path d=\"M9 2V5.04C9 5.60527 8.78929 6.14765 8.41421 6.56066L5.5 10C4.5 11.1667 4 12.3333 4 14V19C4 20.1046 4.89543 21 6 21H18C19.1046 21 20 20.1046 20 19V14C20 12.3333 19.5 11.1667 18.5 10L15.5858 6.56066C15.2107 6.14765 15 5.60527 15 5.04V2\"/>\n            <path d=\"M10 14L14 18\"/>\n            <path d=\"M14 14L10 18\"/>\n          </svg>\n        </div>\n        <h3>Gaps and density</h3>\n        <p>Gaps in the beard, irregular or insufficient growth can disrupt the overall appearance of your beard.</p>\n      </div>\n      \n      <div class=\"problem-card\">\n        <div class=\"problem-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <circle cx=\"12\" cy=\"12\" r=\"10\"/>\n            <path d=\"M12 6V8\"/>\n            <path d=\"M12 16V18\"/>\n            <path d=\"M9 10C9 8.89543 10.3431 8 12 8C13.6569 8 15 8.89543 15 10C15 11.1046 13.6569 12 12 12C10.3431 12 9 12.8954 9 14C9 15.1046 10.3431 16 12 16C13.6569 16 15 15.1046 15 14\"/>\n          </svg>\n        </div>\n        <h3>Psychological impact</h3>\n        <p>Beard appearance can affect your confidence and overall satisfaction. Transplantation is a permanent solution that helps achieve a fuller and more balanced facial appearance.</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .vousy-problem-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--white);\n  }\n\n  .vousy-problem-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .section-header {\n    text-align: center;\n    margin-bottom: 60px;\n  }\n\n  .vousy-problem-section .section-header .mh-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: var(--primary-gold) !important;\n    color: var(--black) !important;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 20px;\n    border-radius: 30px;\n  }\n\n  .section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 20px 0;\n    letter-spacing: normal;\n  }\n\n  .section-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    max-width: 800px;\n    margin: 0 auto;\n    line-height: 1.6;\n    text-align: center;\n  }\n\n  .problem-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 32px;\n  }\n\n  .problem-card {\n    background: var(--light-gray);\n    border-radius: 20px;\n    padding: 40px 32px;\n    text-align: center;\n    transition: all 0.3s ease;\n  }\n\n  .problem-card:hover {\n    background: var(--white);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .problem-icon {\n    width: 56px;\n    height: 56px;\n    margin: 0 auto 24px;\n    color: var(--primary-gold);\n  }\n\n  .problem-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .problem-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 22px;\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 16px 0;\n  }\n\n  .problem-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0 0 16px 0;\n  }\n\n  .norwood-placeholder {\n    margin-top: 20px;\n    padding: 20px;\n    background: rgba(229, 193, 88, 0.1);\n    border-radius: 12px;\n    border: 2px dashed var(--medium-gray);\n  }\n\n  .norwood-placeholder p {\n    font-size: 13px;\n    margin: 4px 0;\n  }\n\n  .norwood-placeholder strong {\n    color: var(--dark-gray);\n    font-weight: 600;\n  }\n\n  @media (max-width: 1200px) {\n    .problem-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .vousy-problem-section {\n      padding: 60px 24px;\n    }\n\n    .problem-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "vousy_reseni_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "vousy_reseni_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Muži Řešení | MaxHair"
+  },
+  {
+    "id": "vousy_reseni_container",
+    "name": "container",
+    "parent": "vousy_reseni_section",
+    "children": [
+      "vousy_reseni_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "vousy_reseni_code",
+    "name": "code",
+    "parent": "vousy_reseni_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- TRANSPLANT SOLUTION -->\n<section class=\"vousy-reseni-section\">\n  <div class=\"vousy-reseni-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">SOLUTION</span>\n      <h2 class=\"section-title\">How it works</h2>\n      <p class=\"section-description\">Hair transplantation is performed with emphasis on precise graft placement and natural growth direction</p>\n    </div>\n    \n    <div class=\"reseni-grid\">\n      <div class=\"reseni-card\">\n        <div class=\"reseni-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M9 12L11 14L15 10\"/>\n            <path d=\"M12 3L14.5 5.5L18 5L17.5 8.5L20 11L17.5 13.5L18 17L14.5 16.5L12 19L9.5 16.5L6 17L6.5 13.5L4 11L6.5 8.5L6 5L9.5 5.5L12 3Z\"/>\n          </svg>\n        </div>\n        <h3>Graft extraction</h3>\n        <p>Grafts are extracted from the donor area in the occipital part of the head. They are genetically resistant and most suitable for beard transplantation.</p>\n      </div>\n      \n      <div class=\"reseni-card\">\n        <div class=\"reseni-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M12 2.69C12 2.69 6 9.69 6 14C6 17.31 8.69 20 12 20C15.31 20 18 17.31 18 14C18 9.69 12 2.69 12 2.69Z\"/>\n            <path d=\"M12 17C10.34 17 9 15.66 9 14\"/>\n          </svg>\n        </div>\n        <h3>Beard implantation</h3>\n        <p>The grafts are then implanted into the beard area according to an individual design for shape and density. Each graft is placed individually with maximum precision.</p>\n      </div>\n      \n      <div class=\"reseni-card\">\n        <div class=\"reseni-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M18 2L22 6\"/>\n            <path d=\"M7.5 20.5L3.5 16.5L15 5L19 9L7.5 20.5Z\"/>\n            <path d=\"M15 5L19 9\"/>\n            <path d=\"M11 9L15 13\"/>\n            <path d=\"M7.5 20.5L2 22L3.5 16.5\"/>\n          </svg>\n        </div>\n        <h3>Natural direction and density</h3>\n        <p>During implantation, we pay attention to the correct angle and growth direction so that the result looks natural and harmonious with your facial features.</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .vousy-reseni-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n  }\n\n  .vousy-reseni-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .reseni-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 32px;\n    margin-top: 60px;\n  }\n\n  .reseni-card {\n    background: var(--white);\n    border-radius: 20px;\n    padding: 40px 32px;\n    text-align: center;\n    transition: all 0.3s ease;\n    border: 2px solid transparent;\n  }\n\n  .reseni-card:hover {\n    border-color: var(--primary-gold);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .reseni-icon {\n    width: 56px;\n    height: 56px;\n    margin: 0 auto 24px;\n    color: var(--primary-gold);\n  }\n\n  .reseni-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .reseni-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 22px;\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 16px 0;\n  }\n\n  .reseni-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0;\n  }\n\n  @media (max-width: 1200px) {\n    .reseni-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .vousy-reseni-section {\n      padding: 60px 24px;\n    }\n\n    .reseni-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "vousy_vhodna_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "vousy_vhodna_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Muži Vhodná | MaxHair"
+  },
+  {
+    "id": "vousy_vhodna_container",
+    "name": "container",
+    "parent": "vousy_vhodna_section",
+    "children": [
+      "vousy_vhodna_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "vousy_vhodna_code",
+    "name": "code",
+    "parent": "vousy_vhodna_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- RECOMMENDATION – WHO IS IT SUITABLE FOR -->\n<section class=\"vousy-vhodna-section\" style=\"background-color: #0a0a0a !important; color: #ffffff !important;\">\n  <div class=\"vousy-vhodna-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">RECOMMENDATION</span>\n      <h2 class=\"section-title\">Who is the transplant suitable for?</h2>\n      <p class=\"section-description\">We always assess each case individually. To achieve the best results, we recommend transplantation especially in the following cases:</p>\n    </div>\n    \n    <div class=\"kandidati-grid\">\n      <div class=\"kandidat-item\">\n        <div class=\"kandidat-number\">23+</div>\n        <h3>Age</h3>\n        <p>The procedure can be performed on adult clients. However, we recommend waiting until beard growth is stabilized, which usually occurs from the age of 23-25.</p>\n      </div>\n      \n      <div class=\"kandidat-item\">\n        <div class=\"kandidat-number\">✓</div>\n        <h3>Stabilized condition</h3>\n        <p>Before the transplant, beard growth should already be settled and density unchanging. This allows us to plan a long-term natural result.</p>\n      </div>\n      \n      <div class=\"kandidat-item\">\n        <div class=\"kandidat-icon\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M9 12L11 14L15 10\"/>\n            <path d=\"M12 3L14.5 5.5L18 5L17.5 8.5L20 11L17.5 13.5L18 17L14.5 16.5L12 19L9.5 16.5L6 17L6.5 13.5L4 11L6.5 8.5L6 5L9.5 5.5L12 3Z\"/>\n          </svg>\n        </div>\n        <h3>Donor area</h3>\n        <p>There should be sufficient hair density in the occipital area of the head. The quality of the donor area fundamentally affects the number of grafts extracted and the final result.</p>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .vousy-vhodna-section {\n    position: relative;\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: #0a0a0a !important;\n    background-color: #0a0a0a !important;\n  }\n  .vousy-vhodna-section::before {\n    content: '';\n    position: absolute;\n    left: 50%;\n    transform: translateX(-50%);\n    width: 100vw;\n    top: 0;\n    bottom: 0;\n    background: #0a0a0a;\n    z-index: -1;\n  }\n\n  .vousy-vhodna-section .mh-badge,\n  .vousy-vhodna-section .section-badge { background: var(--primary-gold, #E5C158) !important; color: #000000 !important; -webkit-text-fill-color: #000000 !important; }\n  .vousy-vhodna-section .section-header,\n  .vousy-vhodna-section .section-title,\n  .vousy-vhodna-section .section-description { color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; }\n  .vousy-vhodna-section .section-description { color: rgba(255,255,255,0.9) !important; -webkit-text-fill-color: rgba(255,255,255,0.9) !important; }\n  .vousy-vhodna-section .kandidat-item { background: rgba(255,255,255,0.08); }\n  .vousy-vhodna-section .kandidat-item:hover { background: rgba(255,255,255,0.12); }\n  .vousy-vhodna-section .kandidat-number { color: var(--primary-gold, #E5C158) !important; -webkit-text-fill-color: var(--primary-gold, #E5C158) !important; }\n  .vousy-vhodna-section .kandidat-item h3 { color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; }\n  .vousy-vhodna-section .kandidat-item p { color: rgba(255,255,255,0.9) !important; -webkit-text-fill-color: rgba(255,255,255,0.9) !important; opacity: 1 !important; }\n  .vousy-vhodna-section .kandidat-icon { color: var(--primary-gold, #E5C158); }\n  .vousy-vhodna-section * { color: inherit; }\n  .vousy-vhodna-section { color: #ffffff !important; }\n\n  .vousy-vhodna-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .vousy-vhodna-section .kandidati-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 32px;\n    margin-top: 60px;\n  }\n\n  .vousy-vhodna-section .kandidat-item {\n    background: rgba(255,255,255,0.08);\n    border-radius: 20px;\n    padding: 40px 32px;\n    text-align: center;\n    transition: all 0.3s ease;\n  }\n\n  .vousy-vhodna-section .kandidat-item:hover {\n    background: rgba(255,255,255,0.12);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .vousy-vhodna-section .kandidat-number {\n    font-family: 'Poppins', sans-serif;\n    font-size: 48px;\n    font-weight: 700;\n    color: var(--primary-gold, #E5C158);\n    margin-bottom: 20px;\n  }\n\n  .vousy-vhodna-section .kandidat-icon {\n    width: 56px;\n    height: 56px;\n    margin: 0 auto 20px;\n    color: var(--primary-gold, #E5C158);\n  }\n\n  .vousy-vhodna-section .kandidat-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .vousy-vhodna-section .kandidat-item h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 22px;\n    font-weight: 700;\n    color: #ffffff;\n    margin: 0 0 16px 0;\n  }\n\n  .vousy-vhodna-section .kandidat-item p {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: rgba(255,255,255,0.85);\n    opacity: 1;\n    line-height: 1.6;\n    margin: 0;\n  }\n\n  @media (max-width: 1200px) {\n    .vousy-vhodna-section .kandidati-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (max-width: 768px) {\n    .vousy-vhodna-section {\n      padding: 60px 24px;\n    }\n\n    .vousy-vhodna-section .kandidati-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "vousy_metody_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "vousy_metody_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Muži Metody | MaxHair"
+  },
+  {
+    "id": "vousy_metody_container",
+    "name": "container",
+    "parent": "vousy_metody_section",
+    "children": [
+      "vousy_metody_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "vousy_metody_code",
+    "name": "code",
+    "parent": "vousy_metody_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- METHODS FOR BEARD -->\n<section class=\"vousy-metody-section\">\n  <div class=\"vousy-metody-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">METHODS</span>\n      <h2 class=\"section-title\">Transplant methods</h2>\n      <p class=\"section-description\">Both the DHI and Sapphire FUE methods represent the current state of the art in hair transplantation. The choice of method is always recommended by the doctor based on hair analysis and the scope of the procedure.</p>\n    </div>\n    \n    <div class=\"metody-grid\">\n      <div class=\"metoda-card\">\n        <div class=\"metoda-badge\">DHI</div>\n        <div class=\"metoda-image-wrap\"><img src=\"https://maxhair.cz/wp-content/uploads/2026/03/dhi-metoda-1-scaled.png\" alt=\"DHI method\" loading=\"lazy\" class=\"metoda-image\" /></div>\n        <h3>DHI method</h3>\n        <p>Direct implantation of hair grafts using the Choi Implanter Pen</p>\n        <ul class=\"metoda-list\">\n          <li>Suitable for densification between existing beard hair</li>\n          <li>Precise work with beard direction and density</li>\n          <li>Ideal for small to medium areas</li>\n        </ul>\n        <a href=\"/en-dhi-method\" class=\"metoda-link\">Learn more about DHI →</a>\n      </div>\n      \n      <div class=\"metoda-card\">\n        <div class=\"metoda-badge\">Sapphire FUE</div>\n        <div class=\"metoda-image-wrap\"><img src=\"https://maxhair.cz/wp-content/uploads/2026/03/sapphire-fue-metoda-1-scaled.png\" alt=\"Sapphire FUE method\" loading=\"lazy\" class=\"metoda-image\" /></div>\n        <h3>Sapphire FUE</h3>\n        <p>Before implantation, channels are created with a sapphire blade into which the hair grafts are placed</p>\n        <ul class=\"metoda-list\">\n          <li>Suitable for larger areas</li>\n          <li>Efficient with a higher number of grafts</li>\n          <li>Sapphire blade instead of steel for greater gentleness and faster healing</li>\n        </ul>\n        <a href=\"/en-sapphire-fue-method\" class=\"metoda-link\">Learn more about Sapphire FUE →</a>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .vousy-metody-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n  }\n\n  .vousy-metody-content {\n    max-width: 1400px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .metody-grid {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    gap: 40px;\n    margin-top: 60px;\n  }\n\n  .metoda-card {\n    background: var(--white);\n    border-radius: 24px;\n    padding: 48px 40px;\n    border: 2px solid var(--light-gray);\n    transition: all 0.3s ease;\n  }\n\n  .metoda-card:hover {\n    border-color: var(--primary-gold);\n    box-shadow: 0 12px 40px rgba(229, 193, 88, 0.2);\n    transform: translateY(-8px);\n  }\n\n  .metoda-badge {\n    display: inline-block;\n    padding: 6px 16px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 12px;\n    font-weight: 600;\n    border-radius: 20px;\n    margin-bottom: 20px;\n  }\n\n  .metoda-image-wrap {\n    margin-bottom: 20px;\n    border-radius: 16px;\n    overflow: hidden;\n    aspect-ratio: 16/10;\n    background: var(--light-gray);\n  }\n\n  .metoda-image-wrap .metoda-image {\n    width: 100%;\n    height: 100%;\n    object-fit: cover;\n    display: block;\n  }\n\n  .metoda-card h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 28px;\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 16px 0;\n  }\n\n  .metoda-card p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.6;\n    margin: 0 0 24px 0;\n  }\n\n  .metoda-list {\n    list-style: none;\n    padding: 0;\n    margin: 0 0 24px 0;\n  }\n\n  .metoda-list li {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    color: var(--dark-gray);\n    padding: 8px 0 8px 28px;\n    position: relative;\n  }\n\n  .metoda-list li::before {\n    content: '✓';\n    position: absolute;\n    left: 0;\n    color: var(--primary-gold);\n    font-weight: 700;\n  }\n\n  .metoda-link {\n    display: inline-block;\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    font-weight: 600;\n    color: var(--primary-gold);\n    text-decoration: none;\n    transition: all 0.3s ease;\n  }\n\n  .metoda-link:hover {\n    color: var(--secondary-gold);\n    transform: translateX(4px);\n  }\n\n  @media (max-width: 768px) {\n    .vousy-metody-section {\n      padding: 60px 24px;\n    }\n\n    .metody-grid {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "vousy_zahrnuto_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "vousy_zahrnuto_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Muži Zahrnuto | MaxHair"
+  },
+  {
+    "id": "vousy_zahrnuto_container",
+    "name": "container",
+    "parent": "vousy_zahrnuto_section",
+    "children": [
+      "vousy_zahrnuto_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "vousy_zahrnuto_code",
+    "name": "code",
+    "parent": "vousy_zahrnuto_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- WHAT'S INCLUDED - TWO COLUMNS -->\n<section class=\"vousy-zahrnuto-section\">\n  <div class=\"vousy-zahrnuto-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">ALL-INCLUSIVE</span>\n      <h2 class=\"section-title\">What's included in the price?</h2>\n      <p class=\"section-description\">Complete service and medical care with no hidden fees.</p>\n    </div>\n    \n    <div class=\"zahrnuto-columns\">\n      <!-- Levý sloupec - Servis -->\n      <div class=\"zahrnuto-box\">\n        <h3 class=\"zahrnuto-box-title\">Service & comfort</h3>\n        <ul class=\"zahrnuto-list\">\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <path d=\"M22 2L11 13\"/>\n                <path d=\"M22 2L15 22L11 13L2 9L22 2Z\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">Return flight</span>\n          </li>\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <path d=\"M3 21V7C3 5.89543 3.89543 5 5 5H19C20.1046 5 21 5.89543 21 7V21\"/>\n                <path d=\"M3 21H21\"/>\n                <path d=\"M9 21V17C9 15.8954 9.89543 15 11 15H13C14.1046 15 15 15.8954 15 17V21\"/>\n                <path d=\"M7 9H7.01\"/>\n                <path d=\"M12 9H12.01\"/>\n                <path d=\"M17 9H17.01\"/>\n                <path d=\"M7 13H7.01\"/>\n                <path d=\"M12 13H12.01\"/>\n                <path d=\"M17 13H17.01\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">3 nights in a 5* hotel</span>\n          </li>\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <path d=\"M5 17H3C2.44772 17 2 16.5523 2 16V13C2 12.4477 2.44772 12 3 12H5\"/>\n                <path d=\"M19 17H21C21.5523 17 22 16.5523 22 16V13C22 12.4477 21.5523 12 21 12H19\"/>\n                <path d=\"M5 17C5 18.1046 5.89543 19 7 19C8.10457 19 9 18.1046 9 17M5 17C5 15.8954 5.89543 15 7 15C8.10457 15 9 15.8954 9 17M5 17H9\"/>\n                <path d=\"M15 17C15 18.1046 15.8954 19 17 19C18.1046 19 19 18.1046 19 17M15 17C15 15.8954 15.8954 15 17 15C18.1046 15 19 15.8954 19 17M15 17H19\"/>\n                <path d=\"M9 17H15\"/>\n                <path d=\"M5 12L6.5 6.5C6.77614 5.62742 7.58579 5 8.5 5H15.5C16.4142 5 17.2239 5.62742 17.5 6.5L19 12\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">VIP transfer</span>\n          </li>\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <path d=\"M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">Czech-speaking support 24/7</span>\n          </li>\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <path d=\"M20 12V22H4V12\"/>\n                <path d=\"M22 7H2V12H22V7Z\"/>\n                <path d=\"M12 22V7\"/>\n                <path d=\"M12 7H7.5C6.83696 7 6.20107 6.73661 5.73223 6.26777C5.26339 5.79893 5 5.16304 5 4.5C5 3.83696 5.26339 3.20107 5.73223 2.73223C6.20107 2.26339 6.83696 2 7.5 2C11 2 12 7 12 7Z\"/>\n                <path d=\"M12 7H16.5C17.163 7 17.7989 6.73661 18.2678 6.26777C18.7366 5.79893 19 5.16304 19 4.5C19 3.83696 18.7366 3.20107 18.2678 2.73223C17.7989 2.26339 17.163 2 16.5 2C13 2 12 7 12 7Z\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">Cosmetics package</span>\n          </li>\n        </ul>\n      </div>\n      \n      <!-- Pravý sloupec - Medicínská část -->\n      <div class=\"zahrnuto-box\">\n        <h3 class=\"zahrnuto-box-title\">Medical care</h3>\n        <ul class=\"zahrnuto-list\">\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <path d=\"M18 2L22 6\"/>\n                <path d=\"M7.5 20.5L3.5 16.5L15 5L19 9L7.5 20.5Z\"/>\n                <path d=\"M15 5L19 9\"/>\n                <path d=\"M11 9L15 13\"/>\n                <path d=\"M7.5 20.5L2 22L3.5 16.5\"/>\n                <path d=\"M9 11L13 15\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">Beard Transplant</span>\n          </li>\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <path d=\"M12 2.69L12 2.69C12 2.69 6 9.69 6 14C6 17.31 8.69 20 12 20C15.31 20 18 17.31 18 14C18 9.69 12 2.69 12 2.69Z\"/>\n                <path d=\"M12 17C10.34 17 9 15.66 9 14\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">PRP therapy</span>\n          </li>\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <path d=\"M10.5 20.5L3.5 13.5C1.5 11.5 1.5 8.5 3.5 6.5C5.5 4.5 8.5 4.5 10.5 6.5L17.5 13.5C19.5 15.5 19.5 18.5 17.5 20.5C15.5 22.5 12.5 22.5 10.5 20.5Z\"/>\n                <path d=\"M7 10L14 17\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">Post-operative medication</span>\n          </li>\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <path d=\"M9 12L11 14L15 10\"/>\n                <path d=\"M12 3L14.5 5.5L18 5L17.5 8.5L20 11L17.5 13.5L18 17L14.5 16.5L12 19L9.5 16.5L6 17L6.5 13.5L4 11L6.5 8.5L6 5L9.5 5.5L12 3Z\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">Warranty certificate</span>\n          </li>\n          <li>\n            <span class=\"zahrnuto-icon\">\n              <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n                <circle cx=\"12\" cy=\"12\" r=\"10\"/>\n                <path d=\"M12 6V12L16 14\"/>\n              </svg>\n            </span>\n            <span class=\"zahrnuto-text\">Long-term follow-up</span>\n          </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .vousy-zahrnuto-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n  }\n\n  .vousy-zahrnuto-content {\n    max-width: 1000px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .zahrnuto-columns {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 32px;\n    margin-top: 60px;\n  }\n\n  .zahrnuto-box {\n    background: #FFFDF8;\n    border-radius: 20px;\n    padding: 36px 40px;\n    box-shadow: 0 8px 40px rgba(212, 168, 75, 0.15), 0 0 60px rgba(212, 168, 75, 0.08);\n    position: relative;\n  }\n\n  .zahrnuto-box::before {\n    content: '';\n    position: absolute;\n    top: -2px;\n    left: -2px;\n    right: -2px;\n    bottom: -2px;\n    background: linear-gradient(135deg, rgba(212, 168, 75, 0.3) 0%, rgba(212, 168, 75, 0.1) 50%, rgba(212, 168, 75, 0.3) 100%);\n    border-radius: 22px;\n    z-index: -1;\n    filter: blur(8px);\n  }\n\n  .zahrnuto-box-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: 20px;\n    font-weight: 600;\n    color: #1A1A1A;\n    margin: 0 0 28px 0;\n    font-style: italic;\n    text-align: left;\n  }\n\n  .zahrnuto-list {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    gap: 18px;\n  }\n\n  .zahrnuto-list li {\n    display: flex;\n    align-items: center;\n    gap: 16px;\n  }\n\n  .zahrnuto-icon {\n    width: 26px;\n    height: 26px;\n    min-width: 26px;\n    color: #D4A84B;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-shrink: 0;\n  }\n\n  .zahrnuto-icon svg {\n    width: 100%;\n    height: 100%;\n  }\n\n  .zahrnuto-text {\n    font-family: 'Inter', sans-serif;\n    font-size: 17px;\n    color: #1A1A1A;\n    font-weight: 500;\n    text-align: left;\n  }\n\n  @media (max-width: 768px) {\n    .zahrnuto-columns {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n\n    .zahrnuto-box {\n      padding: 28px;\n    }\n\n    .zahrnuto-box-title {\n      font-size: 18px;\n    }\n\n    .zahrnuto-text {\n      font-size: 16px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "vousy_proces_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "vousy_proces_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Muži Proces | MaxHair"
+  },
+  {
+    "id": "vousy_proces_container",
+    "name": "container",
+    "parent": "vousy_proces_section",
+    "children": [
+      "vousy_proces_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "vousy_proces_code",
+    "name": "code",
+    "parent": "vousy_proces_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- PROCESS: images from WordPress media library -->\n<section class=\"vousy-proces-section\" id=\"proces\">\n  <div class=\"vousy-proces-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">PROCESS</span>\n      <h2 class=\"section-title\">How does the transplant work?</h2>\n      <p class=\"section-description\">From the first consultation to the final result – step by step.</p>\n    </div>\n    \n    <div class=\"proces-timeline\">\n      <div class=\"timeline-item timeline-item-odd\">\n        <div class=\"timeline-main\">\n          <div class=\"timeline-number\">1</div>\n          <div class=\"timeline-content\">\n            <h3>Consultation</h3>\n            <p>The free initial consultation takes place online. Our medical consultant will evaluate your current condition, review photographs, and after consulting with the doctor in Istanbul, prepare an individual procedure plan including the recommended method and estimated number of grafts.</p>\n          </div>\n        </div>\n        <div class=\"timeline-image\"><img src=\"https://maxhair.cz/wp-content/uploads/2026/02/proces-1-konzultace.png\" alt=\"Online consultation with a doctor\" loading=\"lazy\" /></div>\n      </div>\n      \n      <div class=\"timeline-item timeline-item-even\">\n        <div class=\"timeline-image\"><img src=\"https://maxhair.cz/wp-content/uploads/2026/02/proces-2-priprava.png\" alt=\"Travel preparation – accommodation and transfer\" loading=\"lazy\" /></div>\n        <div class=\"timeline-main\">\n          <div class=\"timeline-number\">2</div>\n          <div class=\"timeline-content\">\n            <h3>Preparation</h3>\n            <p>Once the plan is approved, we will arrange all travel logistics – accommodation, transfers and other details. You will receive clear instructions for preparation, including recommendations regarding medication and scalp care.</p>\n          </div>\n        </div>\n      </div>\n      \n      <div class=\"timeline-item timeline-item-odd\">\n        <div class=\"timeline-main\">\n          <div class=\"timeline-number\">3</div>\n          <div class=\"timeline-content\">\n            <h3>Procedure</h3>\n            <p>Upon arrival in Istanbul, our Czech-speaking representative will pick you up at the airport and will be available throughout your stay. This is followed by transfer to the hotel and check-in. The next day, the procedure is performed under local anesthesia. The entire process takes approximately 6–8 hours depending on the scope of the transplant.</p>\n          </div>\n        </div>\n        <div class=\"timeline-image\"><img src=\"https://maxhair.cz/wp-content/uploads/2026/02/proces-3-zakrok.png\" alt=\"Procedure under local anesthesia – clinic\" loading=\"lazy\" /></div>\n      </div>\n      \n      <div class=\"timeline-item timeline-item-even\">\n        <div class=\"timeline-image\"><img src=\"https://maxhair.cz/wp-content/uploads/2026/02/proces-4-hojeni.png\" alt=\"Healing and skin care after the procedure\" loading=\"lazy\" /></div>\n        <div class=\"timeline-main\">\n          <div class=\"timeline-number\">4</div>\n          <div class=\"timeline-content\">\n            <h3>Healing</h3>\n            <p>In the following weeks after the procedure, healing and skin regeneration takes place. During this period, the transplanted grafts stabilize and gradually take root in the new area. We will provide you with detailed instructions for home care and proper skin care.</p>\n          </div>\n        </div>\n      </div>\n      \n      <div class=\"timeline-item timeline-item-odd\">\n        <div class=\"timeline-main\">\n          <div class=\"timeline-number\">5</div>\n          <div class=\"timeline-content\">\n            <h3>Growth</h3>\n            <p>Transplanted beard hair typically begins to grow after 3–4 months. Gradual thickening continues for several more months, with the final result visible approximately after 12–15 months. We stay in regular contact with you throughout and are available for any questions.</p>\n          </div>\n        </div>\n        <div class=\"timeline-image\"><img src=\"https://maxhair.cz/wp-content/uploads/2026/02/proces-5-rust-muzi-1.png\" alt=\"Result – natural beard growth in a man\" loading=\"lazy\" /></div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .vousy-proces-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n  }\n\n  .vousy-proces-content {\n    max-width: 1100px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .proces-timeline {\n    margin-top: 60px;\n  }\n\n  .timeline-item {\n    display: grid;\n    grid-template-columns: 1fr 400px;\n    gap: 48px;\n    margin-bottom: 64px;\n    align-items: center;\n  }\n\n  .timeline-item:last-child {\n    margin-bottom: 0;\n  }\n\n  .timeline-item-even {\n    grid-template-columns: 400px 1fr;\n  }\n\n  .timeline-item-even .timeline-main {\n    order: 2;\n  }\n\n  .timeline-item-even .timeline-image {\n    order: 1;\n  }\n\n  .timeline-main {\n    display: flex;\n    gap: 24px;\n    align-items: flex-start;\n  }\n\n  .timeline-number {\n    width: 60px;\n    height: 60px;\n    background: var(--primary-gold);\n    color: var(--black);\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-family: 'Poppins', sans-serif;\n    font-size: 28px;\n    font-weight: 700;\n    flex-shrink: 0;\n  }\n\n  .timeline-content {\n    flex: 1;\n  }\n\n  .timeline-content h3 {\n    font-family: 'Poppins', sans-serif;\n    font-size: 24px;\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 12px 0;\n  }\n\n  .timeline-content p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-gray);\n    opacity: 0.85;\n    line-height: 1.7;\n    margin: 0;\n  }\n\n  .timeline-image {\n    border-radius: 12px;\n    overflow: hidden;\n    background: var(--white);\n    box-shadow: 0 4px 24px rgba(0,0,0,0.08);\n  }\n\n  .timeline-image img {\n    width: 100%;\n    height: auto;\n    display: block;\n    object-fit: cover;\n    min-height: 220px;\n  }\n\n  @media (max-width: 900px) {\n    .timeline-item,\n    .timeline-item-even {\n      grid-template-columns: 1fr;\n      gap: 24px;\n      margin-bottom: 48px;\n    }\n\n    .timeline-item-even .timeline-main,\n    .timeline-item-even .timeline-image {\n      order: unset;\n    }\n\n    .vousy-proces-section .timeline-main {\n      order: 1;\n    }\n\n    .vousy-proces-section .timeline-image {\n      order: 2;\n    }\n\n    .timeline-image {\n      max-width: 400px;\n      margin: 0 auto;\n    }\n  }\n\n  @media (max-width: 768px) {\n    .vousy-proces-section {\n      padding: 60px 24px;\n    }\n\n    .timeline-main {\n      flex-direction: column;\n      gap: 16px;\n    }\n\n    .timeline-number {\n      width: 50px;\n      height: 50px;\n      font-size: 24px;\n    }\n\n    .timeline-image img {\n      min-height: 180px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "vousy_faq_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "vousy_faq_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Muži FAQ | MaxHair"
+  },
+  {
+    "id": "vousy_faq_container",
+    "name": "container",
+    "parent": "vousy_faq_section",
+    "children": [
+      "vousy_faq_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "vousy_faq_code",
+    "name": "code",
+    "parent": "vousy_faq_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- BEARD FAQ -->\n<section class=\"vousy-faq-section\">\n  <div class=\"vousy-faq-content\">\n    <div class=\"section-header\">\n      <span class=\"mh-badge\">FAQ</span>\n      <h2 class=\"section-title\">Frequently asked questions about beard transplant</h2>\n    </div>\n    \n    <div class=\"faq-list\">\n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Does beard transplant hurt?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>The procedure is performed under local anesthesia and is completely painless. You may feel slight discomfort for the first few minutes during anesthesia application. After the procedure, you may feel mild pressure that quickly subsides.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>How long does the procedure take?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>The duration of the procedure depends on the scope of the transplant and the number of grafts. It most commonly takes 6 to 8 hours. There are, of course, breaks for rest and refreshments during the procedure.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>When will I see results?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>The first new beard hair begins to appear approximately 3-4 months after the procedure. Visible improvement in density occurs around the 6th month. The final result is usually visible after 9-12 months, for some clients up to 12-15 months.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Will the result look natural?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Yes, with a properly planned and performed procedure, the new beard looks very natural. For beard transplantation, the correct angle, direction, and density of the implanted grafts are key. The goal is for the result to not look artificial but to be in harmony with your facial features.</p>\n        </div>\n      </div>\n      \n      <div class=\"faq-item\">\n        <button class=\"faq-question\">\n          <span>Je možné vytvořit vousy „od nuly“?</span>\n          <span class=\"faq-icon\">+</span>\n        </button>\n        <div class=\"faq-answer\">\n          <p>Yes, transplantation makes it possible to create a new beard shape and density even in areas where growth is almost absent. However, it always depends on the quality and density of the donor area. As part of the analysis, we will propose a realistic shape and number of grafts so that the result looks natural.</p>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n  .vousy-faq-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--white);\n  }\n\n  .vousy-faq-content {\n    max-width: 1000px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .vousy-faq-section .faq-list {\n    margin-top: 60px;\n  }\n\n  .vousy-faq-section .faq-item {\n    border-bottom: 2px solid var(--light-gray);\n    margin-bottom: 0;\n  }\n\n  .vousy-faq-section .faq-item:last-child {\n    border-bottom: none;\n  }\n\n  .vousy-faq-section .faq-question {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding: 24px 0;\n    background: transparent;\n    border: none;\n    cursor: pointer;\n    text-align: left;\n    font-family: 'Poppins', sans-serif;\n    font-size: 20px;\n    font-weight: 600;\n    color: var(--dark-gray);\n    transition: all 0.3s ease;\n  }\n\n  .vousy-faq-section .faq-question:hover {\n    color: var(--primary-gold);\n  }\n\n  .vousy-faq-section .faq-icon {\n    font-size: 28px;\n    font-weight: 300;\n    color: var(--primary-gold);\n    transition: transform 0.3s ease;\n  }\n\n  .vousy-faq-section .faq-item.active .faq-icon {\n    transform: rotate(45deg);\n  }\n\n  .vousy-faq-section .faq-answer {\n    max-height: 0;\n    overflow: hidden;\n    transition: max-height 0.3s ease;\n  }\n\n  .vousy-faq-section .faq-item.active .faq-answer {\n    max-height: 500px;\n  }\n\n  .vousy-faq-section .faq-answer p {\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    color: var(--dark-gray);\n    opacity: 0.7;\n    line-height: 1.6;\n    padding: 0 0 24px 0;\n    margin: 0;\n  }\n\n  @media (max-width: 768px) {\n    .vousy-faq-section {\n      padding: 60px 24px;\n    }\n\n    .vousy-faq-section .faq-question {\n      font-size: 18px;\n      padding: 20px 0;\n    }\n  }\n</style>\n\n<script>\n  // FAQ Accordion - All Sections\n  (function() {\n    function initAllFAQ() {\n      var containers = document.querySelectorAll('.faq-list, .faq-items, .faq-grid');\n      for (var c = 0; c < containers.length; c++) {\n        var faqContainer = containers[c];\n        if (faqContainer.dataset.faqInit) continue;\n        faqContainer.dataset.faqInit = 'true';\n        (function(container) {\n          container.addEventListener('click', function(e) {\n            var question = e.target.closest('.faq-question');\n            if (!question) return;\n            var item = question.closest('.faq-item');\n            if (!item) return;\n            var isActive = item.classList.contains('active');\n            var allItems = container.querySelectorAll('.faq-item');\n            for (var i = 0; i < allItems.length; i++) {\n              allItems[i].classList.remove('active');\n            }\n            if (!isActive) {\n              item.classList.add('active');\n            }\n          });\n        })(faqContainer);\n      }\n    }\n    if (document.readyState === 'loading') {\n      document.addEventListener('DOMContentLoaded', initAllFAQ);\n    } else {\n      initAllFAQ();\n    }\n    setTimeout(initAllFAQ, 100);\n    setTimeout(initAllFAQ, 500);\n  })();\n</script>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "vousy_cta_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "vousy_cta_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Muži CTA | MaxHair"
+  },
+  {
+    "id": "vousy_cta_container",
+    "name": "container",
+    "parent": "vousy_cta_section",
+    "children": [
+      "vousy_cta_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "vousy_cta_code",
+    "name": "code",
+    "parent": "vousy_cta_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- CTA SECTION -->\n<section class=\"vousy-cta-section\">\n  <div class=\"vousy-cta-content\">\n    <h2 class=\"cta-title\">Ready to get a full beard?</h2>\n    <p class=\"cta-description\">Get a free consultation and find out if a beard transplant is right for you.</p>\n    <div class=\"cta-buttons\">\n      <a href=\"/en-contact\" class=\"btn-primary\">Free consultation</a>\n      <a href=\"/en-home#pricing\" class=\"btn-secondary\">See pricing</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  .vousy-cta-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 80px);\n    background: var(--light-gray);\n    text-align: center;\n  }\n\n  .vousy-cta-content {\n    max-width: 800px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .cta-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 56px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 24px 0;\n    letter-spacing: normal;\n  }\n\n  .cta-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(18px, 2.5vw, 22px);\n    color: var(--dark-gray);\n    opacity: 0.8;\n    margin: 0 0 48px 0;\n    line-height: 1.6;\n  }\n\n  .cta-buttons {\n    display: flex;\n    gap: 20px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 10px;\n    transition: all 0.3s ease;\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-3px);\n    box-shadow: 0 10px 35px rgba(229, 193, 88, 0.5);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 18px 40px;\n    background: transparent;\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--primary-gold);\n    border-radius: 10px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--primary-gold);\n    color: var(--black);\n    transform: translateY(-3px);\n  }\n\n  @media (max-width: 768px) {\n    .vousy-cta-section {\n      padding: 60px 24px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  }
+]

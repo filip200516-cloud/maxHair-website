@@ -1,0 +1,115 @@
+[
+  {
+    "id": "cookies_hero_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "cookies_hero_container"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_height": "auto"
+    },
+    "label": "Cookies Hero | MaxHair"
+  },
+  {
+    "id": "cookies_hero_container",
+    "name": "container",
+    "parent": "cookies_hero_section",
+    "children": [
+      "cookies_hero_code"
+    ],
+    "settings": {
+      "_width": "100%",
+      "_height": "auto"
+    }
+  },
+  {
+    "id": "cookies_hero_code",
+    "name": "code",
+    "parent": "cookies_hero_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- COOKIES HERO SECTION -->\n<section class=\"cookies-hero-section\">\n  <div class=\"cookies-hero-content\">\n    <span class=\"mh-badge\">LEGAL DOCUMENTS</span>\n    <h1 class=\"hero-title\">Cookie Policy</h1>\n    <p class=\"hero-description\">Information about the use of cookies on the MaxHair.cz website</p>\n  </div>\n</section>\n\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');\n\n  :root {\n    --primary-gold: #E5C158;\n    --secondary-gold: #D4AF37;\n    --dark-gray: #1A1A1A;\n    --black: #000000;\n    --white: #FFFFFF;\n    --light-gray: #F5F5F5;\n    --medium-gray: #333333;\n  }\n\n  .cookies-hero-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 50svh;\n    background: linear-gradient(135deg, var(--dark-gray) 0%, #3d2f1e 100%);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 120px 80px 80px 80px;\n    text-align: center;\n    margin: 0 !important;\n  }\n\n  .cookies-hero-content {\n    max-width: 1000px;\n    width: 100%;\n  }\n\n  .section-badge {\n    display: inline-block;\n    padding: 8px 24px;\n    background: rgba(229, 193, 88, 0.2);\n    color: #000000;\n    font-family: 'Inter', sans-serif;\n    font-size: 13px;\n    font-weight: 600;\n    letter-spacing: 2px;\n    text-transform: uppercase;\n    margin-bottom: 24px;\n    border-radius: 30px;\n    border: 1px solid var(--primary-gold);\n  }\n\n  .hero-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(36px, 5vw, 64px);\n    font-weight: 800;\n    color: var(--white);\n    margin: 0 0 24px 0;\n    letter-spacing: -1px;\n    line-height: 1.2;\n  }\n\n  .hero-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 20px);\n    color: rgba(255, 255, 255, 0.8);\n    margin: 0;\n    line-height: 1.6;\n  }\n\n  @media (max-width: 768px) {\n    .cookies-hero-section {\n      padding: 100px 24px 60px 24px;\n      min-height: 50svh;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "cookies_content_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "cookies_content_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Cookies Content | MaxHair"
+  },
+  {
+    "id": "cookies_content_container",
+    "name": "container",
+    "parent": "cookies_content_section",
+    "children": [
+      "cookies_content_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "cookies_content_code",
+    "name": "code",
+    "parent": "cookies_content_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- COOKIES CONTENT SECTION -->\n<section class=\"cookies-content-section\">\n  <div class=\"cookies-content-wrapper\">\n    <div class=\"cookies-content\">\n      \n      <div class=\"cookies-section\">\n        <h2 class=\"cookies-section-title\">1. What Are Cookies?</h2>\n        <div class=\"cookies-text\">\n          <p>Cookies are small text files that are stored on your device (computer, tablet, mobile phone) when you visit a website. Cookies allow websites to remember your preferences and improve your user experience.</p>\n          <p>Cookies themselves do not contain any personal data and cannot damage your device or files.</p>\n        </div>\n      </div>\n\n      <div class=\"cookies-section\">\n        <h2 class=\"cookies-section-title\">2. What Cookies Do We Use?</h2>\n        <div class=\"cookies-text\">\n          <p>On our website, we use the following types of cookies:</p>\n          \n          <h3 class=\"cookies-subtitle\">2.1 Necessary (Technical) Cookies</h3>\n          <p>These cookies are required for the website to function in accordance with electronic communications law. They cannot be disabled.</p>\n          <ul class=\"cookies-list\">\n            <li>Session cookies \u2013 to maintain the session</li>\n            <li>Security cookies \u2013 protection against attacks</li>\n            <li>Preference cookies \u2013 storing cookie consent (localStorage)</li>\n          </ul>\n\n          <h3 class=\"cookies-subtitle\">2.2 Marketing Cookies (Meta Pixel)</h3>\n          <p>We use Meta Pixel (Facebook) to measure traffic and advertising effectiveness. These cookies are loaded <strong>only after consent is given</strong> in the cookie banner.</p>\n          <ul class=\"cookies-list\">\n            <li><strong>Meta Pixel (Facebook)</strong> \u2013 conversion measurement, traffic analysis</li>\n            <li>Data recipient: Meta Platforms, Inc.</li>\n            <li>Legal basis: consent (Art. 6(1)(a) GDPR)</li>\n          </ul>\n        </div>\n      </div>\n\n      <div class=\"cookies-section\">\n        <h2 class=\"cookies-section-title\">3. How to Manage Cookies?</h2>\n        <div class=\"cookies-text\">\n          <p>You can change your cookie settings in your browser at any time. Most browsers allow you to:</p>\n          <ul class=\"cookies-list\">\n            <li>Block all cookies</li>\n            <li>Block only third-party cookies</li>\n            <li>Delete existing cookies</li>\n            <li>Alert before saving cookies</li>\n          </ul>\n          <p><strong>Instructions for individual browsers:</strong></p>\n          <ul class=\"cookies-list\">\n            <li><strong>Google Chrome:</strong> Settings \u2192 Privacy and Security \u2192 Cookies</li>\n            <li><strong>Mozilla Firefox:</strong> Options \u2192 Privacy and Security \u2192 Cookies</li>\n            <li><strong>Safari:</strong> Preferences \u2192 Privacy \u2192 Cookies</li>\n            <li><strong>Microsoft Edge:</strong> Settings \u2192 Cookies and Site Permissions</li>\n          </ul>\n          <p><strong>Note:</strong> Blocking cookies may affect the functionality of some parts of the website.</p>\n        </div>\n      </div>\n\n      <div class=\"cookies-section\">\n        <h2 class=\"cookies-section-title\">4. Third-Party Cookies</h2>\n        <div class=\"cookies-text\">\n          <p>Meta Pixel (Facebook) is a third-party service. Data is subject to <a href=\"https://www.facebook.com/privacy/policy/\" target=\"_blank\" rel=\"noopener\" class=\"cookies-link\">Meta's Privacy Policy</a>.</p>\n        </div>\n      </div>\n\n      <div class=\"cookies-section\" id=\"nastaveni\">\n        <h2 class=\"cookies-section-title\">5. How to Refuse Cookies and Change Consent?</h2>\n        <div class=\"cookies-text\">\n          <p>On your first visit, a banner will be displayed. You can:</p>\n          <ul class=\"cookies-list\">\n            <li><strong>Accept All</strong> \u2013 consent to all cookies (including Meta Pixel)</li>\n            <li><strong>Reject Marketing</strong> \u2013 only technical cookies necessary for the website to function</li>\n          </ul>\n          <p><strong>Right to Withdraw Consent:</strong> You can withdraw your consent at any time as easily as you gave it. Click the button below or use the \"Change Settings\" link in the website footer.</p>\n          <p><button type=\"button\" class=\"mh-cookie-change-btn\" id=\"mh-cookie-change-btn\">Change Cookie Settings</button></p>\n        </div>\n      </div>\n\n      <div class=\"cookies-section\">\n        <h2 class=\"cookies-section-title\">6. Legal Basis and Consent Duration</h2>\n        <div class=\"cookies-text\">\n          <p>This policy is based on <strong>GDPR</strong> (Regulation EU 2016/679), <strong>Act No. 110/2019 Coll.</strong> on personal data processing, and the <strong>Electronic Communications Act</strong> (Act No. 127/2005 Coll.).</p>\n          <p>Consent to marketing cookies is valid for 12 months. After rejection, we will display the banner again no earlier than 6 months later.</p>\n        </div>\n      </div>\n\n      <div class=\"cookies-section\">\n        <h2 class=\"cookies-section-title\">7. Policy Changes</h2>\n        <div class=\"cookies-text\">\n          <p>This policy may be updated. The current version is always available on this page. Date of last update: January 1, 2025.</p>\n        </div>\n      </div>\n\n      <div class=\"cookies-section\">\n        <h2 class=\"cookies-section-title\">8. Contact and Right to Complain</h2>\n        <div class=\"cookies-text\">\n          <p><strong>MaxHair.cz</strong> \u2013 cookie inquiries: <a href=\"mailto:info@maxhair.cz\" class=\"cookies-link\">info@maxhair.cz</a>, <a href=\"tel:+420601515323\" class=\"cookies-link\">+420 601 515 323</a></p>\n          <p>You have the right to file a complaint with the <strong>Office for Personal Data Protection (\u00daOO\u00da)</strong>: Pplk. Sochora 27, 170 00 Praha 7, <a href=\"https://www.uoou.cz\" target=\"_blank\" rel=\"noopener\" class=\"cookies-link\">www.uoou.cz</a>, posta@uoou.cz.</p>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</section>\n\n<style>\n  .cookies-content-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: auto;\n    background: #F5F5F5 !important;\n    padding: 48px 24px 64px;\n    margin: 0 !important;\n  }\n\n  .cookies-content-wrapper {\n    max-width: 720px;\n    width: 100%;\n    margin: 0 auto;\n  }\n\n  .cookies-content {\n    background: #FFFFFF;\n    border-radius: 16px;\n    padding: 48px 40px;\n    box-shadow: 0 2px 12px rgba(0,0,0,0.06);\n  }\n\n  .cookies-section {\n    margin-bottom: 36px;\n  }\n\n  .cookies-section:last-child {\n    margin-bottom: 0;\n  }\n\n  .cookies-section-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(18px, 2.2vw, 22px);\n    font-weight: 700;\n    color: #1A1A1A !important;\n    margin: 0 0 16px 0;\n    padding-left: 16px;\n    border-left: 4px solid var(--primary-gold);\n    line-height: 1.4;\n  }\n\n  .cookies-subtitle {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(16px, 1.8vw, 18px);\n    font-weight: 600;\n    color: #1A1A1A;\n    margin: 24px 0 12px 0;\n  }\n\n  .cookies-text {\n    font-family: 'Inter', sans-serif;\n    font-size: 15px;\n    line-height: 1.75;\n    color: #333333;\n  }\n\n  .cookies-text p {\n    margin: 0 0 14px 0;\n  }\n\n  .cookies-text p:last-child {\n    margin-bottom: 0;\n  }\n\n  .cookies-text strong {\n    font-weight: 600;\n    color: #1A1A1A;\n  }\n\n  .cookies-list {\n    margin: 12px 0 16px 24px;\n    padding: 0;\n    list-style: disc;\n  }\n\n  .cookies-list li {\n    margin-bottom: 8px;\n    line-height: 1.6;\n  }\n\n  .cookies-link {\n    color: #B8860B;\n    text-decoration: none;\n    border-bottom: 1px solid rgba(184,134,11,0.3);\n    transition: color 0.2s ease, border-color 0.2s ease;\n  }\n  .cookies-link:hover {\n    color: var(--primary-gold);\n    border-bottom-color: var(--primary-gold);\n  }\n\n  .mh-cookie-change-btn {\n    padding: 12px 24px;\n    background: var(--primary-gold);\n    color: #000000;\n    font-family: 'Poppins', sans-serif;\n    font-size: 14px;\n    font-weight: 600;\n    border: none;\n    border-radius: 30px;\n    cursor: pointer;\n    transition: all 0.2s ease;\n    box-shadow: 0 2px 8px rgba(229,193,88,0.3);\n  }\n  .mh-cookie-change-btn:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-1px);\n    box-shadow: 0 4px 12px rgba(229,193,88,0.4);\n  }\n\n  @media (max-width: 768px) {\n    .cookies-content-section {\n      padding: 32px 16px 48px;\n    }\n    .cookies-content {\n      padding: 32px 24px;\n      border-radius: 12px;\n    }\n    .cookies-section {\n      margin-bottom: 28px;\n    }\n    .cookies-section-title {\n      padding-left: 12px;\n      border-left-width: 3px;\n    }\n    .cookies-list {\n      margin-left: 20px;\n    }\n  }\n\n  @media (max-width: 480px) {\n    .cookies-content {\n      padding: 24px 20px;\n    }\n  }\n</style>\n\n<script>\n(function(){function run(){if(typeof window.mhResetCookieConsent==='function'){if(location.hash==='#nastaveni')window.mhResetCookieConsent();var btn=document.getElementById('mh-cookie-change-btn');if(btn)btn.onclick=function(){window.mhResetCookieConsent();};}else{setTimeout(run,100);}}if(document.readyState==='complete')run();else window.addEventListener('load',run);})();\n</script>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  },
+  {
+    "id": "cookies_cta_section",
+    "name": "section",
+    "parent": 0,
+    "children": [
+      "cookies_cta_container"
+    ],
+    "settings": {
+      "_width": "100%"
+    },
+    "label": "Cookies CTA | MaxHair"
+  },
+  {
+    "id": "cookies_cta_container",
+    "name": "container",
+    "parent": "cookies_cta_section",
+    "children": [
+      "cookies_cta_code"
+    ],
+    "settings": {
+      "_width": "100%"
+    }
+  },
+  {
+    "id": "cookies_cta_code",
+    "name": "code",
+    "parent": "cookies_cta_container",
+    "children": [],
+    "settings": {
+      "code": "<!-- COOKIES CTA SECTION -->\n<section class=\"cookies-cta-section\">\n  <div class=\"cookies-cta-content\">\n    <h2 class=\"cta-title\">Have questions about cookies?</h2>\n    <p class=\"cta-description\">Contact us, we'll be happy to explain everything</p>\n    <div class=\"cta-buttons\">\n      <a href=\"/en-contact\" class=\"btn-primary\">Contact Us</a>\n      <a href=\"/en-home\" class=\"btn-secondary\">Back to Homepage</a>\n    </div>\n  </div>\n</section>\n\n<style>\n  .cookies-cta-section {\n    width: 100%;\n    max-width: 100%;\n    box-sizing: border-box;\n    min-height: 40vh;\n    background: #F5F5F5 !important;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 80px;\n    margin: 0 !important;\n  }\n\n  .cookies-cta-content {\n    max-width: 800px;\n    width: 100%;\n    text-align: center;\n  }\n\n  .cta-title {\n    font-family: 'Poppins', sans-serif;\n    font-size: clamp(28px, 4vw, 40px);\n    font-weight: 700;\n    color: var(--dark-gray);\n    margin: 0 0 16px 0;\n  }\n\n  .cta-description {\n    font-family: 'Inter', sans-serif;\n    font-size: clamp(16px, 2vw, 18px);\n    color: var(--dark-gray);\n    opacity: 0.7;\n    margin: 0 0 40px 0;\n  }\n\n  .cta-buttons {\n    display: flex;\n    gap: 24px;\n    justify-content: center;\n    flex-wrap: wrap;\n  }\n\n  .btn-primary {\n    display: inline-block;\n    padding: 16px 40px;\n    background: var(--primary-gold);\n    color: var(--black);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border-radius: 8px;\n    transition: all 0.3s ease;\n    box-shadow: 0 4px 16px rgba(229, 193, 88, 0.3);\n  }\n\n  .btn-primary:hover {\n    background: var(--secondary-gold);\n    transform: translateY(-2px);\n    box-shadow: 0 6px 24px rgba(229, 193, 88, 0.4);\n  }\n\n  .btn-secondary {\n    display: inline-block;\n    padding: 16px 40px;\n    background: transparent;\n    color: var(--primary-gold);\n    font-family: 'Inter', sans-serif;\n    font-size: 16px;\n    font-weight: 600;\n    text-decoration: none;\n    border: 2px solid var(--primary-gold);\n    border-radius: 8px;\n    transition: all 0.3s ease;\n  }\n\n  .btn-secondary:hover {\n    background: var(--primary-gold);\n    color: var(--black);\n  }\n\n  @media (max-width: 768px) {\n    .cookies-cta-section {\n      padding: 60px 24px;\n    }\n\n    .cta-buttons {\n      flex-direction: column;\n      align-items: center;\n    }\n\n    .btn-primary,\n    .btn-secondary {\n      width: 100%;\n      max-width: 300px;\n    }\n  }\n</style>",
+      "executeCode": true,
+      "signature": "",
+      "user_id": 1,
+      "time": 0
+    },
+    "themeStyles": []
+  }
+]
