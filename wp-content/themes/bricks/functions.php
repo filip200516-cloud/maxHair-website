@@ -602,6 +602,85 @@ add_action('wp_enqueue_scripts', function() {
     ));
 });
 
+/**
+ * MaxHair Leads - admin list (WP backend)
+ */
+add_action('init', function() {
+    register_post_type('maxhair_lead', array(
+        'labels' => array(
+            'name'          => 'Leady',
+            'singular_name' => 'Lead',
+            'menu_name'     => 'Leady',
+        ),
+        'public'              => false,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'menu_position'       => 25,
+        'menu_icon'           => 'dashicons-email-alt2',
+        'supports'            => array('title'),
+        'capability_type'     => 'post',
+        'map_meta_cap'        => true,
+    ));
+});
+
+add_filter('manage_maxhair_lead_posts_columns', function($columns) {
+    return array(
+        'cb'         => $columns['cb'] ?? '<input type="checkbox" />',
+        'title'      => 'Email',
+        'lead_name'  => 'Jméno',
+        'lead_phone' => 'Telefon',
+        'lead_source'=> 'Zdroj',
+        'date'       => 'Datum',
+    );
+});
+
+add_action('manage_maxhair_lead_posts_custom_column', function($column, $post_id) {
+    if ($column === 'lead_name') {
+        echo esc_html(get_post_meta($post_id, '_lead_name', true));
+    }
+    if ($column === 'lead_phone') {
+        $phone = get_post_meta($post_id, '_lead_phone', true);
+        if ($phone) {
+            echo '<a href="tel:' . esc_attr(preg_replace('/\s+/', '', $phone)) . '">' . esc_html($phone) . '</a>';
+        }
+    }
+    if ($column === 'lead_source') {
+        echo esc_html(get_post_meta($post_id, '_lead_source', true));
+    }
+}, 10, 2);
+
+function maxhair_store_lead($args = array()) {
+    $email   = sanitize_email($args['email'] ?? '');
+    $name    = sanitize_text_field($args['name'] ?? '');
+    $phone   = sanitize_text_field($args['phone'] ?? '');
+    $message = sanitize_textarea_field($args['message'] ?? '');
+    $source  = sanitize_text_field($args['source'] ?? 'Web formulář');
+    $page_url = esc_url_raw($args['page_url'] ?? '');
+
+    if (empty($email) || !is_email($email)) {
+        return 0;
+    }
+
+    $post_id = wp_insert_post(array(
+        'post_type'   => 'maxhair_lead',
+        'post_status' => 'publish',
+        'post_title'  => $email,
+    ));
+
+    if (is_wp_error($post_id) || !$post_id) {
+        return 0;
+    }
+
+    update_post_meta($post_id, '_lead_email', $email);
+    update_post_meta($post_id, '_lead_name', $name);
+    update_post_meta($post_id, '_lead_phone', $phone);
+    update_post_meta($post_id, '_lead_message', $message);
+    update_post_meta($post_id, '_lead_source', $source);
+    update_post_meta($post_id, '_lead_page_url', $page_url);
+
+    return (int) $post_id;
+}
+
 function maxhair_contact_submit() {
     $name    = sanitize_text_field( $_POST['name'] ?? '' );
     $email   = sanitize_email( $_POST['email'] ?? '' );
@@ -617,6 +696,15 @@ function maxhair_contact_submit() {
         wp_send_json_error('Zadejte prosím platný email.');
         return;
     }
+
+    maxhair_store_lead(array(
+        'email'   => $email,
+        'name'    => $name,
+        'phone'   => $phone,
+        'message' => $message,
+        'source'  => 'Kontakt formulář',
+        'page_url'=> esc_url_raw($_POST['page_url'] ?? ''),
+    ));
 
     $body = maxhair_email_template( array(
         'title'   => 'Nová poptávka z maxhair.cz',
@@ -651,6 +739,67 @@ function maxhair_contact_submit() {
 }
 add_action('wp_ajax_maxhair_contact_submit', 'maxhair_contact_submit');
 add_action('wp_ajax_nopriv_maxhair_contact_submit', 'maxhair_contact_submit');
+
+/**
+ * MaxHair Lead Magnet Popup - AJAX submit
+ */
+function maxhair_leadmagnet_submit() {
+    $name     = sanitize_text_field($_POST['name'] ?? '');
+    $email    = sanitize_email($_POST['email'] ?? '');
+    $phone    = sanitize_text_field($_POST['phone'] ?? '');
+    $page_url = esc_url_raw($_POST['page_url'] ?? '');
+
+    if (empty($name)) {
+        wp_send_json_error('Vyplňte prosím jméno a příjmení.');
+        return;
+    }
+    if (empty($email) || !is_email($email)) {
+        wp_send_json_error('Zadejte prosím platný e-mail.');
+        return;
+    }
+    if (empty($phone) || strlen(preg_replace('/\s+/', '', $phone)) < 9) {
+        wp_send_json_error('Zadejte prosím platné telefonní číslo.');
+        return;
+    }
+
+    maxhair_store_lead(array(
+        'email'    => $email,
+        'name'     => $name,
+        'phone'    => $phone,
+        'source'   => 'Popup lead magnet',
+        'page_url' => $page_url,
+    ));
+
+    $body = maxhair_email_template(array(
+        'title'  => 'Nový lead z popupu (maxhair.cz)',
+        'fields' => array(
+            'Jméno' => esc_html($name),
+            'Email' => '<a href="mailto:' . esc_attr($email) . '">' . esc_html($email) . '</a>',
+            'Telefon' => '<a href="tel:' . esc_attr(preg_replace('/\s+/', '', $phone)) . '">' . esc_html($phone) . '</a>',
+            'Zdroj' => 'Popup lead magnet',
+            'URL stránky' => $page_url ? '<a href="' . esc_attr($page_url) . '">' . esc_html($page_url) . '</a>' : '-',
+        ),
+        'footer' => 'Odesláno ' . date_i18n('d.m.Y H:i'),
+    ));
+
+    $result = maxhair_smtp_send(
+        'info@maxhair.cz',
+        'Nový lead z popupu - ' . $name,
+        $body,
+        array(
+            'is_html'  => true,
+            'reply_to' => array('email' => $email, 'name' => $name),
+        )
+    );
+
+    if ($result['success']) {
+        wp_send_json_success('Děkujeme, ozveme se vám co nejdříve.');
+    } else {
+        wp_send_json_error('Nepodařilo se odeslat lead. Zkuste to prosím znovu.');
+    }
+}
+add_action('wp_ajax_maxhair_leadmagnet_submit', 'maxhair_leadmagnet_submit');
+add_action('wp_ajax_nopriv_maxhair_leadmagnet_submit', 'maxhair_leadmagnet_submit');
 
 /**
  * MaxHair Contact Form - AJAX submit script (odesílá emaily přes forms@fellaship.cz na info@maxhair.cz)
@@ -755,3 +904,29 @@ add_action('wp_footer', function() {
     </style>
     <?php
 }, 9999);
+
+/**
+ * Favicon + Apple touch icon when WordPress „Site Icon“ is not set (Customizer).
+ * Uses the same logo asset as the header so tabs, bookmarks, and Google can discover an icon.
+ * After uploading a dedicated square Site Icon (512×512) in WP admin, this block does nothing.
+ */
+add_action(
+	'wp_head',
+	static function () {
+		if ( is_admin() || wp_doing_ajax() || ( function_exists( 'wp_is_json_request' ) && wp_is_json_request() ) ) {
+			return;
+		}
+		if ( function_exists( 'has_site_icon' ) && has_site_icon() ) {
+			return;
+		}
+		$icon_url = content_url( 'uploads/2026/02/Layer0.png' );
+		if ( ! $icon_url ) {
+			return;
+		}
+		$icon_url = esc_url( $icon_url );
+		echo '<link rel="icon" href="' . $icon_url . '" type="image/png" sizes="32x32" />' . "\n";
+		echo '<link rel="icon" href="' . $icon_url . '" type="image/png" sizes="192x192" />' . "\n";
+		echo '<link rel="apple-touch-icon" href="' . $icon_url . '" />' . "\n";
+	},
+	98
+);
