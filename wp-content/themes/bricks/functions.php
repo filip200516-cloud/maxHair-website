@@ -907,8 +907,8 @@ add_action('wp_footer', function() {
 
 /**
  * Favicon + Apple touch icon when WordPress „Site Icon“ is not set (Customizer).
- * Uses the same logo asset as the header so tabs, bookmarks, and Google can discover an icon.
- * After uploading a dedicated square Site Icon (512×512) in WP admin, this block does nothing.
+ * Square mark without wordmark (not Layer0 full logo). Local copy: assets/images/maxhair-icon-mark.png
+ * After uploading Site Icon (512×512) in WP admin, this block does nothing.
  */
 add_action(
 	'wp_head',
@@ -919,7 +919,7 @@ add_action(
 		if ( function_exists( 'has_site_icon' ) && has_site_icon() ) {
 			return;
 		}
-		$icon_url = content_url( 'uploads/2026/02/Layer0.png' );
+		$icon_url = content_url( 'uploads/2026/04/maxhair-icon-mark.png' );
 		if ( ! $icon_url ) {
 			return;
 		}
